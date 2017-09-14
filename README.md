@@ -10,27 +10,37 @@ Database Implementations
 
 These are libraries that extend/implement **[AbstractLevelDOWN](https://github.com/level/abstract-leveldown)** and can be used by **[LevelUP](https://github.com/level/levelup)** 
 
-| name | npm | type | dependencies |
-| ---- | --- | ---- | ------------ |
-| **[LevelDOWN](https://github.com/level/leveldown)** | `leveldown` | leveldb | [![dependencies](https://david-dm.org/Level/leveldown.svg)](https://david-dm.org/level/leveldown)|
-
+| name | dependencies | type |
+| ---- | ------------ | ---- |
+| **[leveldown](https://github.com/level/leveldown)** | [![dependencies](https://david-dm.org/Level/leveldown.svg)](https://david-dm.org/level/leveldown)| leveldb |
 
 Adapters
 ------------
 
 These are libraries that adapt another **[AbstractLevelDOWN](https://github.com/level/abstract-leveldown)** and can be used by **[LevelUP](https://github.com/level/levelup)** 
 
-| name | npm | description | dependencies |
-| ---- | --- | ----------- | ------------ |
-| **[encoding-down](https://github.com/level/encoding-down)** | `encoding-down` | provides key/value encoding  | [![dependencies](https://david-dm.org/Level/encoding-down.svg)](https://david-dm.org/level/encoding-down) |
+| name | dependencies | description |
+| ---- | ------------ | ----------- |
+| **[encoding-down](https://github.com/level/encoding-down)**   | [![dependencies](https://david-dm.org/Level/encoding-down.svg)](https://david-dm.org/level/encoding-down) | provides key/value encoding
 
+
+General
+------------
+
+These are general libraries helpful in using other Level related libraries
+
+| name | dependencies | description |
+| ---- | ------------ | ---- |
+| **[level](https://github.com/level/level)** | [![dependencies](https://david-dm.org/Level/level.svg)](https://david-dm.org/level/level)| convenience package that bundles **[LevelUP](https://github.com/level/levelup)** and  **[LevelDOWN](https://github.com/level/leveldown)**
+ |
 
 LevelUP Plugins
 ------------
 These are libraries that add functionality to **[LevelUP](https://github.com/level/levelup)** 
 
-| name | npm | description | dependencies |
-| ---- | --- | ----------- | ------------ |
+| name | dependencies | description |
+| ---- | ------------ | ----------- |
+| **[levelup-async-iterator](https://github.com/MeirionHughes/levelup-async-iterator)**   | [![dependencies](https://david-dm.org/MeirionHughes/levelup-async-iterator.svg)](https://david-dm.org/MeirionHughes/levelup-async-iterator) | expose iterator as `[symbol.asyncIterator]`
 
 Other
 ------------
