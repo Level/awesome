@@ -10,26 +10,27 @@ Database Implementations
 
 These are libraries that extend/implement **[AbstractLevelDOWN](https://github.com/level/abstract-leveldown)** and can be used by **[LevelUP](https://github.com/level/levelup)** 
 
-| name          | npm         | type           |
-| ------------- |-------------| :-------------:|
-| **[LevelDOWN](https://github.com/level/leveldown)** | `leveldown` | leveldb |
+| name | npm | type | dependencies |
+| ---- | --- | ---- | ------------ |
+| **[LevelDOWN](https://github.com/level/leveldown)** | `leveldown` | leveldb | [![dependencies](https://david-dm.org/Level/leveldown.svg)](https://david-dm.org/level/leveldown)|
+
 
 Adapters
 ------------
 
 These are libraries that adapt another **[AbstractLevelDOWN](https://github.com/level/abstract-leveldown)** and can be used by **[LevelUP](https://github.com/level/levelup)** 
 
-| name          | npm         | description    |
-| ------------- |-------------| :-------------:|
-| **[encoding-down](https://github.com/level/encoding-down)** | `encoding-down` | provides key/value encoding  |
+| name | npm | type | dependencies |
+| ---- | --- | ---- | ------------ |
+| **[encoding-down](https://github.com/level/encoding-down)** | `encoding-down` | provides key/value encoding  | [![dependencies](https://david-dm.org/Level/encoding-down.svg)](https://david-dm.org/level/encoding-down) |
 
 
 LevelUP Plugins
 ------------
 These are libraries that add functionality to **[LevelUP](https://github.com/level/levelup)** 
 
-| name          | npm         | description    |
-| ------------- |-------------| :-------------:|
+| name | npm | type | dependencies |
+| ---- | --- | ---- | ------------ |
 
 
 <a name="contributing"></a>
