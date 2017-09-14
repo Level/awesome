@@ -12,7 +12,10 @@ These are libraries that extend/implement **[AbstractLevelDOWN](https://github.c
 
 | name | dependencies | type |
 | ---- | ------------ | ---- |
-| **[leveldown](https://github.com/level/leveldown)** | [![dependencies](https://david-dm.org/Level/leveldown.svg)](https://david-dm.org/level/leveldown)| leveldb |
+| **[leveldown](https://github.com/level/leveldown)** | [![dependencies](https://david-dm.org/Level/leveldown.svg)](https://david-dm.org/level/leveldown)| [LevelDB](https://github.com/google/leveldb) |
+| **[leveldown-hyper](https://github.com/level/leveldown-hyper)** | [![dependencies](https://david-dm.org/Level/leveldown-hyper.svg)](https://david-dm.org/level/leveldown-hyper)| [HyperLevelDB](https://github.com/rescrv/HyperLevelDB) |
+| **[memdown](https://github.com/level/memdown)** | [![dependencies](https://david-dm.org/Level/memdown.svg)](https://david-dm.org/level/memdown)| In-Memory |
+| **[rocksdb](https://github.com/level/rocksdb)** | [![dependencies](https://david-dm.org/Level/rocksdb.svg)](https://david-dm.org/level/rocksdb)| [RocksDB](https://github.com/facebook/rocksdb/) |
 
 Adapters
 ------------
@@ -32,7 +35,7 @@ These are general libraries helpful in using other Level related libraries
 | name | dependencies | description |
 | ---- | ------------ | ---- |
 | **[level](https://github.com/level/level)** | [![dependencies](https://david-dm.org/Level/level.svg)](https://david-dm.org/level/level)| convenience package that bundles **[LevelUP](https://github.com/level/levelup)** and  **[LevelDOWN](https://github.com/level/leveldown)**
- |
+| **[level-iterator-stream](https://github.com/level/iterator-stream)** | [![dependencies](https://david-dm.org/Level/iterator-stream.svg)](https://david-dm.org/level/iterator-stream) | Turn a AbstractDown iterator into a readable stream
 
 LevelUP Plugins
 ------------
