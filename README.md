@@ -17,6 +17,7 @@ These are libraries that extend/implement **[AbstractLevelDOWN](https://github.c
 | **[level.js](https://github.com/maxogden/level.js)** | [![dependencies](https://david-dm.org/maxogden/level.js.svg)](https://david-dm.org/maxogden/level.js)| [IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB) |
 | **[memdown](https://github.com/level/memdown)** | [![dependencies](https://david-dm.org/Level/memdown.svg)](https://david-dm.org/level/memdown)| In-Memory |
 | **[rocksdb](https://github.com/level/rocksdb)** | [![dependencies](https://david-dm.org/Level/rocksdb.svg)](https://david-dm.org/level/rocksdb)| [RocksDB](https://github.com/facebook/rocksdb/) |
+| **[sqldown](https://github.com/calvinmetcalf/sqldown)** | [![dependencies](https://david-dm.org/calvinmetcalf/sqldown/status.svg)](https://david-dm.org/calvinmetcalf/sqldown)| [sqlite3](https://www.npmjs.com/package/sqlite3), [pg](https://www.npmjs.com/package/pg), [mysql](https://www.npmjs.com/package/mysql) |
 
 Adapters
 ------------
