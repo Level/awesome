@@ -32,10 +32,19 @@ These are libraries that add functionality to **[LevelUP](https://github.com/lev
 | name | npm | description | dependencies |
 | ---- | --- | ----------- | ------------ |
 
+Other
+------------
+
+| name | description |
+| ---- | ----------- |
+| **http://leveldb.org/** | website for LevelDb
+
 
 <a name="contributing"></a>
 Contributing
 ------------
+
+Resource authors are welcome and encouraged to add an entry for their work in README.md via a pull-request. 
 
 Level is an **OPEN Open Source Project**. This means that:
 
