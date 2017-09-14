@@ -20,8 +20,8 @@ Adapters
 
 These are libraries that adapt another **[AbstractLevelDOWN](https://github.com/level/abstract-leveldown)** and can be used by **[LevelUP](https://github.com/level/levelup)** 
 
-| name | npm | type | dependencies |
-| ---- | --- | ---- | ------------ |
+| name | npm | description | dependencies |
+| ---- | --- | ----------- | ------------ |
 | **[encoding-down](https://github.com/level/encoding-down)** | `encoding-down` | provides key/value encoding  | [![dependencies](https://david-dm.org/Level/encoding-down.svg)](https://david-dm.org/level/encoding-down) |
 
 
@@ -29,8 +29,8 @@ LevelUP Plugins
 ------------
 These are libraries that add functionality to **[LevelUP](https://github.com/level/levelup)** 
 
-| name | npm | type | dependencies |
-| ---- | --- | ---- | ------------ |
+| name | npm | description | dependencies |
+| ---- | --- | ----------- | ------------ |
 
 
 <a name="contributing"></a>
