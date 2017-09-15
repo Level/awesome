@@ -15,12 +15,12 @@ These are libraries that extend/implement **[AbstractLevelDOWN](https://github.c
 | **[leveldown](https://github.com/level/leveldown)** | [![dependencies](https://david-dm.org/Level/leveldown.svg)](https://david-dm.org/level/leveldown)| [LevelDB](https://github.com/google/leveldb) |
 | **[leveldown-hyper](https://github.com/level/leveldown-hyper)** | [![dependencies](https://david-dm.org/Level/leveldown-hyper.svg)](https://david-dm.org/level/leveldown-hyper)| [HyperLevelDB](https://github.com/rescrv/HyperLevelDB) |
 | **[level.js](https://github.com/maxogden/level.js)** | [![dependencies](https://david-dm.org/maxogden/level.js.svg)](https://david-dm.org/maxogden/level.js)| [IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB) |
-| **[memdown](https://github.com/level/memdown)** | [![dependencies](https://david-dm.org/Level/memdown.svg)](https://david-dm.org/level/memdown)| In-Memory |
+| **[memdown](https://github.com/level/memdown)** | [![dependencies](https://david-dm.org/Level/memdown.svg)](https://david-dm.org/level/memdown)| [Object](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Object) |
 | **[redisdown](https://github.com/hmalphettes/redisdown)** | [![dependencies](https://david-dm.org/hmalphettes/redisdown.svg)](https://hmalphettes/redisdown)| [Redis](https://redis.io/) |
 | **[rocksdb](https://github.com/level/rocksdb)** | [![dependencies](https://david-dm.org/Level/rocksdb.svg)](https://david-dm.org/level/rocksdb)| [RocksDB](https://github.com/facebook/rocksdb/) |
 | **[sqldown](https://github.com/calvinmetcalf/sqldown)** | [![dependencies](https://david-dm.org/calvinmetcalf/sqldown/status.svg)](https://david-dm.org/calvinmetcalf/sqldown)| [sqlite3](https://www.npmjs.com/package/sqlite3), [pg](https://www.npmjs.com/package/pg), [mysql](https://www.npmjs.com/package/mysql) |
 
-Adapters
+AbstractLevelDOWN Adapters
 ------------
 
 These are libraries that adapt another **[AbstractLevelDOWN](https://github.com/level/abstract-leveldown)** and can be used by **[LevelUP](https://github.com/level/levelup)** 
@@ -29,6 +29,13 @@ These are libraries that adapt another **[AbstractLevelDOWN](https://github.com/
 | ---- | ------------ | ----------- |
 | **[encoding-down](https://github.com/level/encoding-down)**   | [![dependencies](https://david-dm.org/Level/encoding-down.svg)](https://david-dm.org/level/encoding-down) | provides key/value encoding
 
+LevelUP Adapters and Plugins
+------------
+These are libraries that add functionality to **[LevelUP](https://github.com/level/levelup)** 
+
+| name | dependencies | description |
+| ---- | ------------ | ----------- |
+| **[levelup-async-iterator](https://github.com/MeirionHughes/levelup-async-iterator)**   | [![dependencies](https://david-dm.org/MeirionHughes/levelup-async-iterator.svg)](https://david-dm.org/MeirionHughes/levelup-async-iterator) | expose `iterator()` with `[symbol.asyncIterator]`
 
 General
 ------------
@@ -39,14 +46,6 @@ These are general libraries helpful in using other Level related libraries
 | ---- | ------------ | ---- |
 | **[level](https://github.com/level/level)** | [![dependencies](https://david-dm.org/Level/level.svg)](https://david-dm.org/level/level)| convenience package that bundles **[LevelUP](https://github.com/level/levelup)** and  **[LevelDOWN](https://github.com/level/leveldown)**
 | **[level-iterator-stream](https://github.com/level/iterator-stream)** | [![dependencies](https://david-dm.org/Level/iterator-stream.svg)](https://david-dm.org/level/iterator-stream) | Turn a AbstractDown iterator into a readable stream
-
-LevelUP Plugins
-------------
-These are libraries that add functionality to **[LevelUP](https://github.com/level/levelup)** 
-
-| name | dependencies | description |
-| ---- | ------------ | ----------- |
-| **[levelup-async-iterator](https://github.com/MeirionHughes/levelup-async-iterator)**   | [![dependencies](https://david-dm.org/MeirionHughes/levelup-async-iterator.svg)](https://david-dm.org/MeirionHughes/levelup-async-iterator) | expose iterator as `[symbol.asyncIterator]`
 
 Other
 ------------
