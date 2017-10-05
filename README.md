@@ -1,6 +1,6 @@
 # Awesome Level ![level badge][level-badge]
 
-> A curated list of amazingly awesome **[Level]** modules and resources.
+> A curated list of amazingly awesome **[Level]** modules and resources. [Add yours!](#contributing)
 
 ## Core
 
