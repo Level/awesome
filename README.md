@@ -7,7 +7,7 @@ A curated list of amazingly awesome **[Level](https://github.com/level)** module
 These are modules that implement **[`abstract-leveldown`](https://github.com/level/abstract-leveldown)** to be used as storage for **[`levelup`](https://github.com/level/levelup)**.
 
 | name | dependencies | type |
-| ---- | ------------ | ---- |
+|:---- |:------------ |:---- |
 | **[leveldown](https://github.com/level/leveldown)** | [![dependencies](https://david-dm.org/Level/leveldown.svg)](https://david-dm.org/level/leveldown)| [LevelDB](https://github.com/google/leveldb) |
 | **[leveldown-hyper](https://github.com/level/leveldown-hyper)** | [![dependencies](https://david-dm.org/Level/leveldown-hyper.svg)](https://david-dm.org/level/leveldown-hyper)| [HyperLevelDB](https://github.com/rescrv/HyperLevelDB) |
 | **[level.js](https://github.com/maxogden/level.js)** | [![dependencies](https://david-dm.org/maxogden/level.js.svg)](https://david-dm.org/maxogden/level.js)| [IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB) |
@@ -22,7 +22,7 @@ Layers
 These are modules that wrap another **[`abstract-leveldown`](https://github.com/level/abstract-leveldown)**.
 
 | name | dependencies | description |
-| ---- | ------------ | ----------- |
+|:---- |:------------ |:----------- |
 | **[encoding-down](https://github.com/level/encoding-down)**   | [![dependencies](https://david-dm.org/Level/encoding-down.svg)](https://david-dm.org/level/encoding-down) | provides key/value encoding
 
 Plugins for `levelup`
@@ -30,7 +30,7 @@ Plugins for `levelup`
 These are modules that add functionality to **[`levelup`](https://github.com/level/levelup)**.
 
 | name | dependencies | description |
-| ---- | ------------ | ----------- |
+|:---- |:------------ |:----------- |
 | **[levelup-async-iterator](https://github.com/MeirionHughes/levelup-async-iterator)**   | [![dependencies](https://david-dm.org/MeirionHughes/levelup-async-iterator.svg)](https://david-dm.org/MeirionHughes/levelup-async-iterator) | expose `iterator()` with `[Symbol.asyncIterator]`
 
 General
@@ -39,7 +39,7 @@ General
 These are general modules helpful in using other Level related modules.
 
 | name | dependencies | description |
-| ---- | ------------ | ---- |
+|:---- |:------------ |:---- |
 | **[level](https://github.com/level/level)** | [![dependencies](https://david-dm.org/Level/level.svg)](https://david-dm.org/level/level)| convenience package that bundles **[`levelup`](https://github.com/level/levelup)** and  **[`leveldown`](https://github.com/level/leveldown)**
 | **[level-iterator-stream](https://github.com/level/iterator-stream)** | [![dependencies](https://david-dm.org/Level/iterator-stream.svg)](https://david-dm.org/level/iterator-stream) | Turn an `abstract-leveldown` iterator into a readable stream
 
@@ -47,7 +47,7 @@ Other
 ------------
 
 | name | description |
-| ---- | ----------- |
+|:---- |:----------- |
 | **http://leveldb.org/** | website for LevelDb
 
 
