@@ -1,14 +1,10 @@
-Awesome Level
-=====
+# Awesome Level <img alt="LevelDB Logo" height="20" src="http://leveldb.org/img/logo.svg">
 
-<img alt="LevelDB Logo" height="100" src="http://leveldb.org/img/logo.svg">
+A curated list of amazingly awesome **[Level](https://github.com/level)** modules and resources.
 
-A curated list of amazingly awesome **[Level](https://github.com/level)** libraries and resources
+## Stores
 
-Database Implementations
-------------
-
-These are libraries that extend/implement **[AbstractLevelDOWN](https://github.com/level/abstract-leveldown)** and can be used by **[LevelUP](https://github.com/level/levelup)** 
+These are modules that implement **[`abstract-leveldown`](https://github.com/level/abstract-leveldown)** to be used as storage for **[`levelup`](https://github.com/level/levelup)**.
 
 | name | dependencies | type |
 | ---- | ------------ | ---- |
@@ -20,32 +16,32 @@ These are libraries that extend/implement **[AbstractLevelDOWN](https://github.c
 | **[rocksdb](https://github.com/level/rocksdb)** | [![dependencies](https://david-dm.org/Level/rocksdb.svg)](https://david-dm.org/level/rocksdb)| [RocksDB](https://github.com/facebook/rocksdb/) |
 | **[sqldown](https://github.com/calvinmetcalf/sqldown)** | [![dependencies](https://david-dm.org/calvinmetcalf/sqldown/status.svg)](https://david-dm.org/calvinmetcalf/sqldown)| [sqlite3](https://www.npmjs.com/package/sqlite3), [pg](https://www.npmjs.com/package/pg), [mysql](https://www.npmjs.com/package/mysql) |
 
-AbstractLevelDOWN Adapters
+Layers
 ------------
 
-These are libraries that adapt another **[AbstractLevelDOWN](https://github.com/level/abstract-leveldown)** and can be used by **[LevelUP](https://github.com/level/levelup)** 
+These are modules that wrap another **[`abstract-leveldown`](https://github.com/level/abstract-leveldown)**.
 
 | name | dependencies | description |
 | ---- | ------------ | ----------- |
 | **[encoding-down](https://github.com/level/encoding-down)**   | [![dependencies](https://david-dm.org/Level/encoding-down.svg)](https://david-dm.org/level/encoding-down) | provides key/value encoding
 
-LevelUP Adapters and Plugins
+Plugins for `levelup`
 ------------
-These are libraries that add functionality to **[LevelUP](https://github.com/level/levelup)** 
+These are modules that add functionality to **[`levelup`](https://github.com/level/levelup)**.
 
 | name | dependencies | description |
 | ---- | ------------ | ----------- |
-| **[levelup-async-iterator](https://github.com/MeirionHughes/levelup-async-iterator)**   | [![dependencies](https://david-dm.org/MeirionHughes/levelup-async-iterator.svg)](https://david-dm.org/MeirionHughes/levelup-async-iterator) | expose `iterator()` with `[symbol.asyncIterator]`
+| **[levelup-async-iterator](https://github.com/MeirionHughes/levelup-async-iterator)**   | [![dependencies](https://david-dm.org/MeirionHughes/levelup-async-iterator.svg)](https://david-dm.org/MeirionHughes/levelup-async-iterator) | expose `iterator()` with `[Symbol.asyncIterator]`
 
 General
 ------------
 
-These are general libraries helpful in using other Level related libraries
+These are general modules helpful in using other Level related modules.
 
 | name | dependencies | description |
 | ---- | ------------ | ---- |
-| **[level](https://github.com/level/level)** | [![dependencies](https://david-dm.org/Level/level.svg)](https://david-dm.org/level/level)| convenience package that bundles **[LevelUP](https://github.com/level/levelup)** and  **[LevelDOWN](https://github.com/level/leveldown)**
-| **[level-iterator-stream](https://github.com/level/iterator-stream)** | [![dependencies](https://david-dm.org/Level/iterator-stream.svg)](https://david-dm.org/level/iterator-stream) | Turn a AbstractDown iterator into a readable stream
+| **[level](https://github.com/level/level)** | [![dependencies](https://david-dm.org/Level/level.svg)](https://david-dm.org/level/level)| convenience package that bundles **[`levelup`](https://github.com/level/levelup)** and  **[`leveldown`](https://github.com/level/leveldown)**
+| **[level-iterator-stream](https://github.com/level/iterator-stream)** | [![dependencies](https://david-dm.org/Level/iterator-stream.svg)](https://david-dm.org/level/iterator-stream) | Turn an `abstract-leveldown` iterator into a readable stream
 
 Other
 ------------
@@ -59,7 +55,7 @@ Other
 Contributing
 ------------
 
-Resource authors are welcome and encouraged to add an entry for their work in README.md via a pull-request. 
+Resource authors are welcome and encouraged to add an entry for their work in README.md via a pull-request.
 
 Level is an **OPEN Open Source Project**. This means that:
 
