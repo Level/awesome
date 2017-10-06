@@ -6,7 +6,7 @@
 
 | name | dependencies | description
 |:---- |:------------ |:-----------
-|**[`level`]** | [![david][120]][121] | Main entry point for beginners.<br> A convenient bundle of [`levelup`] and [`leveldown`].
+|**[`level`]** | [![david][120]][121] | Main entry point for beginners.<br> A convenient bundle of [`levelup`], [`leveldown`] and [`encoding-down`].
 |**[`levelup`]** | [![david][122]][123] | The glue that holds everything together.<br> Use this instead of [`level`] when you need a [custom store](#stores).
 
 <!-- Reserved for this section: 120-149 -->
