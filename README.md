@@ -6,14 +6,14 @@
 
 | name | dependencies | description
 |:---- |:------------ |:-----------
-|**[`level`]** | [![david][120]][121] | Main entry point for beginners.<br> A convenient bundle of [`levelup`], [`leveldown`] and [`encoding-down`].
-|**[`levelup`]** | [![david][122]][123] | The glue that holds everything together.<br> Use this instead of [`level`] when you need a [custom store](#stores).
+|**[`level`]** | [![david][400]][401] | Main entry point for beginners.<br> A convenient bundle of [`levelup`], [`leveldown`] and [`encoding-down`].
+|**[`levelup`]** | [![david][402]][403] | The glue that holds everything together.<br> Use this instead of [`level`] when you need a [custom store](#stores).
 
-<!-- Reserved for this section: 120-149 -->
-[120]: https://img.shields.io/david/level/level.svg
-[121]: https://david-dm.org/level/level
-[122]: https://img.shields.io/david/level/levelup.svg
-[123]: https://david-dm.org/level/levelup
+<!-- Reserved for this section: 400-499 -->
+[400]: https://img.shields.io/david/level/level.svg
+[401]: https://david-dm.org/level/level
+[402]: https://img.shields.io/david/level/levelup.svg
+[403]: https://david-dm.org/level/levelup
 
 ## Stores
 
@@ -41,7 +41,7 @@ Modules that implement [`abstract-leveldown`] as storage for [`levelup`].
 |**[`riakdown`]** | [![down0.x]][ad] |[![david][36]][37] | [riakpbc]
 |**[`sheet-down`]** | [![nondown]][ad] |[![david][38]][39] | [Google Sheets]
 
-<!-- Reserved for this section: 1-69 -->
+<!-- Reserved for this section: 1-99 -->
 [01]: https://img.shields.io/david/level/leveldown.svg
 [02]: https://david-dm.org/level/leveldown
 [03]: https://img.shields.io/david/Level/leveldown-hyper.svg
@@ -58,7 +58,6 @@ Modules that implement [`abstract-leveldown`] as storage for [`levelup`].
 [14]: https://david-dm.org/calvinmetcalf/sqldown
 [16]: https://img.shields.io/david/tradle/asyncstorage-down.svg
 [17]: https://david-dm.org/tradle/asyncstorage-down
-
 [18]: https://img.shields.io/david/richorama/azureleveldown.svg
 [19]: https://david-dm.org/richorama/azureleveldown
 [20]: https://img.shields.io/david/jed/dynamo-down.svg
@@ -91,17 +90,17 @@ Modules that implement [`abstract-leveldown`] to wrap another [`abstract-leveldo
 
 | Name                 |Compatibility    | Status             | Description
 |:-------------------- |:--------------- |:-------------------|:-----------
-|**[`encoding-down`]** |[![down2.7]][ad] | [![david][70]][71] | Provides key/value encoding
-|**[`deferred-leveldown`]** |[![down2.7]][ad] | [![david][72]][73] | Handles delayed-open. Built into [`levelup`].
-|**[`cachedown`]** | [![down2.4]][ad] | [![david][74]][75] | LRU cache
+|**[`encoding-down`]** |[![down2.7]][ad] | [![david][100]][101] | Provides key/value encoding
+|**[`deferred-leveldown`]** |[![down2.7]][ad] | [![david][102]][103] | Handles delayed-open. Built into [`levelup`].
+|**[`cachedown`]** | [![down2.4]][ad] | [![david][104]][105] | LRU cache
 
-<!-- Reserved for this section: 70-99 -->
-[70]: https://img.shields.io/david/Level/encoding-down.svg
-[71]: https://david-dm.org/level/encoding-down
-[72]: https://img.shields.io/david/Level/deferred-leveldown.svg
-[73]: https://david-dm.org/level/deferred-leveldown
-[74]: https://img.shields.io/david/mvayngrib/cachedown.svg
-[75]: https://david-dm.org/mvayngrib/cachedown
+<!-- Reserved for this section: 100-199 -->
+[100]: https://img.shields.io/david/Level/encoding-down.svg
+[101]: https://david-dm.org/level/encoding-down
+[102]: https://img.shields.io/david/Level/deferred-leveldown.svg
+[103]: https://david-dm.org/level/deferred-leveldown
+[104]: https://img.shields.io/david/mvayngrib/cachedown.svg
+[105]: https://david-dm.org/mvayngrib/cachedown
 
 ## Plugins for [`levelup`]
 
@@ -109,27 +108,27 @@ Modules that add functionality to [`levelup`].
 
 | Name | Status       | Description
 |:---- |:------------ |:-----------
-|**[`levelup-async-iterator`]** | [![david][100]][101] | Expose `iterator()` with `[Symbol.asyncIterator]`
+|**[`levelup-async-iterator`]** | [![david][200]][201] | Expose `iterator()` with `[Symbol.asyncIterator]`
 
-<!-- Reserved for this section: 100-129 -->
-[100]: https://img.shields.io/david/MeirionHughes/levelup-async-iterator.svg
-[101]: https://david-dm.org/MeirionHughes/levelup-async-iterator
+<!-- Reserved for this section: 200-299 -->
+[200]: https://img.shields.io/david/MeirionHughes/levelup-async-iterator.svg
+[201]: https://david-dm.org/MeirionHughes/levelup-async-iterator
 
 ## Utilities
 
 | Name | Status       | Description
 |:---- |:------------ |:-----------
-|**[`level-iterator-stream`]** | [![david][200]][201] | Turn an [`abstract-leveldown`] iterator into a readable stream
+|**[`level-iterator-stream`]** | [![david][300]][301] | Turn an [`abstract-leveldown`] iterator into a readable stream
 
-<!-- Reserved for this section: 200-229 -->
-[200]: https://david-dm.org/Level/iterator-stream.svg
-[201]: https://david-dm.org/level/iterator-stream
+<!-- Reserved for this section: 300-399 -->
+[300]: https://david-dm.org/Level/iterator-stream.svg
+[301]: https://david-dm.org/level/iterator-stream
 
 ## Other
 
-| name | description |
-|:---- |:----------- |
-| **[leveldb.org]** | website for LevelDb
+| Name              | Description
+|:----------------- |:-----------
+| **[leveldb.org]** | Website for LevelDB
 
 ## Contributing
 
@@ -160,7 +159,6 @@ Level is licensed under the MIT license. All rights not explicitly granted in th
 [`abstract-leveldown`]: https://github.com/level/abstract-leveldown
 [ad]: https://github.com/level/abstract-leveldown
 [`levelup`]: https://github.com/level/levelup
-
 [`leveldown`]: https://github.com/level/leveldown
 [LevelDB]: https://github.com/google/leveldb
 [`leveldown-hyper`]: https://github.com/level/leveldown-hyper
@@ -196,11 +194,9 @@ Level is licensed under the MIT license. All rights not explicitly granted in th
 [medea]: https://github.com/argo/medea
 [Basho's LevelDB fork]: https://github.com/basho/leveldb
 [localStorage]: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
-
 [`encoding-down`]: https://github.com/level/encoding-down
 [`deferred-leveldown`]: https://github.com/Level/deferred-leveldown
 [`cachedown`]: https://github.com/mvayngrib/cachedown
-
 [`levelup-async-iterator`]: https://github.com/MeirionHughes/levelup-async-iterator
 [`level`]: https://github.com/level/level
 [`level-iterator-stream`]: https://github.com/level/iterator-stream
