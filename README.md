@@ -7,7 +7,7 @@
 | name | dependencies | description
 |:---- |:------------ |:-----------
 |**[`level`]** | [![david][120]][121] | Main entry point for beginners.<br> A convenient bundle of [`levelup`] and [`leveldown`].
-|**[`levelup`]** | [![david][122]][123] | The glue that holds everything together. <br>Use this instead of [`level`] when you need a [custom store](#stores).
+|**[`levelup`]** | [![david][122]][123] | The glue that holds everything together.<br> Use this instead of [`level`] when you need a [custom store](#stores).
 
 <!-- Reserved for this section: 120-149 -->
 [120]: https://img.shields.io/david/level/level.svg
@@ -17,7 +17,7 @@
 
 ## Stores
 
-Modules that implement [`abstract-leveldown`] to be used as storage for [`levelup`].
+Modules that implement [`abstract-leveldown`] as storage for [`levelup`].
 
 | Name                   | Compatibility    | Status            | Type
 |:---------------------- |:---------------  |:----------------- |:----
@@ -48,7 +48,7 @@ Modules that implement [`abstract-leveldown`] to be used as storage for [`levelu
 
 ## Layers
 
-Modules that implement [`abstract-leveldown`] to wrap another [`abstract-leveldown`]. This is the preferred way to extend functionality.
+Modules that implement [`abstract-leveldown`] to wrap another [`abstract-leveldown`]. This is the preferred extension point.
 
 | Name                 |Compatibility    | Status             | Description
 |:-------------------- |:--------------- |:-------------------|:-----------
@@ -89,13 +89,13 @@ Modules that add functionality to [`levelup`].
 
 ## Contributing
 
-Resource authors are welcome and encouraged to add an entry for their work in README.md via a pull-request.
+Resource authors are welcome and encouraged to add an entry for their work in README.md via a pull request.
 
 Level is an **OPEN Open Source Project**. This means that:
 
 > Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.
 
-See the [`CONTRIBUTING.md`](https://github.com/Level/community/blob/master/CONTRIBUTING.md) file for more details.
+See [`CONTRIBUTING.md`](https://github.com/Level/community/blob/master/CONTRIBUTING.md) for more details.
 
 ## License
 
