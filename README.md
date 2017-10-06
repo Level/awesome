@@ -21,15 +21,27 @@ Modules that implement [`abstract-leveldown`] as storage for [`levelup`].
 
 | Name                   | Compatibility    | Status            | Type
 |:---------------------- |:---------------  |:----------------- |:----
-|**[`leveldown`]**       | [![down2.7]][15] |[![david][01]][02] |[LevelDB]
-|**[`leveldown-hyper`]** | [![down2.7]][15] |[![david][03]][04] |[HyperLevelDB]
-|**[`level-js`]**        | [![down0.x]][15] |[![david][05]][06] |[IndexedDB]
-|**[`memdown`]**         | [![down2.7]][15] |[![david][07]][08] |[In-memory RBTree]
-|**[`redisdown`]**       | [![down2.7]][15] |[![david][09]][10] |[Redis]
-|**[`rocksdb`]**         | [![down2.7]][15] |[![david][11]][12] |[RocksDB]
-|**[`sqldown`]**         | [![down2.1]][15] |[![david][13]][14] |[`sqlite3`], [`pg`], [`mysql`]
+|**[`leveldown`]**       | [![down2.7]][ad] |[![david][01]][02] |[LevelDB]
+|**[`leveldown-hyper`]** | [![down2.7]][ad] |[![david][03]][04] |[HyperLevelDB]
+|**[`level-js`]**        | [![down0.x]][ad] |[![david][05]][06] |[IndexedDB]
+|**[`memdown`]**         | [![down2.7]][ad] |[![david][07]][08] |[In-memory RBTree]
+|**[`redisdown`]**       | [![down2.7]][ad] |[![david][09]][10] |[Redis]
+|**[`rocksdb`]**         | [![down2.7]][ad] |[![david][11]][12] |[RocksDB]
+|**[`sqldown`]**         | [![down2.1]][ad] |[![david][13]][14] |[`sqlite3`], [`pg`], [`mysql`], WebSQL
+|**[`asyncstorage-down`]** | [![down2.6]][ad] |[![david][16]][17] | [AsyncStorage] (React Native)
+|**[`azureleveldown`]** | [![down0.x]][ad] |[![david][18]][19] | Windows Azure Table Storage
+|**[`dynamo-down`]** | [![down2.1]][ad] |[![david][20]][21] | [AWS DynamoDB]
+|**[`fruitdown`]** | [![down0.x]][ad] |[![david][22]][23] |IndexedDB (Apple)
+|**[`jsondown`]** | [![nondown]][ad] |[![david][24]][25] | JSON on disk
+|**[`leveldown-basho`]** | [![down0.x]][ad] |[![david][26]][27] | [Basho's LevelDB fork]
+|**[`localstorage-down`]** | [![down0.x]][ad] |[![david][28]][29] | [localStorage]
+|**[`medeadown`]** | [![down1.0]][ad] |[![david][30]][31] | [medea]
+|**[`mongodown`]** | [![down2.6]][ad] |[![david][32]][33] | MongoDB
+|**[`mysqldown`]** | [![down0.x]][ad] |[![david][34]][35] | MySQL
+|**[`riakdown`]** | [![down0.x]][ad] |[![david][36]][37] | [riakpbc]
+|**[`sheet-down`]** | [![nondown]][ad] |[![david][38]][39] | [Google Sheets]
 
-<!-- Reserved for this section: 1-29 -->
+<!-- Reserved for this section: 1-69 -->
 [01]: https://img.shields.io/david/level/leveldown.svg
 [02]: https://david-dm.org/level/leveldown
 [03]: https://img.shields.io/david/Level/leveldown-hyper.svg
@@ -44,7 +56,34 @@ Modules that implement [`abstract-leveldown`] as storage for [`levelup`].
 [12]: https://david-dm.org/level/rocksdb
 [13]: https://img.shields.io/david/calvinmetcalf/sqldown.svg
 [14]: https://david-dm.org/calvinmetcalf/sqldown
-[15]: https://github.com/level/abstract-leveldown
+[16]: https://img.shields.io/david/tradle/asyncstorage-down.svg
+[17]: https://david-dm.org/tradle/asyncstorage-down
+
+[18]: https://img.shields.io/david/richorama/azureleveldown.svg
+[19]: https://david-dm.org/richorama/azureleveldown
+[20]: https://img.shields.io/david/jed/dynamo-down.svg
+[21]: https://david-dm.org/jed/dynamo-down
+[22]: https://img.shields.io/david/nolanlawson/fruitdown.svg
+[23]: https://david-dm.org/nolanlawson/fruitdown
+[24]: https://img.shields.io/david/toolness/jsondown.svg
+[25]: https://david-dm.org/toolness/jsondown
+
+<!-- not available (it's a branch of leveldown) -->
+[26]: https://img.shields.io/david/level/leveldown-basho.svg
+[27]: https://david-dm.org/level/leveldown-basho
+
+[28]: https://img.shields.io/david/No9/localstorage-down.svg
+[29]: https://david-dm.org/No9/localstorage-down
+[30]: https://img.shields.io/david/kesla/medeadown.svg
+[31]: https://david-dm.org/kesla/medeadown
+[32]: https://img.shields.io/david/watson/mongodown.svg
+[33]: https://david-dm.org/watson/mongodown
+[34]: https://img.shields.io/david/kesla/mysqldown.svg
+[35]: https://david-dm.org/kesla/mysqldown
+[36]: https://img.shields.io/david/nlf/riakdown.svg
+[37]: https://david-dm.org/nlf/riakdown
+[38]: https://img.shields.io/david/jed/sheet-down.svg
+[39]: https://david-dm.org/jed/sheet-down
 
 ## Layers
 
@@ -52,12 +91,17 @@ Modules that implement [`abstract-leveldown`] to wrap another [`abstract-leveldo
 
 | Name                 |Compatibility    | Status             | Description
 |:-------------------- |:--------------- |:-------------------|:-----------
-|**[`encoding-down`]** |[![down2.7]][32] | [![david][30]][31] | Provides key/value encoding
+|**[`encoding-down`]** |[![down2.7]][ad] | [![david][70]][71] | Provides key/value encoding
+|**[`deferred-leveldown`]** |[![down2.7]][ad] | [![david][72]][73] | Handles delayed-open. Built into [`levelup`].
+|**[`cachedown`]** | [![down2.4]][ad] | [![david][74]][75] | LRU cache
 
-<!-- Reserved for this section: 30-59 -->
-[30]: https://img.shields.io/david/Level/encoding-down.svg
-[31]: https://david-dm.org/level/encoding-down
-[32]: https://github.com/level/abstract-leveldown
+<!-- Reserved for this section: 70-99 -->
+[70]: https://img.shields.io/david/Level/encoding-down.svg
+[71]: https://david-dm.org/level/encoding-down
+[72]: https://img.shields.io/david/Level/deferred-leveldown.svg
+[73]: https://david-dm.org/level/deferred-leveldown
+[74]: https://img.shields.io/david/mvayngrib/cachedown.svg
+[75]: https://david-dm.org/mvayngrib/cachedown
 
 ## Plugins for [`levelup`]
 
@@ -65,21 +109,21 @@ Modules that add functionality to [`levelup`].
 
 | name | dependencies | description
 |:---- |:------------ |:-----------
-|**[`levelup-async-iterator`]** | [![david][60]][61] | Expose `iterator()` with `[Symbol.asyncIterator]`
+|**[`levelup-async-iterator`]** | [![david][100]][101] | Expose `iterator()` with `[Symbol.asyncIterator]`
 
-<!-- Reserved for this section: 60-89 -->
-[60]: https://img.shields.io/david/MeirionHughes/levelup-async-iterator.svg
-[61]: https://david-dm.org/MeirionHughes/levelup-async-iterator
+<!-- Reserved for this section: 100-129 -->
+[100]: https://img.shields.io/david/MeirionHughes/levelup-async-iterator.svg
+[101]: https://david-dm.org/MeirionHughes/levelup-async-iterator
 
 ## Utilities
 
 | name | dependencies | description
 |:---- |:------------ |:-----------
-|**[`level-iterator-stream`]** | [![david][92]][93] | Turn an [`abstract-leveldown`] iterator into a readable stream
+|**[`level-iterator-stream`]** | [![david][200]][201] | Turn an [`abstract-leveldown`] iterator into a readable stream
 
-<!-- Reserved for this section: 90-119 -->
-[92]: https://david-dm.org/Level/iterator-stream.svg
-[93]: https://david-dm.org/level/iterator-stream
+<!-- Reserved for this section: 200-229 -->
+[200]: https://david-dm.org/Level/iterator-stream.svg
+[201]: https://david-dm.org/level/iterator-stream
 
 ## Other
 
@@ -105,12 +149,18 @@ Level is licensed under the MIT license. All rights not explicitly granted in th
 
 <!-- Manual badges for now -->
 [down2.7]: https://img.shields.io/badge/abstract--leveldown-2.7-brightgreen.svg
+[down2.6]: https://img.shields.io/badge/abstract--leveldown-2.6-orange.svg
+[down2.4]: https://img.shields.io/badge/abstract--leveldown-2.4-orange.svg
 [down2.1]: https://img.shields.io/badge/abstract--leveldown-2.1-orange.svg
+[down1.0]: https://img.shields.io/badge/abstract--leveldown-1.0-red.svg
 [down0.x]: https://img.shields.io/badge/abstract--leveldown-0.x-red.svg
+[nondown]: https://img.shields.io/badge/abstract--leveldown-invalid-lightgrey.svg
 
 [Level]: https://github.com/level
 [`abstract-leveldown`]: https://github.com/level/abstract-leveldown
+[ad]: https://github.com/level/abstract-leveldown
 [`levelup`]: https://github.com/level/levelup
+
 [`leveldown`]: https://github.com/level/leveldown
 [LevelDB]: https://github.com/google/leveldb
 [`leveldown-hyper`]: https://github.com/level/leveldown-hyper
@@ -127,7 +177,30 @@ Level is licensed under the MIT license. All rights not explicitly granted in th
 [`sqlite3`]: https://www.npmjs.com/package/sqlite3
 [`pg`]: https://www.npmjs.com/package/pg
 [`mysql`]: https://www.npmjs.com/package/mysql
+[`asyncstorage-down`]: https://github.com/tradle/asyncstorage-down
+[AsyncStorage]: https://facebook.github.io/react-native/docs/asyncstorage.html
+[`azureleveldown`]: https://github.com/richorama/azureleveldown
+[`dynamo-down`]: https://github.com/jed/dynamo-down
+[`fruitdown`]: https://github.com/nolanlawson/fruitdown
+[`jsondown`]: https://github.com/toolness/jsondown
+[`leveldown-basho`]: https://www.npmjs.com/package/leveldown-basho
+[`localstorage-down`]: https://github.com/No9/localstorage-down
+[`medeadown`]: https://github.com/kesla/medeadown
+[`mongodown`]: https://github.com/watson/mongodown
+[`mysqldown`]: https://github.com/kesla/mysqldown
+[`riakdown`]: https://github.com/nlf/riakdown
+[`sheet-down`]: https://github.com/jed/sheet-down
+[AWS DynamoDB]: http://aws.amazon.com/dynamodb
+[Google Sheets]: https://docs.google.com/spreadsheets
+[riakpbc]: https://github.com/nlf/riakpbc
+[medea]: https://github.com/argo/medea
+[Basho's LevelDB fork]: https://github.com/basho/leveldb
+[localStorage]: https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage
+
 [`encoding-down`]: https://github.com/level/encoding-down
+[`deferred-leveldown`]: https://github.com/Level/deferred-leveldown
+[`cachedown`]: https://github.com/mvayngrib/cachedown
+
 [`levelup-async-iterator`]: https://github.com/MeirionHughes/levelup-async-iterator
 [`level`]: https://github.com/level/level
 [`level-iterator-stream`]: https://github.com/level/iterator-stream
