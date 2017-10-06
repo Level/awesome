@@ -107,7 +107,7 @@ Modules that implement [`abstract-leveldown`] to wrap another [`abstract-leveldo
 
 Modules that add functionality to [`levelup`].
 
-| name | dependencies | description
+| Name | Status       | Description
 |:---- |:------------ |:-----------
 |**[`levelup-async-iterator`]** | [![david][100]][101] | Expose `iterator()` with `[Symbol.asyncIterator]`
 
@@ -117,7 +117,7 @@ Modules that add functionality to [`levelup`].
 
 ## Utilities
 
-| name | dependencies | description
+| Name | Status       | Description
 |:---- |:------------ |:-----------
 |**[`level-iterator-stream`]** | [![david][200]][201] | Turn an [`abstract-leveldown`] iterator into a readable stream
 
