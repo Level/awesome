@@ -109,23 +109,23 @@ Modules that add functionality to [`levelup`].
 | Name | Status       | Description
 |:---- |:------------ |:-----------
 |**[`levelup-async-iterator`]** | [![david][200]][201] | Expose `iterator()` with `[Symbol.asyncIterator]`
+|**[`cluster-levelup`]**| [![david][202]][203] | Wrap any `levelup` instance for `cluster` usage among multiple processes
 
 <!-- Reserved for this section: 200-299 -->
 [200]: https://img.shields.io/david/MeirionHughes/levelup-async-iterator.svg
 [201]: https://david-dm.org/MeirionHughes/levelup-async-iterator
+[202]: https://david-dm.org/chiguireitor/cluster-levelup.svg
+[203]: https://david-dm.org/chiguireitor/cluster-levelup
 
 ## Utilities
 
 | Name | Status       | Description
 |:---- |:------------ |:-----------
 |**[`level-iterator-stream`]** | [![david][300]][301] | Turn an [`abstract-leveldown`] iterator into a readable stream
-| **[`cluster-leveldown`]** | [![david][302][303]] | Wrap any [`levelup instance`] for `cluster` usage among multiple processes
 
 <!-- Reserved for this section: 300-399 -->
 [300]: https://david-dm.org/Level/iterator-stream.svg
 [301]: https://david-dm.org/level/iterator-stream
-[302]: https://david-dm.org/chiguireitor/cluster-levelup.svg
-[303]: https://david-dm.org/chiguireitor/cluster-levelup
 
 
 ## Other
@@ -206,3 +206,4 @@ Level is licensed under the MIT license. All rights not explicitly granted in th
 [`level-iterator-stream`]: https://github.com/level/iterator-stream
 [leveldb.org]: http://leveldb.org
 [level-badge]: http://leveldb.org/img/badge.svg
+[`cluster-levelup`]: https://github.com/chiguireitor/cluster-levelup
