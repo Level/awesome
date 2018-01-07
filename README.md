@@ -119,10 +119,14 @@ Modules that add functionality to [`levelup`].
 | Name | Status       | Description
 |:---- |:------------ |:-----------
 |**[`level-iterator-stream`]** | [![david][300]][301] | Turn an [`abstract-leveldown`] iterator into a readable stream
+| **[`cluster-leveldown`]** | [![david][302][303]] | Wrap any [`levelup instance`] for `cluster` usage among multiple processes
 
 <!-- Reserved for this section: 300-399 -->
 [300]: https://david-dm.org/Level/iterator-stream.svg
 [301]: https://david-dm.org/level/iterator-stream
+[302]: https://david-dm.org/chiguireitor/cluster-levelup.svg
+[303]: https://david-dm.org/chiguireitor/cluster-levelup
+
 
 ## Other
 
