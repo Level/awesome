@@ -23,20 +23,20 @@ Modules that implement [`abstract-leveldown`] as storage for [`levelup`].
 |:---------------------- |:---------------  |:----------------- |:----
 |**[`leveldown`]**       | [![down2.7]][ad] |[![david][01]][02] |[LevelDB]
 |**[`leveldown-hyper`]** | [![down2.7]][ad] |[![david][03]][04] |[HyperLevelDB]
-|**[`level-js`]**        | [![down0.x]][ad] |[![david][05]][06] |[IndexedDB]
 |**[`memdown`]**         | [![down2.7]][ad] |[![david][07]][08] |[In-memory RBTree]
 |**[`redisdown`]**       | [![down2.7]][ad] |[![david][09]][10] |[Redis]
 |**[`rocksdb`]**         | [![down2.7]][ad] |[![david][11]][12] |[RocksDB]
-|**[`sqldown`]**         | [![down2.1]][ad] |[![david][13]][14] |[`sqlite3`], [`pg`], [`mysql`], WebSQL
+|**[`jsondown`]** | [![down2.7]][ad] |[![david][24]][25] | JSON on disk
 |**[`asyncstorage-down`]** | [![down2.6]][ad] |[![david][16]][17] | [AsyncStorage] (React Native)
-|**[`azureleveldown`]** | [![down0.x]][ad] |[![david][18]][19] | Windows Azure Table Storage
+|**[`mongodown`]** | [![down2.6]][ad] |[![david][32]][33] | MongoDB
+|**[`sqldown`]**         | [![down2.1]][ad] |[![david][13]][14] |[`sqlite3`], [`pg`], [`mysql`], WebSQL
 |**[`dynamo-down`]** | [![down2.1]][ad] |[![david][20]][21] | [AWS DynamoDB]
+|**[`medeadown`]** | [![down1.0]][ad] |[![david][30]][31] | [medea]
+|**[`azureleveldown`]** | [![down0.x]][ad] |[![david][18]][19] | Windows Azure Table Storage
+|**[`level-js`]**        | [![down0.x]][ad] |[![david][05]][06] |[IndexedDB]
 |**[`fruitdown`]** | [![down0.x]][ad] |[![david][22]][23] |IndexedDB (Apple)
-|**[`jsondown`]** | [![nondown]][ad] |[![david][24]][25] | JSON on disk
 |**[`leveldown-basho`]** | [![down0.x]][ad] |[![david][26]][27] | [Basho's LevelDB fork]
 |**[`localstorage-down`]** | [![down0.x]][ad] |[![david][28]][29] | [localStorage]
-|**[`medeadown`]** | [![down1.0]][ad] |[![david][30]][31] | [medea]
-|**[`mongodown`]** | [![down2.6]][ad] |[![david][32]][33] | MongoDB
 |**[`mysqldown`]** | [![down0.x]][ad] |[![david][34]][35] | MySQL
 |**[`riakdown`]** | [![down0.x]][ad] |[![david][36]][37] | [riakpbc]
 |**[`sheet-down`]** | [![nondown]][ad] |[![david][38]][39] | [Google Sheets]
