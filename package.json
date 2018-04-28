@@ -1,0 +1,39 @@
+{
+  "name": "level-awesome",
+  "description": "Tooling to update the README for level/awesome",
+  "private": true,
+  "version": "0.0.1",
+  "license": "MIT",
+  "scripts": {
+    "awesome": "node src README.md modules/*"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "after": "~0.8.2",
+    "glob": "~7.1.2",
+    "mdast-util-heading-range": "~2.1.0",
+    "packument": "~1.0.0",
+    "packument-package": "~1.0.0",
+    "remark": "~9.0.0",
+    "remark-github": "~7.0.3",
+    "remark-stringify": "~5.0.0",
+    "remark-toc": "~5.0.0",
+    "semver": "~5.5.0",
+    "sentence-case": "~2.1.1",
+    "thunky-with-args": "~1.0.0",
+    "to-vfile": "~2.2.0",
+    "unist-builder": "~1.0.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Level/awesome.git"
+  },
+  "homepage": "https://github.com/Level/awesome",
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [
+    "awesome",
+    "level"
+  ]
+}

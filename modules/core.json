@@ -1,0 +1,26 @@
+{
+  "section": "Core",
+  "modules": {
+    "levelup": {
+      "github": "level/levelup",
+      "description": [
+        "The glue that holds everything together.",
+        "Use this instead of [`level` or its variants](#bundles) when you need a [custom or swappable store](#stores)."
+      ]
+    },
+    "abstract-leveldown": {
+      "github": "level/abstract-leveldown",
+      "description": [
+        "An abstract prototype matching the [leveldown] API.",
+        "Use this to implement your own store."
+      ]
+    },
+    "level-packager": {
+      "github": "level/packager",
+      "description": [
+        "Package helper to bundle a store with [levelup] and [encoding-down].",
+        "This powers [`level` and its variants](#bundles)."
+      ]
+    }
+  }
+}

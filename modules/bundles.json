@@ -1,0 +1,24 @@
+{
+  "section": "Bundles",
+  "modules": {
+    "level": {
+      "github": "level/level",
+      "description": [
+        "Main entry point for beginners.",
+        "A convenient bundle of [levelup], [leveldown] and [encoding-down]."
+      ]
+    },
+    "level-mem": {
+      "github": "level/level-mem",
+      "description": [
+        "A convenient bundle of [levelup], [memdown] and [encoding-down]."
+      ]
+    },
+    "level-rocksdb": {
+      "github": "level/level-rocksdb",
+      "description": [
+        "A convenient bundle of [levelup], [rocksdb] and [encoding-down]."
+      ]
+    }
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "section": "Stores",
+  "description": "Modules that implement [abstract-leveldown] as storage for [levelup].",
+  "compatibility": "abstract-leveldown",
+  "descriptor": "type",
+  "modules": {
+    "leveldown": {
+      "github": "level/leveldown",
+      "type": "[LevelDB](https://github.com/google/leveldb)"
+    },
+    "memdown": {
+      "github": "level/memdown",
+      "type": "[In-memory RBTree](https://www.npmjs.com/package/functional-red-black-tree)"
+    },
+    "rocksdb": {
+      "github": "level/rocksdb",
+      "type": "[RocksDB](https://github.com/facebook/rocksdb/)"
+    },
+    "medeadown": {
+      "github": "kesla/medeadown",
+      "type": "[medea](https://github.com/argo/medea)"
+    },
+    "jsondown": {
+      "github": "toolness/jsondown",
+      "type": "JSON on disk"
+    },
+    "leveldown-hyper": {
+      "github": "level/leveldown-hyper",
+      "type": "[HyperLevelDB](https://github.com/rescrv/HyperLevelDB)"
+    },
+    "asyncstorage-down": {
+      "github": "tradle/asyncstorage-down",
+      "type": "[AsyncStorage](https://facebook.github.io/react-native/docs/asyncstorage.html) (React Native)"
+    },
+    "mongodown": {
+      "github": "watson/mongodown",
+      "type": "[MongoDB](https://www.mongodb.com/)"
+    },
+    "sqldown": {
+      "github": "calvinmetcalf/sqldown",
+      "type": "[`sqlite3`](https://www.npmjs.com/package/sqlite3), [`pg`](https://www.npmjs.com/package/pg), [`mysql`](https://www.npmjs.com/package/mysql), WebSQL"
+    },
+    "dynamo-down": {
+      "github": "jed/dynamo-down",
+      "type": "[AWS DynamoDB](http://aws.amazon.com/dynamodb)"
+    },
+    "azureleveldown": {
+      "github": "richorama/azureleveldown",
+      "type": "Windows Azure Table Storage"
+    },
+    "level-js": {
+      "github": "level/level.js",
+      "type": "[IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB)"
+    },
+    "fruitdown": {
+      "github": "nolanlawson/fruitdown",
+      "type": "IndexedDB (Apple)"
+    },
+    "localstorage-down": {
+      "github": "No9/localstorage-down",
+      "type": "[localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)"
+    },
+    "riakdown": {
+      "github": "nlf/riakdown",
+      "type": "[riakpbc](https://github.com/nlf/riakpbc)"
+    },
+    "mysqldown": {
+      "github": "kesla/mysqldown",
+      "type": "[MySQL](https://www.mysql.com/)"
+    },
+    "redisdown": {
+      "github": "hmalphettes/redisdown",
+      "type": "[Redis](https://redis.io/)"
+    },
+    "leveldown-basho": {
+      "url": "https://www.npmjs.com/package/leveldown-basho",
+      "type": "[Basho's LevelDB fork](https://github.com/basho/leveldb)"
+    },
+    "sheet-down": {
+      "github": "jed/sheet-down",
+      "type": "[Google Sheets](https://docs.google.com/spreadsheets)"
+    }
+  }
+}
