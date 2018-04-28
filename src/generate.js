@@ -31,6 +31,7 @@ module.exports = function (sections, bookmarks, done) {
     }
   }
 
+  // TODO: use `run-parallel` instead of `after`
   const next = after(sections.length, (err) => {
     if (err) return done(err)
     done(null, result)
@@ -91,6 +92,7 @@ module.exports = function (sections, bookmarks, done) {
     })
   }
 
+  // TODO: move this to a remark plugin, to work on an AST.
   function linkify (markdown) {
     // Hack. Don't touch existing links like [foo][bar] and [foo](bar)
     return markdown.replace(/\[([^\]]+)\]([^\[\(]|$)/g, (match, name, suffix) => {

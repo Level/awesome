@@ -1,5 +1,8 @@
 'use strict'
 
+// TODO: move this to an npm module. First gotta solve
+// transient dependencies, see jsondown comment below.
+
 const semver = require('semver')
 const after = require('after')
 const memoize = require('thunky-with-args')
@@ -43,6 +46,7 @@ exports.badge = function (module, dependency, done) {
 exports.badges = function (module, dependencies, separator, done) {
   const badges = new Array(dependencies.length)
 
+  // TODO: use `run-parallel` instead of `after`, to reduce boilerplate.
   const next = after(dependencies.length, (err) => {
     if (err) return done(err)
     done(null, badges.join(separator))

@@ -2,6 +2,7 @@
 
 const LOVE = '%E2%99%A5'
 
+// TODO: find or create an npm module for this.
 module.exports = function (slug) {
   if (!slug) {
     const image = `https://img.shields.io/badge/dependencies-unknown-lightgrey.svg?label=${LOVE}`

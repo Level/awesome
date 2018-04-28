@@ -42,6 +42,7 @@ module.exports = function (opts) {
 
     for (let identifier of refs) {
       if (!bookmarks[identifier]) {
+        // TODO: use file.message(..)
         throw new Error('dead reference: ' + identifier)
       }
     }
