@@ -9,8 +9,8 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "after": "~0.8.2",
     "glob": "~7.1.2",
+    "map-limit": "0.0.1",
     "mdast-util-heading-range": "~2.1.0",
     "packument": "~1.0.0",
     "packument-package": "~1.0.0",

@@ -4,8 +4,8 @@
 // transient dependencies, see jsondown comment below.
 
 const semver = require('semver')
-const after = require('after')
 const memoize = require('thunky-with-args')
+const mapLimit = require('map-limit')
 const getPackument = memoize(require('packument').factory({ keepAlive: true }))
 const getPackage = require('packument-package').factory(getPackument)
 
@@ -44,24 +44,10 @@ exports.badge = function (module, dependency, done) {
 }
 
 exports.badges = function (module, dependencies, separator, done) {
-  const badges = new Array(dependencies.length)
-
-  // TODO: use `run-parallel` instead of `after`, to reduce boilerplate.
-  const next = after(dependencies.length, (err) => {
+  mapLimit(dependencies, 4, exports.badge.bind(null, module), (err, badges) => {
     if (err) return done(err)
     done(null, badges.join(separator))
   })
-
-  for (let [index, dependency] of dependencies.entries()) {
-    exports.badge(module, dependency, (err, badge) => {
-      if (err) return next(err)
-
-      // Keep sort order.
-      badges[index] = badge
-
-      next()
-    })
-  }
 }
 
 exports.data = function (module, dependency, opts, callback) {
