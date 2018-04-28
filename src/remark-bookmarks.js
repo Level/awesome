@@ -3,6 +3,7 @@
 // Adapted from ben-eb/remark-bookmarks (MIT © Ben Briggs). Changes:
 //
 // - Allow late initialization of bookmarks
+// - Support modules (quoted identifiers)
 // - Fix removal of nodes.
 // - Support image references.
 // - Throw on dead references.
@@ -12,27 +13,37 @@ const visit = require('unist-util-visit')
 const b = require('unist-builder')
 
 module.exports = function (opts) {
+  if (!opts) opts = {}
+
   // Don't iterate bookmarks until transform(), in
   // order to pick up bookmarks added by other plugins.
-  let bookmarks = (opts && opts.bookmarks) || {}
+  let bookmarks = opts.bookmarks || {}
+  let modules = opts.modules || {}
 
-  return function transform (tree) {
+  return function transform (tree, file) {
     // All identifiers should be case-insensitive
-    bookmarks = Object.keys(bookmarks).reduce((obj, identifier) => {
-      obj[identifier.toLowerCase()] = bookmarks[identifier]
-      return obj
-    }, {})
+    bookmarks = lowercaseKeys(bookmarks)
+    modules = lowercaseKeys(modules)
 
-    // Track which bookmarks are used
-    const refs = new Set()
+    // Find module references and existing bookmarks
+    visit(tree, ['linkReference', 'definition'], (node, index, parent) => {
+      const { type, identifier } = node
 
-    visit(tree, ['linkReference', 'imageReference', 'definition'], (node, index, parent) => {
-      const { type, identifier, url } = node
+      if (type === 'linkReference') {
+        const name = identifier.replace(/`/g, '').toLowerCase()
 
-      if (type === 'linkReference' || type === 'imageReference') {
-        refs.add(identifier)
+        if (modules[name]) {
+          const quoted = '`' + name + '`'
+
+          bookmarks[quoted] = modules[name]
+          node.identifier = quoted
+
+          if (node.referenceType === 'shortcut') {
+            node.children = [b('text', quoted)]
+          }
+        }
       } else if (type === 'definition') {
-        bookmarks[identifier] = bookmarks[identifier] || url
+        bookmarks[identifier] = bookmarks[identifier] || node.url
 
         // Remove node and return current index to visit sibling
         parent.children.splice(index, 1)
@@ -40,20 +51,28 @@ module.exports = function (opts) {
       }
     })
 
-    for (let identifier of refs) {
-      if (!bookmarks[identifier]) {
-        // TODO: use file.message(..)
-        throw new Error('dead reference: ' + identifier)
+    // Find which bookmarks are used
+    const refs = new Set()
+
+    visit(tree, ['linkReference', 'imageReference'], (node, index, parent) => {
+      if (bookmarks[node.identifier]) {
+        refs.add(node.identifier)
+      } else {
+        file.message('dead reference: ' + node.identifier, node, 'remark-bookmarks')
       }
-    }
+    })
 
     // Sort for deterministic result (and less diff noise)
-    for (let identifier of Object.keys(bookmarks).sort()) {
+    for (let identifier of Array.from(refs).sort()) {
       const url = bookmarks[identifier]
-
-      if (refs.has(identifier)) {
-        tree.children.push(b('definition', { url, identifier }, identifier))
-      }
+      tree.children.push(b('definition', { url, identifier }, identifier))
     }
   }
+}
+
+function lowercaseKeys (obj) {
+  return Object.keys(obj).reduce((acc, k) => {
+    acc[k.toLowerCase()] = obj[k]
+    return acc
+  }, {})
 }

@@ -1,6 +1,6 @@
 # Awesome Level ![level badge][level-badge]
 
-> A curated list of amazingly awesome **[Level][level]** modules and resources. [Add yours!](#contributing)
+> A curated list of amazingly awesome **[Level][level-org]** modules and resources. [Add yours!](#contributing)
 
 ## Table of Contents
 
@@ -168,8 +168,8 @@ Level is licensed under the MIT license. All rights not explicitly granted in th
 
 [`subleveldown`]: https://github.com/mafintosh/subleveldown
 
-[level]: https://github.com/level
-
 [level-badge]: http://leveldb.org/img/badge.svg
+
+[level-org]: https://github.com/level
 
 [leveldb.org]: http://leveldb.org
