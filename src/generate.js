@@ -23,8 +23,8 @@ function generateSection (section, done) {
     if (err) return done(err)
 
     const header = section.compatibility
-      ? ['Name', 'Compatibility', 'Status', sentence(descriptor)]
-      : ['Name', 'Status', sentence(descriptor)]
+      ? ['Name', 'Compatibility', 'Dependencies', sentence(descriptor)]
+      : ['Name', 'Dependencies', sentence(descriptor)]
 
     nodes.push(b('table', { align: new Array(header.length).fill('left') }, [
       buildRow(header.map(column => b('text', column))),

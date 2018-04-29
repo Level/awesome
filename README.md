@@ -16,16 +16,16 @@
 
 ## Bundles
 
-Name | Status | Description
-:--- | :----- | :----------
+Name | Dependencies | Description
+:--- | :----------- | :----------
 **[`level`]** | [![dependencies](https://img.shields.io/david/level/level.svg?label=%E2%99%A5)](https://david-dm.org/level/level) | Main entry point for beginners. A convenient bundle of [`levelup`], [`leveldown`] and [`encoding-down`].
 **[`level-mem`]** | [![dependencies](https://img.shields.io/david/level/level-mem.svg?label=%E2%99%A5)](https://david-dm.org/level/level-mem) | A convenient bundle of [`levelup`], [`memdown`] and [`encoding-down`].
 **[`level-rocksdb`]** | [![dependencies](https://img.shields.io/david/level/level-rocksdb.svg?label=%E2%99%A5)](https://david-dm.org/level/level-rocksdb) | A convenient bundle of [`levelup`], [`rocksdb`] and [`encoding-down`].
 
 ## Core
 
-Name | Status | Description
-:--- | :----- | :----------
+Name | Dependencies | Description
+:--- | :----------- | :----------
 **[`levelup`]** | [![dependencies](https://img.shields.io/david/level/levelup.svg?label=%E2%99%A5)](https://david-dm.org/level/levelup) | The glue that holds everything together. Use this instead of [`level` or its variants](#bundles) when you need a [custom or swappable store](#stores).
 **[`abstract-leveldown`]** | [![dependencies](https://img.shields.io/david/level/abstract-leveldown.svg?label=%E2%99%A5)](https://david-dm.org/level/abstract-leveldown) | An abstract prototype matching the [`leveldown`] API. Use this to implement your own store.
 **[`level-packager`]** | [![dependencies](https://img.shields.io/david/level/packager.svg?label=%E2%99%A5)](https://david-dm.org/level/packager) | Package helper to bundle a store with [`levelup`] and [`encoding-down`]. This powers [`level` and its variants](#bundles).
@@ -34,8 +34,8 @@ Name | Status | Description
 
 Modules that implement [`abstract-leveldown`] as storage for [`levelup`].
 
-Name | Compatibility | Status | Type
-:--- | :------------ | :----- | :---
+Name | Compatibility | Dependencies | Type
+:--- | :------------ | :----------- | :---
 **[`leveldown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-4.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/leveldown.svg?label=%E2%99%A5)](https://david-dm.org/level/leveldown) | [LevelDB](https://github.com/google/leveldb)
 **[`memdown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-4.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/memdown.svg?label=%E2%99%A5)](https://david-dm.org/level/memdown) | [In-memory RBTree](https://www.npmjs.com/package/functional-red-black-tree)
 **[`rocksdb`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-4.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/rocksdb.svg?label=%E2%99%A5)](https://david-dm.org/level/rocksdb) | [RocksDB](https://github.com/facebook/rocksdb/)
@@ -60,8 +60,8 @@ Name | Compatibility | Status | Type
 
 Modules that implement [`abstract-leveldown`] to wrap another [`abstract-leveldown`]. This is the preferred extension point.
 
-Name | Compatibility | Status | Description
-:--- | :------------ | :----- | :----------
+Name | Compatibility | Dependencies | Description
+:--- | :------------ | :----------- | :----------
 **[`encoding-down`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-4.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/encoding-down.svg?label=%E2%99%A5)](https://david-dm.org/level/encoding-down) | Provides key/value encoding
 **[`deferred-leveldown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-4.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/deferred-leveldown.svg?label=%E2%99%A5)](https://david-dm.org/level/deferred-leveldown) | Handles delayed-open. Built into [`levelup`].
 **[`subleveldown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.4-orange.svg)<br>![levelup](https://img.shields.io/badge/levelup-1.2-orange.svg) | [![dependencies](https://img.shields.io/david/mafintosh/subleveldown.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/subleveldown) | Sublevels implemented using leveldowns
@@ -71,15 +71,15 @@ Name | Compatibility | Status | Description
 
 Modules that add functionality to [`levelup`].
 
-Name | Status | Description
-:--- | :----- | :----------
+Name | Dependencies | Description
+:--- | :----------- | :----------
 **[`levelup-async-iterator`]** | [![dependencies](https://img.shields.io/david/MeirionHughes/levelup-async-iterator.svg?label=%E2%99%A5)](https://david-dm.org/MeirionHughes/levelup-async-iterator) | Expose `iterator()` with [`Symbol.asyncIterator`](https://github.com/tc39/proposal-async-iteration)
 **[`cluster-levelup`]** | [![dependencies](https://img.shields.io/david/chiguireitor/cluster-levelup.svg?label=%E2%99%A5)](https://david-dm.org/chiguireitor/cluster-levelup) | Wrap any [`levelup`] instance for [`cluster`](https://nodejs.org/api/cluster.html) usage among multiple processes
 
 ## Utilities
 
-Name | Status | Description
-:--- | :----- | :----------
+Name | Dependencies | Description
+:--- | :----------- | :----------
 **[`level-iterator-stream`]** | [![dependencies](https://img.shields.io/david/level/iterator-stream.svg?label=%E2%99%A5)](https://david-dm.org/level/iterator-stream) | Turn an [`abstract-leveldown`] iterator into a readable stream
 
 ## Resources
