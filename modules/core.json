@@ -1,0 +1,26 @@
+{
+  "title": "Core",
+  "modules": {
+    "levelup": {
+      "github": "level/levelup",
+      "description": [
+        "The glue that holds everything together.",
+        "Use this when you need a [custom or swappable store](#stores)."
+      ]
+    },
+    "abstract-leveldown": {
+      "github": "level/abstract-leveldown",
+      "description": [
+        "An abstract prototype matching the [leveldown] API.",
+        "Use this to implement your own store."
+      ]
+    },
+    "level-packager": {
+      "github": "level/packager",
+      "description": [
+        "Package helper to export [a bundle](#bundles).",
+        "Use this to create a new `level-*` bundle."
+      ]
+    }
+  }
+}

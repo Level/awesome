@@ -1,0 +1,31 @@
+{
+  "title": "Bundles",
+  "description": [
+    "Convenience modules that bundle [a store](#stores) with [levelup] and [encoding-down]."
+  ],
+  "compatibility": [{
+    "package": "levelup",
+    "via": "level-packager"
+  }],
+  "modules": {
+    "level": {
+      "github": "level/level",
+      "description": [
+        "Bundle for [leveldown].",
+        "Main entry point for beginners."
+      ]
+    },
+    "level-mem": {
+      "github": "level/level-mem",
+      "description": "Bundle for [memdown]."
+    },
+    "level-rocksdb": {
+      "github": "level/level-rocksdb",
+      "description": "Bundle for [rocksdb]."
+    },
+    "level-browserify": {
+      "github": "level/level-browserify",
+      "description": "Bundle for [level-js]."
+    }
+  }
+}
