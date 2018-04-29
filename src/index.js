@@ -1,6 +1,5 @@
 'use strict'
 
-const path = require('path')
 const glob = require('glob')
 const vfile = require('to-vfile')
 const remark = require('remark')

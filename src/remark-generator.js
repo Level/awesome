@@ -6,6 +6,8 @@ const generate = require('./generate')
 module.exports = function generator ({ sections }) {
   return function transformer (tree, file, next) {
     generate(sections, (err, sections) => {
+      if (err) return next(err)
+
       for (let { section, nodes: newNodes } of sections) {
         // Find current section and replace it with new nodes
         heading(tree, section, (start, nodes, end) => {

@@ -5,6 +5,7 @@
   "version": "0.0.1",
   "license": "MIT",
   "scripts": {
+    "test": "standard",
     "awesome": "node src README.md modules/*"
   },
   "dependencies": {},
@@ -21,6 +22,7 @@
     "remark-toc": "~5.0.0",
     "semver": "~5.5.0",
     "sentence-case": "~2.1.1",
+    "standard": "~11.0.1",
     "thunky-with-args": "~1.0.0",
     "to-vfile": "~2.2.0",
     "unist-builder": "~1.0.2",
