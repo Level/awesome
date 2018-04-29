@@ -1,0 +1,41 @@
+{
+  "title": "Replication",
+  "modules": {
+    "level-2pc": {
+      "github": "hij1nx/level-2pc",
+      "description": [
+        "A two-phase commit protocol."
+      ]
+    },
+    "level-couch-sync": {
+      "github": "dominictarr/level-couch-sync",
+      "description": [
+        "Replicate from CouchDB to LevelDB."
+      ]
+    },
+    "level-master": {
+      "github": "dominictarr/level-master",
+      "description": [
+        "Master-Slave replication for [levelup]."
+      ]
+    },
+    "level-merkle": {
+      "github": "dominictarr/level-merkle",
+      "description": [
+        "Uses [merkle-trees](http://en.wikipedia.org/wiki/Merkle_tree) to replicate data sets. Data must be sets and currently, deletes are not supported."
+      ]
+    },
+    "level-replicate": {
+      "github": "dominictarr/level-replicate",
+      "description": [
+        "Master-master replication with [levelup]. Implements scuttlebutt style handshake, syncs data, then replicates real time changes."
+      ]
+    },
+    "level-replicator": {
+      "github": "hij1nx/level-replicator",
+      "description": [
+        "Master-master replication. Same goal as [level-replicate] but different approach."
+      ]
+    }
+  }
+}
