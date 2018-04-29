@@ -20,7 +20,7 @@ remark()
   .use(toc, { tight: true })
   .use(collapse, {
     test: 'Table of Contents',
-    summary: () => 'db.open()'
+    summary: () => 'Click to expand'
   })
   .use(github)
   .use(bookmarks, { modules })

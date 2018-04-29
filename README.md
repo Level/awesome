@@ -4,7 +4,7 @@
 
 ## Table of Contents
 
-<details><summary>db.open()</summary>
+<details><summary>Click to expand</summary>
 
 -   [Bundles](#bundles)
 -   [Core](#core)
