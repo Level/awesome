@@ -4,7 +4,7 @@
     "Modules that implement [abstract-leveldown] to wrap another [abstract-leveldown].",
     "This is the preferred extension point."
   ],
-  "compatibility": "abstract-leveldown",
+  "compatibility": ["abstract-leveldown"],
   "modules": {
     "encoding-down": {
       "github": "level/encoding-down",
@@ -16,7 +16,7 @@
     },
     "subleveldown": {
       "github": "mafintosh/subleveldown",
-      "compatibility": "levelup",
+      "compatibility": ["abstract-leveldown", "levelup"],
       "description": "Sublevels implemented using leveldowns"
     },
     "cachedown": {

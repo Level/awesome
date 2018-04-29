@@ -1,7 +1,7 @@
 {
   "section": "Stores",
   "description": "Modules that implement [abstract-leveldown] as storage for [levelup].",
-  "compatibility": "abstract-leveldown",
+  "compatibility": ["abstract-leveldown"],
   "descriptor": "type",
   "modules": {
     "leveldown": {
@@ -22,7 +22,11 @@
     },
     "jsondown": {
       "github": "toolness/jsondown",
-      "type": "JSON on disk"
+      "type": "JSON on disk",
+      "compatibility": [{
+        "package": "abstract-leveldown",
+        "via": "memdown"
+      }]
     },
     "leveldown-hyper": {
       "github": "level/leveldown-hyper",

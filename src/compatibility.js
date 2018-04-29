@@ -1,7 +1,6 @@
 'use strict'
 
-// TODO: move this to an npm module. First gotta solve
-// transient dependencies, see jsondown comment below.
+// TODO: move this to an npm module.
 
 const semver = require('semver')
 const memoize = require('thunky-with-args')
@@ -26,8 +25,22 @@ exports.compatibility = function (versions, range) {
   return { major, minor, short, long: baseVersion }
 }
 
-exports.url = function (module, dependency, done) {
-  exports.data(module, dependency, (err, badge) => {
+function normalizeTarget (target) {
+  if (typeof target === 'string') {
+    return normalizeTarget({ package: target })
+  } else if (typeof target === 'object' && target !== null) {
+    if (typeof target.package !== 'string' || target.package === '') {
+      throw new TypeError('target package must be a non-empty string')
+    }
+
+    return target
+  } else {
+    throw new TypeError('target must be a string or object')
+  }
+}
+
+exports.url = function (module, target, done) {
+  exports.data(module, target, (err, badge) => {
     if (err) return done(err)
 
     const left = encode(badge.left)
@@ -38,21 +51,25 @@ exports.url = function (module, dependency, done) {
   })
 }
 
-exports.badge = function (module, dependency, done) {
-  exports.url(module, dependency, (err, url) => {
+exports.badge = function (module, target, done) {
+  target = normalizeTarget(target)
+
+  exports.url(module, target, (err, url) => {
     if (err) return done(err)
-    done(null, image(url, dependency))
+    done(null, image(url, target.package))
   })
 }
 
-exports.badges = function (module, dependencies, done) {
-  mapLimit(dependencies, 4, exports.badge.bind(null, module), (err, badges) => {
+exports.badges = function (module, targets, done) {
+  mapLimit(targets, 4, exports.badge.bind(null, module), (err, badges) => {
     if (err) return done(err)
     done(null, intersperse(badges, { type: 'html', value: '<br>' }))
   })
 }
 
-exports.data = function (module, dependency, opts, callback) {
+exports.data = function (module, target, opts, callback) {
+  target = normalizeTarget(target)
+
   if (typeof opts === 'function') {
     callback = opts
     opts = null
@@ -66,7 +83,7 @@ exports.data = function (module, dependency, opts, callback) {
     }
 
     callback(null, {
-      left: dependency,
+      left: target.package,
       right: right || 'unknown',
       color: color || 'lightgrey'
     })
@@ -76,13 +93,13 @@ exports.data = function (module, dependency, opts, callback) {
     if (err) return finish(err, 'inaccessible')
 
     const deps = pkg.dependencies
-    const range = deps && deps[dependency]
+    const range = deps && deps[target.package]
 
     if (!range) {
-      // jsondown extends memdown, making abstract-leveldown a
-      // transient dependency. TODO: find a generic solution.
-      if (module === 'jsondown' && deps && deps.memdown) {
-        return getPackage('memdown', { version: deps.memdown }, handlePackage)
+      // A target can be a transient dependency
+      if (target.via && deps && deps[target.via]) {
+        const version = deps[target.via]
+        return getPackage(target.via, { version }, handlePackage)
       }
 
       return finish(null, 'missing')
@@ -91,7 +108,7 @@ exports.data = function (module, dependency, opts, callback) {
       return finish(null, range, 'red')
     }
 
-    getPackument(dependency, (err, packument) => {
+    getPackument(target.package, (err, packument) => {
       if (err) return finish(err, 'inaccessible')
 
       const versions = Object.keys(packument.versions)

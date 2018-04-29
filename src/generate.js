@@ -43,9 +43,9 @@ function generateSection (section, done) {
     const description = parse(join(module[descriptor], '<br>'))
 
     if (section.compatibility) {
-      const dependencies = [].concat(section.compatibility).concat(module.compatibility || [])
+      const targets = module.compatibility || section.compatibility
 
-      compatibilityBadges(id, dependencies, (err, compatibility) => {
+      compatibilityBadges(id, targets, (err, compatibility) => {
         if (err) return done(err)
         done(null, buildRow([name, compatibility, status, description]))
       })

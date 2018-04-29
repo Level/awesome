@@ -22,11 +22,12 @@
 
 Convenience modules that bundle [a store](#stores) with [`levelup`] and [`encoding-down`].
 
-Name | Dependencies | Description
-:--- | :----------- | :----------
-**[`level`]** | [![dependencies](https://img.shields.io/david/level/level.svg?label=%E2%99%A5)](https://david-dm.org/level/level) | Bundle for [`leveldown`].<br>Main entry point for beginners.
-**[`level-mem`]** | [![dependencies](https://img.shields.io/david/level/level-mem.svg?label=%E2%99%A5)](https://david-dm.org/level/level-mem) | Bundle for [`memdown`].
-**[`level-rocksdb`]** | [![dependencies](https://img.shields.io/david/level/level-rocksdb.svg?label=%E2%99%A5)](https://david-dm.org/level/level-rocksdb) | Bundle for [`rocksdb`].
+Name | Compatibility | Dependencies | Description
+:--- | :------------ | :----------- | :----------
+**[`level`]** | ![levelup](https://img.shields.io/badge/levelup-2.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/level.svg?label=%E2%99%A5)](https://david-dm.org/level/level) | Bundle for [`leveldown`].<br>Main entry point for beginners.
+**[`level-mem`]** | ![levelup](https://img.shields.io/badge/levelup-2.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/level-mem.svg?label=%E2%99%A5)](https://david-dm.org/level/level-mem) | Bundle for [`memdown`].
+**[`level-rocksdb`]** | ![levelup](https://img.shields.io/badge/levelup-2.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/level-rocksdb.svg?label=%E2%99%A5)](https://david-dm.org/level/level-rocksdb) | Bundle for [`rocksdb`].
+**[`level-browserify`]** | ![levelup](https://img.shields.io/badge/levelup-1.3-orange.svg) | [![dependencies](https://img.shields.io/david/level/level-browserify.svg?label=%E2%99%A5)](https://david-dm.org/level/level-browserify) | Bundle for [`level-js`].
 
 ## Core
 
@@ -129,6 +130,8 @@ Level is licensed under the MIT license. All rights not explicitly granted in th
 [`fruitdown`]: https://github.com/nolanlawson/fruitdown
 
 [`jsondown`]: https://github.com/toolness/jsondown
+
+[`level-browserify`]: https://github.com/level/level-browserify
 
 [`level-iterator-stream`]: https://github.com/level/iterator-stream
 
