@@ -4,13 +4,11 @@
 
 const semver = require('semver')
 const memoize = require('thunky-with-args')
-const mapLimit = require('map-limit')
-const intersperse = require('intersperse')
-const image = require('./mdast-image')
+const shield = require('./shield-custom')
 const getPackument = memoize(require('packument').factory({ keepAlive: true }))
 const getPackage = require('packument-package').factory(getPackument)
 
-exports.compatibility = function (versions, range) {
+function compatibility (versions, range) {
   const baseVersion = semver.minSatisfying(versions, range)
 
   if (!baseVersion) {
@@ -22,7 +20,7 @@ exports.compatibility = function (versions, range) {
   const minor = semver.minor(baseVersion)
   const short = major + '.' + minor
 
-  return { major, minor, short, long: baseVersion }
+  return { major, minor, short }
 }
 
 function normalizeTarget (target) {
@@ -39,31 +37,21 @@ function normalizeTarget (target) {
   }
 }
 
-exports.url = function (module, target, done) {
-  exports.data(module, target, (err, badge) => {
-    if (err) return done(err)
+exports.badge = function (module, target, opts, callback) {
+  if (typeof opts === 'function') {
+    callback = opts
+    opts = {}
+  } else if (opts == null) {
+    opts = {}
+  }
 
-    const left = encode(badge.left)
-    const right = encode(badge.right)
-    const color = encode(badge.color)
+  exports.data(module, target, opts, (err, data) => {
+    if (err) return callback(err)
 
-    done(null, `https://img.shields.io/badge/${left}-${right}-${color}.svg`)
-  })
-}
-
-exports.badge = function (module, target, done) {
-  target = normalizeTarget(target)
-
-  exports.url(module, target, (err, url) => {
-    if (err) return done(err)
-    done(null, image(url, target.package))
-  })
-}
-
-exports.badges = function (module, targets, done) {
-  mapLimit(targets, 4, exports.badge.bind(null, module), (err, badges) => {
-    if (err) return done(err)
-    done(null, intersperse(badges, { type: 'html', value: '<br>' }))
+    callback(null, {
+      image: shield(data.subject, data.status, data.color, opts.shield),
+      alt: data.subject
+    })
   })
 }
 
@@ -72,19 +60,21 @@ exports.data = function (module, target, opts, callback) {
 
   if (typeof opts === 'function') {
     callback = opts
-    opts = null
+    opts = {}
+  } else if (opts == null) {
+    opts = {}
   }
 
-  function finish (err, right, color) {
-    if (err && opts && opts.swallow) {
+  function finish (err, status, color) {
+    if (err && opts.swallow) {
       console.error(err)
     } else if (err) {
       return callback(err)
     }
 
     callback(null, {
-      left: target.package,
-      right: right || 'unknown',
+      subject: target.package,
+      status: status || 'unknown',
       color: color || 'lightgrey'
     })
   }
@@ -117,7 +107,7 @@ exports.data = function (module, target, opts, callback) {
       const minor = semver.minor(latest)
 
       try {
-        var compat = exports.compatibility(versions, range)
+        var compat = compatibility(versions, range)
       } catch (err) {
         return finish(err, 'invalid')
       }
@@ -133,8 +123,4 @@ exports.data = function (module, target, opts, callback) {
       }
     })
   })
-}
-
-function encode (text) {
-  return encodeURIComponent(text.replace(/-/g, '--'))
 }

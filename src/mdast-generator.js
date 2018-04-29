@@ -2,8 +2,10 @@
 
 const sentence = require('sentence-case')
 const mapLimit = require('map-limit')
-const compatibilityBadges = require('./compatibility').badges
-const davidBadge = require('./david-badge')
+const intersperse = require('intersperse')
+const compat = require('./shield-compat').badge
+const david = require('./shield-david')
+const img = require('./mdast-image')
 const b = require('unist-builder')
 const processor = require('remark')()
 
@@ -32,15 +34,20 @@ module.exports = function (section, done) {
 
   function generateRow ([id, module], done) {
     const name = moduleName(id)
-    const status = davidBadge(module.github)
+    const dm = david(module.github, { label: '♥' })
+    const status = img(dm.image, dm.alt, dm.link)
     const description = parse(join(module[descriptor], '<br>'))
 
     if (section.compatibility) {
       const targets = module.compatibility || section.compatibility
 
-      compatibilityBadges(id, targets, (err, compatibility) => {
+      mapLimit(targets, 4, compat.bind(null, id), (err, badges) => {
         if (err) return done(err)
-        done(null, buildRow([name, compatibility, status, description]))
+
+        const nodes = badges.map(({ image, alt, link }) => img(image, alt, link))
+        const compat = intersperse(nodes, { type: 'html', value: '<br>' })
+
+        done(null, buildRow([name, compat, status, description]))
       })
     } else {
       done(null, buildRow([name, status, description]))
