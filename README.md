@@ -10,6 +10,7 @@
 -   [Core](#core)
 -   [Stores](#stores)
 -   [Layers](#layers)
+-   [Databases](#databases)
 -   [Plugins for levelup](#plugins-for-levelup)
 -   [Utilities](#utilities)
 -   [Resources](#resources)
@@ -74,6 +75,29 @@ Name | Compatibility | Dependencies | Description
 **[`subleveldown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.4-orange.svg)<br>![levelup](https://img.shields.io/badge/levelup-1.2-orange.svg) | [![dependencies](https://img.shields.io/david/mafintosh/subleveldown.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/subleveldown) | Sublevels implemented using leveldowns
 **[`cachedown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.4-orange.svg) | [![dependencies](https://img.shields.io/david/mvayngrib/cachedown.svg?label=%E2%99%A5)](https://david-dm.org/mvayngrib/cachedown) | LRU cache
 
+## Databases
+
+Complete Node.js databases built with Level.
+
+Name | Dependencies | Description
+:--- | :----------- | :----------
+**[`dat`]** | [![dependencies](https://img.shields.io/david/maxogden/dat.svg?label=%E2%99%A5)](https://david-dm.org/maxogden/dat) | Lets you build streaming data pipelines that can be shared and replicated by others.
+**[`pouchdb`]** | ![dependencies](https://img.shields.io/badge/dependencies-unknown-lightgrey.svg?label=%E2%99%A5) | PouchDB allows you to store and query data offline and then sync with CouchDB when online. For Node, browser and mobile.
+**[`couchup`]** | [![dependencies](https://img.shields.io/david/mikeal/couchup.svg?label=%E2%99%A5)](https://david-dm.org/mikeal/couchup) | A CouchDB implementation on top of [`levelup`].
+**[`firedup`]** | [![dependencies](https://img.shields.io/david/eugeneware/firedup.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/firedup) | A node.js implementation of firebase based on [`levelup`]
+**[`len`]** | [![dependencies](https://img.shields.io/david/binocarlos/len.svg?label=%E2%99%A5)](https://david-dm.org/binocarlos/len) | Len is a resource booking database using LevelDB for storage. Useful for calendar and gantt chart apps and for questions like 'can a customer book this resource starting X and ending Y'.
+**[`lem`]** | [![dependencies](https://img.shields.io/david/binocarlos/lem.svg?label=%E2%99%A5)](https://david-dm.org/binocarlos/lem) | Lem is a telemetry storage database using LevelDB. Keys are indexed by timestamp and you can read values in-between 2 points in time.
+**[`levelgraph`]** | [![dependencies](https://img.shields.io/david/mcollina/node-levelgraph.svg?label=%E2%99%A5)](https://david-dm.org/mcollina/node-levelgraph) | A Graph database built on top of [`levelup`] with pattern-matching and join support.
+**[`linvodb3`]** | [![dependencies](https://img.shields.io/david/Ivshti/linvodb3.svg?label=%E2%99%A5)](https://david-dm.org/Ivshti/linvodb3) | Persistent database on top of [`levelup`] for Node.js/NW.js with MongoDB-style queries, Mongoose-like models and a map/reduce system.
+**[`plumbdb`]** | [![dependencies](https://img.shields.io/david/maxogden/plumbdb.svg?label=%E2%99%A5)](https://david-dm.org/maxogden/plumbdb) | HTTP request handlers for building web services on top of LevelDB. Not in active development.
+**[`rxdb`]** | [![dependencies](https://img.shields.io/david/pubkey/rxdb.svg?label=%E2%99%A5)](https://david-dm.org/pubkey/rxdb) | Event-driven database based on [`pouchdb`]. Optimized for reactive programming with observables. Events and state is automatically shared between multiple browser tabs. Queries are defined by the mongoDB mango-standard.
+**[`pushdb`]** | [![dependencies](https://img.shields.io/david/mikeal/pushdb.svg?label=%E2%99%A5)](https://david-dm.org/mikeal/pushdb) | A programmable database with document storage and unique indexing capabilities.
+**[`search-index`]** | [![dependencies](https://img.shields.io/david/fergiemcdowall/search-index.svg?label=%E2%99%A5)](https://david-dm.org/fergiemcdowall/search-index) | A persistent full text search engine for browser and Node.js.
+**[`tacodb`]** | [![dependencies](https://img.shields.io/david/dominictarr/tacodb.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/tacodb) | A responsive, Node.js-style database ideal for realtime data. Highly modular and adaptable, allowing extension with the [Level][level-org] ecosystem.
+**[`timestreamdb`]** | [![dependencies](https://img.shields.io/david/brycebaril/timestreamdb.svg?label=%E2%99%A5)](https://david-dm.org/brycebaril/timestreamdb) | A full-featured timeseries database on top of LevelDB. Includes a library for streaming statistical operations on timeseries data including joins, aggregates, filters, and map-like operations.
+**[`nanosql`]** | [![dependencies](https://img.shields.io/david/ClickSimply/Nano-SQL.svg?label=%E2%99%A5)](https://david-dm.org/ClickSimply/Nano-SQL) | A small (10Kb) RDBMS abstraction on top of [`levelup`] that also runs in the browser with undo/redo support, immutable objects and IndexedDB persistence.
+**[`vertical`]** | [![dependencies](https://img.shields.io/david/zy445566/vertical.svg?label=%E2%99%A5)](https://david-dm.org/zy445566/vertical) | LevelDB distributed, Server and Client!
+
 ## Plugins for levelup
 
 Modules that add functionality to [`levelup`].
@@ -121,15 +145,25 @@ Level is licensed under the MIT license. All rights not explicitly granted in th
 
 [`cluster-levelup`]: https://github.com/chiguireitor/cluster-levelup
 
+[`couchup`]: https://github.com/mikeal/couchup
+
+[`dat`]: https://github.com/maxogden/dat
+
 [`deferred-leveldown`]: https://github.com/level/deferred-leveldown
 
 [`dynamo-down`]: https://github.com/jed/dynamo-down
 
 [`encoding-down`]: https://github.com/level/encoding-down
 
+[`firedup`]: https://github.com/eugeneware/firedup
+
 [`fruitdown`]: https://github.com/nolanlawson/fruitdown
 
 [`jsondown`]: https://github.com/toolness/jsondown
+
+[`lem`]: https://github.com/binocarlos/lem
+
+[`len`]: https://github.com/binocarlos/len
 
 [`level-browserify`]: https://github.com/level/level-browserify
 
@@ -151,9 +185,13 @@ Level is licensed under the MIT license. All rights not explicitly granted in th
 
 [`leveldown`]: https://github.com/level/leveldown
 
+[`levelgraph`]: https://github.com/mcollina/node-levelgraph
+
 [`levelup-async-iterator`]: https://github.com/MeirionHughes/levelup-async-iterator
 
 [`levelup`]: https://github.com/level/levelup
+
+[`linvodb3`]: https://github.com/Ivshti/linvodb3
 
 [`localstorage-down`]: https://github.com/No9/localstorage-down
 
@@ -165,17 +203,35 @@ Level is licensed under the MIT license. All rights not explicitly granted in th
 
 [`mysqldown`]: https://github.com/kesla/mysqldown
 
+[`nanosql`]: https://github.com/ClickSimply/Nano-SQL
+
+[`plumbdb`]: https://github.com/maxogden/plumbdb
+
+[`pouchdb`]: http://pouchdb.com/
+
+[`pushdb`]: https://github.com/mikeal/pushdb
+
 [`redisdown`]: https://github.com/hmalphettes/redisdown
 
 [`riakdown`]: https://github.com/nlf/riakdown
 
 [`rocksdb`]: https://github.com/level/rocksdb
 
+[`rxdb`]: https://github.com/pubkey/rxdb
+
+[`search-index`]: https://github.com/fergiemcdowall/search-index
+
 [`sheet-down`]: https://github.com/jed/sheet-down
 
 [`sqldown`]: https://github.com/calvinmetcalf/sqldown
 
 [`subleveldown`]: https://github.com/mafintosh/subleveldown
+
+[`tacodb`]: https://github.com/dominictarr/tacodb
+
+[`timestreamdb`]: https://github.com/brycebaril/timestreamdb
+
+[`vertical`]: https://github.com/zy445566/vertical
 
 [level-badge]: http://leveldb.org/img/badge.svg
 
