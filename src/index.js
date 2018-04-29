@@ -12,7 +12,12 @@ const generator = require('./remark-generator')
 const bookmarks = require('./remark-bookmarks')
 
 const fp = process.argv[2]
-const sections = glob.sync(process.argv[3], { absolute: true }).map(require)
+const files = process.argv.slice(3).reduce((acc, pattern) => {
+  acc.push(...glob.sync(pattern, { absolute: true }))
+  return acc
+}, [])
+
+const sections = Array.from(new Set(files)).map(require)
 const modules = {}
 
 remark()
