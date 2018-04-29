@@ -5,7 +5,7 @@
       "github": "level/levelup",
       "description": [
         "The glue that holds everything together.",
-        "Use this instead of [`level` or its variants](#bundles) when you need a [custom or swappable store](#stores)."
+        "Use this when you need a [custom or swappable store](#stores)."
       ]
     },
     "abstract-leveldown": {
@@ -18,8 +18,8 @@
     "level-packager": {
       "github": "level/packager",
       "description": [
-        "Package helper to bundle a store with [levelup] and [encoding-down].",
-        "This powers [`level` and its variants](#bundles)."
+        "Package helper to export [a bundle](#bundles).",
+        "Use this to create a new `level-*` bundle."
       ]
     }
   }

@@ -40,7 +40,7 @@ function generateSection (section, done) {
   function generateRow ([id, module], done) {
     const name = moduleName(id)
     const status = davidBadge(module.github)
-    const description = parse(join(module[descriptor], ' '))
+    const description = parse(join(module[descriptor], '<br>'))
 
     if (section.compatibility) {
       const dependencies = [].concat(section.compatibility).concat(module.compatibility || [])
@@ -66,7 +66,7 @@ function moduleName (identifier) {
 }
 
 function join (parts, glue) {
-  return [].concat(parts).join(' ')
+  return [].concat(parts).join(glue)
 }
 
 function buildRow (columns) {

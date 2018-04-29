@@ -20,19 +20,21 @@
 
 ## Bundles
 
+Convenience modules that bundle [a store](#stores) with [`levelup`] and [`encoding-down`].
+
 Name | Dependencies | Description
 :--- | :----------- | :----------
-**[`level`]** | [![dependencies](https://img.shields.io/david/level/level.svg?label=%E2%99%A5)](https://david-dm.org/level/level) | Main entry point for beginners. A convenient bundle of [`levelup`], [`leveldown`] and [`encoding-down`].
-**[`level-mem`]** | [![dependencies](https://img.shields.io/david/level/level-mem.svg?label=%E2%99%A5)](https://david-dm.org/level/level-mem) | A convenient bundle of [`levelup`], [`memdown`] and [`encoding-down`].
-**[`level-rocksdb`]** | [![dependencies](https://img.shields.io/david/level/level-rocksdb.svg?label=%E2%99%A5)](https://david-dm.org/level/level-rocksdb) | A convenient bundle of [`levelup`], [`rocksdb`] and [`encoding-down`].
+**[`level`]** | [![dependencies](https://img.shields.io/david/level/level.svg?label=%E2%99%A5)](https://david-dm.org/level/level) | Bundle for [`leveldown`].<br>Main entry point for beginners.
+**[`level-mem`]** | [![dependencies](https://img.shields.io/david/level/level-mem.svg?label=%E2%99%A5)](https://david-dm.org/level/level-mem) | Bundle for [`memdown`].
+**[`level-rocksdb`]** | [![dependencies](https://img.shields.io/david/level/level-rocksdb.svg?label=%E2%99%A5)](https://david-dm.org/level/level-rocksdb) | Bundle for [`rocksdb`].
 
 ## Core
 
 Name | Dependencies | Description
 :--- | :----------- | :----------
-**[`levelup`]** | [![dependencies](https://img.shields.io/david/level/levelup.svg?label=%E2%99%A5)](https://david-dm.org/level/levelup) | The glue that holds everything together. Use this instead of [`level` or its variants](#bundles) when you need a [custom or swappable store](#stores).
-**[`abstract-leveldown`]** | [![dependencies](https://img.shields.io/david/level/abstract-leveldown.svg?label=%E2%99%A5)](https://david-dm.org/level/abstract-leveldown) | An abstract prototype matching the [`leveldown`] API. Use this to implement your own store.
-**[`level-packager`]** | [![dependencies](https://img.shields.io/david/level/packager.svg?label=%E2%99%A5)](https://david-dm.org/level/packager) | Package helper to bundle a store with [`levelup`] and [`encoding-down`]. This powers [`level` and its variants](#bundles).
+**[`levelup`]** | [![dependencies](https://img.shields.io/david/level/levelup.svg?label=%E2%99%A5)](https://david-dm.org/level/levelup) | The glue that holds everything together.<br>Use this when you need a [custom or swappable store](#stores).
+**[`abstract-leveldown`]** | [![dependencies](https://img.shields.io/david/level/abstract-leveldown.svg?label=%E2%99%A5)](https://david-dm.org/level/abstract-leveldown) | An abstract prototype matching the [`leveldown`] API.<br>Use this to implement your own store.
+**[`level-packager`]** | [![dependencies](https://img.shields.io/david/level/packager.svg?label=%E2%99%A5)](https://david-dm.org/level/packager) | Package helper to export [a bundle](#bundles).<br>Use this to create a new `level-*` bundle.
 
 ## Stores
 
