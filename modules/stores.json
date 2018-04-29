@@ -1,5 +1,5 @@
 {
-  "section": "Stores",
+  "title": "Stores",
   "description": "Modules that implement [abstract-leveldown] as storage for [levelup].",
   "compatibility": ["abstract-leveldown"],
   "descriptor": "type",

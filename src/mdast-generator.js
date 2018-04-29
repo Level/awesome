@@ -7,11 +7,7 @@ const davidBadge = require('./david-badge')
 const b = require('unist-builder')
 const processor = require('remark')()
 
-module.exports = function (sections, done) {
-  mapLimit(sections, 4, generateSection, done)
-}
-
-function generateSection (section, done) {
+module.exports = function (section, done) {
   const nodes = []
   const descriptor = section.descriptor || 'description'
 
@@ -31,10 +27,7 @@ function generateSection (section, done) {
       ...rows
     ]))
 
-    done(null, {
-      section: section.section,
-      nodes
-    })
+    done(null, nodes)
   })
 
   function generateRow ([id, module], done) {

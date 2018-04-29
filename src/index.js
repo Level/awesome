@@ -15,28 +15,8 @@ const fp = process.argv[2]
 const sections = glob.sync(process.argv[3], { absolute: true }).map(require)
 const modules = {}
 
-// Normalize and validate sections
-for (let section of sections) {
-  for (let [id, module] of Object.entries(section.modules)) {
-    if (modules[id]) {
-      throw new Error('duplicate module: ' + id)
-    }
-
-    if (!module.url) {
-      if (!module.github) {
-        throw new TypeError('either "github" or "url" must be set')
-      }
-
-      module.url = `https://github.com/${module.github}`
-    }
-
-    // Collect links for bookmarks
-    modules[id] = module.url
-  }
-}
-
 remark()
-  .use(generator, { sections })
+  .use(generator, { sections, modules })
   .use(toc, { tight: true })
   .use(collapse, {
     test: 'Table of Contents',

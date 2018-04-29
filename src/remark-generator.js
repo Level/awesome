@@ -1,20 +1,47 @@
 'use strict'
 
 const heading = require('mdast-util-heading-range')
-const generate = require('./generate')
+const mapLimit = require('map-limit')
+const generator = require('./mdast-generator')
 
-module.exports = function generator ({ sections }) {
+module.exports = function (options) {
+  const sections = options.sections
+  const modules = options.modules || {}
+
+  // Normalize and validate sections
+  for (let section of sections) {
+    if (typeof section.title !== 'string' || section.title === '') {
+      throw new TypeError('title must be a non-empty string')
+    }
+
+    for (let [id, module] of Object.entries(section.modules)) {
+      if (modules[id]) {
+        throw new Error('duplicate module: ' + id)
+      }
+
+      if (!module.url) {
+        if (!module.github) {
+          throw new TypeError('either "github" or "url" must be set')
+        }
+
+        module.url = `https://github.com/${module.github}`
+      }
+
+      // Collect links for bookmarks
+      modules[id] = module.url
+    }
+  }
+
   return function transformer (tree, file, next) {
-    generate(sections, (err, sections) => {
+    mapLimit(sections, 4, generator, (err, results) => {
       if (err) return next(err)
 
-      for (let { section, nodes: newNodes } of sections) {
+      results.forEach((nodes, index) => {
         // Find current section and replace it with new nodes
-        heading(tree, section, (start, nodes, end) => {
-          // TODO: isn't start already an array?
-          return [start].concat(newNodes).concat([end])
+        heading(tree, sections[index].title, (start, oldNodes, end) => {
+          return [start].concat(nodes).concat([end])
         })
-      }
+      })
 
       next()
     })

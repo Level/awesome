@@ -1,5 +1,5 @@
 {
-  "section": "Plugins for levelup",
+  "title": "Plugins for levelup",
   "description": [
     "Modules that add functionality to [levelup]."
   ],

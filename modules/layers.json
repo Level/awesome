@@ -1,5 +1,5 @@
 {
-  "section": "Layers",
+  "title": "Layers",
   "description": [
     "Modules that implement [abstract-leveldown] to wrap another [abstract-leveldown].",
     "This is the preferred extension point."

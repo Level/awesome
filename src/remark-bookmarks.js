@@ -3,11 +3,13 @@
 // Adapted from ben-eb/remark-bookmarks (MIT © Ben Briggs). Changes:
 //
 // - Allow late initialization of bookmarks
-// - Support modules (quoted identifiers)
-// - Fix removal of nodes.
-// - Support image references.
-// - Throw on dead references.
-// - Sort definitions.
+// - Support modules (as auto-quoted links)
+// - Fix removal of nodes
+// - Support image references
+// - Warn about dead references
+// - Sort definitions for deterministic result.
+//
+// TODO: publish as remark-module-bookmarks
 
 const visit = require('unist-util-visit')
 const b = require('unist-builder')

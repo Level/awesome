@@ -1,5 +1,5 @@
 {
-  "section": "Bundles",
+  "title": "Bundles",
   "description": [
     "Convenience modules that bundle [a store](#stores) with [levelup] and [encoding-down]."
   ],

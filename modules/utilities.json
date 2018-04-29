@@ -1,5 +1,5 @@
 {
-  "section": "Utilities",
+  "title": "Utilities",
   "modules": {
     "level-iterator-stream": {
       "github": "level/iterator-stream",

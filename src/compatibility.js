@@ -122,7 +122,6 @@ exports.data = function (module, target, opts, callback) {
         return finish(err, 'invalid')
       }
 
-      // TODO: should 1 major back be red?
       if (compat.major < major - 2) {
         finish(null, compat.short, 'red')
       } else if (compat.major < major) {
