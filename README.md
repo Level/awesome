@@ -11,6 +11,7 @@
 -   [Stores](#stores)
 -   [Layers](#layers)
 -   [Databases](#databases)
+-   [Replication](#replication)
 -   [Plugins for levelup](#plugins-for-levelup)
 -   [Utilities](#utilities)
 -   [Resources](#resources)
@@ -98,6 +99,17 @@ Name | Dependencies | Description
 **[`nanosql`]** | [![dependencies](https://img.shields.io/david/ClickSimply/Nano-SQL.svg?label=%E2%99%A5)](https://david-dm.org/ClickSimply/Nano-SQL) | A small (10Kb) RDBMS abstraction on top of [`levelup`] that also runs in the browser with undo/redo support, immutable objects and IndexedDB persistence.
 **[`vertical`]** | [![dependencies](https://img.shields.io/david/zy445566/vertical.svg?label=%E2%99%A5)](https://david-dm.org/zy445566/vertical) | LevelDB distributed, Server and Client!
 
+## Replication
+
+Name | Dependencies | Description
+:--- | :----------- | :----------
+**[`level-2pc`]** | [![dependencies](https://img.shields.io/david/hij1nx/level-2pc.svg?label=%E2%99%A5)](https://david-dm.org/hij1nx/level-2pc) | A two-phase commit protocol.
+**[`level-couch-sync`]** | [![dependencies](https://img.shields.io/david/dominictarr/level-couch-sync.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-couch-sync) | Replicate from CouchDB to LevelDB.
+**[`level-master`]** | [![dependencies](https://img.shields.io/david/dominictarr/level-master.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-master) | Master-Slave replication for [`levelup`].
+**[`level-merkle`]** | [![dependencies](https://img.shields.io/david/dominictarr/level-merkle.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-merkle) | Uses [merkle-trees](http://en.wikipedia.org/wiki/Merkle_tree) to replicate data sets. Data must be sets and currently, deletes are not supported.
+**[`level-replicate`]** | [![dependencies](https://img.shields.io/david/dominictarr/level-replicate.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-replicate) | Master-master replication with [`levelup`]. Implements scuttlebutt style handshake, syncs data, then replicates real time changes.
+**[`level-replicator`]** | [![dependencies](https://img.shields.io/david/hij1nx/level-replicator.svg?label=%E2%99%A5)](https://david-dm.org/hij1nx/level-replicator) | Master-master replication. Same goal as [`level-replicate`] but different approach.
+
 ## Plugins for levelup
 
 Modules that add functionality to [`levelup`].
@@ -131,7 +143,7 @@ See [`CONTRIBUTING.md`](https://github.com/Level/community/blob/master/CONTRIBUT
 
 ## License
 
-Copyright &copy; 2012-2018 **Level** [contributors](https://github.com/level/community#contributors).
+Copyright © 2012-2018 **Level** [contributors](https://github.com/level/community#contributors).
 
 Level is licensed under the MIT license. All rights not explicitly granted in the MIT license are reserved. See the included `LICENSE.md` file for more details.
 
@@ -165,15 +177,27 @@ Level is licensed under the MIT license. All rights not explicitly granted in th
 
 [`len`]: https://github.com/binocarlos/len
 
+[`level-2pc`]: https://github.com/hij1nx/level-2pc
+
 [`level-browserify`]: https://github.com/level/level-browserify
+
+[`level-couch-sync`]: https://github.com/dominictarr/level-couch-sync
 
 [`level-iterator-stream`]: https://github.com/level/iterator-stream
 
 [`level-js`]: https://github.com/level/level.js
 
+[`level-master`]: https://github.com/dominictarr/level-master
+
 [`level-mem`]: https://github.com/level/level-mem
 
+[`level-merkle`]: https://github.com/dominictarr/level-merkle
+
 [`level-packager`]: https://github.com/level/packager
+
+[`level-replicate`]: https://github.com/dominictarr/level-replicate
+
+[`level-replicator`]: https://github.com/hij1nx/level-replicator
 
 [`level-rocksdb`]: https://github.com/level/level-rocksdb
 
