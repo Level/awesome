@@ -6,6 +6,8 @@
 const semver = require('semver')
 const memoize = require('thunky-with-args')
 const mapLimit = require('map-limit')
+const intersperse = require('intersperse')
+const image = require('./mdast-image')
 const getPackument = memoize(require('packument').factory({ keepAlive: true }))
 const getPackage = require('packument-package').factory(getPackument)
 
@@ -39,14 +41,14 @@ exports.url = function (module, dependency, done) {
 exports.badge = function (module, dependency, done) {
   exports.url(module, dependency, (err, url) => {
     if (err) return done(err)
-    done(null, `![${dependency}](${url})`)
+    done(null, image(url, dependency))
   })
 }
 
-exports.badges = function (module, dependencies, separator, done) {
+exports.badges = function (module, dependencies, done) {
   mapLimit(dependencies, 4, exports.badge.bind(null, module), (err, badges) => {
     if (err) return done(err)
-    done(null, badges.join(separator))
+    done(null, intersperse(badges, { type: 'html', value: '<br>' }))
   })
 }
 

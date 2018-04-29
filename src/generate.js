@@ -4,53 +4,79 @@ const sentence = require('sentence-case')
 const mapLimit = require('map-limit')
 const compatibilityBadges = require('./compatibility').badges
 const davidBadge = require('./david-badge')
-const minimalTable = require('./util/minimal-table')
+const b = require('unist-builder')
+const processor = require('remark')()
 
-// TODO: generate markdown nodes with unist-builder.
 module.exports = function (sections, done) {
   mapLimit(sections, 4, generateSection, done)
 }
 
 function generateSection (section, done) {
-  const paragraphs = []
+  const nodes = []
   const descriptor = section.descriptor || 'description'
 
   if (section.description) {
-    paragraphs.push([].concat(section.description).join(' '))
+    nodes.push(b('paragraph', parse(join(section.description, ' '))))
   }
 
   mapLimit(Object.entries(section.modules), 4, generateRow, (err, rows) => {
     if (err) return done(err)
 
-    paragraphs.push(minimalTable(rows, {
-      columns: [
-        { name: 'Name' },
-        { name: 'Compatibility', skip: !section.compatibility },
-        { name: 'Status' },
-        { name: sentence(descriptor) }
-      ]
-    }))
+    const header = section.compatibility
+      ? ['Name', 'Compatibility', 'Status', sentence(descriptor)]
+      : ['Name', 'Status', sentence(descriptor)]
+
+    nodes.push(b('table', { align: new Array(header.length).fill('left') }, [
+      buildRow(header.map(column => b('text', column))),
+      ...rows
+    ]))
 
     done(null, {
       section: section.section,
-      markdown: paragraphs.join('\n\n')
+      nodes
     })
   })
 
   function generateRow ([id, module], done) {
-    const name = '**[`' + id.toLowerCase() + '`]**'
+    const name = moduleName(id)
     const status = davidBadge(module.github)
-    const description = [].concat(module[descriptor]).join(' ')
+    const description = parse(join(module[descriptor], ' '))
 
     if (section.compatibility) {
       const dependencies = [].concat(section.compatibility).concat(module.compatibility || [])
 
-      compatibilityBadges(id, dependencies, '<br>', (err, compatibility) => {
+      compatibilityBadges(id, dependencies, (err, compatibility) => {
         if (err) return done(err)
-        done(null, { name, compatibility, status, description })
+        done(null, buildRow([name, compatibility, status, description]))
       })
     } else {
-      done(null, { name, status, description })
+      done(null, buildRow([name, status, description]))
     }
   }
+}
+
+function moduleName (identifier) {
+  identifier = identifier.toLowerCase()
+
+  return b('strong', [
+    b('linkReference', { identifier, referenceType: 'shortcut' }, [
+      [b('inlineCode', identifier)]
+    ])
+  ])
+}
+
+function join (parts, glue) {
+  return [].concat(parts).join(' ')
+}
+
+function buildRow (columns) {
+  return b('tableRow', columns.map(buildCell))
+}
+
+function buildCell (children) {
+  return b('tableCell', [].concat(children))
+}
+
+function parse (md) {
+  return processor.parse(md, { position: false }).children
 }

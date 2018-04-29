@@ -1,16 +1,19 @@
 'use strict'
 
+const image = require('./mdast-image')
 const LOVE = '%E2%99%A5'
 
-// TODO: find or create an npm module for this.
 module.exports = function (slug) {
   if (!slug) {
-    const image = `https://img.shields.io/badge/dependencies-unknown-lightgrey.svg?label=${LOVE}`
-    return `![dependencies](${image})`
+    return image(
+      `https://img.shields.io/badge/dependencies-unknown-lightgrey.svg?label=${LOVE}`,
+      'dependencies'
+    )
   }
 
-  const image = `https://img.shields.io/david/${slug}.svg?label=${LOVE}`
-  const link = `https://david-dm.org/${slug}`
-
-  return `[![dependencies](${image})](${link})`
+  return image(
+    `https://img.shields.io/david/${slug}.svg?label=${LOVE}`,
+    'dependencies',
+    `https://david-dm.org/${slug}`
+  )
 }

@@ -10,6 +10,7 @@
   "dependencies": {},
   "devDependencies": {
     "glob": "~7.1.2",
+    "intersperse": "~1.0.0",
     "map-limit": "0.0.1",
     "mdast-util-heading-range": "~2.1.0",
     "packument": "~1.0.0",
