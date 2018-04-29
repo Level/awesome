@@ -13,6 +13,7 @@
 
 const visit = require('unist-util-visit')
 const b = require('unist-builder')
+const BACKTICK = '`'
 
 module.exports = function (opts) {
   if (!opts) opts = {}
@@ -27,33 +28,32 @@ module.exports = function (opts) {
     bookmarks = lowercaseKeys(bookmarks)
     modules = lowercaseKeys(modules)
 
-    // Find module references and existing bookmarks
-    visit(tree, ['linkReference', 'definition'], (node, index, parent) => {
-      const { type, identifier } = node
+    // Find and remove existing bookmarks
+    visit(tree, 'definition', (node, index, parent) => {
+      bookmarks[node.identifier] = bookmarks[node.identifier] || node.url
+      parent.children.splice(index, 1)
+      return index
+    })
 
-      if (type === 'linkReference') {
-        const name = identifier.replace(/`/g, '').toLowerCase()
+    // Track which bookmarks are used
+    const refs = new Set()
+
+    // Find references to modules and bookmarks
+    visit(tree, ['linkReference', 'imageReference'], (node, index, parent) => {
+      if (node.type === 'linkReference') {
+        const name = node.identifier.replace(/`/g, '').toLowerCase()
+        const quoted = BACKTICK + name + BACKTICK
 
         if (modules[name]) {
-          const quoted = '`' + name + '`'
-
           bookmarks[quoted] = modules[name]
+        }
+
+        if (bookmarks[quoted]) {
           node.identifier = quoted
           node.children = [b('inlineCode', name)]
         }
-      } else if (type === 'definition') {
-        bookmarks[identifier] = bookmarks[identifier] || node.url
-
-        // Remove node and return current index to visit sibling
-        parent.children.splice(index, 1)
-        return index
       }
-    })
 
-    // Find which bookmarks are used
-    const refs = new Set()
-
-    visit(tree, ['linkReference', 'imageReference'], (node, index, parent) => {
       if (bookmarks[node.identifier]) {
         refs.add(node.identifier)
       } else {
