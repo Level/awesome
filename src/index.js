@@ -4,6 +4,7 @@ const glob = require('glob')
 const vfile = require('to-vfile')
 const remark = require('remark')
 const toc = require('remark-toc')
+const collapse = require('remark-collapse')
 const github = require('remark-github')
 const stringify = require('remark-stringify')
 const report = require('vfile-reporter')
@@ -37,6 +38,10 @@ for (let section of sections) {
 remark()
   .use(generator, { sections })
   .use(toc, { tight: true })
+  .use(collapse, {
+    test: 'Table of Contents',
+    summary: () => 'db.open()'
+  })
   .use(github)
   .use(bookmarks, { modules })
 

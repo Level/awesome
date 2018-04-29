@@ -4,6 +4,8 @@
 
 ## Table of Contents
 
+<details><summary>db.open()</summary>
+
 -   [Bundles](#bundles)
 -   [Core](#core)
 -   [Stores](#stores)
@@ -13,6 +15,8 @@
 -   [Resources](#resources)
 -   [Contributing](#contributing)
 -   [License](#license)
+
+</details>
 
 ## Bundles
 

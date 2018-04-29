@@ -17,6 +17,7 @@
     "packument": "~1.0.0",
     "packument-package": "~1.0.0",
     "remark": "~9.0.0",
+    "remark-collapse": "~0.1.2",
     "remark-github": "~7.0.3",
     "remark-stringify": "~5.0.0",
     "remark-toc": "~5.0.0",
