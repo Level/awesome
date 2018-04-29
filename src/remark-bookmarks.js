@@ -39,10 +39,7 @@ module.exports = function (opts) {
 
           bookmarks[quoted] = modules[name]
           node.identifier = quoted
-
-          if (node.referenceType === 'shortcut') {
-            node.children = [b('text', quoted)]
-          }
+          node.children = [b('text', quoted)]
         }
       } else if (type === 'definition') {
         bookmarks[identifier] = bookmarks[identifier] || node.url
