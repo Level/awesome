@@ -3,7 +3,11 @@
   "modules": {
     "level-iterator-stream": {
       "github": "level/iterator-stream",
-      "description": "Turn an [abstract-leveldown] iterator into a readable stream"
+      "description": "Turn an [abstract-leveldown] iterator into a readable stream."
+    },
+    "level-test": {
+      "github": "level/level-test",
+      "description": "Easily run your `level-*` tests against [all stores](#stores)."
     }
   }
 }
