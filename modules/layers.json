@@ -8,7 +8,7 @@
   "modules": {
     "encoding-down": {
       "github": "level/encoding-down",
-      "description": "Provides key/value encoding"
+      "description": "Provides key/value encoding."
     },
     "deferred-leveldown": {
       "github": "level/deferred-leveldown",
@@ -17,11 +17,11 @@
     "subleveldown": {
       "github": "mafintosh/subleveldown",
       "compatibility": ["abstract-leveldown", "levelup"],
-      "description": "Sublevels implemented using leveldowns"
+      "description": "Sublevels implemented using leveldowns."
     },
     "cachedown": {
       "github": "mvayngrib/cachedown",
-      "description": "LRU cache"
+      "description": "LRU cache."
     }
   }
 }

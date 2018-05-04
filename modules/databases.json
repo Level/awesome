@@ -21,7 +21,7 @@
     "firedup": {
       "github": "eugeneware/firedup",
       "description": [
-        "A node.js implementation of firebase based on [levelup]"
+        "A node.js implementation of firebase based on [levelup]."
       ]
     },
     "len": {

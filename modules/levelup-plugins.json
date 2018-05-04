@@ -6,11 +6,11 @@
   "modules": {
     "levelup-async-iterator": {
       "github": "MeirionHughes/levelup-async-iterator",
-      "description": "Expose `iterator()` with [`Symbol.asyncIterator`](https://github.com/tc39/proposal-async-iteration)"
+      "description": "Expose `iterator()` with [`Symbol.asyncIterator`](https://github.com/tc39/proposal-async-iteration)."
     },
     "cluster-levelup": {
       "github": "chiguireitor/cluster-levelup",
-      "description": "Wrap any [`levelup`] instance for [`cluster`](https://nodejs.org/api/cluster.html) usage among multiple processes"
+      "description": "Wrap any [`levelup`] instance for [`cluster`](https://nodejs.org/api/cluster.html) usage among multiple processes."
     }
   }
 }
