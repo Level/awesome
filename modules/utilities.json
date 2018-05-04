@@ -7,7 +7,7 @@
     },
     "level-test": {
       "github": "level/level-test",
-      "description": "Easily run your `level-*` tests across all leveldown backends."
+      "description": "Easily run your `level-*` tests against [all stores](#stores)."
     }
   }
 }

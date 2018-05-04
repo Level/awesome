@@ -124,7 +124,7 @@ Name | Dependencies | Description
 Name | Dependencies | Description
 :--- | :----------- | :----------
 **[`level-iterator-stream`]** | [![dependencies](https://img.shields.io/david/level/iterator-stream.svg?label=%E2%99%A5)](https://david-dm.org/level/iterator-stream) | Turn an [`abstract-leveldown`] iterator into a readable stream.
-**[`level-test`]** | [![dependencies](https://img.shields.io/david/level/level-test.svg?label=%E2%99%A5)](https://david-dm.org/level/level-test) | Easily run your `level-*` tests across all leveldown backends.
+**[`level-test`]** | [![dependencies](https://img.shields.io/david/level/level-test.svg?label=%E2%99%A5)](https://david-dm.org/level/level-test) | Easily run your `level-*` tests against [all stores](#stores).
 
 ## Resources
 
