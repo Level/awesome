@@ -8,6 +8,10 @@
     "level-test": {
       "github": "level/level-test",
       "description": "Easily run your `level-*` tests against [all stores](#stores)."
+    },
+    "lev2": {
+      "github": "maxlath/lev2",
+      "description": "A complete REPL & CLI for managing LevelDB instances"
     }
   }
 }

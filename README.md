@@ -125,6 +125,7 @@ Name | Dependencies | Description
 :--- | :----------- | :----------
 **[`level-iterator-stream`]** | [![dependencies](https://img.shields.io/david/level/iterator-stream.svg?label=%E2%99%A5)](https://david-dm.org/level/iterator-stream) | Turn an [`abstract-leveldown`] iterator into a readable stream.
 **[`level-test`]** | [![dependencies](https://img.shields.io/david/level/level-test.svg?label=%E2%99%A5)](https://david-dm.org/level/level-test) | Easily run your `level-*` tests against [all stores](#stores).
+**[`lev2`]** | [![dependencies](https://img.shields.io/david/maxlath/lev2.svg?label=%E2%99%A5)](https://david-dm.org/maxlath/lev2) | A complete REPL & CLI for managing LevelDB instances
 
 ## Resources
 
@@ -177,6 +178,8 @@ Level is licensed under the MIT license. All rights not explicitly granted in th
 [`lem`]: https://github.com/binocarlos/lem
 
 [`len`]: https://github.com/binocarlos/len
+
+[`lev2`]: https://github.com/maxlath/lev2
 
 [`level-2pc`]: https://github.com/hij1nx/level-2pc
 
