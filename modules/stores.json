@@ -12,9 +12,17 @@
       "github": "level/memdown",
       "type": "[In-memory RBTree](https://www.npmjs.com/package/functional-red-black-tree)"
     },
+    "level-js": {
+      "github": "level/level.js",
+      "type": "[IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB)"
+    },
     "rocksdb": {
       "github": "level/rocksdb",
       "type": "[RocksDB](https://github.com/facebook/rocksdb/)"
+    },
+    "leveldown-hyper": {
+      "github": "level/leveldown-hyper",
+      "type": "[HyperLevelDB](https://github.com/rescrv/HyperLevelDB)"
     },
     "medeadown": {
       "github": "kesla/medeadown",
@@ -27,10 +35,6 @@
         "package": "abstract-leveldown",
         "via": "memdown"
       }]
-    },
-    "leveldown-hyper": {
-      "github": "level/leveldown-hyper",
-      "type": "[HyperLevelDB](https://github.com/rescrv/HyperLevelDB)"
     },
     "asyncstorage-down": {
       "github": "tradle/asyncstorage-down",
@@ -51,10 +55,6 @@
     "azureleveldown": {
       "github": "richorama/azureleveldown",
       "type": "Windows Azure Table Storage"
-    },
-    "level-js": {
-      "github": "level/level.js",
-      "type": "[IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB)"
     },
     "fruitdown": {
       "github": "nolanlawson/fruitdown",
