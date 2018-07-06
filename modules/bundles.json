@@ -25,7 +25,7 @@
     },
     "level-browserify": {
       "github": "level/level-browserify",
-      "description": "Bundle for [level-js]."
+      "description": "Bundle for [level-js] and [leveldown]."
     }
   }
 }
