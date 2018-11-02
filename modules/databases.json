@@ -101,6 +101,12 @@
       "description": [
         "FlashStore is a Key-Value persistent storage with easy to use ES6 Map-like API(both Async and Sync support), powered by LevelDB and TypeScript."
       ]
+    },
+    "level-fact-base": {
+      "github": "smallhelm/level-fact-base",
+      "description": [
+        "Store immutable facts and query them with datalog."
+      ]
     }
   }
 }

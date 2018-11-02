@@ -100,6 +100,7 @@ Name | Dependencies | Description
 **[`nanosql`]** | [![dependencies](https://img.shields.io/david/ClickSimply/Nano-SQL.svg?label=%E2%99%A5)](https://david-dm.org/ClickSimply/Nano-SQL) | A small (10Kb) RDBMS abstraction on top of [`levelup`] that also runs in the browser with undo/redo support, immutable objects and IndexedDB persistence.
 **[`vertical`]** | [![dependencies](https://img.shields.io/david/zy445566/vertical.svg?label=%E2%99%A5)](https://david-dm.org/zy445566/vertical) | LevelDB distributed, Server and Client!
 **[`flash-store`]** | [![dependencies](https://img.shields.io/david/zixia/flash-store.svg?label=%E2%99%A5)](https://david-dm.org/zixia/flash-store) | FlashStore is a Key-Value persistent storage with easy to use ES6 Map-like API(both Async and Sync support), powered by LevelDB and TypeScript.
+**[`level-fact-base`]** | [![dependencies](https://img.shields.io/david/smallhelm/level-fact-base.svg?label=%E2%99%A5)](https://david-dm.org/smallhelm/level-fact-base) | Store immutable facts and query them with datalog.
 
 ## Replication
 
@@ -192,6 +193,8 @@ Level is licensed under the MIT license. All rights not explicitly granted in th
 [`level-browserify`]: https://github.com/level/level-browserify
 
 [`level-couch-sync`]: https://github.com/dominictarr/level-couch-sync
+
+[`level-fact-base`]: https://github.com/smallhelm/level-fact-base
 
 [`level-iterator-stream`]: https://github.com/level/iterator-stream
 
