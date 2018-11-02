@@ -10,6 +10,10 @@
       "github": "level/encoding-down",
       "description": "Provides key/value encoding."
     },
+    "@adorsys/encrypt-down": {
+      "github": "adorsys/encrypt-down",
+      "description": "Provides encryption for values."
+    },
     "deferred-leveldown": {
       "github": "level/deferred-leveldown",
       "description": "Handles delayed-open. Built into [levelup]."

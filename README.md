@@ -45,12 +45,12 @@ Modules that implement [`abstract-leveldown`] as storage for [`levelup`].
 
 Name | Compatibility | Dependencies | Type
 :--- | :------------ | :----------- | :---
-**[`leveldown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/leveldown.svg?label=%E2%99%A5)](https://david-dm.org/level/leveldown) | [LevelDB](https://github.com/google/leveldb)
-**[`memdown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/memdown.svg?label=%E2%99%A5)](https://david-dm.org/level/memdown) | [In-memory RBTree](https://www.npmjs.com/package/functional-red-black-tree)
-**[`level-js`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/level.js.svg?label=%E2%99%A5)](https://david-dm.org/level/level.js) | [IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB)
-**[`rocksdb`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/rocksdb.svg?label=%E2%99%A5)](https://david-dm.org/level/rocksdb) | [RocksDB](https://github.com/facebook/rocksdb/)
-**[`leveldown-hyper`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/leveldown-hyper.svg?label=%E2%99%A5)](https://david-dm.org/level/leveldown-hyper) | [HyperLevelDB](https://github.com/rescrv/HyperLevelDB)
-**[`medeadown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-3.0-orange.svg) | [![dependencies](https://img.shields.io/david/kesla/medeadown.svg?label=%E2%99%A5)](https://david-dm.org/kesla/medeadown) | [medea](https://github.com/argo/medea)
+**[`leveldown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-orange.svg) | [![dependencies](https://img.shields.io/david/level/leveldown.svg?label=%E2%99%A5)](https://david-dm.org/level/leveldown) | [LevelDB](https://github.com/google/leveldb)
+**[`memdown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-orange.svg) | [![dependencies](https://img.shields.io/david/level/memdown.svg?label=%E2%99%A5)](https://david-dm.org/level/memdown) | [In-memory RBTree](https://www.npmjs.com/package/functional-red-black-tree)
+**[`level-js`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-orange.svg) | [![dependencies](https://img.shields.io/david/level/level.js.svg?label=%E2%99%A5)](https://david-dm.org/level/level.js) | [IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB)
+**[`rocksdb`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-orange.svg) | [![dependencies](https://img.shields.io/david/level/rocksdb.svg?label=%E2%99%A5)](https://david-dm.org/level/rocksdb) | [RocksDB](https://github.com/facebook/rocksdb/)
+**[`leveldown-hyper`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-orange.svg) | [![dependencies](https://img.shields.io/david/level/leveldown-hyper.svg?label=%E2%99%A5)](https://david-dm.org/level/leveldown-hyper) | [HyperLevelDB](https://github.com/rescrv/HyperLevelDB)
+**[`medeadown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-3.0-red.svg) | [![dependencies](https://img.shields.io/david/kesla/medeadown.svg?label=%E2%99%A5)](https://david-dm.org/kesla/medeadown) | [medea](https://github.com/argo/medea)
 **[`jsondown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.7-red.svg) | [![dependencies](https://img.shields.io/david/toolness/jsondown.svg?label=%E2%99%A5)](https://david-dm.org/toolness/jsondown) | JSON on disk
 **[`asyncstorage-down`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.6-red.svg) | [![dependencies](https://img.shields.io/david/tradle/asyncstorage-down.svg?label=%E2%99%A5)](https://david-dm.org/tradle/asyncstorage-down) | [AsyncStorage](https://facebook.github.io/react-native/docs/asyncstorage.html) (React Native)
 **[`mongodown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.6-red.svg) | [![dependencies](https://img.shields.io/david/watson/mongodown.svg?label=%E2%99%A5)](https://david-dm.org/watson/mongodown) | [MongoDB](https://www.mongodb.com/)
@@ -71,9 +71,10 @@ Modules that implement [`abstract-leveldown`] to wrap another [`abstract-leveldo
 
 Name | Compatibility | Dependencies | Description
 :--- | :------------ | :----------- | :----------
-**[`encoding-down`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/encoding-down.svg?label=%E2%99%A5)](https://david-dm.org/level/encoding-down) | Provides key/value encoding.
-**[`deferred-leveldown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/level/deferred-leveldown.svg?label=%E2%99%A5)](https://david-dm.org/level/deferred-leveldown) | Handles delayed-open. Built into [`levelup`].
-**[`subleveldown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-brightgreen.svg)<br>![levelup](https://img.shields.io/badge/levelup-3.0-yellow.svg) | [![dependencies](https://img.shields.io/david/mafintosh/subleveldown.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/subleveldown) | Sublevels implemented using leveldowns.
+**[`encoding-down`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-orange.svg) | [![dependencies](https://img.shields.io/david/level/encoding-down.svg?label=%E2%99%A5)](https://david-dm.org/level/encoding-down) | Provides key/value encoding.
+**[`@adorsys/encrypt-down`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/adorsys/encrypt-down.svg?label=%E2%99%A5)](https://david-dm.org/adorsys/encrypt-down) | Provides encryption for values.
+**[`deferred-leveldown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-orange.svg) | [![dependencies](https://img.shields.io/david/level/deferred-leveldown.svg?label=%E2%99%A5)](https://david-dm.org/level/deferred-leveldown) | Handles delayed-open. Built into [`levelup`].
+**[`subleveldown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-orange.svg)<br>![levelup](https://img.shields.io/badge/levelup-3.0-yellow.svg) | [![dependencies](https://img.shields.io/david/mafintosh/subleveldown.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/subleveldown) | Sublevels implemented using leveldowns.
 **[`cachedown`]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.4-red.svg) | [![dependencies](https://img.shields.io/david/mvayngrib/cachedown.svg?label=%E2%99%A5)](https://david-dm.org/mvayngrib/cachedown) | LRU cache.
 
 ## Databases
@@ -149,6 +150,8 @@ See [`CONTRIBUTING.md`](https://github.com/Level/community/blob/master/CONTRIBUT
 Copyright © 2012-present **Level** [contributors](https://github.com/level/community#contributors).
 
 Level is licensed under the MIT license. All rights not explicitly granted in the MIT license are reserved. See the included `LICENSE.md` file for more details.
+
+[`@adorsys/encrypt-down`]: https://github.com/adorsys/encrypt-down
 
 [`abstract-leveldown`]: https://github.com/level/abstract-leveldown
 
