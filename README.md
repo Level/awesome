@@ -148,7 +148,7 @@ See [`CONTRIBUTING.md`](https://github.com/Level/community/blob/master/CONTRIBUT
 
 ## License
 
-Copyright © 2012-present **Level** [contributors](https://github.com/level/community#contributors).
+[MIT](LICENSE.md) © 2017-present [Contributors](CONTRIBUTORS.md).
 
 Level is licensed under the MIT license. All rights not explicitly granted in the MIT license are reserved. See the included `LICENSE.md` file for more details.
 
