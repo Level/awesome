@@ -13,7 +13,6 @@
 
 const visit = require('unist-util-visit')
 const b = require('unist-builder')
-const BACKTICK = '`'
 
 module.exports = function (opts) {
   if (!opts) opts = {}
@@ -40,18 +39,12 @@ module.exports = function (opts) {
 
     // Find references to modules and bookmarks
     visit(tree, ['linkReference', 'imageReference'], (node, index, parent) => {
-      if (node.type === 'linkReference') {
-        const name = node.identifier.replace(/`/g, '').toLowerCase()
-        const quoted = BACKTICK + name + BACKTICK
+      if (node.type === 'linkReference' && modules[node.identifier]) {
+        bookmarks[node.identifier] = modules[node.identifier]
 
-        if (modules[name]) {
-          bookmarks[quoted] = modules[name]
-        }
-
-        if (bookmarks[quoted]) {
-          node.identifier = quoted
-          node.children = [b('inlineCode', name)]
-        }
+        node.referenceType = 'full'
+        node.label = node.identifier
+        node.children = [b('inlineCode', node.identifier)]
       }
 
       if (bookmarks[node.identifier]) {
