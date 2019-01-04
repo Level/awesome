@@ -150,8 +150,6 @@ See [`CONTRIBUTING.md`](https://github.com/Level/community/blob/master/CONTRIBUT
 
 [MIT](LICENSE.md) © 2017-present [Contributors](CONTRIBUTORS.md).
 
-Level is licensed under the MIT license. All rights not explicitly granted in the MIT license are reserved. See the included `LICENSE.md` file for more details.
-
 [@adorsys/encrypt-down]: https://github.com/adorsys/encrypt-down
 
 [abstract-leveldown]: https://github.com/level/abstract-leveldown
