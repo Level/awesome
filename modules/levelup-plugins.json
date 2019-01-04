@@ -10,7 +10,7 @@
     },
     "cluster-levelup": {
       "github": "chiguireitor/cluster-levelup",
-      "description": "Wrap any [`levelup`] instance for [`cluster`](https://nodejs.org/api/cluster.html) usage among multiple processes."
+      "description": "Wrap any [`levelup`][levelup] instance for [`cluster`](https://nodejs.org/api/cluster.html) usage among multiple processes."
     }
   }
 }
