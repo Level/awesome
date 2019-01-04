@@ -60,7 +60,7 @@ function moduleName (identifier) {
 
   return b('strong', [
     b('linkReference', { identifier, referenceType: 'shortcut' }, [
-      [b('inlineCode', identifier)]
+      b('inlineCode', identifier)
     ])
   ])
 }
