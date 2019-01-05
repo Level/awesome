@@ -140,11 +140,11 @@ Name | Description
 
 Module and resource authors are welcome and encouraged to add an entry for their work via a pull request. To add a module, edit `modules/*.json` and run `npm run awesome` to update `README.md`.
 
-Level is an **OPEN Open Source Project**. This means that:
+[`Level/awesome`](https://github.com/Level/awesome) is an **OPEN Open Source Project**. This means that:
 
 > Individuals making significant and valuable contributions are given commit-access to the project to contribute as they see fit. This project is more like an open wiki than a standard guarded open source project.
 
-See [`CONTRIBUTING.md`](https://github.com/Level/community/blob/master/CONTRIBUTING.md) for more details.
+See the [Contribution Guide](https://github.com/Level/community/blob/master/CONTRIBUTING.md) for more details.
 
 ## License
 

@@ -1,8 +1,8 @@
 {
   "name": "level-awesome",
+  "version": "0.0.1",
   "description": "Tooling to update the README for level/awesome",
   "private": true,
-  "version": "0.0.1",
   "license": "MIT",
   "scripts": {
     "test": "standard",
@@ -39,11 +39,11 @@
     "url": "https://github.com/Level/awesome.git"
   },
   "homepage": "https://github.com/Level/awesome",
-  "engines": {
-    "node": ">=8"
-  },
   "keywords": [
     "awesome",
     "level"
-  ]
+  ],
+  "engines": {
+    "node": ">=8"
+  }
 }
