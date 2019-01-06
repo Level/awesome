@@ -16,6 +16,7 @@
 -   [Utilities](#utilities)
 -   [Resources](#resources)
 -   [Contributing](#contributing)
+-   [Donate](#donate)
 -   [License](#license)
 
 </details>
