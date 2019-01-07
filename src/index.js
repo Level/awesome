@@ -22,7 +22,7 @@ const modules = {}
 
 remark()
   .use(generator, { sections, modules })
-  .use(toc, { tight: true })
+  .use(toc, { maxDepth: 2, tight: true })
   .use(collapse, {
     test: 'Table of Contents',
     summary: () => 'Click to expand'
