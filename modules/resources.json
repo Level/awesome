@@ -11,9 +11,7 @@
     },
     "level-community": {
       "github": "Level/community",
-      "description": [
-        "A place for general discussion, cross-repo efforts and common information related to projects in the [Level][level-org] community."
-      ],
+      "description": "General discussion, cross-repo efforts and common information for projects in the community",
       "copyrightYear": 2012,
       "author": null
     },

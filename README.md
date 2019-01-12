@@ -143,7 +143,7 @@ Name | Dependencies | Description
 Name | Description
 :--- | :----------
 **[`leveldb.org`][leveldb.org]** | Website for LevelDB
-**[`level-community`][level-community]** | A place for general discussion, cross-repo efforts and common information related to projects in the [Level][level-org] community.
+**[`level-community`][level-community]** | General discussion, cross-repo efforts and common information for projects in the community
 **[`level-awesome`][level-awesome]** | An open list of awesome [Level][level-org] libraries and resources.
 
 ## Contributing
