@@ -7,21 +7,27 @@
   "compatibility": ["abstract-leveldown"],
   "modules": {
     "encoding-down": {
-      "github": "level/encoding-down",
-      "description": "Provides key/value encoding."
+      "github": "Level/encoding-down",
+      "description": "Provides key/value encoding.",
+      "copyrightYear": 2012,
+      "author": null
     },
     "@adorsys/encrypt-down": {
       "github": "adorsys/encrypt-down",
       "description": "Provides encryption for values."
     },
     "deferred-leveldown": {
-      "github": "level/deferred-leveldown",
-      "description": "Handles delayed-open. Built into [levelup]."
+      "github": "Level/deferred-leveldown",
+      "description": "Handles delayed-open. Built into [levelup].",
+      "copyrightYear": 2013,
+      "author": "Rod Vagg"
     },
     "subleveldown": {
       "github": "mafintosh/subleveldown",
       "compatibility": ["abstract-leveldown", "levelup"],
-      "description": "Sublevels implemented using leveldowns."
+      "description": "Sublevels implemented using leveldowns.",
+      "copyrightYear": 2014,
+      "author": "[Mathias Buus](https://github.com/mafintosh)"
     },
     "cachedown": {
       "github": "mvayngrib/cachedown",

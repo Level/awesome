@@ -11,6 +11,15 @@
     "cluster-levelup": {
       "github": "chiguireitor/cluster-levelup",
       "description": "Wrap any [`levelup`][levelup] instance for [`cluster`](https://nodejs.org/api/cluster.html) usage among multiple processes."
+    },
+    "level-ttl": {
+      "github": "Level/level-ttl",
+      "description": [
+        "Add a `ttl` (time-to-live) option to [levelup] for `put()` and `batch()`.",
+        "Note: suffers from race issues."
+      ],
+      "copyrightYear": 2013,
+      "author": "Rod Vagg"
     }
   }
 }

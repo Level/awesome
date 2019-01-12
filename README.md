@@ -1,6 +1,6 @@
 # Awesome Level ![level badge][level-badge]
 
-> A curated list of amazingly awesome **[Level][level-org]** modules and resources. [Add yours!](#contributing)
+> An open list of awesome **[Level][level-org]** modules and resources. [Add yours!](#contributing)
 
 ## Table of Contents
 
@@ -133,10 +133,6 @@ Name | Dependencies | Description
 
 ## Resources
 
-Name | Description
-:--- | :----------
-**[leveldb.org]** | Website for LevelDB
-
 ## Contributing
 
 Module and resource authors are welcome and encouraged to add an entry for their work via a pull request. To add a module, edit `modules/*.json` and run `npm run awesome` to update `README.md`.
@@ -232,8 +228,6 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [level-rocksdb]: https://github.com/level/level-rocksdb
 
 [level-test]: https://github.com/level/level-test
-
-[leveldb.org]: http://leveldb.org
 
 [leveldown]: https://github.com/level/leveldown
 

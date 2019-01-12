@@ -5,24 +5,34 @@
   "descriptor": "type",
   "modules": {
     "leveldown": {
-      "github": "level/leveldown",
-      "type": "[LevelDB](https://github.com/google/leveldb)"
+      "github": "Level/leveldown",
+      "type": "[LevelDB](https://github.com/google/leveldb)",
+      "copyrightYear": 2012,
+      "author": "Rod Vagg"
     },
     "memdown": {
-      "github": "level/memdown",
-      "type": "[In-memory RBTree](https://www.npmjs.com/package/functional-red-black-tree)"
+      "github": "Level/memdown",
+      "type": "[In-memory RBTree](https://www.npmjs.com/package/functional-red-black-tree)",
+      "copyrightYear": 2013,
+      "author": "Rod Vagg"
     },
     "level-js": {
-      "github": "level/level.js",
-      "type": "[IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB)"
+      "github": "Level/level.js",
+      "type": "[IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB)",
+      "copyrightYear": 2012,
+      "author": "[Max Ogden](https://github.com/maxogden)"
     },
     "rocksdb": {
-      "github": "level/rocksdb",
-      "type": "[RocksDB](https://github.com/facebook/rocksdb/)"
+      "github": "Level/rocksdb",
+      "type": "[RocksDB](https://github.com/facebook/rocksdb/)",
+      "copyrightYear": 2012,
+      "author": "Rod Vagg"
     },
     "leveldown-hyper": {
-      "github": "level/leveldown-hyper",
-      "type": "[HyperLevelDB](https://github.com/rescrv/HyperLevelDB)"
+      "github": "Level/leveldown-hyper",
+      "type": "[HyperLevelDB](https://github.com/rescrv/HyperLevelDB)",
+      "copyrightYear": 2012,
+      "author": null
     },
     "medeadown": {
       "github": "kesla/medeadown",
