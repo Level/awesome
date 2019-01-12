@@ -46,10 +46,7 @@
     },
     "level-lazy-open": {
       "github": "Level/lazy-open",
-      "description": [
-        "Lazily open a leveldown compatible backend.",
-        "Superseded by [deferred-leveldown]."
-      ],
+      "description": "Lazily open a leveldown compatible backend.",
       "copyrightYear": 2012,
       "author": null
     }
