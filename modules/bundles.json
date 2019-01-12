@@ -9,23 +9,40 @@
   }],
   "modules": {
     "level": {
-      "github": "level/level",
+      "github": "Level/level",
       "description": [
         "Bundle for [leveldown].",
         "Main entry point for beginners."
-      ]
+      ],
+      "copyrightYear": 2013,
+      "author": "Rod Vagg"
     },
     "level-mem": {
-      "github": "level/level-mem",
-      "description": "Bundle for [memdown]."
+      "github": "Level/level-mem",
+      "description": "Bundle for [memdown].",
+      "copyrightYear": 2012,
+      "author": null
     },
     "level-rocksdb": {
-      "github": "level/level-rocksdb",
-      "description": "Bundle for [rocksdb]."
+      "github": "Level/level-rocksdb",
+      "description": "Bundle for [rocksdb].",
+      "copyrightYear": 2013,
+      "author": null
     },
     "level-browserify": {
-      "github": "level/level-browserify",
-      "description": "Bundle for [level-js] and [leveldown]."
+      "github": "Level/level-browserify",
+      "description": [
+        "Bundle for [level-js] and [leveldown].",
+        "Will soon be superseded by the [level] bundle."
+      ],
+      "copyrightYear": 2012,
+      "author": null
+    },
+    "level-hyper": {
+      "github": "Level/level-hyper",
+      "description": "Bundle for [leveldown-hyper].",
+      "copyrightYear": 2012,
+      "author": null
     }
   }
 }

@@ -1,0 +1,25 @@
+{
+  "title": "Resources",
+  "dependencies": false,
+  "modules": {
+    "leveldb.org": {
+      "github": "Level/leveldb.org",
+      "url": "http://leveldb.org",
+      "description": "Website for LevelDB",
+      "copyrightYear": 2014,
+      "author": "Paolo Fragomeni"
+    },
+    "level-community": {
+      "github": "Level/community",
+      "description": "General discussion, cross-repo efforts and common information for projects in the community",
+      "copyrightYear": 2012,
+      "author": null
+    },
+    "level-awesome": {
+      "github": "Level/awesome",
+      "description": "An open list of awesome [Level][level-org] libraries and resources.",
+      "copyrightYear": 2017,
+      "author": null
+    }
+  }
+}
