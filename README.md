@@ -129,14 +129,14 @@ Name | Dependencies | Description
 
 Name | Dependencies | Description
 :--- | :----------- | :----------
-**[`level-iterator-stream`][level-iterator-stream]** | [![dependencies](https://img.shields.io/david/Level/iterator-stream.svg?label=%E2%99%A5)](https://david-dm.org/Level/iterator-stream) | Turn an [`abstract-leveldown`][abstract-leveldown] iterator into a readable stream. Included in [`levelup`][levelup].
+**[`level-iterator-stream`][level-iterator-stream]** | [![dependencies](https://img.shields.io/david/Level/iterator-stream.svg?label=%E2%99%A5)](https://david-dm.org/Level/iterator-stream) | Turn an [`abstract-leveldown`][abstract-leveldown] iterator into a readable stream.<br>Included in [`levelup`][levelup].
 **[`level-concat-iterator`][level-concat-iterator]** | [![dependencies](https://img.shields.io/david/Level/concat-iterator.svg?label=%E2%99%A5)](https://david-dm.org/Level/concat-iterator) | Concatenate items from an iterator into an array.
 **[`level-codec`][level-codec]** | [![dependencies](https://img.shields.io/david/Level/codec.svg?label=%E2%99%A5)](https://david-dm.org/Level/codec) | Encode keys, values and ltgte options. Used in [`encoding-down`][encoding-down].
 **[`level-errors`][level-errors]** | [![dependencies](https://img.shields.io/david/Level/errors.svg?label=%E2%99%A5)](https://david-dm.org/Level/errors) | Error types for [`levelup`][levelup].
 **[`level-test`][level-test]** | [![dependencies](https://img.shields.io/david/Level/level-test.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-test) | Easily run your `level-*` tests against [all stores](#stores).
 **[`lev2`][lev2]** | [![dependencies](https://img.shields.io/david/maxlath/lev2.svg?label=%E2%99%A5)](https://david-dm.org/maxlath/lev2) | A complete REPL & CLI for managing LevelDB instances
 **[`level-ws`][level-ws]** | [![dependencies](https://img.shields.io/david/Level/level-ws.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-ws) | A basic WriteStream implementation for [`levelup`][levelup].
-**[`level-lazy-open`][level-lazy-open]** | [![dependencies](https://img.shields.io/david/Level/lazy-open.svg?label=%E2%99%A5)](https://david-dm.org/Level/lazy-open) | Lazily open a leveldown compatible backend. Superseded by [`deferred-leveldown`][deferred-leveldown].
+**[`level-lazy-open`][level-lazy-open]** | [![dependencies](https://img.shields.io/david/Level/lazy-open.svg?label=%E2%99%A5)](https://david-dm.org/Level/lazy-open) | Lazily open a leveldown compatible backend.<br>Superseded by [`deferred-leveldown`][deferred-leveldown].
 
 ## Resources
 

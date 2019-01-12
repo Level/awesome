@@ -3,7 +3,10 @@
   "modules": {
     "level-iterator-stream": {
       "github": "Level/iterator-stream",
-      "description": "Turn an [abstract-leveldown] iterator into a readable stream. Included in [levelup].",
+      "description": [
+        "Turn an [abstract-leveldown] iterator into a readable stream.",
+        "Included in [levelup]."
+      ],
       "copyrightYear": 2012,
       "author": null
     },
@@ -43,7 +46,10 @@
     },
     "level-lazy-open": {
       "github": "Level/lazy-open",
-      "description": "Lazily open a leveldown compatible backend. Superseded by [deferred-leveldown].",
+      "description": [
+        "Lazily open a leveldown compatible backend.",
+        "Superseded by [deferred-leveldown]."
+      ],
       "copyrightYear": 2012,
       "author": null
     }
