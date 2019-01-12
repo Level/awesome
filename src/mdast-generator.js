@@ -17,52 +17,67 @@ module.exports = function (section, done) {
     nodes.push(b('paragraph', parse(join(section.description, ' '))))
   }
 
+  const columns = [{ name: 'Name', fn: generateName }]
+
+  if (section.compatibility) {
+    columns.push({ name: 'Compatibility', fn: generateCompatibilityBadge })
+  }
+
+  if (section.dependencies !== false) {
+    columns.push({ name: 'Dependencies', fn: generateDependenciesBadge })
+  }
+
+  columns.push({ name: sentence(descriptor), fn: generateDescription })
+
   mapLimit(Object.entries(section.modules), 4, generateRow, (err, rows) => {
     if (err) return done(err)
 
-    const header = section.compatibility
-      ? ['Name', 'Compatibility', 'Dependencies', sentence(descriptor)]
-      : ['Name', 'Dependencies', sentence(descriptor)]
-
-    nodes.push(b('table', { align: new Array(header.length).fill('left') }, [
-      buildRow(header.map(column => b('text', column))),
-      ...rows
+    nodes.push(b('table', { align: new Array(columns.length).fill('left') }, [
+      buildRow(columns.map(column => b('text', column.name))),
+      ...rows.map(buildRow)
     ]))
 
     done(null, nodes)
   })
 
   function generateRow ([id, module], done) {
-    const name = moduleName(id)
-    const dm = david(module.github, { label: '♥' })
-    const status = img(dm.image, dm.alt, dm.link)
-    const description = parse(join(module[descriptor], '<br>'))
-
-    if (section.compatibility) {
-      const targets = module.compatibility || section.compatibility
-
-      mapLimit(targets, 4, compat.bind(null, id), (err, badges) => {
-        if (err) return done(err)
-
-        const nodes = badges.map(({ image, alt, link }) => img(image, alt, link))
-        const compat = intersperse(nodes, { type: 'html', value: '<br>' })
-
-        done(null, buildRow([name, compat, status, description]))
-      })
-    } else {
-      done(null, buildRow([name, status, description]))
-    }
+    mapLimit(columns, Infinity, ({ fn }, next) => fn(id, module, next), done)
   }
-}
 
-function moduleName (identifier) {
-  identifier = identifier.toLowerCase()
-
-  return b('strong', [
-    b('linkReference', { identifier, referenceType: 'shortcut' }, [
-      b('inlineCode', identifier)
+  function generateName (id, module, done) {
+    const identifier = id.toLowerCase()
+    const name = b('strong', [
+      b('linkReference', { identifier, referenceType: 'shortcut' }, [
+        b('inlineCode', identifier)
+      ])
     ])
-  ])
+
+    done(null, name)
+  }
+
+  function generateCompatibilityBadge (id, module, done) {
+    const targets = module.compatibility || section.compatibility
+
+    mapLimit(targets, 4, compat.bind(null, id), (err, badges) => {
+      if (err) return done(err)
+
+      const nodes = badges.map(({ image, alt, link }) => img(image, alt, link))
+      const badge = intersperse(nodes, { type: 'html', value: '<br>' })
+
+      done(null, badge)
+    })
+  }
+
+  function generateDependenciesBadge (id, module, done) {
+    const dm = david(module.github, { label: '♥' })
+    const badge = img(dm.image, dm.alt, dm.link)
+
+    done(null, badge)
+  }
+
+  function generateDescription (id, module, done) {
+    done(null, parse(join(module[descriptor], '<br>')))
+  }
 }
 
 function join (parts, glue) {

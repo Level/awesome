@@ -1,5 +1,6 @@
 {
   "title": "Resources",
+  "dependencies": false,
   "modules": {
     "leveldb.org": {
       "github": "Level/leveldb.org",
