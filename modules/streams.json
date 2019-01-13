@@ -1,0 +1,48 @@
+{
+  "title": "Streams",
+  "description": "[Node.js stream](https://nodejs.org/api/stream.html) or [`pull-stream`](https://github.com/pull-stream/pull-stream) implementations for reading and writing data from/to [levelup].",
+  "modules": {
+    "level-ws": {
+      "github": "Level/level-ws",
+      "description": "General-case, streams3-compliant writable stream for [levelup].",
+      "copyrightYear": 2012,
+      "author": null
+    },
+    "level-batch-stream": {
+      "github": "jcrugzz/level-batch-stream",
+      "description": "Streams2-compliant writable stream for [levelup]."
+    },
+    "level-writestream": {
+      "github": "pgte/level-writestream",
+      "description": "Streams2-compliant writable stream for [levelup]."
+    },
+    "level-write-stream": {
+      "github": "Raynos/level-write-stream",
+      "description": "Streams1-compliant writable stream for [levelup] or [abstract-leveldown]."
+    },
+    "level-delete-stream": {
+      "github": "juliangruber/level-delete-stream",
+      "description": "A streams1 deleteStream for [levelup]."
+    },
+    "pull-level": {
+      "github": "dominictarr/pull-level",
+      "description": "[`pull-stream`](https://github.com/pull-stream/pull-stream) interface to [levelup] with read streams, write streams and realtime (tail/live) reads."
+    },
+    "level-live-stream": {
+      "github": "dominictarr/level-live-stream",
+      "description": "Like `db.createReadStream()` except it's live / tailable. i.e. instead of ending, it will stay open and stream changes to the database as they are inserted."
+    },
+    "level-livefeed": {
+      "github": "Raynos/level-livefeed",
+      "description": "A live query of a range in [levelup]. Similar to [level-live-stream] but with a streams2 interface."
+    },
+    "level-range": {
+      "github": "juliangruber/level-range",
+      "description": "Find all K/V-pairs prefixed by a certain key. Streams1."
+    },
+    "level-cursor": {
+      "github": "kordon/cursor",
+      "description": "A stream \"cursor\" to iterate through a ReadStream / KeyStream / ValueStream."
+    }
+  }
+}

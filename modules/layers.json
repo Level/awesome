@@ -22,13 +22,6 @@
       "copyrightYear": 2013,
       "author": "Rod Vagg"
     },
-    "subleveldown": {
-      "github": "mafintosh/subleveldown",
-      "compatibility": ["abstract-leveldown", "levelup"],
-      "description": "Sublevels implemented using leveldowns.",
-      "copyrightYear": 2014,
-      "author": "[Mathias Buus](https://github.com/mafintosh)"
-    },
     "cachedown": {
       "github": "mvayngrib/cachedown",
       "description": "LRU cache."

@@ -10,12 +10,13 @@
 -   [Core](#core)
 -   [Stores](#stores)
 -   [Layers](#layers)
+-   [Sublevels](#sublevels)
 -   [Encodings](#encodings)
 -   [Databases](#databases)
 -   [Replication](#replication)
 -   [Plugins for levelup](#plugins-for-levelup)
 -   [Utilities](#utilities)
--   [Writable Streams](#writable-streams)
+-   [Streams](#streams)
 -   [Tools](#tools)
 -   [Resources](#resources)
 -   [Contributing](#contributing)
@@ -79,8 +80,21 @@ Name | Compatibility | Dependencies | Description
 **[`encoding-down`][encoding-down]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/Level/encoding-down.svg?label=%E2%99%A5)](https://david-dm.org/Level/encoding-down) | Provides key/value encoding.
 **[`@adorsys/encrypt-down`][@adorsys/encrypt-down]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/adorsys/encrypt-down.svg?label=%E2%99%A5)](https://david-dm.org/adorsys/encrypt-down) | Provides encryption for values.
 **[`deferred-leveldown`][deferred-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/Level/deferred-leveldown.svg?label=%E2%99%A5)](https://david-dm.org/Level/deferred-leveldown) | Handles delayed-open. Built into [`levelup`][levelup].
-**[`subleveldown`][subleveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-orange.svg)<br>![levelup](https://img.shields.io/badge/levelup-3.0-orange.svg) | [![dependencies](https://img.shields.io/david/mafintosh/subleveldown.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/subleveldown) | Sublevels implemented using leveldowns.
 **[`cachedown`][cachedown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.4-red.svg) | [![dependencies](https://img.shields.io/david/mvayngrib/cachedown.svg?label=%E2%99%A5)](https://david-dm.org/mvayngrib/cachedown) | LRU cache.
+
+## Sublevels
+
+Modules related to splitting a database into sections a.k.a. sublevels.
+
+Name | Dependencies | Description
+:--- | :----------- | :----------
+**[`subleveldown`][subleveldown]** | [![dependencies](https://img.shields.io/david/mafintosh/subleveldown.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/subleveldown) | Sublevels implemented using leveldowns.
+**[`bytespace`][bytespace]** | [![dependencies](https://img.shields.io/david/deanlandolt/bytespace.svg?label=%E2%99%A5)](https://david-dm.org/deanlandolt/bytespace) | Keypath subspaces prefixed with [`bytewise`][bytewise] tuples. Similar to [`level-sublevel`][level-sublevel].<br>NB. [`bytewise`][bytewise] - and thus [`bytespace`][bytespace] - can be slow. Consider using [`subleveldown`][subleveldown] paired with the [`charwise`][charwise] encoding instead.
+**[`level-sublevel`][level-sublevel]** | [![dependencies](https://img.shields.io/david/dominictarr/level-sublevel.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-sublevel) | Adds the ability to create subsections with the same API as [`levelup`][levelup], but only write/read to a prefixed section, or bucket, of the key-space. Each section also has [level-hooks] installed.<br>NB. No longer maintained. We recommend [`subleveldown`][subleveldown] instead.
+**[`level-sublevel-stream`][level-sublevel-stream]** | [![dependencies](https://img.shields.io/david/juliangruber/level-sublevel-stream.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-sublevel-stream) | Find [`level-sublevel`][level-sublevel] sublevels, not requiring them to be in memory already.
+**[`level-subtree`][level-subtree]** | [![dependencies](https://img.shields.io/david/hij1nx/level-subtree.svg?label=%E2%99%A5)](https://david-dm.org/hij1nx/level-subtree) | Generate a tree from [`level-sublevel`][level-sublevel] sublevels, useful when there is no manifest.
+**[`level-superlevel`][level-superlevel]** | [![dependencies](https://img.shields.io/david/randymized/level-superlevel.svg?label=%E2%99%A5)](https://david-dm.org/randymized/level-superlevel) | Superlevel adds a "super" level that allows accessing the entire database, discovering [`level-sublevel`][level-sublevel] sublevels and browsing the database without knowledge of the sublevel structure.
+**[`level-subkey`][level-subkey]** | [![dependencies](https://img.shields.io/david/snowyu/level-subkey.svg?label=%E2%99%A5)](https://david-dm.org/snowyu/level-subkey) | Use path-like keys to separate sections of [`levelup`][levelup], with hooks. Adapted from [`level-sublevel`][level-sublevel].
 
 ## Encodings
 
@@ -131,13 +145,20 @@ Name | Dependencies | Description
 
 ## Plugins for levelup
 
-Modules that add functionality to [`levelup`][levelup].
+Modules that add functionality to [`levelup`][levelup]. They qualify as such if they monkey-patch a [`levelup`][levelup] instance or return an API matching [`levelup`][levelup].
 
 Name | Dependencies | Description
 :--- | :----------- | :----------
-**[`levelup-async-iterator`][levelup-async-iterator]** | [![dependencies](https://img.shields.io/david/MeirionHughes/levelup-async-iterator.svg?label=%E2%99%A5)](https://david-dm.org/MeirionHughes/levelup-async-iterator) | Expose `iterator()` with [`Symbol.asyncIterator`](https://github.com/tc39/proposal-async-iteration).
+**[`levelup-async-iterator`][levelup-async-iterator]** | [![dependencies](https://img.shields.io/david/MeirionHughes/levelup-async-iterator.svg?label=%E2%99%A5)](https://david-dm.org/MeirionHughes/levelup-async-iterator) | Expose `iterator()` with [`Symbol.asyncIterator`](https://github.com/tc39/proposal-async-iteration).<br>NB. Conflicts with [`iterator()`](https://github.com/Level/levelup/#iterator) added in `levelup@3.1.0`.
 **[`cluster-levelup`][cluster-levelup]** | [![dependencies](https://img.shields.io/david/chiguireitor/cluster-levelup.svg?label=%E2%99%A5)](https://david-dm.org/chiguireitor/cluster-levelup) | Wrap any [`levelup`][levelup] instance for [`cluster`](https://nodejs.org/api/cluster.html) usage among multiple processes.
-**[`level-ttl`][level-ttl]** | [![dependencies](https://img.shields.io/david/Level/level-ttl.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-ttl) | Add a `ttl` (time-to-live) option to [`levelup`][levelup] for `put()` and `batch()`.<br>Note: suffers from race issues.
+**[`level-ttl`][level-ttl]** | [![dependencies](https://img.shields.io/david/Level/level-ttl.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-ttl) | Add a `ttl` (time-to-live) option to [`levelup`][levelup] for `put()` and `batch()`.<br>NB. Suffers from race issues.
+**[`level-atomics`][level-atomics]** | [![dependencies](https://img.shields.io/david/IndigoUnited/node-level-atomics.svg?label=%E2%99%A5)](https://david-dm.org/IndigoUnited/node-level-atomics) | Add (parallel) atomic operations like `insert`, `replace`, `increment` and `decrement`.
+**[`level-autotable`][level-autotable]** | [![dependencies](https://img.shields.io/david/santoshrajan/levelup-autotable.svg?label=%E2%99%A5)](https://david-dm.org/santoshrajan/levelup-autotable) | Auto incrementing keys with "fields" and "records".
+**[`level-cache`][level-cache]** | [![dependencies](https://img.shields.io/david/Raynos/level-cache.svg?label=%E2%99%A5)](https://david-dm.org/Raynos/level-cache) | A caching module you can place in front of a [`levelup`][levelup] database. It will cache a subset of the database in an in-memory LRU cache based on configuration. It has an optional synchronous API which will return from the cache only.
+**[`level-capped`][level-capped]** | [![dependencies](https://img.shields.io/david/juliangruber/level-capped.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-capped) | Capped collections.
+**[`level-set`][level-set]** | [![dependencies](https://img.shields.io/david/maiah/level-set.svg?label=%E2%99%A5)](https://david-dm.org/maiah/level-set) | Add a `set` method for saving objects in a tree-like structure.
+**[`level-push`][level-push]** | [![dependencies](https://img.shields.io/david/maiah/level-push.svg?label=%E2%99%A5)](https://david-dm.org/maiah/level-push) | Add a `push` method for saving objects using [`level-set`][level-set] with auto-generated UUID.
+**[`level-scuttlebutt`][level-scuttlebutt]** | [![dependencies](https://img.shields.io/david/dominictarr/level-scuttlebutt.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-scuttlebutt) | Persist and query scuttlebutt documents (requires [`level-sublevel`][level-sublevel]).
 
 ## Utilities
 
@@ -151,16 +172,22 @@ Name | Dependencies | Description
 **[`level-lazy-open`][level-lazy-open]** | [![dependencies](https://img.shields.io/david/Level/lazy-open.svg?label=%E2%99%A5)](https://david-dm.org/Level/lazy-open) | Lazily open a leveldown compatible backend.
 **[`level-benchmarks`][level-benchmarks]** | [![dependencies](https://img.shields.io/david/kesla/level-benchmarks.svg?label=%E2%99%A5)](https://david-dm.org/kesla/level-benchmarks) | Run benchmarks against levelup-compatible engines
 
-## Writable Streams
+## Streams
 
-[Writable stream](https://nodejs.org/api/stream.html#stream_writable_streams) implementations for writing data to [`levelup`][levelup] or [`abstract-leveldown`][abstract-leveldown] stores.
+[Node.js stream](https://nodejs.org/api/stream.html) or [`pull-stream`](https://github.com/pull-stream/pull-stream) implementations for reading and writing data from/to [`levelup`][levelup].
 
 Name | Dependencies | Description
 :--- | :----------- | :----------
-**[`level-ws`][level-ws]** | [![dependencies](https://img.shields.io/david/Level/level-ws.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-ws) | General-case, streams3-compliant write stream for [`levelup`][levelup].
-**[`level-batch-stream`][level-batch-stream]** | [![dependencies](https://img.shields.io/david/jcrugzz/level-batch-stream.svg?label=%E2%99%A5)](https://david-dm.org/jcrugzz/level-batch-stream) | Streams2-compliant write stream for [`levelup`][levelup].
-**[`level-writestream`][level-writestream]** | [![dependencies](https://img.shields.io/david/pgte/level-writestream.svg?label=%E2%99%A5)](https://david-dm.org/pgte/level-writestream) | Streams2-compliant write stream for [`levelup`][levelup].
-**[`level-write-stream`][level-write-stream]** | [![dependencies](https://img.shields.io/david/Raynos/level-write-stream.svg?label=%E2%99%A5)](https://david-dm.org/Raynos/level-write-stream) | Streams1-compliant write stream for [`levelup`][levelup] or [`abstract-leveldown`][abstract-leveldown].
+**[`level-ws`][level-ws]** | [![dependencies](https://img.shields.io/david/Level/level-ws.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-ws) | General-case, streams3-compliant writable stream for [`levelup`][levelup].
+**[`level-batch-stream`][level-batch-stream]** | [![dependencies](https://img.shields.io/david/jcrugzz/level-batch-stream.svg?label=%E2%99%A5)](https://david-dm.org/jcrugzz/level-batch-stream) | Streams2-compliant writable stream for [`levelup`][levelup].
+**[`level-writestream`][level-writestream]** | [![dependencies](https://img.shields.io/david/pgte/level-writestream.svg?label=%E2%99%A5)](https://david-dm.org/pgte/level-writestream) | Streams2-compliant writable stream for [`levelup`][levelup].
+**[`level-write-stream`][level-write-stream]** | [![dependencies](https://img.shields.io/david/Raynos/level-write-stream.svg?label=%E2%99%A5)](https://david-dm.org/Raynos/level-write-stream) | Streams1-compliant writable stream for [`levelup`][levelup] or [`abstract-leveldown`][abstract-leveldown].
+**[`level-delete-stream`][level-delete-stream]** | [![dependencies](https://img.shields.io/david/juliangruber/level-delete-stream.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-delete-stream) | A streams1 deleteStream for [`levelup`][levelup].
+**[`pull-level`][pull-level]** | [![dependencies](https://img.shields.io/david/dominictarr/pull-level.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/pull-level) | [`pull-stream`](https://github.com/pull-stream/pull-stream) interface to [`levelup`][levelup] with read streams, write streams and realtime (tail/live) reads.
+**[`level-live-stream`][level-live-stream]** | [![dependencies](https://img.shields.io/david/dominictarr/level-live-stream.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-live-stream) | Like `db.createReadStream()` except it's live / tailable. i.e. instead of ending, it will stay open and stream changes to the database as they are inserted.
+**[`level-livefeed`][level-livefeed]** | [![dependencies](https://img.shields.io/david/Raynos/level-livefeed.svg?label=%E2%99%A5)](https://david-dm.org/Raynos/level-livefeed) | A live query of a range in [`levelup`][levelup]. Similar to [`level-live-stream`][level-live-stream] but with a streams2 interface.
+**[`level-range`][level-range]** | [![dependencies](https://img.shields.io/david/juliangruber/level-range.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-range) | Find all K/V-pairs prefixed by a certain key. Streams1.
+**[`level-cursor`][level-cursor]** | [![dependencies](https://img.shields.io/david/kordon/cursor.svg?label=%E2%99%A5)](https://david-dm.org/kordon/cursor) | A stream "cursor" to iterate through a ReadStream / KeyStream / ValueStream.
 
 ## Tools
 
@@ -216,6 +243,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [azureleveldown]: https://github.com/richorama/azureleveldown
 
+[bytespace]: https://github.com/deanlandolt/bytespace
+
 [bytewise]: https://github.com/deanlandolt/bytewise
 
 [cachedown]: https://github.com/mvayngrib/cachedown
@@ -254,6 +283,10 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-2pc]: https://github.com/hij1nx/level-2pc
 
+[level-atomics]: https://github.com/IndigoUnited/node-level-atomics
+
+[level-autotable]: https://github.com/santoshrajan/levelup-autotable
+
 [level-awesome]: https://github.com/Level/awesome
 
 [level-badge]: http://leveldb.org/img/badge.svg
@@ -264,6 +297,10 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-browserify]: https://github.com/Level/level-browserify
 
+[level-cache]: https://github.com/Raynos/level-cache
+
+[level-capped]: https://github.com/juliangruber/level-capped
+
 [level-codec]: https://github.com/Level/codec
 
 [level-community]: https://github.com/Level/community
@@ -272,9 +309,15 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-couch-sync]: https://github.com/dominictarr/level-couch-sync
 
+[level-cursor]: https://github.com/kordon/cursor
+
+[level-delete-stream]: https://github.com/juliangruber/level-delete-stream
+
 [level-errors]: https://github.com/Level/errors
 
 [level-fact-base]: https://github.com/smallhelm/level-fact-base
+
+[level-hooks]: https://github.com/dominictarr/level-hooks
 
 [level-hyper]: https://github.com/Level/level-hyper
 
@@ -283,6 +326,10 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [level-js]: https://github.com/Level/level.js
 
 [level-lazy-open]: https://github.com/Level/lazy-open
+
+[level-live-stream]: https://github.com/dominictarr/level-live-stream
+
+[level-livefeed]: https://github.com/Raynos/level-livefeed
 
 [level-master]: https://github.com/dominictarr/level-master
 
@@ -294,11 +341,29 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-packager]: https://github.com/Level/packager
 
+[level-push]: https://github.com/maiah/level-push
+
+[level-range]: https://github.com/juliangruber/level-range
+
 [level-replicate]: https://github.com/dominictarr/level-replicate
 
 [level-replicator]: https://github.com/hij1nx/level-replicator
 
 [level-rocksdb]: https://github.com/Level/level-rocksdb
+
+[level-scuttlebutt]: https://github.com/dominictarr/level-scuttlebutt
+
+[level-set]: https://github.com/maiah/level-set
+
+[level-subkey]: https://github.com/snowyu/level-subkey
+
+[level-sublevel]: https://github.com/dominictarr/level-sublevel
+
+[level-sublevel-stream]: https://github.com/juliangruber/level-sublevel-stream
+
+[level-subtree]: https://github.com/hij1nx/level-subtree
+
+[level-superlevel]: https://github.com/randymized/level-superlevel
 
 [level-test]: https://github.com/Level/level-test
 
@@ -351,6 +416,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [pouchdb]: http://pouchdb.com/
 
 [protocol-buffers]: https://github.com/mafintosh/protocol-buffers
+
+[pull-level]: https://github.com/dominictarr/pull-level
 
 [pushdb]: https://github.com/mikeal/pushdb
 

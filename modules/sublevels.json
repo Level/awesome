@@ -1,0 +1,51 @@
+{
+  "title": "Sublevels",
+  "description": "Modules related to splitting a database into sections a.k.a. sublevels.",
+  "modules": {
+    "subleveldown": {
+      "github": "mafintosh/subleveldown",
+      "compatibility": ["abstract-leveldown", "levelup"],
+      "description": "Sublevels implemented using leveldowns.",
+      "copyrightYear": 2014,
+      "author": "[Mathias Buus](https://github.com/mafintosh)"
+    },
+    "bytespace": {
+      "github": "deanlandolt/bytespace",
+      "description": [
+        "Keypath subspaces prefixed with [bytewise] tuples. Similar to [level-sublevel].",
+        "NB. [bytewise] - and thus [bytespace] - can be slow. Consider using [subleveldown] paired with the [charwise] encoding instead."
+      ]
+    },
+    "level-sublevel": {
+      "github": "dominictarr/level-sublevel",
+      "description": [
+        "Adds the ability to create subsections with the same API as [levelup], but only write/read to a prefixed section, or bucket, of the key-space. Each section also has [level-hooks] installed.",
+        "NB. No longer maintained. We recommend [subleveldown] instead."
+      ]
+    },
+    "level-sublevel-stream": {
+      "github": "juliangruber/level-sublevel-stream",
+      "description": [
+        "Find [level-sublevel] sublevels, not requiring them to be in memory already."
+      ]
+    },
+    "level-subtree": {
+      "github": "hij1nx/level-subtree",
+      "description": [
+        "Generate a tree from [level-sublevel] sublevels, useful when there is no manifest."
+      ]
+    },
+    "level-superlevel": {
+      "github": "randymized/level-superlevel",
+      "description": [
+        "Superlevel adds a \"super\" level that allows accessing the entire database, discovering [level-sublevel] sublevels and browsing the database without knowledge of the sublevel structure."
+      ]
+    },
+    "level-subkey": {
+      "github": "snowyu/level-subkey",
+      "description": [
+        "Use path-like keys to separate sections of [levelup], with hooks. Adapted from [level-sublevel]."
+      ]
+    }
+  }
+}

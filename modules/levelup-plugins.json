@@ -1,25 +1,56 @@
 {
   "title": "Plugins for levelup",
   "description": [
-    "Modules that add functionality to [levelup]."
+    "Modules that add functionality to [levelup]. They qualify as such if they monkey-patch a [levelup] instance or return an API matching [levelup]."
   ],
   "modules": {
     "levelup-async-iterator": {
       "github": "MeirionHughes/levelup-async-iterator",
-      "description": "Expose `iterator()` with [`Symbol.asyncIterator`](https://github.com/tc39/proposal-async-iteration)."
+      "description": [
+        "Expose `iterator()` with [`Symbol.asyncIterator`](https://github.com/tc39/proposal-async-iteration).",
+        "NB. Conflicts with [`iterator()`](https://github.com/Level/levelup/#iterator) added in `levelup@3.1.0`."
+      ]
     },
     "cluster-levelup": {
       "github": "chiguireitor/cluster-levelup",
-      "description": "Wrap any [`levelup`][levelup] instance for [`cluster`](https://nodejs.org/api/cluster.html) usage among multiple processes."
+      "description": "Wrap any [levelup] instance for [`cluster`](https://nodejs.org/api/cluster.html) usage among multiple processes."
     },
     "level-ttl": {
       "github": "Level/level-ttl",
       "description": [
         "Add a `ttl` (time-to-live) option to [levelup] for `put()` and `batch()`.",
-        "Note: suffers from race issues."
+        "NB. Suffers from race issues."
       ],
       "copyrightYear": 2013,
       "author": "Rod Vagg"
+    },
+    "level-atomics": {
+      "github": "IndigoUnited/node-level-atomics",
+      "description": "Add (parallel) atomic operations like `insert`, `replace`, `increment` and `decrement`."
+    },
+    "level-autotable": {
+      "github": "santoshrajan/levelup-autotable",
+      "description": "Auto incrementing keys with \"fields\" and \"records\"."
+    },
+    "level-cache": {
+      "github": "Raynos/level-cache",
+      "description": "A caching module you can place in front of a [levelup] database. It will cache a subset of the database in an in-memory LRU cache based on configuration. It has an optional synchronous API which will return from the cache only."
+    },
+    "level-capped": {
+      "github": "juliangruber/level-capped",
+      "description": "Capped collections."
+    },
+    "level-set": {
+      "github": "maiah/level-set",
+      "description": "Add a `set` method for saving objects in a tree-like structure."
+    },
+    "level-push": {
+      "github": "maiah/level-push",
+      "description": "Add a `push` method for saving objects using [level-set] with auto-generated UUID."
+    },
+    "level-scuttlebutt": {
+      "github": "dominictarr/level-scuttlebutt",
+      "description": "Persist and query scuttlebutt documents (requires [level-sublevel])."
     }
   }
 }
