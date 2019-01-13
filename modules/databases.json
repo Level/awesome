@@ -107,6 +107,10 @@
       "description": [
         "Store immutable facts and query them with datalog."
       ]
+    },
+    "dulcimer": {
+      "github": "fritzy/dulcimer",
+      "description": "Define JSON models and manage indexes, children, foreign keys and much more."
     }
   }
 }

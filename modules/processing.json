@@ -1,0 +1,78 @@
+{
+  "title": "Processing",
+  "description": "Modules for indexing, alternative forms of querying data, for hooks, MapReduce models and other forms of data processing.",
+  "modules": {
+    "jsonquery": {
+      "github": "eugeneware/jsonquery",
+      "description": "Query [levelup] with a MongoDB-like query API that returns streams."
+    },
+    "jsonquery-engine": {
+      "github": "eugeneware/jsonquery-engine",
+      "description": "A full MongoDB query language implementation with indexes for querying [levelup]."
+    },
+    "level-hooks": {
+      "github": "dominictarr/level-hooks",
+      "description": "Implements a hook mechanism that allows you to intercept `put`, `delete` and `batch` operations. You can then turn those operations into batches. Useful if you want to turn a `put` into an atomic batch for say an automatic map operation.<br><br>NB. Author recommends using [level-sublevel] instead of `level-hooks` directly. Note that [level-sublevel] is not maintained."
+    },
+    "level-indico": {
+      "github": "mariocasciaro/level-indico",
+      "description": "Yet another indexing plugin for [levelup]. By providing only a low-level querying mechanism it gives you the power to build more complicated and optimized queries on top of it.<br><br>NB. Relies on [bytewise] and [level-sublevel], both of which have caveats."
+    },
+    "level-inverted-index": {
+      "github": "dominictarr/level-inverted-index",
+      "description": "Create an inverted index for full-text search."
+    },
+    "map-reduce": {
+      "github": "dominictarr/map-reduce",
+      "description": "A MapReduce implementation on top of [levelup]. Allows you to define a map reduce query that will run on top of your db. The map reduces are incremental, and you can query the results in real-time."
+    },
+    "level-map-merge": {
+      "github": "dominictarr/level-map-merge",
+      "description": "Like [map-reduce] but simpler. Has a batch component that runs periodically, and a real-time component that fills in the gaps. Good for generating inverted indexes."
+    },
+    "level-queryengine": {
+      "github": "eugeneware/level-queryengine",
+      "description": "A generic pluggable query-engine system (that supports indexes) for [levelup]."
+    },
+    "level-trigger": {
+      "github": "dominictarr/level-trigger",
+      "description": "Triggers for [levelup]. Runs an async job when a key changes. All jobs will eventually run, even across restarts!"
+    },
+    "levels": {
+      "github": "eugeneware/levels",
+      "description": "A light-weight full text search engine for [levelup] (Port of TJ's [reds](https://github.com/visionmedia/reds) redis search engine)."
+    },
+    "map-reduce-chained": {
+      "github": "ryanramage/map-reduce-chained",
+      "description": "Extends [map-reduce] and [level-mapped-index] to provide easy to setup chained MapReduce. An example use case is to find the top 10 values after a reduce."
+    },
+    "path-engine": {
+      "github": "eugeneware/path-engine",
+      "description": "Query [levelup] using a JavaScript property path array syntax with indexes."
+    },
+    "subindex": {
+      "github": "eugeneware/subindex",
+      "description": "Generic pluggable indexing system for [levelup]."
+    },
+    "level-sec": {
+      "github": "juliangruber/level-sec",
+      "description": "High-level API for creating secondary indexes."
+    },
+    "level-secondary": {
+      "github": "juliangruber/level-secondary",
+      "description": "Create and query secondary indexes."
+    },
+    "inverted-index": {
+      "github": "kordon/inverted",
+      "description": "Inverted index built upon [levelup]."
+    },
+    "level-index-update": {
+      "github": "binocarlos/level-index-update",
+      "description": "Remove the old indexes in the same batch as the new ones are inserted."
+    },
+    "range-index": {
+      "github": "kordon/range",
+      "description": "Range indexes for [levelup]."
+    }
+  }
+}

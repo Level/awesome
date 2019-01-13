@@ -1,0 +1,42 @@
+{
+  "title": "Legacy",
+  "description": "Modules that are deprecated, archived or superseded. Listed here for the historical record.",
+  "modules": {
+    "level-mapped-index": {
+      "github": "rvagg/node-level-mapped-index",
+      "description": "Indexes for [levelup] built on [map-reduce]. Uses a custom indexing function for each index to parse and record index values for each entry. Archived."
+    },
+    "level-encoding": {
+      "github": "Raynos/level-encoding",
+      "description": "Implements the encoding logic of a [levelup]-like database. This functionality lives on in [level-codec]."
+    },
+    "byteup": {
+      "github": "eugeneware/byteup",
+      "description": "Adds the [bytewise] encoding as a native encoding for [levelup]. This can now be achieved with [encoding-down] and `{ keyEncoding: bytewise }`."
+    },
+    "level-cbatch": {
+      "github": "kesla/level-cbatch",
+      "description": "Provides a chainable API for `db.batch()`. This functionality is now provided by [levelup]."
+    },
+    "memdb": {
+      "github": "juliangruber/memdb",
+      "description": "[levelup] + [memdown]. Superseded by [level-mem]."
+    },
+    "levelup-iterator": {
+      "github": "mirkokiefer/levelup-iterator",
+      "description": "Use [abstract-leveldown] iterators instead of readable streams to traverse the database. Iterators are exposed by [levelup] since `levelup@3.1.0`."
+    },
+    "levelidb": {
+      "github": "Raynos/levelidb",
+      "description": "A [levelup] interface on top of IndexedDB. Superseded by [level-js] and [level]."
+    },
+    "level-multiply": {
+      "github": "rvagg/node-level-multiply",
+      "description": "Make [levelup] `get()`, `put()` and `del()` methods accept multiples keys & values. Archived."
+    },
+    "level-namespace": {
+      "github": "kesla/level-namespace",
+      "description": "Split your db up into multiple namespaces. Deprecated."
+    }
+  }
+}

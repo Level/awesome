@@ -12,6 +12,7 @@
 -   [Layers](#layers)
 -   [Sublevels](#sublevels)
 -   [Encodings](#encodings)
+-   [Processing](#processing)
 -   [Databases](#databases)
 -   [Replication](#replication)
 -   [Plugins for levelup](#plugins-for-levelup)
@@ -19,6 +20,7 @@
 -   [Streams](#streams)
 -   [Tools](#tools)
 -   [Resources](#resources)
+-   [Legacy](#legacy)
 -   [Contributing](#contributing)
 -   [Donate](#donate)
 -   [License](#license)
@@ -90,7 +92,7 @@ Name | Dependencies | Description
 :--- | :----------- | :----------
 **[`subleveldown`][subleveldown]** | [![dependencies](https://img.shields.io/david/mafintosh/subleveldown.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/subleveldown) | Sublevels implemented using leveldowns.
 **[`bytespace`][bytespace]** | [![dependencies](https://img.shields.io/david/deanlandolt/bytespace.svg?label=%E2%99%A5)](https://david-dm.org/deanlandolt/bytespace) | Keypath subspaces prefixed with [`bytewise`][bytewise] tuples. Similar to [`level-sublevel`][level-sublevel].<br>NB. [`bytewise`][bytewise] - and thus [`bytespace`][bytespace] - can be slow. Consider using [`subleveldown`][subleveldown] paired with the [`charwise`][charwise] encoding instead.
-**[`level-sublevel`][level-sublevel]** | [![dependencies](https://img.shields.io/david/dominictarr/level-sublevel.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-sublevel) | Adds the ability to create subsections with the same API as [`levelup`][levelup], but only write/read to a prefixed section, or bucket, of the key-space. Each section also has [level-hooks] installed.<br>NB. No longer maintained. We recommend [`subleveldown`][subleveldown] instead.
+**[`level-sublevel`][level-sublevel]** | [![dependencies](https://img.shields.io/david/dominictarr/level-sublevel.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-sublevel) | Adds the ability to create subsections with the same API as [`levelup`][levelup], but only write/read to a prefixed section, or bucket, of the key-space. Each section also has [`level-hooks`][level-hooks] installed.<br>NB. No longer maintained. We recommend [`subleveldown`][subleveldown] instead.
 **[`level-sublevel-stream`][level-sublevel-stream]** | [![dependencies](https://img.shields.io/david/juliangruber/level-sublevel-stream.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-sublevel-stream) | Find [`level-sublevel`][level-sublevel] sublevels, not requiring them to be in memory already.
 **[`level-subtree`][level-subtree]** | [![dependencies](https://img.shields.io/david/hij1nx/level-subtree.svg?label=%E2%99%A5)](https://david-dm.org/hij1nx/level-subtree) | Generate a tree from [`level-sublevel`][level-sublevel] sublevels, useful when there is no manifest.
 **[`level-superlevel`][level-superlevel]** | [![dependencies](https://img.shields.io/david/randymized/level-superlevel.svg?label=%E2%99%A5)](https://david-dm.org/randymized/level-superlevel) | Superlevel adds a "super" level that allows accessing the entire database, discovering [`level-sublevel`][level-sublevel] sublevels and browsing the database without knowledge of the sublevel structure.
@@ -106,6 +108,31 @@ Name | Dependencies | Description
 **[`bytewise`][bytewise]** | [![dependencies](https://img.shields.io/david/deanlandolt/bytewise.svg?label=%E2%99%A5)](https://david-dm.org/deanlandolt/bytewise) | Binary serialization which sorts bytewise for arbitrarily complex data structures.<br>NB. Use [`charwise`][charwise] if possible. Gives you almost everything `bytewise` does but much faster.
 **[`protocol-buffers`][protocol-buffers]** | [![dependencies](https://img.shields.io/david/mafintosh/protocol-buffers.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/protocol-buffers) | [Protocol Buffers](https://developers.google.com/protocol-buffers/) for Node.js. Compiled messages are [`level-codec`][level-codec] compatible encodings.
 **[`lexicographic-integer-encoding`][lexicographic-integer-encoding]** | [![dependencies](https://img.shields.io/david/vweevers/lexicographic-integer-encoding.svg?label=%E2%99%A5)](https://david-dm.org/vweevers/lexicographic-integer-encoding) | Wraps [`lexicographic-integer`](https://github.com/substack/lexicographic-integer).
+
+## Processing
+
+Modules for indexing, alternative forms of querying data, for hooks, MapReduce models and other forms of data processing.
+
+Name | Dependencies | Description
+:--- | :----------- | :----------
+**[`jsonquery`][jsonquery]** | [![dependencies](https://img.shields.io/david/eugeneware/jsonquery.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/jsonquery) | Query [`levelup`][levelup] with a MongoDB-like query API that returns streams.
+**[`jsonquery-engine`][jsonquery-engine]** | [![dependencies](https://img.shields.io/david/eugeneware/jsonquery-engine.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/jsonquery-engine) | A full MongoDB query language implementation with indexes for querying [`levelup`][levelup].
+**[`level-hooks`][level-hooks]** | [![dependencies](https://img.shields.io/david/dominictarr/level-hooks.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-hooks) | Implements a hook mechanism that allows you to intercept `put`, `delete` and `batch` operations. You can then turn those operations into batches. Useful if you want to turn a `put` into an atomic batch for say an automatic map operation.<br><br>NB. Author recommends using [`level-sublevel`][level-sublevel] instead of `level-hooks` directly. Note that [`level-sublevel`][level-sublevel] is not maintained.
+**[`level-indico`][level-indico]** | [![dependencies](https://img.shields.io/david/mariocasciaro/level-indico.svg?label=%E2%99%A5)](https://david-dm.org/mariocasciaro/level-indico) | Yet another indexing plugin for [`levelup`][levelup]. By providing only a low-level querying mechanism it gives you the power to build more complicated and optimized queries on top of it.<br><br>NB. Relies on [`bytewise`][bytewise] and [`level-sublevel`][level-sublevel], both of which have caveats.
+**[`level-inverted-index`][level-inverted-index]** | [![dependencies](https://img.shields.io/david/dominictarr/level-inverted-index.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-inverted-index) | Create an inverted index for full-text search.
+**[`map-reduce`][map-reduce]** | [![dependencies](https://img.shields.io/david/dominictarr/map-reduce.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/map-reduce) | A MapReduce implementation on top of [`levelup`][levelup]. Allows you to define a map reduce query that will run on top of your db. The map reduces are incremental, and you can query the results in real-time.
+**[`level-map-merge`][level-map-merge]** | [![dependencies](https://img.shields.io/david/dominictarr/level-map-merge.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-map-merge) | Like [`map-reduce`][map-reduce] but simpler. Has a batch component that runs periodically, and a real-time component that fills in the gaps. Good for generating inverted indexes.
+**[`level-queryengine`][level-queryengine]** | [![dependencies](https://img.shields.io/david/eugeneware/level-queryengine.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/level-queryengine) | A generic pluggable query-engine system (that supports indexes) for [`levelup`][levelup].
+**[`level-trigger`][level-trigger]** | [![dependencies](https://img.shields.io/david/dominictarr/level-trigger.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-trigger) | Triggers for [`levelup`][levelup]. Runs an async job when a key changes. All jobs will eventually run, even across restarts!
+**[`levels`][levels]** | [![dependencies](https://img.shields.io/david/eugeneware/levels.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/levels) | A light-weight full text search engine for [`levelup`][levelup] (Port of TJ's [reds](https://github.com/visionmedia/reds) redis search engine).
+**[`map-reduce-chained`][map-reduce-chained]** | [![dependencies](https://img.shields.io/david/ryanramage/map-reduce-chained.svg?label=%E2%99%A5)](https://david-dm.org/ryanramage/map-reduce-chained) | Extends [`map-reduce`][map-reduce] and [`level-mapped-index`][level-mapped-index] to provide easy to setup chained MapReduce. An example use case is to find the top 10 values after a reduce.
+**[`path-engine`][path-engine]** | [![dependencies](https://img.shields.io/david/eugeneware/path-engine.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/path-engine) | Query [`levelup`][levelup] using a JavaScript property path array syntax with indexes.
+**[`subindex`][subindex]** | [![dependencies](https://img.shields.io/david/eugeneware/subindex.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/subindex) | Generic pluggable indexing system for [`levelup`][levelup].
+**[`level-sec`][level-sec]** | [![dependencies](https://img.shields.io/david/juliangruber/level-sec.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-sec) | High-level API for creating secondary indexes.
+**[`level-secondary`][level-secondary]** | [![dependencies](https://img.shields.io/david/juliangruber/level-secondary.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-secondary) | Create and query secondary indexes.
+**[`inverted-index`][inverted-index]** | [![dependencies](https://img.shields.io/david/kordon/inverted.svg?label=%E2%99%A5)](https://david-dm.org/kordon/inverted) | Inverted index built upon [`levelup`][levelup].
+**[`level-index-update`][level-index-update]** | [![dependencies](https://img.shields.io/david/binocarlos/level-index-update.svg?label=%E2%99%A5)](https://david-dm.org/binocarlos/level-index-update) | Remove the old indexes in the same batch as the new ones are inserted.
+**[`range-index`][range-index]** | [![dependencies](https://img.shields.io/david/kordon/range.svg?label=%E2%99%A5)](https://david-dm.org/kordon/range) | Range indexes for [`levelup`][levelup].
 
 ## Databases
 
@@ -131,6 +158,7 @@ Name | Dependencies | Description
 **[`vertical`][vertical]** | [![dependencies](https://img.shields.io/david/zy445566/vertical.svg?label=%E2%99%A5)](https://david-dm.org/zy445566/vertical) | LevelDB distributed, Server and Client!
 **[`flash-store`][flash-store]** | [![dependencies](https://img.shields.io/david/zixia/flash-store.svg?label=%E2%99%A5)](https://david-dm.org/zixia/flash-store) | FlashStore is a Key-Value persistent storage with easy to use ES6 Map-like API(both Async and Sync support), powered by LevelDB and TypeScript.
 **[`level-fact-base`][level-fact-base]** | [![dependencies](https://img.shields.io/david/smallhelm/level-fact-base.svg?label=%E2%99%A5)](https://david-dm.org/smallhelm/level-fact-base) | Store immutable facts and query them with datalog.
+**[`dulcimer`][dulcimer]** | [![dependencies](https://img.shields.io/david/fritzy/dulcimer.svg?label=%E2%99%A5)](https://david-dm.org/fritzy/dulcimer) | Define JSON models and manage indexes, children, foreign keys and much more.
 
 ## Replication
 
@@ -171,6 +199,8 @@ Name | Dependencies | Description
 **[`level-test`][level-test]** | [![dependencies](https://img.shields.io/david/Level/level-test.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-test) | Easily run your `level-*` tests against [all stores](#stores).
 **[`level-lazy-open`][level-lazy-open]** | [![dependencies](https://img.shields.io/david/Level/lazy-open.svg?label=%E2%99%A5)](https://david-dm.org/Level/lazy-open) | Lazily open a leveldown compatible backend.
 **[`level-benchmarks`][level-benchmarks]** | [![dependencies](https://img.shields.io/david/kesla/level-benchmarks.svg?label=%E2%99%A5)](https://david-dm.org/kesla/level-benchmarks) | Run benchmarks against levelup-compatible engines
+**[`changeset`][changeset]** | [![dependencies](https://img.shields.io/david/eugeneware/changeset.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/changeset) | Generate diff changesets for javascript objects, decomposing diffs into a series of puts and delete operations. The format is compatible with [`levelup`][levelup] batch operations. Useful to synchronize objects.
+**[`level-delete-range`][level-delete-range]** | [![dependencies](https://img.shields.io/david/Raynos/level-delete-range.svg?label=%E2%99%A5)](https://david-dm.org/Raynos/level-delete-range) | Delete a range of keys from [`levelup`][levelup].
 
 ## Streams
 
@@ -209,6 +239,22 @@ Name | Description
 **[`level-community`][level-community]** | General discussion, cross-repo efforts and common information for projects in the community
 **[`level-awesome`][level-awesome]** | An open list of awesome [Level][level-org] libraries and resources.
 
+## Legacy
+
+Modules that are deprecated, archived or superseded. Listed here for the historical record.
+
+Name | Dependencies | Description
+:--- | :----------- | :----------
+**[`level-mapped-index`][level-mapped-index]** | [![dependencies](https://img.shields.io/david/rvagg/node-level-mapped-index.svg?label=%E2%99%A5)](https://david-dm.org/rvagg/node-level-mapped-index) | Indexes for [`levelup`][levelup] built on [`map-reduce`][map-reduce]. Uses a custom indexing function for each index to parse and record index values for each entry. Archived.
+**[`level-encoding`][level-encoding]** | [![dependencies](https://img.shields.io/david/Raynos/level-encoding.svg?label=%E2%99%A5)](https://david-dm.org/Raynos/level-encoding) | Implements the encoding logic of a [`levelup`][levelup]-like database. This functionality lives on in [`level-codec`][level-codec].
+**[`byteup`][byteup]** | [![dependencies](https://img.shields.io/david/eugeneware/byteup.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/byteup) | Adds the [`bytewise`][bytewise] encoding as a native encoding for [`levelup`][levelup]. This can now be achieved with [`encoding-down`][encoding-down] and `{ keyEncoding: bytewise }`.
+**[`level-cbatch`][level-cbatch]** | [![dependencies](https://img.shields.io/david/kesla/level-cbatch.svg?label=%E2%99%A5)](https://david-dm.org/kesla/level-cbatch) | Provides a chainable API for `db.batch()`. This functionality is now provided by [`levelup`][levelup].
+**[`memdb`][memdb]** | [![dependencies](https://img.shields.io/david/juliangruber/memdb.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/memdb) | [`levelup`][levelup] + [`memdown`][memdown]. Superseded by [`level-mem`][level-mem].
+**[`levelup-iterator`][levelup-iterator]** | [![dependencies](https://img.shields.io/david/mirkokiefer/levelup-iterator.svg?label=%E2%99%A5)](https://david-dm.org/mirkokiefer/levelup-iterator) | Use [`abstract-leveldown`][abstract-leveldown] iterators instead of readable streams to traverse the database. Iterators are exposed by [`levelup`][levelup] since `levelup@3.1.0`.
+**[`levelidb`][levelidb]** | [![dependencies](https://img.shields.io/david/Raynos/levelidb.svg?label=%E2%99%A5)](https://david-dm.org/Raynos/levelidb) | A [`levelup`][levelup] interface on top of IndexedDB. Superseded by [`level-js`][level-js] and [`level`][level].
+**[`level-multiply`][level-multiply]** | [![dependencies](https://img.shields.io/david/rvagg/node-level-multiply.svg?label=%E2%99%A5)](https://david-dm.org/rvagg/node-level-multiply) | Make [`levelup`][levelup] `get()`, `put()` and `del()` methods accept multiples keys & values. Archived.
+**[`level-namespace`][level-namespace]** | [![dependencies](https://img.shields.io/david/kesla/level-namespace.svg?label=%E2%99%A5)](https://david-dm.org/kesla/level-namespace) | Split your db up into multiple namespaces. Deprecated.
+
 ## Contributing
 
 Module and resource authors are welcome and encouraged to add an entry for their work via a pull request. To add a module, edit `modules/*.json` and run `npm run awesome` to update `README.md`.
@@ -245,9 +291,13 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [bytespace]: https://github.com/deanlandolt/bytespace
 
+[byteup]: https://github.com/eugeneware/byteup
+
 [bytewise]: https://github.com/deanlandolt/bytewise
 
 [cachedown]: https://github.com/mvayngrib/cachedown
+
+[changeset]: https://github.com/eugeneware/changeset
 
 [charwise]: https://github.com/dominictarr/charwise
 
@@ -259,6 +309,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [deferred-leveldown]: https://github.com/Level/deferred-leveldown
 
+[dulcimer]: https://github.com/fritzy/dulcimer
+
 [dynamo-down]: https://github.com/jed/dynamo-down
 
 [encoding-down]: https://github.com/Level/encoding-down
@@ -269,7 +321,13 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [fruitdown]: https://github.com/nolanlawson/fruitdown
 
+[inverted-index]: https://github.com/kordon/inverted
+
 [jsondown]: https://github.com/toolness/jsondown
+
+[jsonquery]: https://github.com/eugeneware/jsonquery
+
+[jsonquery-engine]: https://github.com/eugeneware/jsonquery-engine
 
 [lem]: https://github.com/binocarlos/lem
 
@@ -301,6 +359,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-capped]: https://github.com/juliangruber/level-capped
 
+[level-cbatch]: https://github.com/kesla/level-cbatch
+
 [level-codec]: https://github.com/Level/codec
 
 [level-community]: https://github.com/Level/community
@@ -311,7 +371,11 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-cursor]: https://github.com/kordon/cursor
 
+[level-delete-range]: https://github.com/Raynos/level-delete-range
+
 [level-delete-stream]: https://github.com/juliangruber/level-delete-stream
+
+[level-encoding]: https://github.com/Raynos/level-encoding
 
 [level-errors]: https://github.com/Level/errors
 
@@ -320,6 +384,12 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [level-hooks]: https://github.com/dominictarr/level-hooks
 
 [level-hyper]: https://github.com/Level/level-hyper
+
+[level-index-update]: https://github.com/binocarlos/level-index-update
+
+[level-indico]: https://github.com/mariocasciaro/level-indico
+
+[level-inverted-index]: https://github.com/dominictarr/level-inverted-index
 
 [level-iterator-stream]: https://github.com/Level/iterator-stream
 
@@ -331,17 +401,27 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-livefeed]: https://github.com/Raynos/level-livefeed
 
+[level-map-merge]: https://github.com/dominictarr/level-map-merge
+
+[level-mapped-index]: https://github.com/rvagg/node-level-mapped-index
+
 [level-master]: https://github.com/dominictarr/level-master
 
 [level-mem]: https://github.com/Level/level-mem
 
 [level-merkle]: https://github.com/dominictarr/level-merkle
 
+[level-multiply]: https://github.com/rvagg/node-level-multiply
+
+[level-namespace]: https://github.com/kesla/level-namespace
+
 [level-org]: https://github.com/level
 
 [level-packager]: https://github.com/Level/packager
 
 [level-push]: https://github.com/maiah/level-push
+
+[level-queryengine]: https://github.com/eugeneware/level-queryengine
 
 [level-range]: https://github.com/juliangruber/level-range
 
@@ -352,6 +432,10 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [level-rocksdb]: https://github.com/Level/level-rocksdb
 
 [level-scuttlebutt]: https://github.com/dominictarr/level-scuttlebutt
+
+[level-sec]: https://github.com/juliangruber/level-sec
+
+[level-secondary]: https://github.com/juliangruber/level-secondary
 
 [level-set]: https://github.com/maiah/level-set
 
@@ -366,6 +450,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [level-superlevel]: https://github.com/randymized/level-superlevel
 
 [level-test]: https://github.com/Level/level-test
+
+[level-trigger]: https://github.com/dominictarr/level-trigger
 
 [level-ttl]: https://github.com/Level/level-ttl
 
@@ -389,9 +475,15 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [levelhud]: https://github.com/ricardobeat/levelhud
 
+[levelidb]: https://github.com/Raynos/levelidb
+
+[levels]: https://github.com/eugeneware/levels
+
 [levelup]: https://github.com/Level/levelup
 
 [levelup-async-iterator]: https://github.com/MeirionHughes/levelup-async-iterator
+
+[levelup-iterator]: https://github.com/mirkokiefer/levelup-iterator
 
 [levelweb]: https://github.com/hij1nx/levelui
 
@@ -401,7 +493,13 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [localstorage-down]: https://github.com/No9/localstorage-down
 
+[map-reduce]: https://github.com/dominictarr/map-reduce
+
+[map-reduce-chained]: https://github.com/ryanramage/map-reduce-chained
+
 [medeadown]: https://github.com/kesla/medeadown
+
+[memdb]: https://github.com/juliangruber/memdb
 
 [memdown]: https://github.com/Level/memdown
 
@@ -410,6 +508,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [mysqldown]: https://github.com/kesla/mysqldown
 
 [nanosql]: https://github.com/ClickSimply/Nano-SQL
+
+[path-engine]: https://github.com/eugeneware/path-engine
 
 [plumbdb]: https://github.com/maxogden/plumbdb
 
@@ -420,6 +520,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [pull-level]: https://github.com/dominictarr/pull-level
 
 [pushdb]: https://github.com/mikeal/pushdb
+
+[range-index]: https://github.com/kordon/range
 
 [redisdown]: https://github.com/hmalphettes/redisdown
 
@@ -434,6 +536,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [sheet-down]: https://github.com/jed/sheet-down
 
 [sqldown]: https://github.com/calvinmetcalf/sqldown
+
+[subindex]: https://github.com/eugeneware/subindex
 
 [subleveldown]: https://github.com/mafintosh/subleveldown
 

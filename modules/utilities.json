@@ -43,6 +43,14 @@
     "level-benchmarks": {
       "github": "kesla/level-benchmarks",
       "description": "Run benchmarks against levelup-compatible engines"
+    },
+    "changeset": {
+      "github": "eugeneware/changeset",
+      "description": "Generate diff changesets for javascript objects, decomposing diffs into a series of puts and delete operations. The format is compatible with [levelup] batch operations. Useful to synchronize objects."
+    },
+    "level-delete-range": {
+      "github": "Raynos/level-delete-range",
+      "description": "Delete a range of keys from [levelup]."
     }
   }
 }
