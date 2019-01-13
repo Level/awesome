@@ -243,17 +243,17 @@ Name | Description
 
 Modules that are deprecated, archived or superseded. Listed here for the historical record.
 
-Name | Dependencies | Description
-:--- | :----------- | :----------
-**[`level-mapped-index`][level-mapped-index]** | [![dependencies](https://img.shields.io/david/rvagg/node-level-mapped-index.svg?label=%E2%99%A5)](https://david-dm.org/rvagg/node-level-mapped-index) | Indexes for [`levelup`][levelup] built on [`map-reduce`][map-reduce]. Uses a custom indexing function for each index to parse and record index values for each entry. Archived.
-**[`level-encoding`][level-encoding]** | [![dependencies](https://img.shields.io/david/Raynos/level-encoding.svg?label=%E2%99%A5)](https://david-dm.org/Raynos/level-encoding) | Implements the encoding logic of a [`levelup`][levelup]-like database. This functionality lives on in [`level-codec`][level-codec].
-**[`byteup`][byteup]** | [![dependencies](https://img.shields.io/david/eugeneware/byteup.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/byteup) | Adds the [`bytewise`][bytewise] encoding as a native encoding for [`levelup`][levelup]. This can now be achieved with [`encoding-down`][encoding-down] and `{ keyEncoding: bytewise }`.
-**[`level-cbatch`][level-cbatch]** | [![dependencies](https://img.shields.io/david/kesla/level-cbatch.svg?label=%E2%99%A5)](https://david-dm.org/kesla/level-cbatch) | Provides a chainable API for `db.batch()`. This functionality is now provided by [`levelup`][levelup].
-**[`memdb`][memdb]** | [![dependencies](https://img.shields.io/david/juliangruber/memdb.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/memdb) | [`levelup`][levelup] + [`memdown`][memdown]. Superseded by [`level-mem`][level-mem].
-**[`levelup-iterator`][levelup-iterator]** | [![dependencies](https://img.shields.io/david/mirkokiefer/levelup-iterator.svg?label=%E2%99%A5)](https://david-dm.org/mirkokiefer/levelup-iterator) | Use [`abstract-leveldown`][abstract-leveldown] iterators instead of readable streams to traverse the database. Iterators are exposed by [`levelup`][levelup] since `levelup@3.1.0`.
-**[`levelidb`][levelidb]** | [![dependencies](https://img.shields.io/david/Raynos/levelidb.svg?label=%E2%99%A5)](https://david-dm.org/Raynos/levelidb) | A [`levelup`][levelup] interface on top of IndexedDB. Superseded by [`level-js`][level-js] and [`level`][level].
-**[`level-multiply`][level-multiply]** | [![dependencies](https://img.shields.io/david/rvagg/node-level-multiply.svg?label=%E2%99%A5)](https://david-dm.org/rvagg/node-level-multiply) | Make [`levelup`][levelup] `get()`, `put()` and `del()` methods accept multiples keys & values. Archived.
-**[`level-namespace`][level-namespace]** | [![dependencies](https://img.shields.io/david/kesla/level-namespace.svg?label=%E2%99%A5)](https://david-dm.org/kesla/level-namespace) | Split your db up into multiple namespaces. Deprecated.
+Name | Description
+:--- | :----------
+**[`level-mapped-index`][level-mapped-index]** | Indexes for [`levelup`][levelup] built on [`map-reduce`][map-reduce]. Uses a custom indexing function for each index to parse and record index values for each entry. Archived.
+**[`level-encoding`][level-encoding]** | Implements the encoding logic of a [`levelup`][levelup]-like database. This functionality lives on in [`level-codec`][level-codec].
+**[`byteup`][byteup]** | Adds the [`bytewise`][bytewise] encoding as a native encoding for [`levelup`][levelup]. This can now be achieved with [`encoding-down`][encoding-down] and `{ keyEncoding: bytewise }`.
+**[`level-cbatch`][level-cbatch]** | Provides a chainable API for `db.batch()`. This functionality is now provided by [`levelup`][levelup].
+**[`memdb`][memdb]** | [`levelup`][levelup] + [`memdown`][memdown]. Superseded by [`level-mem`][level-mem].
+**[`levelup-iterator`][levelup-iterator]** | Use [`abstract-leveldown`][abstract-leveldown] iterators instead of readable streams to traverse the database. Iterators are exposed by [`levelup`][levelup] since `levelup@3.1.0`.
+**[`levelidb`][levelidb]** | A [`levelup`][levelup] interface on top of IndexedDB. Superseded by [`level-js`][level-js] and [`level`][level].
+**[`level-multiply`][level-multiply]** | Make [`levelup`][levelup] `get()`, `put()` and `del()` methods accept multiples keys & values. Archived.
+**[`level-namespace`][level-namespace]** | Split your db up into multiple namespaces. Deprecated.
 
 ## Contributing
 
