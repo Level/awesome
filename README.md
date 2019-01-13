@@ -10,6 +10,7 @@
 -   [Core](#core)
 -   [Stores](#stores)
 -   [Layers](#layers)
+-   [Encodings](#encodings)
 -   [Databases](#databases)
 -   [Replication](#replication)
 -   [Plugins for levelup](#plugins-for-levelup)
@@ -80,6 +81,17 @@ Name | Compatibility | Dependencies | Description
 **[`deferred-leveldown`][deferred-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/Level/deferred-leveldown.svg?label=%E2%99%A5)](https://david-dm.org/Level/deferred-leveldown) | Handles delayed-open. Built into [`levelup`][levelup].
 **[`subleveldown`][subleveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-orange.svg)<br>![levelup](https://img.shields.io/badge/levelup-3.0-orange.svg) | [![dependencies](https://img.shields.io/david/mafintosh/subleveldown.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/subleveldown) | Sublevels implemented using leveldowns.
 **[`cachedown`][cachedown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.4-red.svg) | [![dependencies](https://img.shields.io/david/mvayngrib/cachedown.svg?label=%E2%99%A5)](https://david-dm.org/mvayngrib/cachedown) | LRU cache.
+
+## Encodings
+
+Custom [`level-codec`][level-codec] compatible encodings for use with [`encoding-down`][encoding-down].
+
+Name | Dependencies | Description
+:--- | :----------- | :----------
+**[`charwise`][charwise]** | [![dependencies](https://img.shields.io/david/dominictarr/charwise.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/charwise) | Encode/decode with same encoded sort order as [`bytewise`][bytewise].
+**[`bytewise`][bytewise]** | [![dependencies](https://img.shields.io/david/deanlandolt/bytewise.svg?label=%E2%99%A5)](https://david-dm.org/deanlandolt/bytewise) | Binary serialization which sorts bytewise for arbitrarily complex data structures.<br>NB. Use [`charwise`][charwise] if possible. Gives you almost everything `bytewise` does but much faster.
+**[`protocol-buffers`][protocol-buffers]** | [![dependencies](https://img.shields.io/david/mafintosh/protocol-buffers.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/protocol-buffers) | [Protocol Buffers](https://developers.google.com/protocol-buffers/) for Node.js. Compiled messages are [`level-codec`][level-codec] compatible encodings.
+**[`lexicographic-integer-encoding`][lexicographic-integer-encoding]** | [![dependencies](https://img.shields.io/david/vweevers/lexicographic-integer-encoding.svg?label=%E2%99%A5)](https://david-dm.org/vweevers/lexicographic-integer-encoding) | Wraps [`lexicographic-integer`](https://github.com/substack/lexicographic-integer).
 
 ## Databases
 
@@ -204,7 +216,11 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [azureleveldown]: https://github.com/richorama/azureleveldown
 
+[bytewise]: https://github.com/deanlandolt/bytewise
+
 [cachedown]: https://github.com/mvayngrib/cachedown
+
+[charwise]: https://github.com/dominictarr/charwise
 
 [cluster-levelup]: https://github.com/chiguireitor/cluster-levelup
 
@@ -314,6 +330,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [levelweb]: https://github.com/hij1nx/levelui
 
+[lexicographic-integer-encoding]: https://github.com/vweevers/lexicographic-integer-encoding
+
 [linvodb3]: https://github.com/Ivshti/linvodb3
 
 [localstorage-down]: https://github.com/No9/localstorage-down
@@ -331,6 +349,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [plumbdb]: https://github.com/maxogden/plumbdb
 
 [pouchdb]: http://pouchdb.com/
+
+[protocol-buffers]: https://github.com/mafintosh/protocol-buffers
 
 [pushdb]: https://github.com/mikeal/pushdb
 
