@@ -34,12 +34,6 @@
       "copyrightYear": 2013,
       "author": "Dominic Tarr"
     },
-    "level-ws": {
-      "github": "Level/level-ws",
-      "description": "A basic WriteStream implementation for [levelup].",
-      "copyrightYear": 2012,
-      "author": null
-    },
     "level-lazy-open": {
       "github": "Level/lazy-open",
       "description": "Lazily open a leveldown compatible backend.",

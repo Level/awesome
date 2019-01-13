@@ -1,0 +1,24 @@
+{
+  "title": "Writable Streams",
+  "description": "[Writable stream](https://nodejs.org/api/stream.html#stream_writable_streams) implementations for writing data to [levelup] or [abstract-leveldown] stores.",
+  "modules": {
+    "level-ws": {
+      "github": "Level/level-ws",
+      "description": "General-case, streams3-compliant write stream for [levelup].",
+      "copyrightYear": 2012,
+      "author": null
+    },
+    "level-batch-stream": {
+      "github": "jcrugzz/level-batch-stream",
+      "description": "Streams2-compliant write stream for [levelup]."
+    },
+    "level-writestream": {
+      "github": "pgte/level-writestream",
+      "description": "Streams2-compliant write stream for [levelup]."
+    },
+    "level-write-stream": {
+      "github": "Raynos/level-write-stream",
+      "description": "Streams1-compliant write stream for [levelup] or [abstract-leveldown]."
+    }
+  }
+}

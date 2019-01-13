@@ -14,6 +14,7 @@
 -   [Replication](#replication)
 -   [Plugins for levelup](#plugins-for-levelup)
 -   [Utilities](#utilities)
+-   [Writable Streams](#writable-streams)
 -   [Tools](#tools)
 -   [Resources](#resources)
 -   [Contributing](#contributing)
@@ -135,9 +136,19 @@ Name | Dependencies | Description
 **[`level-codec`][level-codec]** | [![dependencies](https://img.shields.io/david/Level/codec.svg?label=%E2%99%A5)](https://david-dm.org/Level/codec) | Encode keys, values and ltgte options. Used in [`encoding-down`][encoding-down].
 **[`level-errors`][level-errors]** | [![dependencies](https://img.shields.io/david/Level/errors.svg?label=%E2%99%A5)](https://david-dm.org/Level/errors) | Error types for [`levelup`][levelup].
 **[`level-test`][level-test]** | [![dependencies](https://img.shields.io/david/Level/level-test.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-test) | Easily run your `level-*` tests against [all stores](#stores).
-**[`level-ws`][level-ws]** | [![dependencies](https://img.shields.io/david/Level/level-ws.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-ws) | A basic WriteStream implementation for [`levelup`][levelup].
 **[`level-lazy-open`][level-lazy-open]** | [![dependencies](https://img.shields.io/david/Level/lazy-open.svg?label=%E2%99%A5)](https://david-dm.org/Level/lazy-open) | Lazily open a leveldown compatible backend.
 **[`level-benchmarks`][level-benchmarks]** | [![dependencies](https://img.shields.io/david/kesla/level-benchmarks.svg?label=%E2%99%A5)](https://david-dm.org/kesla/level-benchmarks) | Run benchmarks against levelup-compatible engines
+
+## Writable Streams
+
+[Writable stream](https://nodejs.org/api/stream.html#stream_writable_streams) implementations for writing data to [`levelup`][levelup] or [`abstract-leveldown`][abstract-leveldown] stores.
+
+Name | Dependencies | Description
+:--- | :----------- | :----------
+**[`level-ws`][level-ws]** | [![dependencies](https://img.shields.io/david/Level/level-ws.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-ws) | General-case, streams3-compliant write stream for [`levelup`][levelup].
+**[`level-batch-stream`][level-batch-stream]** | [![dependencies](https://img.shields.io/david/jcrugzz/level-batch-stream.svg?label=%E2%99%A5)](https://david-dm.org/jcrugzz/level-batch-stream) | Streams2-compliant write stream for [`levelup`][levelup].
+**[`level-writestream`][level-writestream]** | [![dependencies](https://img.shields.io/david/pgte/level-writestream.svg?label=%E2%99%A5)](https://david-dm.org/pgte/level-writestream) | Streams2-compliant write stream for [`levelup`][levelup].
+**[`level-write-stream`][level-write-stream]** | [![dependencies](https://img.shields.io/david/Raynos/level-write-stream.svg?label=%E2%99%A5)](https://david-dm.org/Raynos/level-write-stream) | Streams1-compliant write stream for [`levelup`][levelup] or [`abstract-leveldown`][abstract-leveldown].
 
 ## Tools
 
@@ -231,6 +242,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-badge]: http://leveldb.org/img/badge.svg
 
+[level-batch-stream]: https://github.com/jcrugzz/level-batch-stream
+
 [level-benchmarks]: https://github.com/kesla/level-benchmarks
 
 [level-browserify]: https://github.com/Level/level-browserify
@@ -274,6 +287,10 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [level-test]: https://github.com/Level/level-test
 
 [level-ttl]: https://github.com/Level/level-ttl
+
+[level-write-stream]: https://github.com/Raynos/level-write-stream
+
+[level-writestream]: https://github.com/pgte/level-writestream
 
 [level-ws]: https://github.com/Level/level-ws
 
