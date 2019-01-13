@@ -1,0 +1,26 @@
+{
+  "title": "Tools",
+  "description": "CLI, GUI and web interfaces for exploring data.",
+  "modules": {
+    "lev2": {
+      "github": "maxlath/lev2",
+      "description": "A complete REPL & CLI for managing LevelDB instances"
+    },
+    "lev": {
+      "github": "hij1nx/lev",
+      "description": "A CLI REPL interface for LevelDB."
+    },
+    "leveldb-repl": {
+      "github": "lapwinglabs/leveldb-repl",
+      "description": "Super simple REPL for LevelDB. Supports filter globbing."
+    },
+    "levelhud": {
+      "github": "ricardobeat/levelhud",
+      "description": "LevelDB GUI with an interactive console."
+    },
+    "levelweb": {
+      "github": "hij1nx/levelui",
+      "description": "A LevelDB GUI. Includes simple data visualization tools."
+    }
+  }
+}

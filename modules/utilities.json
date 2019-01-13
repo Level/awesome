@@ -34,10 +34,6 @@
       "copyrightYear": 2013,
       "author": "Dominic Tarr"
     },
-    "lev2": {
-      "github": "maxlath/lev2",
-      "description": "A complete REPL & CLI for managing LevelDB instances"
-    },
     "level-ws": {
       "github": "Level/level-ws",
       "description": "A basic WriteStream implementation for [levelup].",
@@ -49,6 +45,10 @@
       "description": "Lazily open a leveldown compatible backend.",
       "copyrightYear": 2012,
       "author": null
+    },
+    "level-benchmarks": {
+      "github": "kesla/level-benchmarks",
+      "description": "Run benchmarks against levelup-compatible engines"
     }
   }
 }

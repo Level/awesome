@@ -14,6 +14,7 @@
 -   [Replication](#replication)
 -   [Plugins for levelup](#plugins-for-levelup)
 -   [Utilities](#utilities)
+-   [Tools](#tools)
 -   [Resources](#resources)
 -   [Contributing](#contributing)
 -   [Donate](#donate)
@@ -134,9 +135,21 @@ Name | Dependencies | Description
 **[`level-codec`][level-codec]** | [![dependencies](https://img.shields.io/david/Level/codec.svg?label=%E2%99%A5)](https://david-dm.org/Level/codec) | Encode keys, values and ltgte options. Used in [`encoding-down`][encoding-down].
 **[`level-errors`][level-errors]** | [![dependencies](https://img.shields.io/david/Level/errors.svg?label=%E2%99%A5)](https://david-dm.org/Level/errors) | Error types for [`levelup`][levelup].
 **[`level-test`][level-test]** | [![dependencies](https://img.shields.io/david/Level/level-test.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-test) | Easily run your `level-*` tests against [all stores](#stores).
-**[`lev2`][lev2]** | [![dependencies](https://img.shields.io/david/maxlath/lev2.svg?label=%E2%99%A5)](https://david-dm.org/maxlath/lev2) | A complete REPL & CLI for managing LevelDB instances
 **[`level-ws`][level-ws]** | [![dependencies](https://img.shields.io/david/Level/level-ws.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-ws) | A basic WriteStream implementation for [`levelup`][levelup].
 **[`level-lazy-open`][level-lazy-open]** | [![dependencies](https://img.shields.io/david/Level/lazy-open.svg?label=%E2%99%A5)](https://david-dm.org/Level/lazy-open) | Lazily open a leveldown compatible backend.
+**[`level-benchmarks`][level-benchmarks]** | [![dependencies](https://img.shields.io/david/kesla/level-benchmarks.svg?label=%E2%99%A5)](https://david-dm.org/kesla/level-benchmarks) | Run benchmarks against levelup-compatible engines
+
+## Tools
+
+CLI, GUI and web interfaces for exploring data.
+
+Name | Dependencies | Description
+:--- | :----------- | :----------
+**[`lev2`][lev2]** | [![dependencies](https://img.shields.io/david/maxlath/lev2.svg?label=%E2%99%A5)](https://david-dm.org/maxlath/lev2) | A complete REPL & CLI for managing LevelDB instances
+**[`lev`][lev]** | [![dependencies](https://img.shields.io/david/hij1nx/lev.svg?label=%E2%99%A5)](https://david-dm.org/hij1nx/lev) | A CLI REPL interface for LevelDB.
+**[`leveldb-repl`][leveldb-repl]** | [![dependencies](https://img.shields.io/david/lapwinglabs/leveldb-repl.svg?label=%E2%99%A5)](https://david-dm.org/lapwinglabs/leveldb-repl) | Super simple REPL for LevelDB. Supports filter globbing.
+**[`levelhud`][levelhud]** | [![dependencies](https://img.shields.io/david/ricardobeat/levelhud.svg?label=%E2%99%A5)](https://david-dm.org/ricardobeat/levelhud) | LevelDB GUI with an interactive console.
+**[`levelweb`][levelweb]** | [![dependencies](https://img.shields.io/david/hij1nx/levelui.svg?label=%E2%99%A5)](https://david-dm.org/hij1nx/levelui) | A LevelDB GUI. Includes simple data visualization tools.
 
 ## Resources
 
@@ -206,6 +219,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [len]: https://github.com/binocarlos/len
 
+[lev]: https://github.com/hij1nx/lev
+
 [lev2]: https://github.com/maxlath/lev2
 
 [level]: https://github.com/Level/level
@@ -215,6 +230,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [level-awesome]: https://github.com/Level/awesome
 
 [level-badge]: http://leveldb.org/img/badge.svg
+
+[level-benchmarks]: https://github.com/kesla/level-benchmarks
 
 [level-browserify]: https://github.com/Level/level-browserify
 
@@ -260,6 +277,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-ws]: https://github.com/Level/level-ws
 
+[leveldb-repl]: https://github.com/lapwinglabs/leveldb-repl
+
 [leveldb.org]: http://leveldb.org
 
 [leveldown]: https://github.com/Level/leveldown
@@ -270,9 +289,13 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [levelgraph]: https://github.com/mcollina/node-levelgraph
 
+[levelhud]: https://github.com/ricardobeat/levelhud
+
 [levelup]: https://github.com/Level/levelup
 
 [levelup-async-iterator]: https://github.com/MeirionHughes/levelup-async-iterator
+
+[levelweb]: https://github.com/hij1nx/levelui
 
 [linvodb3]: https://github.com/Ivshti/linvodb3
 
