@@ -22,9 +22,13 @@
       "copyrightYear": 2013,
       "author": "Rod Vagg"
     },
-    "cachedown": {
-      "github": "mvayngrib/cachedown",
-      "description": "LRU cache."
+    "level-cowdown": {
+      "github": "substack/level-cowdown",
+      "description": "Copy-on-write [abstract-leveldown] layer."
+    },
+    "abstract-stream-leveldown": {
+      "github": "jed/abstract-stream-leveldown",
+      "description": "A stream-based abstract prototype."
     }
   }
 }

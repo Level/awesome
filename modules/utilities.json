@@ -1,21 +1,6 @@
 {
   "title": "Utilities",
   "modules": {
-    "level-iterator-stream": {
-      "github": "Level/iterator-stream",
-      "description": [
-        "Turn an [abstract-leveldown] iterator into a readable stream.",
-        "Included in [levelup]."
-      ],
-      "copyrightYear": 2012,
-      "author": null
-    },
-    "level-concat-iterator": {
-      "github": "Level/concat-iterator",
-      "description": "Concatenate items from an iterator into an array.",
-      "copyrightYear": 2018,
-      "author": null
-    },
     "level-codec": {
       "github": "Level/codec",
       "description": "Encode keys, values and ltgte options. Used in [encoding-down].",
@@ -34,15 +19,51 @@
       "copyrightYear": 2013,
       "author": "Dominic Tarr"
     },
+    "level-exists": {
+      "github": "juliangruber/level-exists",
+      "description": "Check if a datum exists without reading its value."
+    },
+    "level-move": {
+      "github": "juliangruber/level-move",
+      "description": "Move a value to another key."
+    },
+    "level-capped": {
+      "github": "juliangruber/level-capped",
+      "description": "Capped collections."
+    },
+    "level-create": {
+      "github": "substack/level-create",
+      "description": "Insert a key if and only if it doesn't already exist"
+    },
+    "level-create-batch": {
+      "github": "substack/level-create-batch",
+      "description": "Insert a batch of keys if and only if none of the keys already exist"
+    },
+    "level-modify": {
+      "github": "dskrepps/level-modify",
+      "description": "Modify an existing key in [levelup]. Uses [level-lock]. See also [level-create] and [level-move]."
+    },
+    "level-random": {
+      "github": "michaelnisi/level-random",
+      "description": "Read values of random [levelup] keys."
+    },
+    "level-shared-batch": {
+      "github": "juliangruber/level-shared-batch",
+      "description": "Share batches and commit collectively"
+    },
+    "ltest": {
+      "github": "ralphtheninja/ltest",
+      "description": "Test function for [levelup] testing, based on [level-test]."
+    },
+    "level-probe": {
+      "github": "vweevers/level-probe",
+      "description": "Get the first record in a range, using an iterator or stream. NB. Not compatible with latest [levelup]."
+    },
     "level-lazy-open": {
       "github": "Level/lazy-open",
       "description": "Lazily open a leveldown compatible backend.",
       "copyrightYear": 2012,
       "author": null
-    },
-    "level-benchmarks": {
-      "github": "kesla/level-benchmarks",
-      "description": "Run benchmarks against levelup-compatible engines"
     },
     "changeset": {
       "github": "eugeneware/changeset",
@@ -51,6 +72,14 @@
     "level-delete-range": {
       "github": "Raynos/level-delete-range",
       "description": "Delete a range of keys from [levelup]."
+    },
+    "levelup-defaults": {
+      "github": "mafintosh/levelup-defaults",
+      "description": "Change the defaults settings on a [levelup] instance by returning a new [levelup] instance that uses the same [abstract-leveldown] but different options."
+    },
+    "level-methods": {
+      "github": "Wayla/level-methods",
+      "description": "Useful meta information about [levelup] methods."
     }
   }
 }

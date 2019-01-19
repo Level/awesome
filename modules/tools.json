@@ -6,6 +6,18 @@
       "github": "maxlath/lev2",
       "description": "A complete REPL & CLI for managing LevelDB instances"
     },
+    "level-in": {
+      "github": "fergiemcdowall/level-in",
+      "description": "A simple command-line utility for writing data to LevelDB via [levelup]."
+    },
+    "level-out": {
+      "github": "fergiemcdowall/level-out",
+      "description": "A simple command-line utility for reading LevelDB data via [levelup]."
+    },
+    "level-key-list": {
+      "github": "hughsk/level-key-list",
+      "description": "Command-line tool for quickly printing a list of keys in a LevelDB database."
+    },
     "lev": {
       "github": "hij1nx/lev",
       "description": "A CLI REPL interface for LevelDB."
@@ -21,6 +33,30 @@
     "levelweb": {
       "github": "hij1nx/levelui",
       "description": "A LevelDB GUI. Includes simple data visualization tools."
+    },
+    "level-cli": {
+      "github": "mablay/level-cli",
+      "description": "Interact with LevelDB on the command line."
+    },
+    "level-explore": {
+      "github": "jcblw/level-explore",
+      "description": "A terminal program to visualize LevelDB data. Early stages."
+    },
+    "level-repair": {
+      "github": "kesla/level-repair",
+      "description": "CLI tool to repair a LevelDB."
+    },
+    "leveldb-editor": {
+      "github": "derhuerst/leveldb-editor",
+      "description": "Edit a LevelDB from the command line."
+    },
+    "levelscan": {
+      "github": "joeledwards/node-levelscan",
+      "description": "LevelDB command line scanning utility"
+    },
+    "levelui": {
+      "github": "hij1nx/levelui",
+      "description": "A LevelDB GUI based on [`atom-shell`](https://github.com/atom/atom-shell) (now called Electron)."
     }
   }
 }

@@ -6,6 +6,7 @@
       "github": "Level/leveldb.org",
       "url": "http://leveldb.org",
       "description": "Website for LevelDB",
+      "private": true,
       "copyrightYear": 2014,
       "author": "Paolo Fragomeni"
     },
@@ -18,8 +19,13 @@
     "level-awesome": {
       "github": "Level/awesome",
       "description": "An open list of awesome [Level][level-org] libraries and resources.",
+      "private": true,
       "copyrightYear": 2017,
       "author": null
+    },
+    "levelmeup": {
+      "github": "workshopper/levelmeup",
+      "description": "Level Me Up Scotty! An intro to Node.js databases via a set of self-guided workshops."
     }
   }
 }

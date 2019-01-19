@@ -84,7 +84,7 @@
         "A full-featured timeseries database on top of LevelDB. Includes a library for streaming statistical operations on timeseries data including joins, aggregates, filters, and map-like operations."
       ]
     },
-    "NanoSQL": {
+    "@nano-sql/core": {
       "github": "ClickSimply/Nano-SQL",
       "description": [
         "A small (10Kb) RDBMS abstraction on top of [levelup] that also runs in the browser with undo/redo support, immutable objects and IndexedDB persistence."
@@ -111,6 +111,30 @@
     "dulcimer": {
       "github": "fritzy/dulcimer",
       "description": "Define JSON models and manage indexes, children, foreign keys and much more."
+    },
+    "levi": {
+      "github": "cshum/levi",
+      "description": "Stream based full-text search for Node.js and browser using [levelup]."
+    },
+    "level-mongo": {
+      "github": "simon-p-r/level-mongo",
+      "description": "MongoDB-like database backed by LevelDB."
+    },
+    "level-orm": {
+      "github": "eugeneware/level-orm",
+      "description": "Simple ORM built on [levelup]."
+    },
+    "level-lively": {
+      "github": "eugeneware/level-lively",
+      "description": "[levelup] implementation of [LivelyDb](https://github.com/eugeneware/livelydb) for doing real-time data binding of a database with local javascript objects."
+    },
+    "level-rest": {
+      "github": "shama/level-rest",
+      "description": "A REST wrapper for [levelup]."
+    },
+    "level-restful": {
+      "github": "karissa/level-restful",
+      "description": "Plug and play REST wrapper for [levelup], as an extension to [level-orm]."
     }
   }
 }

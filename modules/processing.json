@@ -1,6 +1,6 @@
 {
   "title": "Processing",
-  "description": "Modules for indexing, alternative forms of querying data, for hooks, MapReduce models and other forms of data processing.",
+  "description": "Modules for indexing, alternative forms of querying data, MapReduce models and other forms of data processing.",
   "modules": {
     "jsonquery": {
       "github": "eugeneware/jsonquery",
@@ -9,10 +9,6 @@
     "jsonquery-engine": {
       "github": "eugeneware/jsonquery-engine",
       "description": "A full MongoDB query language implementation with indexes for querying [levelup]."
-    },
-    "level-hooks": {
-      "github": "dominictarr/level-hooks",
-      "description": "Implements a hook mechanism that allows you to intercept `put`, `delete` and `batch` operations. You can then turn those operations into batches. Useful if you want to turn a `put` into an atomic batch for say an automatic map operation.<br><br>NB. Author recommends using [level-sublevel] instead of `level-hooks` directly. Note that [level-sublevel] is not maintained."
     },
     "level-indico": {
       "github": "mariocasciaro/level-indico",
@@ -73,6 +69,14 @@
     "range-index": {
       "github": "kordon/range",
       "description": "Range indexes for [levelup]."
+    },
+    "level-path-index": {
+      "github": "level-path-index",
+      "description": "Index properties of items that live in a tree of materialized paths."
+    },
+    "level-sql": {
+      "github": "hij1nx/level-sql",
+      "description": "SQL queries for [levelup]."
     }
   }
 }

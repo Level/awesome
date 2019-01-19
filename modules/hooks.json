@@ -1,0 +1,26 @@
+{
+  "title": "Hooks",
+  "description": "Low-level utilities for hooking into a [levelup] instance.",
+  "modules": {
+    "level-events": {
+      "github": "mafintosh/level-events",
+      "description": "Get an event everytime something is written / read / deleted using [levelup]."
+    },
+    "level-hookdown": {
+      "github": "hypermodules/level-hookdown",
+      "description": "Simple [levelup] hooks."
+    },
+    "level-post": {
+      "github": "dominictarr/level-post",
+      "description": "Consistent post hooks for [levelup]."
+    },
+    "level-condition": {
+      "github": "juliangruber/level-condition",
+      "description": "Get notified when a condition is triggered inside a [levelup] instance."
+    },
+    "level-hooks": {
+      "github": "dominictarr/level-hooks",
+      "description": "Implements a hook mechanism that allows you to intercept `put`, `delete` and `batch` operations. You can then turn those operations into batches. Useful if you want to turn a `put` into an atomic batch for say an automatic map operation.<br><br>NB. Author recommends using [level-sublevel] instead of `level-hooks` directly. Note that [level-sublevel] is not maintained."
+    }
+  }
+}

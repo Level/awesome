@@ -1,0 +1,13 @@
+{
+  "title": "Jobs",
+  "modules": {
+    "level-schedule": {
+      "github": "juliangruber/level-schedule",
+      "description": "A durable job scheduler."
+    },
+    "level-jobs": {
+      "github": "pgte/level-jobs",
+      "description": "Job Queue in [levelup]."
+    }
+  }
+}

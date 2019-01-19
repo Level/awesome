@@ -1,0 +1,29 @@
+{
+  "title": "Benchmarking & Debugging",
+  "modules": {
+    "level-compare-forks": {
+      "github": "kesla/level-compare-forks",
+      "description": "Run benchmarks on different level-forks and see how they compare."
+    },
+    "level-log": {
+      "github": "micnews/level-log",
+      "description": "Log all [levelup] operations, including method calls."
+    },
+    "debugdown": {
+      "github": "vweevers/debugdown",
+      "description": "Log all operations made on an [abstract-leveldown] compliant store. For node and browsers."
+    },
+    "level-time": {
+      "github": "micnews/level-time",
+      "description": "Log [levelup] operations and their duration."
+    },
+    "level-dump": {
+      "github": "thlorenz/level-dump",
+      "description": "Dumps all values and/or keys of a [levelup] or [level-sublevel] instance to the console."
+    },
+    "level-benchmarks": {
+      "github": "kesla/level-benchmarks",
+      "description": "Run benchmarks against levelup-compatible engines"
+    }
+  }
+}

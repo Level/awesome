@@ -1,0 +1,29 @@
+{
+  "title": "Atomicity",
+  "modules": {
+    "level-lock": {
+      "github": "substack/level-lock",
+      "description": "In-memory advisory read/write locks for [levelup] keys."
+    },
+    "level-mutex": {
+      "github": "mikeal/level-mutex",
+      "description": "Mutex read/write lock for [levelup]."
+    },
+    "level-updater": {
+      "github": "hughsk/level-updater",
+      "description": "Update keys without overlapping changes - makes it possible to implement an atomic incrementer, JSON merger, etc."
+    },
+    "levelplus": {
+      "github": "https://github.com/eugeneware/levelplus",
+      "description": "Adds atomic updates, increments, array pushes, set additions and user-defined atomic operations to [levelup]."
+    },
+    "level-atomics": {
+      "github": "IndigoUnited/node-level-atomics",
+      "description": "Add (parallel) atomic operations like `insert`, `replace`, `increment` and `decrement` to [levelup]."
+    },
+    "level-transactions": {
+      "github": "cshum/level-transactions",
+      "description": "Transaction layer for [levelup]."
+    }
+  }
+}

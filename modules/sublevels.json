@@ -9,6 +9,14 @@
       "copyrightYear": 2014,
       "author": "[Mathias Buus](https://github.com/mafintosh)"
     },
+    "level-temp": {
+      "github": "mafintosh/level-temp",
+      "description": "Create a temporary [subleveldown] sublevel that is guaranteed to be empty."
+    },
+    "level-mount": {
+      "github": "u8sand/level-mount",
+      "description": "Mount multiple [abstract-leveldown] stores by key prefix onto a single store. Can be used with [subleveldown]."
+    },
     "bytespace": {
       "github": "deanlandolt/bytespace",
       "description": [
@@ -46,6 +54,10 @@
       "description": [
         "Use path-like keys to separate sections of [levelup], with hooks. Adapted from [level-sublevel]."
       ]
+    },
+    "level-mirror": {
+      "github": "juliangruber/level-mirror",
+      "description": "Mirror and optionally transform data from one [level-sublevel] sublevel into another."
     }
   }
 }
