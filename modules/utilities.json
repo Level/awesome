@@ -51,6 +51,10 @@
       "github": "juliangruber/level-shared-batch",
       "description": "Share batches and commit collectively"
     },
+    "batchlevel": {
+      "github": "biobricks/batchlevel",
+      "description": "Batch all operations made on a [levelup] instance. Compatible with [subleveldown]."
+    },
     "ltest": {
       "github": "ralphtheninja/ltest",
       "description": "Test function for [levelup] testing, based on [level-test]."
@@ -58,6 +62,10 @@
     "level-probe": {
       "github": "vweevers/level-probe",
       "description": "Get the first record in a range, using an iterator or stream. NB. Not compatible with latest [levelup]."
+    },
+    "autolevel": {
+      "github": "https://gitlab.com/finwo/autolevel",
+      "description": "Automatically combine [levelup] with the right [abstract-leveldown] store for your configuration."
     },
     "level-lazy-open": {
       "github": "Level/lazy-open",

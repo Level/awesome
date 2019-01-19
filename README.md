@@ -29,6 +29,7 @@
 -   [Tools](#tools)
 -   [Benchmarking & Debugging](#benchmarking--debugging)
 -   [Resources](#resources)
+-   [Applications](#applications)
 -   [Legacy](#legacy)
 -   [Contributing](#contributing)
 -   [Donate](#donate)
@@ -133,6 +134,7 @@ Modules for indexing, alternative forms of querying data, MapReduce models and o
 
 Name | Dependencies | Description
 :--- | :----------- | :----------
+**[`level-auto-index`][level-auto-index]** | [![dependencies](https://img.shields.io/david/hypermodules/level-auto-index.svg?label=%E2%99%A5)](https://david-dm.org/hypermodules/level-auto-index) | Automatic secondary indexing for [`levelup`][levelup] and [`subleveldown`][subleveldown].
 **[`jsonquery`][jsonquery]** | [![dependencies](https://img.shields.io/david/eugeneware/jsonquery.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/jsonquery) | Query [`levelup`][levelup] with a MongoDB-like query API that returns streams.
 **[`jsonquery-engine`][jsonquery-engine]** | [![dependencies](https://img.shields.io/david/eugeneware/jsonquery-engine.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/jsonquery-engine) | A full MongoDB query language implementation with indexes for querying [`levelup`][levelup].
 **[`level-indico`][level-indico]** | [![dependencies](https://img.shields.io/david/mariocasciaro/level-indico.svg?label=%E2%99%A5)](https://david-dm.org/mariocasciaro/level-indico) | Yet another indexing plugin for [`levelup`][levelup]. By providing only a low-level querying mechanism it gives you the power to build more complicated and optimized queries on top of it.<br><br>NB. Relies on [`bytewise`][bytewise] and [`level-sublevel`][level-sublevel], both of which have caveats.
@@ -152,6 +154,13 @@ Name | Dependencies | Description
 **[`range-index`][range-index]** | [![dependencies](https://img.shields.io/david/kordon/range.svg?label=%E2%99%A5)](https://david-dm.org/kordon/range) | Range indexes for [`levelup`][levelup].
 **[`level-path-index`][level-path-index]** | [![dependencies](https://img.shields.io/david/level-path-index.svg?label=%E2%99%A5)](https://david-dm.org/level-path-index) | Index properties of items that live in a tree of materialized paths.
 **[`level-sql`][level-sql]** | [![dependencies](https://img.shields.io/david/hij1nx/level-sql.svg?label=%E2%99%A5)](https://david-dm.org/hij1nx/level-sql) | SQL queries for [`levelup`][levelup].
+**[`level-hash-index`][level-hash-index]** | [![dependencies](https://img.shields.io/david/smallhelm/level-hash-index.svg?label=%E2%99%A5)](https://david-dm.org/smallhelm/level-hash-index) | Store any string into [`levelup`][levelup], and get a collision free hash of that value that you can use in an index (or similar).
+**[`level-idx`][level-idx]** | [![dependencies](https://img.shields.io/david/hypermodules/level-idx.svg?label=%E2%99%A5)](https://david-dm.org/hypermodules/level-idx) | Another high-level API for creating secondary indexes, using [`level-auto-index`][level-auto-index].
+**[`level-indexer`][level-indexer]** | [![dependencies](https://img.shields.io/david/mafintosh/level-indexer.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/level-indexer) | Generic indexer for [`levelup`][levelup]. Only stores document keys for space efficiency.
+**[`level-librarian`][level-librarian]** | [![dependencies](https://img.shields.io/david/microstar-db/level-librarian.svg?label=%E2%99%A5)](https://david-dm.org/microstar-db/level-librarian) | Lightweight indexing and querying with the LLCJ query language.
+**[`level-match-index`][level-match-index]** | [![dependencies](https://img.shields.io/david/mmckegg/level-match-index.svg?label=%E2%99%A5)](https://david-dm.org/mmckegg/level-match-index) | Index and filter [`level-sublevel`][level-sublevel] databases and watch for future changes.
+**[`level-assoc`][level-assoc]** | [![dependencies](https://img.shields.io/david/substack/level-assoc.svg?label=%E2%99%A5)](https://david-dm.org/substack/level-assoc) | Relational foreign key associations (`hasMany`, `belongsTo`) for [`levelup`][levelup].
+**[`level-tree-index`][level-tree-index]** | [![dependencies](https://img.shields.io/david/biobricks/level-tree-index.svg?label=%E2%99%A5)](https://david-dm.org/biobricks/level-tree-index) | Tree indexer for [`levelup`][levelup].
 
 ## Databases
 
@@ -329,12 +338,14 @@ Name | Dependencies | Description
 :--- | :----------- | :----------
 **[`level-schedule`][level-schedule]** | [![dependencies](https://img.shields.io/david/juliangruber/level-schedule.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-schedule) | A durable job scheduler.
 **[`level-jobs`][level-jobs]** | [![dependencies](https://img.shields.io/david/pgte/level-jobs.svg?label=%E2%99%A5)](https://david-dm.org/pgte/level-jobs) | Job Queue in [`levelup`][levelup].
+**[`batchdb`][batchdb]** | [![dependencies](https://img.shields.io/david/substack/batchdb.svg?label=%E2%99%A5)](https://david-dm.org/substack/batchdb) | [`levelup`][levelup] and disk storage for queued batch jobs.
 
 ## File System
 
 Name | Dependencies | Description
 :--- | :----------- | :----------
 **[`level-filesystem`][level-filesystem]** | [![dependencies](https://img.shields.io/david/mafintosh/level-filesystem.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/level-filesystem) | Full implementation of the Node.js `fs` module on top of [`levelup`][levelup].
+**[`browserify-fs`][browserify-fs]** | [![dependencies](https://img.shields.io/david/mafintosh/browserify-fs.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/browserify-fs) | [`level-filesystem`][level-filesystem] as drop-in `fs` replacement for the browser, to be used with `browserify`.
 **[`level-fs`][level-fs]** | [![dependencies](https://img.shields.io/david/juliangruber/level-fs.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-fs) | Node's `fs` module with [`levelup`][levelup] as backend.
 **[`level-fs-browser`][level-fs-browser]** | [![dependencies](https://img.shields.io/david/juliangruber/level-fs-browser.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-fs-browser) | [`level-fs`][level-fs] as drop-in `fs` replacement for the browser, to be used with `browserify`.
 **[`level-store`][level-store]** | [![dependencies](https://img.shields.io/david/juliangruber/level-store.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-store) | A streaming storage engine based on [`levelup`][levelup].
@@ -361,8 +372,10 @@ Name | Dependencies | Description
 **[`level-modify`][level-modify]** | [![dependencies](https://img.shields.io/david/dskrepps/level-modify.svg?label=%E2%99%A5)](https://david-dm.org/dskrepps/level-modify) | Modify an existing key in [`levelup`][levelup]. Uses [`level-lock`][level-lock]. See also [`level-create`][level-create] and [`level-move`][level-move].
 **[`level-random`][level-random]** | [![dependencies](https://img.shields.io/david/michaelnisi/level-random.svg?label=%E2%99%A5)](https://david-dm.org/michaelnisi/level-random) | Read values of random [`levelup`][levelup] keys.
 **[`level-shared-batch`][level-shared-batch]** | [![dependencies](https://img.shields.io/david/juliangruber/level-shared-batch.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-shared-batch) | Share batches and commit collectively
+**[`batchlevel`][batchlevel]** | [![dependencies](https://img.shields.io/david/biobricks/batchlevel.svg?label=%E2%99%A5)](https://david-dm.org/biobricks/batchlevel) | Batch all operations made on a [`levelup`][levelup] instance. Compatible with [`subleveldown`][subleveldown].
 **[`ltest`][ltest]** | [![dependencies](https://img.shields.io/david/ralphtheninja/ltest.svg?label=%E2%99%A5)](https://david-dm.org/ralphtheninja/ltest) | Test function for [`levelup`][levelup] testing, based on [`level-test`][level-test].
 **[`level-probe`][level-probe]** | [![dependencies](https://img.shields.io/david/vweevers/level-probe.svg?label=%E2%99%A5)](https://david-dm.org/vweevers/level-probe) | Get the first record in a range, using an iterator or stream. NB. Not compatible with latest [`levelup`][levelup].
+**[`autolevel`][autolevel]** | [![dependencies](https://img.shields.io/david/https://gitlab.com/finwo/autolevel.svg?label=%E2%99%A5)](https://david-dm.org/https://gitlab.com/finwo/autolevel) | Automatically combine [`levelup`][levelup] with the right [`abstract-leveldown`][abstract-leveldown] store for your configuration.
 **[`level-lazy-open`][level-lazy-open]** | [![dependencies](https://img.shields.io/david/Level/lazy-open.svg?label=%E2%99%A5)](https://david-dm.org/Level/lazy-open) | Lazily open a leveldown compatible backend.
 **[`changeset`][changeset]** | [![dependencies](https://img.shields.io/david/eugeneware/changeset.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/changeset) | Generate diff changesets for javascript objects, decomposing diffs into a series of puts and delete operations. The format is compatible with [`levelup`][levelup] batch operations. Useful to synchronize objects.
 **[`level-delete-range`][level-delete-range]** | [![dependencies](https://img.shields.io/david/Raynos/level-delete-range.svg?label=%E2%99%A5)](https://david-dm.org/Raynos/level-delete-range) | Delete a range of keys from [`levelup`][levelup].
@@ -420,6 +433,23 @@ Name | Description
 **[`level-community`][level-community]** | General discussion, cross-repo efforts and common information for projects in the community
 **[`level-awesome`][level-awesome]** | An open list of awesome [Level][level-org] libraries and resources.
 **[`levelmeup`][levelmeup]** | Level Me Up Scotty! An intro to Node.js databases via a set of self-guided workshops.
+
+## Applications
+
+Name | Description
+:--- | :----------
+**[`level-todo`][level-todo]** | A todo list using LevelDB.
+**[`lt-core`][lt-core]** | Time tracking library.
+**[`npm-search`][npm-search]** | An index of npm using [`levelup`][levelup].
+**[`connect-level`][connect-level]** | A `connect` / `express` session store backed by LevelDB via [`levelup`][levelup].
+**[`hadron`][hadron]** | A hackable publishing platform using LevelDB as main database.
+**[`groove basin`][groove basin]** | Music player server with a web-based user interface. Uses [`levelup`][levelup] for the music library database.
+**[`prerender-level-cache`][prerender-level-cache]** | [Prerender](https://github.com/prerender/prerender) plugin to use level as a cache store.
+**[`tsd`][tsd]** | Spin up a quick server to visualize time series data.
+**[`appfeed`][appfeed]** | Version feed for trusted application delivery
+**[`arrivals-osx`][arrivals-osx]** | Watch a folder for audio and video arrivals and convert them to Apple-friendly formats.
+**[`bleach-log-server`][bleach-log-server]** | Keep track of bleach levels for a hot tub or a pool.
+**[`browserify-cdn`][browserify-cdn]** | Browserify CDN. Caches browserify bundles in LevelDB.
 
 ## Legacy
 
@@ -503,9 +533,25 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [aerospike-leveldown]: https://github.com/ProjectThor/aerospikedown
 
+[appfeed]: https://github.com/substack/appfeed
+
+[arrivals-osx]: https://github.com/mshick/arrivals-osx
+
 [asyncstorage-down]: https://github.com/tradle/asyncstorage-down
 
+[autolevel]: https://github.com/https://gitlab.com/finwo/autolevel
+
 [azureleveldown]: https://github.com/richorama/azureleveldown
+
+[batchdb]: https://github.com/substack/batchdb
+
+[batchlevel]: https://github.com/biobricks/batchlevel
+
+[bleach-log-server]: https://github.com/substack/bleach-log-server
+
+[browserify-cdn]: https://github.com/jesusabdullah/browserify-cdn
+
+[browserify-fs]: https://github.com/mafintosh/browserify-fs
 
 [bytespace]: https://github.com/deanlandolt/bytespace
 
@@ -520,6 +566,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [charwise]: https://github.com/dominictarr/charwise
 
 [cluster-levelup]: https://github.com/chiguireitor/cluster-levelup
+
+[connect-level]: https://github.com/davidbanham/connect-level
 
 [couchup]: https://github.com/mikeal/couchup
 
@@ -541,7 +589,11 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [fruitdown]: https://github.com/nolanlawson/fruitdown
 
+[groove basin]: https://github.com/andrewrk/groovebasin
+
 [gun-level]: https://github.com/PsychoLlama/gun-level
+
+[hadron]: https://github.com/hadronjs/hadron
 
 [indexeddown]: https://github.com/kapetan/indexeddown
 
@@ -569,7 +621,11 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-array]: https://github.com/juliangruber/level-array
 
+[level-assoc]: https://github.com/substack/level-assoc
+
 [level-atomics]: https://github.com/IndigoUnited/node-level-atomics
+
+[level-auto-index]: https://github.com/hypermodules/level-auto-index
 
 [level-autotable]: https://github.com/santoshrajan/levelup-autotable
 
@@ -661,6 +717,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-glob]: https://github.com/vweevers/level-glob
 
+[level-hash-index]: https://github.com/smallhelm/level-hash-index
+
 [level-historical-json]: https://github.com/ellell/level-historical-json
 
 [level-hookdown]: https://github.com/hypermodules/level-hookdown
@@ -669,6 +727,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-hyper]: https://github.com/Level/level-hyper
 
+[level-idx]: https://github.com/hypermodules/level-idx
+
 [level-immutable]: https://github.com/eugeneware/level-immutable
 
 [level-in]: https://github.com/fergiemcdowall/level-in
@@ -676,6 +736,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [level-index-update]: https://github.com/binocarlos/level-index-update
 
 [level-indexed]: https://github.com/kapetan/level-indexed
+
+[level-indexer]: https://github.com/mafintosh/level-indexer
 
 [level-indico]: https://github.com/mariocasciaro/level-indico
 
@@ -692,6 +754,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [level-key-list]: https://github.com/hughsk/level-key-list
 
 [level-lazy-open]: https://github.com/Level/lazy-open
+
+[level-librarian]: https://github.com/microstar-db/level-librarian
 
 [level-list]: https://github.com/juliangruber/level-list
 
@@ -720,6 +784,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [level-mapped-index]: https://github.com/rvagg/node-level-mapped-index
 
 [level-master]: https://github.com/dominictarr/level-master
+
+[level-match-index]: https://github.com/mmckegg/level-match-index
 
 [level-mem]: https://github.com/Level/level-mem
 
@@ -879,9 +945,13 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-time]: https://github.com/micnews/level-time
 
+[level-todo]: https://github.com/nickleefly/level-todo
+
 [level-transactions]: https://github.com/cshum/level-transactions
 
 [level-tree]: https://github.com/calvinmetcalf/level-tree
+
+[level-tree-index]: https://github.com/biobricks/level-tree-index
 
 [level-trie]: https://github.com/juliangruber/level-trie
 
@@ -965,6 +1035,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [localstorage-down]: https://github.com/No9/localstorage-down
 
+[lt-core]: https://github.com/juice49/lt-core
+
 [ltest]: https://github.com/ralphtheninja/ltest
 
 [ltgt]: https://github.com/dominictarr/ltgt
@@ -997,11 +1069,15 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [mysqldown]: https://github.com/kesla/mysqldown
 
+[npm-search]: https://github.com/dominictarr/npm-search
+
 [path-engine]: https://github.com/eugeneware/path-engine
 
 [plumbdb]: https://github.com/maxogden/plumbdb
 
 [pouchdb]: http://pouchdb.com/
+
+[prerender-level-cache]: https://github.com/maxlath/prerender-level-cache
 
 [protocol-buffers]: https://github.com/mafintosh/protocol-buffers
 
@@ -1048,5 +1124,7 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [timestreamdb]: https://github.com/brycebaril/timestreamdb
 
 [tiny-level-ttl]: https://github.com/ArtskydJ/tiny-level-ttl
+
+[tsd]: https://github.com/hij1nx/tsd
 
 [vertical]: https://github.com/zy445566/vertical

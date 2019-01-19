@@ -2,6 +2,10 @@
   "title": "Processing",
   "description": "Modules for indexing, alternative forms of querying data, MapReduce models and other forms of data processing.",
   "modules": {
+    "level-auto-index": {
+      "github": "hypermodules/level-auto-index",
+      "description": "Automatic secondary indexing for [levelup] and [subleveldown]."
+    },
     "jsonquery": {
       "github": "eugeneware/jsonquery",
       "description": "Query [levelup] with a MongoDB-like query API that returns streams."
@@ -77,6 +81,34 @@
     "level-sql": {
       "github": "hij1nx/level-sql",
       "description": "SQL queries for [levelup]."
+    },
+    "level-hash-index": {
+      "github": "smallhelm/level-hash-index",
+      "description": "Store any string into [levelup], and get a collision free hash of that value that you can use in an index (or similar)."
+    },
+    "level-idx": {
+      "github": "hypermodules/level-idx",
+      "description": "Another high-level API for creating secondary indexes, using [level-auto-index]."
+    },
+    "level-indexer": {
+      "github": "mafintosh/level-indexer",
+      "description": "Generic indexer for [levelup]. Only stores document keys for space efficiency."
+    },
+    "level-librarian": {
+      "github": "microstar-db/level-librarian",
+      "description": "Lightweight indexing and querying with the LLCJ query language."
+    },
+    "level-match-index": {
+      "github": "mmckegg/level-match-index",
+      "description": "Index and filter [level-sublevel] databases and watch for future changes."
+    },
+    "level-assoc": {
+      "github": "substack/level-assoc",
+      "description": "Relational foreign key associations (`hasMany`, `belongsTo`) for [levelup]."
+    },
+    "level-tree-index": {
+      "github": "biobricks/level-tree-index",
+      "description": "Tree indexer for [levelup]."
     }
   }
 }

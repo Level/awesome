@@ -5,6 +5,10 @@
       "github": "mafintosh/level-filesystem",
       "description": "Full implementation of the Node.js `fs` module on top of [levelup]."
     },
+    "browserify-fs": {
+      "github": "mafintosh/browserify-fs",
+      "description": "[level-filesystem] as drop-in `fs` replacement for the browser, to be used with `browserify`."
+    },
     "level-fs": {
       "github": "juliangruber/level-fs",
       "description": "Node's `fs` module with [levelup] as backend."

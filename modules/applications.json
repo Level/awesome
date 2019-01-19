@@ -1,0 +1,54 @@
+{
+  "title": "Applications",
+  "dependencies": false,
+  "modules": {
+    "level-todo": {
+      "github": "nickleefly/level-todo",
+      "description": "A todo list using LevelDB."
+    },
+    "lt-core": {
+      "github": "juice49/lt-core",
+      "description": "Time tracking library."
+    },
+    "npm-search": {
+      "github": "dominictarr/npm-search",
+      "description": "An index of npm using [levelup]."
+    },
+    "connect-level": {
+      "github": "davidbanham/connect-level",
+      "description": "A `connect` / `express` session store backed by LevelDB via [levelup]."
+    },
+    "Hadron": {
+      "github": "hadronjs/hadron",
+      "description": "A hackable publishing platform using LevelDB as main database."
+    },
+    "Groove Basin": {
+      "github": "andrewrk/groovebasin",
+      "description": "Music player server with a web-based user interface. Uses [levelup] for the music library database."
+    },
+    "Prerender-level-cache": {
+      "github": "maxlath/prerender-level-cache",
+      "description": "[Prerender](https://github.com/prerender/prerender) plugin to use level as a cache store."
+    },
+    "tsd": {
+      "github": "hij1nx/tsd",
+      "description": "Spin up a quick server to visualize time series data."
+    },
+    "appfeed": {
+      "github": "substack/appfeed",
+      "description": "Version feed for trusted application delivery"
+    },
+    "arrivals-osx": {
+      "github": "mshick/arrivals-osx",
+      "description": "Watch a folder for audio and video arrivals and convert them to Apple-friendly formats."
+    },
+    "bleach-log-server": {
+      "github": "substack/bleach-log-server",
+      "description": "Keep track of bleach levels for a hot tub or a pool."
+    },
+    "browserify-cdn": {
+      "github": "jesusabdullah/browserify-cdn",
+      "description": "Browserify CDN. Caches browserify bundles in LevelDB."
+    }
+  }
+}
