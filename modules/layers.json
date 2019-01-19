@@ -22,16 +22,13 @@
       "copyrightYear": 2013,
       "author": "Rod Vagg"
     },
-    "subleveldown": {
-      "github": "mafintosh/subleveldown",
-      "compatibility": ["abstract-leveldown", "levelup"],
-      "description": "Sublevels implemented using leveldowns.",
-      "copyrightYear": 2014,
-      "author": "[Mathias Buus](https://github.com/mafintosh)"
+    "level-cowdown": {
+      "github": "substack/level-cowdown",
+      "description": "Copy-on-write [abstract-leveldown] layer."
     },
-    "cachedown": {
-      "github": "mvayngrib/cachedown",
-      "description": "LRU cache."
+    "abstract-stream-leveldown": {
+      "github": "jed/abstract-stream-leveldown",
+      "description": "A stream-based abstract prototype."
     }
   }
 }

@@ -43,6 +43,13 @@
       "description": "Bundle for [leveldown-hyper].",
       "copyrightYear": 2012,
       "author": null
+    },
+    "level-indexed": {
+      "github": "kapetan/level-indexed",
+      "description": [
+        "Bundle for [indexeddown].",
+        "Alternative to [level-browserify] and [level]."
+      ]
     }
   }
 }

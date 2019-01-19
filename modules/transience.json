@@ -1,0 +1,42 @@
+{
+  "title": "Transience",
+  "modules": {
+    "cachedown": {
+      "github": "mvayngrib/cachedown",
+      "description": "LRU cache implemented as an [abstract-leveldown] layer."
+    },
+    "level-ttl": {
+      "github": "Level/level-ttl",
+      "description": [
+        "Add a `ttl` (time-to-live) option to [levelup].",
+        "NB. Suffers from race issues. See also [tiny-level-ttl]."
+      ],
+      "copyrightYear": 2013,
+      "author": "Rod Vagg"
+    },
+    "tiny-level-ttl": {
+      "github": "ArtskydJ/tiny-level-ttl",
+      "description": "Add a `ttl` (time-to-live) option to [levelup], [level-sublevel] or [level-spaces]. Also respects [level-lock]."
+    },
+    "level-live-cache": {
+      "github": "juliangruber/level-live-cache",
+      "description": "An in-memory cache that keeps up to date with its source."
+    },
+    "level-lru-cache": {
+      "github": "kemitchell/level-lru-cache.js",
+      "description": "Simple LRU cache."
+    },
+    "level-ttl-cache": {
+      "github": "rvagg/level-ttl-cache",
+      "description": "A pass-through cache for arbitrary objects or binary data using LevelDB, expired by a TTL."
+    },
+    "level-cache": {
+      "github": "Raynos/level-cache",
+      "description": "A caching module you can place in front of a [levelup] database. It will cache a subset of the database in an in-memory LRU cache based on configuration. It has an optional synchronous API which will return from the cache only."
+    },
+    "levelup-cache": {
+      "github": "TehShrike/levelup-cache",
+      "description": "Use [levelup] to cache remote data."
+    }
+  }
+}

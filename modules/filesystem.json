@@ -1,0 +1,53 @@
+{
+  "title": "File System",
+  "modules": {
+    "level-filesystem": {
+      "github": "mafintosh/level-filesystem",
+      "description": "Full implementation of the Node.js `fs` module on top of [levelup]."
+    },
+    "browserify-fs": {
+      "github": "mafintosh/browserify-fs",
+      "description": "[level-filesystem] as drop-in `fs` replacement for the browser, to be used with `browserify`."
+    },
+    "level-fs": {
+      "github": "juliangruber/level-fs",
+      "description": "Node's `fs` module with [levelup] as backend."
+    },
+    "level-fs-browser": {
+      "github": "juliangruber/level-fs-browser",
+      "description": "[level-fs] as drop-in `fs` replacement for the browser, to be used with `browserify`."
+    },
+    "level-store": {
+      "github": "juliangruber/level-store",
+      "description": "A streaming storage engine based on [levelup]."
+    },
+    "level-serve": {
+      "github": "Wayla/level-serve",
+      "description": "Streaming static file server based on [levelup]."
+    },
+    "suckit": {
+      "github": "deoxxa/suckit",
+      "description": "Expose a [level-store] over HTTP."
+    },
+    "level-vinyl": {
+      "github": "vweevers/level-vinyl",
+      "description": "[Vinyl](https://github.com/gulpjs/vinyl-fs) adapter and blob store. Saves file contents in a content addressable blob store, file metadata in [levelup]."
+    },
+    "level-blob": {
+      "github": "crodas/level-blob",
+      "description": "Store blobs in [levelup]"
+    },
+    "level-blob-store": {
+      "github": "diasdavid/level-blob-store",
+      "description": "An [`abstract-blob-store`](https://github.com/maxogden/abstract-blob-store) using LevelDB as the storage backend"
+    },
+    "level-pull-blob-store": {
+      "github": "ipfs/js-level-pull-blob-store",
+      "description": "A [`pull-blob-store`](https://github.com/ipfs/interface-pull-blob-store) implementation backed by LevelDB."
+    },
+    "level-server": {
+      "github": "Wayla/level-server",
+      "description": "Standalone LevelDB file server based on [level-serve], [multilevel] and [level-sublevel]."
+    }
+  }
+}

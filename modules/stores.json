@@ -93,6 +93,22 @@
     "sheet-down": {
       "github": "jed/sheet-down",
       "type": "[Google Sheets](https://docs.google.com/spreadsheets)"
+    },
+    "indexeddown": {
+      "github": "kapetan/indexeddown",
+      "type": "IndexedDB"
+    },
+    "lmdb-leveldown": {
+      "github": "chrbala/lmdb-leveldown",
+      "type": "LMDB"
+    },
+    "localdown": {
+      "github": "bhoriuchi/localdown",
+      "type": "localStorage in Node.js"
+    },
+    "aerospike-leveldown": {
+      "github": "ProjectThor/aerospikedown",
+      "type": "Aerospike"
     }
   }
 }

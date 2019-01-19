@@ -1,0 +1,134 @@
+{
+  "title": "Data Structures",
+  "description": "Modules that utilize a specific key/value scheme to provide a higher-level data structure.",
+  "modules": {
+    "merkle-dag": {
+      "github": "mafintosh/merkle-dag",
+      "description": "Merkle DAG on top of LevelDB"
+    },
+    "merkle-patricia-tree": {
+      "github": "ethereumjs/merkle-patricia-tree",
+      "description": "Implementation of the modified merkle patricia tree as specified in [Ethereum's yellow paper](http://gavwood.com/Paper.pdf)."
+    },
+    "level-array": {
+      "github": "juliangruber/level-array",
+      "description": "The array datatype inside [levelup]."
+    },
+    "level-set": {
+      "github": "maiah/level-set",
+      "description": "Add a `set` method to [levelup] for saving objects in a tree-like structure."
+    },
+    "level-push": {
+      "github": "maiah/level-push",
+      "description": "Add a `push` method to [levelup] for saving objects using [level-set] with auto-generated UUID."
+    },
+    "level-version": {
+      "github": "brycebaril/level-version",
+      "description": "Store and retrieve versioned data in [levelup]."
+    },
+    "level-queue-type": {
+      "github": "mcollina/level-queue-type",
+      "description": "The queue datatype inside [levelup]."
+    },
+    "level-q": {
+      "github": "eugeneware/level-q",
+      "description": "Priority queuing for [levelup]."
+    },
+    "qool": {
+      "github": "kessler/qool",
+      "description": "A queue backed by [levelup], durable and FIFO."
+    },
+    "level-trie": {
+      "github": "juliangruber/level-trie",
+      "description": "The TRIE data structure and search algorithm, on top of [levelup]."
+    },
+    "level-geospatial": {
+      "github": "richorama/level-geospatial",
+      "description": "Store key values pairs with lat/lon coordinates, and query using a radius."
+    },
+    "level-pathwise": {
+      "github": "juliangruber/level-pathwise",
+      "description": "Turn [levelup] into one huge object of arbitrary size! Efficiently and atomically update and read parts of it."
+    },
+    "level-places": {
+      "github": "Wayla/level-places",
+      "description": "Store and retrieve places near a lat/long pair."
+    },
+    "level-nearby-stream": {
+      "github": "juliangruber/level-nearby-stream",
+      "description": "Stream in nearby places using the browser's geolocation and [level-places]."
+    },
+    "level-tree": {
+      "github": "calvinmetcalf/level-tree",
+      "description": "Geospatial indexing for GeoJSON in [levelup]"
+    },
+    "level-list": {
+      "github": "juliangruber/level-list",
+      "description": "Map lists of data stored in [levelup] to DOM elements."
+    },
+    "level-reactive": {
+      "github": "juliangruber/level-reactive",
+      "description": "Reactive templating for data stored in [levelup]."
+    },
+    "level-paginate": {
+      "github": "juliangruber/level-paginate",
+      "description": "Streaming pagination for [levelup]."
+    },
+    "level-average": {
+      "github": "juliangruber/level-average",
+      "description": "Calculate rolling averages in [levelup]."
+    },
+    "level-sum": {
+      "github": "juliangruber/level-sum",
+      "description": "Calculate sums in [levelup] and get live updates."
+    },
+    "level-historical-json": {
+      "github": "ellell/level-historical-json",
+      "description": "Keep a history of all the changes of a JSON document."
+    },
+    "level-immutable": {
+      "github": "eugeneware/level-immutable",
+      "description": "[levelup] immutable history and database snapshotting based on ideas in `datomic`."
+    },
+    "level-model": {
+      "github": "sethvincent/level-model",
+      "description": "A higher-level module for creating content models using [levelup] and JSON Schema validation."
+    },
+    "level-stream": {
+      "github": "juliangruber/level-stream",
+      "description": "Persist streams in [levelup]."
+    },
+    "level-stay": {
+      "github": "juliangruber/level-stay",
+      "description": "An alternative approach to storing scuttlebutts in [levelup]."
+    },
+    "skeyma": {
+      "github": "jed/skeyma",
+      "description": "Turns a template string (like `${forumId}/${postId}`) into parse/serialize streams that transform objects like `{forumId, postId, text}` into key-value pairs and back."
+    },
+    "level-autotable": {
+      "github": "santoshrajan/levelup-autotable",
+      "description": "Auto incrementing keys with \"fields\" and \"records\"."
+    },
+    "level-forks": {
+      "github": "substack/level-forks",
+      "description": "Forking graph of cascading namespaces."
+    },
+    "level-geo": {
+      "github": "julianduque/level-geo",
+      "description": "A geospatial index for [levelup]."
+    },
+    "level-geography": {
+      "github": "morganherlocker/level-geography",
+      "description": "Indexed geography storage in [levelup]."
+    },
+    "accountdown": {
+      "github": "substack/accountdown",
+      "description": "Persistent user accounts."
+    },
+    "accountdown-model": {
+      "github": "sethvincent/accountdown-model",
+      "description": "A wrapper around [accountdown] that provides a few additional features"
+    }
+  }
+}

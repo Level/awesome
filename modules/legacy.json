@@ -1,0 +1,153 @@
+{
+  "title": "Legacy",
+  "description": "Modules that are deprecated, archived or superseded. Listed here for the historical record.",
+  "dependencies": false,
+  "modules": {
+    "level-mapped-index": {
+      "github": "rvagg/node-level-mapped-index",
+      "description": "Indexes for [levelup] built on [map-reduce]. Uses a custom indexing function for each index to parse and record index values for each entry. Archived."
+    },
+    "level-encoding": {
+      "github": "Raynos/level-encoding",
+      "description": "Implements the encoding logic of a [levelup]-like database. This functionality lives on in [level-codec]."
+    },
+    "byteup": {
+      "github": "eugeneware/byteup",
+      "description": "Adds [bytewise] as a native encoding for [levelup]. This can now be achieved with [encoding-down] and `{ keyEncoding: bytewise }`."
+    },
+    "msgpackup": {
+      "github": "eugeneware/msgpackup",
+      "description": "Adds [msgpack](https://github.com/msgpack/msgpack) as a native encoding for [levelup]. This can now be achieved with [encoding-down] and `{ keyEncoding: msgpack }`."
+    },
+    "level-cbatch": {
+      "github": "kesla/level-cbatch",
+      "description": "Provides a chainable API for `db.batch()`. This functionality is now provided by [levelup]."
+    },
+    "memdb": {
+      "github": "juliangruber/memdb",
+      "description": "[levelup] + [memdown]. Superseded by [level-mem]."
+    },
+    "levelup-iterator": {
+      "github": "mirkokiefer/levelup-iterator",
+      "description": "Use [abstract-leveldown] iterators instead of readable streams to traverse the database. Iterators are exposed by [levelup] since `levelup@3.1.0`."
+    },
+    "levelidb": {
+      "github": "Raynos/levelidb",
+      "description": "A [levelup] interface on top of IndexedDB. Superseded by [level-js] and [level]."
+    },
+    "level-multiply": {
+      "github": "rvagg/node-level-multiply",
+      "description": "Make [levelup] `get()`, `put()` and `del()` methods accept multiples keys & values. Archived."
+    },
+    "level-namespace": {
+      "github": "kesla/level-namespace",
+      "description": "Split your db up into multiple namespaces. Deprecated."
+    },
+    "q-level": {
+      "github": "mvayngrib/q-level",
+      "description": "[levelup] with Q promises. [levelup] has native Promise support now."
+    },
+    "level-static": {
+      "github": "dominictarr/level-static",
+      "description": "Use [levelup] as a static file server. Abandoned."
+    },
+    "level-spaces": {
+      "github": "rvagg/level-spaces",
+      "description": "A simple namespacing solution for [levelup]. Deprecated."
+    },
+    "level-object": {
+      "github": "juliangruber/level-object",
+      "description": "Store objects in [levelup]. Author recommends [level-pathwise] instead."
+    },
+    "level-scuttlebutt": {
+      "github": "dominictarr/level-scuttlebutt",
+      "description": "Persist and query scuttlebutt documents (requires [level-sublevel]). Abandoned."
+    },
+    "gun-level": {
+      "github": "PsychoLlama/gun-level",
+      "description": "Sync graph-style data real-time between browsers and servers. Discontinued."
+    },
+    "level-co": {
+      "github": "juliangruber/level-co",
+      "description": "[levelup] wrappers for [co](https://github.com/tj/co). Instead use native ES6 features."
+    },
+    "level-session": {
+      "github": "rvagg/node-level-session",
+      "description": "Framework-agnostic, LevelDB-backed web server session manager. Archived."
+    },
+    "level-socket": {
+      "github": "maxogden/level-socket",
+      "description": "Backend server that exposes [levelup] over authenticated cross domain websockets."
+    },
+    "level-user": {
+      "github": "maxogden/level-user",
+      "description": "Client side library for authenticating with and moving data over [level-socket]."
+    },
+    "string-range": {
+      "github": "dominictarr/string-range",
+      "description": "Manipulate string ranges for `db.createReadStream()`. Abandoned."
+    },
+    "range-bucket": {
+      "github": "dominictarr/range-bucket",
+      "description": "Generate string ranges that group into ranges, suitable for use as database keys. Abandoned."
+    },
+    "level-partition-check": {
+      "github": "soldair/level-partition-check",
+      "description": "Extend [levelup] to error if you write outside of a specified range of keys. Stalled work in progress."
+    },
+    "level-binomial-replication": {
+      "github": "dominictarr/level-binomial-replication",
+      "description": "Biniomial replication for [levelup]. Abandoned."
+    },
+    "level-bytewise": {
+      "github": "eugeneware/level-bytewise",
+      "description": "[levelup] with [bytewise] key encoding and bytewise-friendly sublevels."
+    },
+    "level-peek": {
+      "github": "dominictarr/level-peek",
+      "description": "Get the first or last record in a range. Abandoned."
+    },
+    "level-party-hyper": {
+      "github": "jcrugzz/level-party",
+      "description": "Defunct fork of [level-party]."
+    },
+    "level-prebuilt": {
+      "github": "jhermsmeier/level-prebuilt",
+      "description": "Same as [level] but with prebuilt binaries. This is now provided by [level] too."
+    },
+    "level-promise": {
+      "github": "nathan7/level-promise",
+      "description": "[levelup] with Promises. This is now provided by [levelup] out of the box."
+    },
+    "level-search": {
+      "github": "dominictarr/level-search",
+      "description": "Index and search every property in [levelup] containing object values. Abandoned."
+    },
+    "level-scout": {
+      "github": "vweevers/level-scout",
+      "description": "Range search with a query planner. Development stalled."
+    },
+    "leveldown-android-prebuilt": {
+      "github": "level/leveldown",
+      "description": "Defunct fork of [leveldown] to add Android support. Merged into `leveldown`."
+    },
+    "leveldown-prebuilt": {
+      "github": "mafintosh/leveldown-prebuilt",
+      "description": "Defunct fork of [leveldown] to add prebuilt binaries. Now provided by `leveldown`."
+    },
+    "level-map-index": {
+      "github": "vweevers/level-map-index",
+      "description": "Another indexing module. Adapted from [map-reduce]. Author recommends other solutions."
+    },
+    "level-memview": {
+      "github": "dominictarr/level-memview",
+      "description": "In memory view on top of [levelup]. Abandoned."
+    },
+    "plumbdb": {
+      "github": "maxogden/plumbdb",
+      "description": [
+        "HTTP request handlers for building web services on top of LevelDB. Not in active development."
+      ]
+    }
+  }
+}

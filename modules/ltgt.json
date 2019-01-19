@@ -1,0 +1,26 @@
+{
+  "title": "Range Options",
+  "description": "Utilities for working with range options, known as ltgt(e), common to [levelup] streams and [abstract-leveldown] iterators.",
+  "modules": {
+    "ltgt": {
+      "github": "dominictarr/ltgt",
+      "description": "Tool belt to find lower or upper bounds, compare and filter keys and more."
+    },
+    "level-option-wrap": {
+      "github": "substack/level-option-wrap",
+      "description": "Wrap `ltgt` options with functions. Expose range options without leaking information about your internal key representations."
+    },
+    "interval-to-ltgt": {
+      "github": "nowsecure/interval-to-ltgt",
+      "description": "Convert an interval string to an `ltgt` object. This is the counterpart to [ltgt-to-interval]."
+    },
+    "ltgt-to-interval": {
+      "github": "juliangruber/ltgt-to-interval",
+      "description": "Convert an `ltgt` object to an interval string. This is the counterpart to [interval-to-ltgt]."
+    },
+    "range-emitter": {
+      "github": "jameskyburz/range-emitter",
+      "description": "Range emitter. Publish keys and subscribe to ranges."
+    }
+  }
+}

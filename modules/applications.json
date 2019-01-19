@@ -1,0 +1,87 @@
+{
+  "title": "Applications",
+  "description": "Applications and libraries that use Level modules under the hood.",
+  "dependencies": false,
+  "modules": {
+    "IPFS": {
+      "url": "https://ipfs.io/",
+      "description": "A peer-to-peer hypermedia protocol to make the web faster, safer, and more open."
+    },
+    "clocker": {
+      "github": "substack/clocker",
+      "description": "Track project hours"
+    },
+    "copy-on-write": {
+      "github": "andrewosh/copy-on-write",
+      "description": "A copy-on-write FUSE implementation"
+    },
+    "chrome-localstorage": {
+      "github": "regular/chrome-localstorage",
+      "description": "CLI to manipulate Chrome and Chromium's localStorage on disk."
+    },
+    "cipherhub": {
+      "github": "substack/cipherhub",
+      "description": "Encrypt messages based on GitHub SSH public keys"
+    },
+    "code-music-studio": {
+      "github": "substack/code-music-studio",
+      "description": "Design musical algorithms"
+    },
+    "level-todo": {
+      "github": "nickleefly/level-todo",
+      "description": "A todo list using LevelDB."
+    },
+    "electron-crash-report-service": {
+      "github": "yoshuawuyts/electron-crash-report-service",
+      "description": "Aggregate crash reports for Electron apps"
+    },
+    "cross-street-indexer": {
+      "github": "mapbox/cross-street-indexer",
+      "description": "Blazing fast tile based geocoder that matches cross street (road intersections) entirely sourced by OSM QA Tiles."
+    },
+    "lt-core": {
+      "github": "juice49/lt-core",
+      "description": "Time tracking library."
+    },
+    "npm-search": {
+      "github": "dominictarr/npm-search",
+      "description": "An index of npm using [levelup]."
+    },
+    "connect-level": {
+      "github": "davidbanham/connect-level",
+      "description": "A `connect` / `express` session store backed by LevelDB via [levelup]."
+    },
+    "Hadron": {
+      "github": "hadronjs/hadron",
+      "description": "A hackable publishing platform using LevelDB as main database."
+    },
+    "Groove Basin": {
+      "github": "andrewrk/groovebasin",
+      "description": "Music player server with a web-based user interface. Uses [levelup] for the music library database."
+    },
+    "Prerender-level-cache": {
+      "github": "maxlath/prerender-level-cache",
+      "description": "[Prerender](https://github.com/prerender/prerender) plugin to use level as a cache store."
+    },
+    "tsd": {
+      "github": "hij1nx/tsd",
+      "description": "Spin up a quick server to visualize time series data."
+    },
+    "appfeed": {
+      "github": "substack/appfeed",
+      "description": "Version feed for trusted application delivery"
+    },
+    "arrivals-osx": {
+      "github": "mshick/arrivals-osx",
+      "description": "Watch a folder for audio and video arrivals and convert them to Apple-friendly formats."
+    },
+    "bleach-log-server": {
+      "github": "substack/bleach-log-server",
+      "description": "Keep track of bleach levels for a hot tub or a pool."
+    },
+    "browserify-cdn": {
+      "github": "jesusabdullah/browserify-cdn",
+      "description": "Browserify CDN. Caches browserify bundles in LevelDB."
+    }
+  }
+}
