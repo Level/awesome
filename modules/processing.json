@@ -109,6 +109,14 @@
     "level-tree-index": {
       "github": "biobricks/level-tree-index",
       "description": "Tree indexer for [levelup]."
+    },
+    "changes-index": {
+      "github": "substack/changes-index",
+      "description": "Create indexes from a [changes-feed](https://github.com/mafintosh/changes-feed). Provides a way to create a materialized view on top of an append-only log."
+    },
+    "changesdown": {
+      "github": "mafintosh/changesdown",
+      "description": "[levelup] interface that uses an [abstract-leveldown] store that writes to a [changes-feed](https://github.com/mafintosh/changes-feed) to store its state."
     }
   }
 }

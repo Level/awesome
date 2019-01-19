@@ -1,6 +1,10 @@
-# Awesome Level ![level badge][level-badge]
+# Awesome Level
 
 > An open list of awesome **[Level][level-org]** modules and resources. [Add yours!](#contributing)
+
+[![level badge][level-badge]](https://github.com/level/awesome)
+[![Backers on Open Collective](https://opencollective.com/level/backers/badge.svg?color=orange)](#backers)
+[![Sponsors on Open Collective](https://opencollective.com/level/sponsors/badge.svg?color=orange)](#sponsors)
 
 ## Table of Contents
 
@@ -107,7 +111,7 @@ Custom [`level-codec`][level-codec] compatible encodings for use with [`encoding
 Name | Dependencies | Description
 :--- | :----------- | :----------
 **[`charwise`][charwise]** | [![dependencies](https://img.shields.io/david/dominictarr/charwise.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/charwise) | Encode/decode with same encoded sort order as [`bytewise`][bytewise].
-**[`bytewise`][bytewise]** | [![dependencies](https://img.shields.io/david/deanlandolt/bytewise.svg?label=%E2%99%A5)](https://david-dm.org/deanlandolt/bytewise) | Binary serialization which sorts bytewise for arbitrarily complex data structures.<br>NB. Use [`charwise`][charwise] if possible. Gives you almost everything `bytewise` does but much faster.
+**[`bytewise`][bytewise]** | [![dependencies](https://img.shields.io/david/deanlandolt/bytewise.svg?label=%E2%99%A5)](https://david-dm.org/deanlandolt/bytewise) | Binary serialization which sorts bytewise for arbitrarily complex data structures.<br><br>NB. Use [`charwise`][charwise] if possible. Gives you almost everything `bytewise` does but much faster.
 **[`protocol-buffers`][protocol-buffers]** | [![dependencies](https://img.shields.io/david/mafintosh/protocol-buffers.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/protocol-buffers) | [Protocol Buffers](https://developers.google.com/protocol-buffers/) for Node.js. Compiled messages are [`level-codec`][level-codec] compatible encodings.
 **[`lexicographic-integer-encoding`][lexicographic-integer-encoding]** | [![dependencies](https://img.shields.io/david/vweevers/lexicographic-integer-encoding.svg?label=%E2%99%A5)](https://david-dm.org/vweevers/lexicographic-integer-encoding) | Wraps [`lexicographic-integer`](https://github.com/substack/lexicographic-integer).
 
@@ -120,8 +124,8 @@ Name | Dependencies | Description
 **[`subleveldown`][subleveldown]** | [![dependencies](https://img.shields.io/david/mafintosh/subleveldown.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/subleveldown) | Sublevels implemented using leveldowns.
 **[`level-temp`][level-temp]** | [![dependencies](https://img.shields.io/david/mafintosh/level-temp.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/level-temp) | Create a temporary [`subleveldown`][subleveldown] sublevel that is guaranteed to be empty.
 **[`level-mount`][level-mount]** | [![dependencies](https://img.shields.io/david/u8sand/level-mount.svg?label=%E2%99%A5)](https://david-dm.org/u8sand/level-mount) | Mount multiple [`abstract-leveldown`][abstract-leveldown] stores by key prefix onto a single store. Can be used with [`subleveldown`][subleveldown].
-**[`bytespace`][bytespace]** | [![dependencies](https://img.shields.io/david/deanlandolt/bytespace.svg?label=%E2%99%A5)](https://david-dm.org/deanlandolt/bytespace) | Keypath subspaces prefixed with [`bytewise`][bytewise] tuples. Similar to [`level-sublevel`][level-sublevel].<br>NB. [`bytewise`][bytewise] - and thus [`bytespace`][bytespace] - can be slow. Consider using [`subleveldown`][subleveldown] paired with the [`charwise`][charwise] encoding instead.
-**[`level-sublevel`][level-sublevel]** | [![dependencies](https://img.shields.io/david/dominictarr/level-sublevel.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-sublevel) | Adds the ability to create subsections with the same API as [`levelup`][levelup], but only write/read to a prefixed section, or bucket, of the key-space. Each section also has [`level-hooks`][level-hooks] installed.<br>NB. No longer maintained. We recommend [`subleveldown`][subleveldown] instead.
+**[`bytespace`][bytespace]** | [![dependencies](https://img.shields.io/david/deanlandolt/bytespace.svg?label=%E2%99%A5)](https://david-dm.org/deanlandolt/bytespace) | Keypath subspaces prefixed with [`bytewise`][bytewise] tuples. Similar to [`level-sublevel`][level-sublevel].<br><br>NB. [`bytewise`][bytewise] - and thus [`bytespace`][bytespace] - can be slow. Consider using [`subleveldown`][subleveldown] paired with the [`charwise`][charwise] encoding instead.
+**[`level-sublevel`][level-sublevel]** | [![dependencies](https://img.shields.io/david/dominictarr/level-sublevel.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-sublevel) | Adds the ability to create subsections with the same API as [`levelup`][levelup], but only write/read to a prefixed section, or bucket, of the key-space. Each section also has [`level-hooks`][level-hooks] installed.<br><br>NB. No longer maintained. We recommend [`subleveldown`][subleveldown] instead.
 **[`level-sublevel-stream`][level-sublevel-stream]** | [![dependencies](https://img.shields.io/david/juliangruber/level-sublevel-stream.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-sublevel-stream) | Find [`level-sublevel`][level-sublevel] sublevels, not requiring them to be in memory already.
 **[`level-subtree`][level-subtree]** | [![dependencies](https://img.shields.io/david/hij1nx/level-subtree.svg?label=%E2%99%A5)](https://david-dm.org/hij1nx/level-subtree) | Generate a tree from [`level-sublevel`][level-sublevel] sublevels, useful when there is no manifest.
 **[`level-superlevel`][level-superlevel]** | [![dependencies](https://img.shields.io/david/randymized/level-superlevel.svg?label=%E2%99%A5)](https://david-dm.org/randymized/level-superlevel) | Superlevel adds a "super" level that allows accessing the entire database, discovering [`level-sublevel`][level-sublevel] sublevels and browsing the database without knowledge of the sublevel structure.
@@ -161,6 +165,8 @@ Name | Dependencies | Description
 **[`level-match-index`][level-match-index]** | [![dependencies](https://img.shields.io/david/mmckegg/level-match-index.svg?label=%E2%99%A5)](https://david-dm.org/mmckegg/level-match-index) | Index and filter [`level-sublevel`][level-sublevel] databases and watch for future changes.
 **[`level-assoc`][level-assoc]** | [![dependencies](https://img.shields.io/david/substack/level-assoc.svg?label=%E2%99%A5)](https://david-dm.org/substack/level-assoc) | Relational foreign key associations (`hasMany`, `belongsTo`) for [`levelup`][levelup].
 **[`level-tree-index`][level-tree-index]** | [![dependencies](https://img.shields.io/david/biobricks/level-tree-index.svg?label=%E2%99%A5)](https://david-dm.org/biobricks/level-tree-index) | Tree indexer for [`levelup`][levelup].
+**[`changes-index`][changes-index]** | [![dependencies](https://img.shields.io/david/substack/changes-index.svg?label=%E2%99%A5)](https://david-dm.org/substack/changes-index) | Create indexes from a [changes-feed](https://github.com/mafintosh/changes-feed). Provides a way to create a materialized view on top of an append-only log.
+**[`changesdown`][changesdown]** | [![dependencies](https://img.shields.io/david/mafintosh/changesdown.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/changesdown) | [`levelup`][levelup] interface that uses an [`abstract-leveldown`][abstract-leveldown] store that writes to a [changes-feed](https://github.com/mafintosh/changes-feed) to store its state.
 
 ## Databases
 
@@ -176,7 +182,6 @@ Name | Dependencies | Description
 **[`lem`][lem]** | [![dependencies](https://img.shields.io/david/binocarlos/lem.svg?label=%E2%99%A5)](https://david-dm.org/binocarlos/lem) | Lem is a telemetry storage database using LevelDB. Keys are indexed by timestamp and you can read values in-between 2 points in time.
 **[`levelgraph`][levelgraph]** | [![dependencies](https://img.shields.io/david/mcollina/node-levelgraph.svg?label=%E2%99%A5)](https://david-dm.org/mcollina/node-levelgraph) | A Graph database built on top of [`levelup`][levelup] with pattern-matching and join support.
 **[`linvodb3`][linvodb3]** | [![dependencies](https://img.shields.io/david/Ivshti/linvodb3.svg?label=%E2%99%A5)](https://david-dm.org/Ivshti/linvodb3) | Persistent database on top of [`levelup`][levelup] for Node.js/NW.js with MongoDB-style queries, Mongoose-like models and a map/reduce system.
-**[`plumbdb`][plumbdb]** | [![dependencies](https://img.shields.io/david/maxogden/plumbdb.svg?label=%E2%99%A5)](https://david-dm.org/maxogden/plumbdb) | HTTP request handlers for building web services on top of LevelDB. Not in active development.
 **[`rxdb`][rxdb]** | [![dependencies](https://img.shields.io/david/pubkey/rxdb.svg?label=%E2%99%A5)](https://david-dm.org/pubkey/rxdb) | Event-driven database based on [`pouchdb`][pouchdb]. Optimized for reactive programming with observables. Events and state is automatically shared between multiple browser tabs. Queries are defined by the mongoDB mango-standard.
 **[`pushdb`][pushdb]** | [![dependencies](https://img.shields.io/david/mikeal/pushdb.svg?label=%E2%99%A5)](https://david-dm.org/mikeal/pushdb) | A programmable database with document storage and unique indexing capabilities.
 **[`search-index`][search-index]** | [![dependencies](https://img.shields.io/david/fergiemcdowall/search-index.svg?label=%E2%99%A5)](https://david-dm.org/fergiemcdowall/search-index) | A persistent full text search engine for browser and Node.js.
@@ -228,7 +233,7 @@ Name | Dependencies | Description
 **[`level-delete-stream`][level-delete-stream]** | [![dependencies](https://img.shields.io/david/juliangruber/level-delete-stream.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-delete-stream) | A streams1 deleteStream for [`levelup`][levelup].
 **[`pull-level`][pull-level]** | [![dependencies](https://img.shields.io/david/dominictarr/pull-level.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/pull-level) | [`pull-stream`](https://github.com/pull-stream/pull-stream) interface to [`levelup`][levelup] with read streams, write streams and realtime (tail/live) reads.
 **[`level-live-stream`][level-live-stream]** | [![dependencies](https://img.shields.io/david/dominictarr/level-live-stream.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-live-stream) | Like `db.createReadStream()` except it's live / tailable. i.e. instead of ending, it will stay open and stream changes to the database as they are inserted.
-**[`level-live`][level-live]** | [![dependencies](https://img.shields.io/david/voltraco/level-live.svg?label=%E2%99%A5)](https://david-dm.org/voltraco/level-live) | Simple, light and correct live read stream implementation. NB. Undefined streams version.
+**[`level-live`][level-live]** | [![dependencies](https://img.shields.io/david/voltraco/level-live.svg?label=%E2%99%A5)](https://david-dm.org/voltraco/level-live) | Simple, light and correct live read stream implementation.<br><br>NB. Uses an undefined streams version.
 **[`level-livefeed`][level-livefeed]** | [![dependencies](https://img.shields.io/david/Raynos/level-livefeed.svg?label=%E2%99%A5)](https://david-dm.org/Raynos/level-livefeed) | A live query of a range in [`levelup`][levelup]. Similar to [`level-live-stream`][level-live-stream] but with a streams2 interface.
 **[`level-range`][level-range]** | [![dependencies](https://img.shields.io/david/juliangruber/level-range.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-range) | Find all K/V-pairs prefixed by a certain key. Streams1.
 **[`level-cursor`][level-cursor]** | [![dependencies](https://img.shields.io/david/kordon/cursor.svg?label=%E2%99%A5)](https://david-dm.org/kordon/cursor) | A stream "cursor" to iterate through a ReadStream / KeyStream / ValueStream.
@@ -242,8 +247,8 @@ Name | Dependencies | Description
 :--- | :----------- | :----------
 **[`level-concat-iterator`][level-concat-iterator]** | [![dependencies](https://img.shields.io/david/Level/concat-iterator.svg?label=%E2%99%A5)](https://david-dm.org/Level/concat-iterator) | Concatenate items from an iterator into an array.
 **[`level-iterator-stream`][level-iterator-stream]** | [![dependencies](https://img.shields.io/david/Level/iterator-stream.svg?label=%E2%99%A5)](https://david-dm.org/Level/iterator-stream) | Turn an [`abstract-leveldown`][abstract-leveldown] iterator into a readable stream.<br>Included in [`levelup`][levelup].
-**[`levelup-async-iterator`][levelup-async-iterator]** | [![dependencies](https://img.shields.io/david/MeirionHughes/levelup-async-iterator.svg?label=%E2%99%A5)](https://david-dm.org/MeirionHughes/levelup-async-iterator) | Add an `iterator()` method to [`levelup`][levelup] with [`Symbol.asyncIterator`](https://github.com/tc39/proposal-async-iteration).<br>NB. Conflicts with [`iterator()`](https://github.com/Level/levelup/#iterator) added in `levelup@3.1.0`.
-**[`level-iterator`][level-iterator]** | [![dependencies](https://img.shields.io/david/vweevers/level-iterator.svg?label=%E2%99%A5)](https://david-dm.org/vweevers/level-iterator) | Decoding iterator for [`levelup`][levelup] instances. Wraps iterators like [`level-iterator-stream`][level-iterator-stream] does.<br>NB. Not compatible with `levelup` >= 2 due to encodings having moved out to [`encoding-down`][encoding-down]. PR welcome.
+**[`levelup-async-iterator`][levelup-async-iterator]** | [![dependencies](https://img.shields.io/david/MeirionHughes/levelup-async-iterator.svg?label=%E2%99%A5)](https://david-dm.org/MeirionHughes/levelup-async-iterator) | Add an `iterator()` method to [`levelup`][levelup] with [`Symbol.asyncIterator`](https://github.com/tc39/proposal-async-iteration).<br><br>NB. Conflicts with [`iterator()`](https://github.com/Level/levelup/#iterator) added in `levelup@3.1.0`.
+**[`level-iterator`][level-iterator]** | [![dependencies](https://img.shields.io/david/vweevers/level-iterator.svg?label=%E2%99%A5)](https://david-dm.org/vweevers/level-iterator) | Decoding iterator for [`levelup`][levelup] instances. Wraps iterators like [`level-iterator-stream`][level-iterator-stream] does.<br><br>NB. Not compatible with `levelup` >= 2 due to encodings having moved out to [`encoding-down`][encoding-down]. PR welcome.
 
 ## Hooks
 
@@ -433,12 +438,23 @@ Name | Description
 **[`level-community`][level-community]** | General discussion, cross-repo efforts and common information for projects in the community
 **[`level-awesome`][level-awesome]** | An open list of awesome [Level][level-org] libraries and resources.
 **[`levelmeup`][levelmeup]** | Level Me Up Scotty! An intro to Node.js databases via a set of self-guided workshops.
+**[`electron-demo`][electron-demo]** | Demo app loading LevelDB into an Electron context.
 
 ## Applications
 
+Applications and libraries that use Level modules under the hood.
+
 Name | Description
 :--- | :----------
+**[`ipfs`][ipfs]** | A peer-to-peer hypermedia protocol to make the web faster, safer, and more open.
+**[`clocker`][clocker]** | Track project hours
+**[`copy-on-write`][copy-on-write]** | A copy-on-write FUSE implementation
+**[`chrome-localstorage`][chrome-localstorage]** | CLI to manipulate Chrome and Chromium's localStorage on disk.
+**[`cipherhub`][cipherhub]** | Encrypt messages based on GitHub SSH public keys
+**[`code-music-studio`][code-music-studio]** | Design musical algorithms
 **[`level-todo`][level-todo]** | A todo list using LevelDB.
+**[`electron-crash-report-service`][electron-crash-report-service]** | Aggregate crash reports for Electron apps
+**[`cross-street-indexer`][cross-street-indexer]** | Blazing fast tile based geocoder that matches cross street (road intersections) entirely sourced by OSM QA Tiles.
 **[`lt-core`][lt-core]** | Time tracking library.
 **[`npm-search`][npm-search]** | An index of npm using [`levelup`][levelup].
 **[`connect-level`][connect-level]** | A `connect` / `express` session store backed by LevelDB via [`levelup`][levelup].
@@ -492,6 +508,7 @@ Name | Description
 **[`leveldown-prebuilt`][leveldown-prebuilt]** | Defunct fork of [`leveldown`][leveldown] to add prebuilt binaries. Now provided by `leveldown`.
 **[`level-map-index`][level-map-index]** | Another indexing module. Adapted from [`map-reduce`][map-reduce]. Author recommends other solutions.
 **[`level-memview`][level-memview]** | In memory view on top of [`levelup`][levelup]. Abandoned.
+**[`plumbdb`][plumbdb]** | HTTP request handlers for building web services on top of LevelDB. Not in active development.
 
 ## Contributing
 
@@ -561,15 +578,31 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [cachedown]: https://github.com/mvayngrib/cachedown
 
+[changes-index]: https://github.com/substack/changes-index
+
+[changesdown]: https://github.com/mafintosh/changesdown
+
 [changeset]: https://github.com/eugeneware/changeset
 
 [charwise]: https://github.com/dominictarr/charwise
 
+[chrome-localstorage]: https://github.com/regular/chrome-localstorage
+
+[cipherhub]: https://github.com/substack/cipherhub
+
+[clocker]: https://github.com/substack/clocker
+
 [cluster-levelup]: https://github.com/chiguireitor/cluster-levelup
+
+[code-music-studio]: https://github.com/substack/code-music-studio
 
 [connect-level]: https://github.com/davidbanham/connect-level
 
+[copy-on-write]: https://github.com/andrewosh/copy-on-write
+
 [couchup]: https://github.com/mikeal/couchup
+
+[cross-street-indexer]: https://github.com/mapbox/cross-street-indexer
 
 [dat]: https://github.com/maxogden/dat
 
@@ -580,6 +613,10 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [dulcimer]: https://github.com/fritzy/dulcimer
 
 [dynamo-down]: https://github.com/jed/dynamo-down
+
+[electron-crash-report-service]: https://github.com/yoshuawuyts/electron-crash-report-service
+
+[electron-demo]: https://github.com/Level/electron-demo
 
 [encoding-down]: https://github.com/Level/encoding-down
 
@@ -600,6 +637,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [interval-to-ltgt]: https://github.com/nowsecure/interval-to-ltgt
 
 [inverted-index]: https://github.com/kordon/inverted
+
+[ipfs]: https://ipfs.io/
 
 [jsondown]: https://github.com/toolness/jsondown
 

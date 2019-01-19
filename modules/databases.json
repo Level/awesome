@@ -48,12 +48,6 @@
         "Persistent database on top of [levelup] for Node.js/NW.js with MongoDB-style queries, Mongoose-like models and a map/reduce system."
       ]
     },
-    "plumbdb": {
-      "github": "maxogden/plumbdb",
-      "description": [
-        "HTTP request handlers for building web services on top of LevelDB. Not in active development."
-      ]
-    },
     "rxdb": {
       "github": "pubkey/rxdb",
       "description": [

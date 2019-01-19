@@ -142,6 +142,12 @@
     "level-memview": {
       "github": "dominictarr/level-memview",
       "description": "In memory view on top of [levelup]. Abandoned."
+    },
+    "plumbdb": {
+      "github": "maxogden/plumbdb",
+      "description": [
+        "HTTP request handlers for building web services on top of LevelDB. Not in active development."
+      ]
     }
   }
 }

@@ -21,6 +21,7 @@
       "github": "MeirionHughes/levelup-async-iterator",
       "description": [
         "Add an `iterator()` method to [levelup] with [`Symbol.asyncIterator`](https://github.com/tc39/proposal-async-iteration).",
+        "",
         "NB. Conflicts with [`iterator()`](https://github.com/Level/levelup/#iterator) added in `levelup@3.1.0`."
       ]
     },
@@ -28,6 +29,7 @@
       "github": "vweevers/level-iterator",
       "description": [
         "Decoding iterator for [levelup] instances. Wraps iterators like [level-iterator-stream] does.",
+        "",
         "NB. Not compatible with `levelup` >= 2 due to encodings having moved out to [encoding-down]. PR welcome."
       ]
     }

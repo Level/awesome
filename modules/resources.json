@@ -26,6 +26,10 @@
     "levelmeup": {
       "github": "workshopper/levelmeup",
       "description": "Level Me Up Scotty! An intro to Node.js databases via a set of self-guided workshops."
+    },
+    "electron-demo": {
+      "github": "Level/electron-demo",
+      "description": "Demo app loading LevelDB into an Electron context."
     }
   }
 }

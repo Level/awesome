@@ -21,6 +21,7 @@
       "github": "deanlandolt/bytespace",
       "description": [
         "Keypath subspaces prefixed with [bytewise] tuples. Similar to [level-sublevel].",
+        "",
         "NB. [bytewise] - and thus [bytespace] - can be slow. Consider using [subleveldown] paired with the [charwise] encoding instead."
       ]
     },
@@ -28,6 +29,7 @@
       "github": "dominictarr/level-sublevel",
       "description": [
         "Adds the ability to create subsections with the same API as [levelup], but only write/read to a prefixed section, or bucket, of the key-space. Each section also has [level-hooks] installed.",
+        "",
         "NB. No longer maintained. We recommend [subleveldown] instead."
       ]
     },

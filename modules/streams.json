@@ -34,7 +34,11 @@
     },
     "level-live": {
       "github": "voltraco/level-live",
-      "description": "Simple, light and correct live read stream implementation. NB. Undefined streams version."
+      "description": [
+        "Simple, light and correct live read stream implementation.",
+        "",
+        "NB. Uses an undefined streams version."
+      ]
     },
     "level-livefeed": {
       "github": "Raynos/level-livefeed",

@@ -10,6 +10,7 @@
       "github": "deanlandolt/bytewise",
       "description": [
         "Binary serialization which sorts bytewise for arbitrarily complex data structures.",
+        "",
         "NB. Use [charwise] if possible. Gives you almost everything `bytewise` does but much faster."
       ]
     },
