@@ -96,6 +96,12 @@
         "FlashStore is a Key-Value persistent storage with easy to use ES6 Map-like API(both Async and Sync support), powered by LevelDB and TypeScript."
       ]
     },
+    "kwdb":{
+      "github": "KsRyY/kwdb",
+      "description":[
+        "A REST wrapper for level.There's also a REST wrapper [level-rest] below, but kwdb is much newer and will keep updating"
+      ]
+    },
     "level-fact-base": {
       "github": "smallhelm/level-fact-base",
       "description": [

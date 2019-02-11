@@ -190,6 +190,7 @@ Name | Dependencies | Description
 **[`@nano-sql/core`][@nano-sql/core]** | [![dependencies](https://img.shields.io/david/ClickSimply/Nano-SQL.svg?label=%E2%99%A5)](https://david-dm.org/ClickSimply/Nano-SQL) | A small (10Kb) RDBMS abstraction on top of [`levelup`][levelup] that also runs in the browser with undo/redo support, immutable objects and IndexedDB persistence.
 **[`vertical`][vertical]** | [![dependencies](https://img.shields.io/david/zy445566/vertical.svg?label=%E2%99%A5)](https://david-dm.org/zy445566/vertical) | LevelDB distributed, Server and Client!
 **[`flash-store`][flash-store]** | [![dependencies](https://img.shields.io/david/zixia/flash-store.svg?label=%E2%99%A5)](https://david-dm.org/zixia/flash-store) | FlashStore is a Key-Value persistent storage with easy to use ES6 Map-like API(both Async and Sync support), powered by LevelDB and TypeScript.
+**[`kwdb`][kwdb]** | [![dependencies](https://img.shields.io/david/KsRyY/kwdb.svg?label=%E2%99%A5)](https://david-dm.org/KsRyY/kwdb) | A REST wrapper for level.There's also a REST wrapper [`level-rest`][level-rest] below, but kwdb is much newer and will keep updating
 **[`level-fact-base`][level-fact-base]** | [![dependencies](https://img.shields.io/david/smallhelm/level-fact-base.svg?label=%E2%99%A5)](https://david-dm.org/smallhelm/level-fact-base) | Store immutable facts and query them with datalog.
 **[`dulcimer`][dulcimer]** | [![dependencies](https://img.shields.io/david/fritzy/dulcimer.svg?label=%E2%99%A5)](https://david-dm.org/fritzy/dulcimer) | Define JSON models and manage indexes, children, foreign keys and much more.
 **[`levi`][levi]** | [![dependencies](https://img.shields.io/david/cshum/levi.svg?label=%E2%99%A5)](https://david-dm.org/cshum/levi) | Stream based full-text search for Node.js and browser using [`levelup`][levelup].
@@ -645,6 +646,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [jsonquery]: https://github.com/eugeneware/jsonquery
 
 [jsonquery-engine]: https://github.com/eugeneware/jsonquery-engine
+
+[kwdb]: https://github.com/KsRyY/kwdb
 
 [lem]: https://github.com/binocarlos/lem
 
