@@ -196,8 +196,9 @@ Name | Dependencies | Description
 **[`level-mongo`][level-mongo]** | [![dependencies](https://img.shields.io/david/simon-p-r/level-mongo.svg?label=%E2%99%A5)](https://david-dm.org/simon-p-r/level-mongo) | MongoDB-like database backed by LevelDB.
 **[`level-orm`][level-orm]** | [![dependencies](https://img.shields.io/david/eugeneware/level-orm.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/level-orm) | Simple ORM built on [`levelup`][levelup].
 **[`level-lively`][level-lively]** | [![dependencies](https://img.shields.io/david/eugeneware/level-lively.svg?label=%E2%99%A5)](https://david-dm.org/eugeneware/level-lively) | [`levelup`][levelup] implementation of [LivelyDb](https://github.com/eugeneware/livelydb) for doing real-time data binding of a database with local javascript objects.
-**[`level-rest`][level-rest]** | [![dependencies](https://img.shields.io/david/shama/level-rest.svg?label=%E2%99%A5)](https://david-dm.org/shama/level-rest) | A REST wrapper for [`levelup`][levelup].
-**[`level-restful`][level-restful]** | [![dependencies](https://img.shields.io/david/karissa/level-restful.svg?label=%E2%99%A5)](https://david-dm.org/karissa/level-restful) | Plug and play REST wrapper for [`levelup`][levelup], as an extension to [`level-orm`][level-orm].
+**[`kwdb`][kwdb]** | [![dependencies](https://img.shields.io/david/KsRyY/kwdb.svg?label=%E2%99%A5)](https://david-dm.org/KsRyY/kwdb) | REST wrapper for [`levelup`][levelup].
+**[`level-restful`][level-restful]** | [![dependencies](https://img.shields.io/david/karissa/level-restful.svg?label=%E2%99%A5)](https://david-dm.org/karissa/level-restful) | REST wrapper for [`levelup`][levelup], as an extension to [`level-orm`][level-orm].
+**[`level-rest`][level-rest]** | [![dependencies](https://img.shields.io/david/shama/level-rest.svg?label=%E2%99%A5)](https://david-dm.org/shama/level-rest) | REST wrapper for [`levelup`][levelup].<br>NB. Not compatible with latest [`levelup`][levelup].
 
 ## Shared Access
 
@@ -645,6 +646,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [jsonquery]: https://github.com/eugeneware/jsonquery
 
 [jsonquery-engine]: https://github.com/eugeneware/jsonquery-engine
+
+[kwdb]: https://github.com/KsRyY/kwdb
 
 [lem]: https://github.com/binocarlos/lem
 

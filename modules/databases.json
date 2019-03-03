@@ -122,13 +122,20 @@
       "github": "eugeneware/level-lively",
       "description": "[levelup] implementation of [LivelyDb](https://github.com/eugeneware/livelydb) for doing real-time data binding of a database with local javascript objects."
     },
-    "level-rest": {
-      "github": "shama/level-rest",
-      "description": "A REST wrapper for [levelup]."
+    "kwdb": {
+      "github": "KsRyY/kwdb",
+      "description": "REST wrapper for [levelup]."
     },
     "level-restful": {
       "github": "karissa/level-restful",
-      "description": "Plug and play REST wrapper for [levelup], as an extension to [level-orm]."
+      "description": "REST wrapper for [levelup], as an extension to [level-orm]."
+    },
+    "level-rest": {
+      "github": "shama/level-rest",
+      "description": [
+        "REST wrapper for [levelup].",
+        "NB. Not compatible with latest [levelup]."
+      ]
     }
   }
 }
