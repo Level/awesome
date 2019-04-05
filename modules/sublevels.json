@@ -5,7 +5,7 @@
     "subleveldown": {
       "github": "mafintosh/subleveldown",
       "compatibility": ["abstract-leveldown", "levelup"],
-      "description": "Sublevels implemented using leveldowns.",
+      "description": "Split a [levelup] database into sublevels with their own keyspace, encoding and events.",
       "copyrightYear": 2014,
       "author": "[Mathias Buus](https://github.com/mafintosh)"
     },

@@ -121,7 +121,7 @@ Modules related to splitting a database into sections a.k.a. sublevels.
 
 Name | Dependencies | Description
 :--- | :----------- | :----------
-**[`subleveldown`][subleveldown]** | [![dependencies](https://img.shields.io/david/mafintosh/subleveldown.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/subleveldown) | Sublevels implemented using leveldowns.
+**[`subleveldown`][subleveldown]** | [![dependencies](https://img.shields.io/david/mafintosh/subleveldown.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/subleveldown) | Split a [`levelup`][levelup] database into sublevels with their own keyspace, encoding and events.
 **[`level-temp`][level-temp]** | [![dependencies](https://img.shields.io/david/mafintosh/level-temp.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/level-temp) | Create a temporary [`subleveldown`][subleveldown] sublevel that is guaranteed to be empty.
 **[`level-mount`][level-mount]** | [![dependencies](https://img.shields.io/david/u8sand/level-mount.svg?label=%E2%99%A5)](https://david-dm.org/u8sand/level-mount) | Mount multiple [`abstract-leveldown`][abstract-leveldown] stores by key prefix onto a single store. Can be used with [`subleveldown`][subleveldown].
 **[`bytespace`][bytespace]** | [![dependencies](https://img.shields.io/david/deanlandolt/bytespace.svg?label=%E2%99%A5)](https://david-dm.org/deanlandolt/bytespace) | Keypath subspaces prefixed with [`bytewise`][bytewise] tuples. Similar to [`level-sublevel`][level-sublevel].<br><br>NB. [`bytewise`][bytewise] - and thus [`bytespace`][bytespace] - can be slow. Consider using [`subleveldown`][subleveldown] paired with the [`charwise`][charwise] encoding instead.
