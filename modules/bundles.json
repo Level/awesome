@@ -11,7 +11,7 @@
     "level": {
       "github": "Level/level",
       "description": [
-        "Bundle for [leveldown].",
+        "Bundle for [leveldown] and [level-js].",
         "Main entry point for beginners."
       ],
       "copyrightYear": 2013,
@@ -29,15 +29,6 @@
       "copyrightYear": 2013,
       "author": null
     },
-    "level-browserify": {
-      "github": "Level/level-browserify",
-      "description": [
-        "Bundle for [level-js] and [leveldown].",
-        "Will soon be superseded by the [level] bundle."
-      ],
-      "copyrightYear": 2012,
-      "author": null
-    },
     "level-hyper": {
       "github": "Level/level-hyper",
       "description": "Bundle for [leveldown-hyper].",
@@ -48,7 +39,7 @@
       "github": "kapetan/level-indexed",
       "description": [
         "Bundle for [indexeddown].",
-        "Alternative to [level-browserify] and [level]."
+        "Alternative to [level]."
       ]
     }
   }

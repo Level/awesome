@@ -47,12 +47,11 @@ Convenience modules that bundle [a store](#stores) with [`levelup`][levelup] and
 
 Name | Compatibility | Dependencies | Description
 :--- | :------------ | :----------- | :----------
-**[`level`][level]** | ![levelup](https://img.shields.io/badge/levelup-4.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/Level/level.svg?label=%E2%99%A5)](https://david-dm.org/Level/level) | Bundle for [`leveldown`][leveldown].<br>Main entry point for beginners.
+**[`level`][level]** | ![levelup](https://img.shields.io/badge/levelup-4.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/Level/level.svg?label=%E2%99%A5)](https://david-dm.org/Level/level) | Bundle for [`leveldown`][leveldown] and [`level-js`][level-js].<br>Main entry point for beginners.
 **[`level-mem`][level-mem]** | ![levelup](https://img.shields.io/badge/levelup-4.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/Level/level-mem.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-mem) | Bundle for [`memdown`][memdown].
 **[`level-rocksdb`][level-rocksdb]** | ![levelup](https://img.shields.io/badge/levelup-3.0-orange.svg) | [![dependencies](https://img.shields.io/david/Level/level-rocksdb.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-rocksdb) | Bundle for [`rocksdb`][rocksdb].
-**[`level-browserify`][level-browserify]** | ![levelup](https://img.shields.io/badge/levelup-3.0-orange.svg) | [![dependencies](https://img.shields.io/david/Level/level-browserify.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-browserify) | Bundle for [`level-js`][level-js] and [`leveldown`][leveldown].<br>Will soon be superseded by the [`level`][level] bundle.
 **[`level-hyper`][level-hyper]** | ![levelup](https://img.shields.io/badge/levelup-3.0-orange.svg) | [![dependencies](https://img.shields.io/david/Level/level-hyper.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-hyper) | Bundle for [`leveldown-hyper`][leveldown-hyper].
-**[`level-indexed`][level-indexed]** | ![levelup](https://img.shields.io/badge/levelup-2.0-orange.svg) | [![dependencies](https://img.shields.io/david/kapetan/level-indexed.svg?label=%E2%99%A5)](https://david-dm.org/kapetan/level-indexed) | Bundle for [`indexeddown`][indexeddown].<br>Alternative to [`level-browserify`][level-browserify] and [`level`][level].
+**[`level-indexed`][level-indexed]** | ![levelup](https://img.shields.io/badge/levelup-2.0-orange.svg) | [![dependencies](https://img.shields.io/david/kapetan/level-indexed.svg?label=%E2%99%A5)](https://david-dm.org/kapetan/level-indexed) | Bundle for [`indexeddown`][indexeddown].<br>Alternative to [`level`][level].
 
 ## Core
 
@@ -474,6 +473,7 @@ Modules that are deprecated, archived or superseded. Listed here for the histori
 
 Name | Description
 :--- | :----------
+**[`level-browserify`][level-browserify]** | Bundle for [`level-js`][level-js] and [`leveldown`][leveldown]. No longer maintained: superseded by [`level`][level] v5.0.0.
 **[`level-mapped-index`][level-mapped-index]** | Indexes for [`levelup`][levelup] built on [`map-reduce`][map-reduce]. Uses a custom indexing function for each index to parse and record index values for each entry. Archived.
 **[`level-encoding`][level-encoding]** | Implements the encoding logic of a [`levelup`][levelup]-like database. This functionality lives on in [`level-codec`][level-codec].
 **[`byteup`][byteup]** | Adds [`bytewise`][bytewise] as a native encoding for [`levelup`][levelup]. This can now be achieved with [`encoding-down`][encoding-down] and `{ keyEncoding: bytewise }`.
