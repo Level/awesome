@@ -2,10 +2,10 @@
   "title": "Resources",
   "dependencies": false,
   "modules": {
-    "leveldb.org": {
-      "github": "Level/leveldb.org",
-      "url": "http://leveldb.org",
-      "description": "Website for LevelDB",
+    "leveljs.org": {
+      "github": "Level/leveljs.org",
+      "url": "https://leveljs.org",
+      "description": "Website for [Level][level-org]",
       "private": true,
       "copyrightYear": 2014,
       "author": "Paolo Fragomeni"

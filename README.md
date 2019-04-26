@@ -434,7 +434,7 @@ Name | Dependencies | Description
 
 Name | Description
 :--- | :----------
-**[`leveldb.org`][leveldb.org]** | Website for LevelDB
+**[`leveljs.org`][leveljs.org]** | Website for [Level][level-org]
 **[`level-community`][level-community]** | General discussion, cross-repo efforts and common information for projects in the community
 **[`level-awesome`][level-awesome]** | An open list of awesome [Level][level-org] libraries and resources.
 **[`levelmeup`][levelmeup]** | Level Me Up Scotty! An intro to Node.js databases via a set of self-guided workshops.
@@ -675,7 +675,7 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-awesome]: https://github.com/Level/awesome
 
-[level-badge]: http://leveldb.org/img/badge.svg
+[level-badge]: https://leveljs.org/img/badge.svg
 
 [level-batch-stream]: https://github.com/jcrugzz/level-batch-stream
 
@@ -1025,8 +1025,6 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [leveldb-repl]: https://github.com/lapwinglabs/leveldb-repl
 
-[leveldb.org]: http://leveldb.org
-
 [leveldown]: https://github.com/Level/leveldown
 
 [leveldown-android-prebuilt]: https://github.com/level/leveldown
@@ -1042,6 +1040,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [levelhud]: https://github.com/ricardobeat/levelhud
 
 [levelidb]: https://github.com/Raynos/levelidb
+
+[leveljs.org]: https://leveljs.org
 
 [levelmeup]: https://github.com/workshopper/levelmeup
 
