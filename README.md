@@ -90,6 +90,7 @@ Name | Compatibility | Dependencies | Type
 **[`lmdb-leveldown`][lmdb-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-4.0-orange.svg) | [![dependencies](https://img.shields.io/david/chrbala/lmdb-leveldown.svg?label=%E2%99%A5)](https://david-dm.org/chrbala/lmdb-leveldown) | LMDB
 **[`localdown`][localdown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-4.0-orange.svg) | [![dependencies](https://img.shields.io/david/bhoriuchi/localdown.svg?label=%E2%99%A5)](https://david-dm.org/bhoriuchi/localdown) | localStorage in Node.js
 **[`aerospike-leveldown`][aerospike-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.7-red.svg) | [![dependencies](https://img.shields.io/david/ProjectThor/aerospikedown.svg?label=%E2%99%A5)](https://david-dm.org/ProjectThor/aerospikedown) | Aerospike
+**[`s3leveldown`][s3leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/loune/s3leveldown.svg?label=%E2%99%A5)](https://david-dm.org/loune/s3leveldown) | [AWS S3](https://aws.amazon.com/s3/)
 
 ## Layers
 
@@ -1144,6 +1145,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [rocksdb]: https://github.com/Level/rocksdb
 
 [rxdb]: https://github.com/pubkey/rxdb
+
+[s3leveldown]: https://github.com/loune/s3leveldown
 
 [search-index]: https://github.com/fergiemcdowall/search-index
 

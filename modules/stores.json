@@ -109,6 +109,10 @@
     "aerospike-leveldown": {
       "github": "ProjectThor/aerospikedown",
       "type": "Aerospike"
+    },
+    "s3leveldown": {
+      "github": "loune/s3leveldown",
+      "type": "[AWS S3](https://aws.amazon.com/s3/)"
     }
   }
 }
