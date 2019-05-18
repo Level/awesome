@@ -437,9 +437,11 @@ Name | Description
 :--- | :----------
 **[`leveljs.org`][leveljs.org]** | Website for [Level][level-org]
 **[`level-community`][level-community]** | General discussion, cross-repo efforts and common information for projects in the community
+**[`electron-demo`][electron-demo]** | Demo app loading LevelDB into an Electron context.
+**[`browserify-starter`][browserify-starter]** | Demonstrates bundling [`level`][level] for browsers using [`browserify`](https://github.com/browserify/browserify).
+**[`webpack-starter`][webpack-starter]** | Demonstrates bundling [`level`][level] for browsers using [`webpack`](https://webpack.js.org/).
 **[`level-awesome`][level-awesome]** | An open list of awesome [Level][level-org] libraries and resources.
 **[`levelmeup`][levelmeup]** | Level Me Up Scotty! An intro to Node.js databases via a set of self-guided workshops.
-**[`electron-demo`][electron-demo]** | Demo app loading LevelDB into an Electron context.
 
 ## Applications
 
@@ -571,6 +573,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [browserify-cdn]: https://github.com/jesusabdullah/browserify-cdn
 
 [browserify-fs]: https://github.com/mafintosh/browserify-fs
+
+[browserify-starter]: https://github.com/Level/browserify-starter
 
 [bytespace]: https://github.com/deanlandolt/bytespace
 
@@ -1173,3 +1177,5 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [tsd]: https://github.com/hij1nx/tsd
 
 [vertical]: https://github.com/zy445566/vertical
+
+[webpack-starter]: https://github.com/Level/webpack-starter

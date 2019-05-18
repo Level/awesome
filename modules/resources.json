@@ -16,6 +16,24 @@
       "copyrightYear": 2012,
       "author": null
     },
+    "electron-demo": {
+      "github": "Level/electron-demo",
+      "description": "Demo app loading LevelDB into an Electron context.",
+      "copyrightYear": 2015,
+      "private": true
+    },
+    "browserify-starter": {
+      "github": "Level/browserify-starter",
+      "description": "Demonstrates bundling [level] for browsers using [`browserify`](https://github.com/browserify/browserify).",
+      "copyrightYear": 2019,
+      "private": true
+    },
+    "webpack-starter": {
+      "github": "Level/webpack-starter",
+      "description": "Demonstrates bundling [level] for browsers using [`webpack`](https://webpack.js.org/).",
+      "copyrightYear": 2019,
+      "private": true
+    },
     "level-awesome": {
       "github": "Level/awesome",
       "description": "An open list of awesome [Level][level-org] libraries and resources.",
@@ -26,10 +44,6 @@
     "levelmeup": {
       "github": "workshopper/levelmeup",
       "description": "Level Me Up Scotty! An intro to Node.js databases via a set of self-guided workshops."
-    },
-    "electron-demo": {
-      "github": "Level/electron-demo",
-      "description": "Demo app loading LevelDB into an Electron context."
     }
   }
 }
