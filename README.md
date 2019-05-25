@@ -370,6 +370,7 @@ Name | Dependencies | Description
 **[`level-codec`][level-codec]** | [![dependencies](https://img.shields.io/david/Level/codec.svg?label=%E2%99%A5)](https://david-dm.org/Level/codec) | Encode keys, values and ltgte options. Used in [`encoding-down`][encoding-down].
 **[`level-errors`][level-errors]** | [![dependencies](https://img.shields.io/david/Level/errors.svg?label=%E2%99%A5)](https://david-dm.org/Level/errors) | Error types for [`levelup`][levelup].
 **[`level-test`][level-test]** | [![dependencies](https://img.shields.io/david/Level/level-test.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-test) | Easily run your `level-*` tests against [all stores](#stores).
+**[`level-compose`][level-compose]** | [![dependencies](https://img.shields.io/david/Level/compose.svg?label=%E2%99%A5)](https://david-dm.org/Level/compose) | Compose a database factory from [`abstract-leveldown`][abstract-leveldown] and [`levelup`][levelup] layers.
 **[`level-exists`][level-exists]** | [![dependencies](https://img.shields.io/david/juliangruber/level-exists.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-exists) | Check if a datum exists without reading its value.
 **[`level-move`][level-move]** | [![dependencies](https://img.shields.io/david/juliangruber/level-move.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-move) | Move a value to another key.
 **[`level-capped`][level-capped]** | [![dependencies](https://img.shields.io/david/juliangruber/level-capped.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-capped) | Capped collections.
@@ -424,6 +425,7 @@ Name | Dependencies | Description
 
 Name | Dependencies | Description
 :--- | :----------- | :----------
+**[`level-bench`][level-bench]** | [![dependencies](https://img.shields.io/david/Level/bench.svg?label=%E2%99%A5)](https://david-dm.org/Level/bench) | Benchmark [`abstract-leveldown`][abstract-leveldown] and [`levelup`][levelup] stores.
 **[`level-compare-forks`][level-compare-forks]** | [![dependencies](https://img.shields.io/david/kesla/level-compare-forks.svg?label=%E2%99%A5)](https://david-dm.org/kesla/level-compare-forks) | Run benchmarks on different level-forks and see how they compare.
 **[`level-log`][level-log]** | [![dependencies](https://img.shields.io/david/micnews/level-log.svg?label=%E2%99%A5)](https://david-dm.org/micnews/level-log) | Log all [`levelup`][levelup] operations, including method calls.
 **[`debugdown`][debugdown]** | [![dependencies](https://img.shields.io/david/vweevers/debugdown.svg?label=%E2%99%A5)](https://david-dm.org/vweevers/debugdown) | Log all operations made on an [`abstract-leveldown`][abstract-leveldown] compliant store. For node and browsers.
@@ -684,6 +686,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [level-batch-stream]: https://github.com/jcrugzz/level-batch-stream
 
+[level-bench]: https://github.com/Level/bench
+
 [level-benchmarks]: https://github.com/kesla/level-benchmarks
 
 [level-binomial-replication]: https://github.com/dominictarr/level-binomial-replication
@@ -713,6 +717,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [level-community]: https://github.com/Level/community
 
 [level-compare-forks]: https://github.com/kesla/level-compare-forks
+
+[level-compose]: https://github.com/Level/compose
 
 [level-concat-iterator]: https://github.com/Level/concat-iterator
 

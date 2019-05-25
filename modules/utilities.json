@@ -19,6 +19,12 @@
       "copyrightYear": 2013,
       "author": "Dominic Tarr"
     },
+    "level-compose": {
+      "github": "Level/compose",
+      "description": "Compose a database factory from [abstract-leveldown] and [levelup] layers.",
+      "copyrightYear": 2019,
+      "author": null
+    },
     "level-exists": {
       "github": "juliangruber/level-exists",
       "description": "Check if a datum exists without reading its value."

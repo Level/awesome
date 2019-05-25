@@ -1,6 +1,10 @@
 {
   "title": "Benchmarking & Debugging",
   "modules": {
+    "level-bench": {
+      "github": "Level/bench",
+      "description": "Benchmark [abstract-leveldown] and [levelup] stores."
+    },
     "level-compare-forks": {
       "github": "kesla/level-compare-forks",
       "description": "Run benchmarks on different level-forks and see how they compare."
