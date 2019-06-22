@@ -3,7 +3,7 @@
   "description": "Modules related to splitting a database into sections a.k.a. sublevels.",
   "modules": {
     "subleveldown": {
-      "github": "mafintosh/subleveldown",
+      "github": "Level/subleveldown",
       "compatibility": ["abstract-leveldown", "levelup"],
       "description": "Split a [levelup] database into sublevels with their own keyspace, encoding and events.",
       "copyrightYear": 2014,
@@ -32,6 +32,10 @@
         "",
         "NB. No longer maintained. We recommend [subleveldown] instead."
       ]
+    },
+    "sublevel-prefixer": {
+      "github": "mafintosh/sublevel-prefixer",
+      "description": "Utility to prefix a key with a sublevel prefix."
     },
     "level-sublevel-stream": {
       "github": "juliangruber/level-sublevel-stream",

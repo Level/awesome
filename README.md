@@ -49,7 +49,7 @@ Name | Compatibility | Dependencies | Description
 :--- | :------------ | :----------- | :----------
 **[`level`][level]** | ![levelup](https://img.shields.io/badge/levelup-4.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/Level/level.svg?label=%E2%99%A5)](https://david-dm.org/Level/level) | Bundle for [`leveldown`][leveldown] and [`level-js`][level-js].<br>Main entry point for beginners.
 **[`level-mem`][level-mem]** | ![levelup](https://img.shields.io/badge/levelup-4.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/Level/level-mem.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-mem) | Bundle for [`memdown`][memdown].
-**[`level-rocksdb`][level-rocksdb]** | ![levelup](https://img.shields.io/badge/levelup-3.0-orange.svg) | [![dependencies](https://img.shields.io/david/Level/level-rocksdb.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-rocksdb) | Bundle for [`rocksdb`][rocksdb].
+**[`level-rocksdb`][level-rocksdb]** | ![levelup](https://img.shields.io/badge/levelup-4.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/Level/level-rocksdb.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-rocksdb) | Bundle for [`rocksdb`][rocksdb].
 **[`level-hyper`][level-hyper]** | ![levelup](https://img.shields.io/badge/levelup-3.0-orange.svg) | [![dependencies](https://img.shields.io/david/Level/level-hyper.svg?label=%E2%99%A5)](https://david-dm.org/Level/level-hyper) | Bundle for [`leveldown-hyper`][leveldown-hyper].
 **[`level-indexed`][level-indexed]** | ![levelup](https://img.shields.io/badge/levelup-2.0-orange.svg) | [![dependencies](https://img.shields.io/david/kapetan/level-indexed.svg?label=%E2%99%A5)](https://david-dm.org/kapetan/level-indexed) | Bundle for [`indexeddown`][indexeddown].<br>Alternative to [`level`][level].
 
@@ -70,7 +70,7 @@ Name | Compatibility | Dependencies | Type
 **[`leveldown`][leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/Level/leveldown.svg?label=%E2%99%A5)](https://david-dm.org/Level/leveldown) | [LevelDB](https://github.com/google/leveldb)
 **[`memdown`][memdown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/Level/memdown.svg?label=%E2%99%A5)](https://david-dm.org/Level/memdown) | [In-memory RBTree](https://www.npmjs.com/package/functional-red-black-tree)
 **[`level-js`][level-js]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/Level/level.js.svg?label=%E2%99%A5)](https://david-dm.org/Level/level.js) | [IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB)
-**[`rocksdb`][rocksdb]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-orange.svg) | [![dependencies](https://img.shields.io/david/Level/rocksdb.svg?label=%E2%99%A5)](https://david-dm.org/Level/rocksdb) | [RocksDB](https://github.com/facebook/rocksdb/)
+**[`rocksdb`][rocksdb]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/Level/rocksdb.svg?label=%E2%99%A5)](https://david-dm.org/Level/rocksdb) | [RocksDB](https://github.com/facebook/rocksdb/)
 **[`leveldown-hyper`][leveldown-hyper]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-5.0-orange.svg) | [![dependencies](https://img.shields.io/david/Level/leveldown-hyper.svg?label=%E2%99%A5)](https://david-dm.org/Level/leveldown-hyper) | [HyperLevelDB](https://github.com/rescrv/HyperLevelDB)
 **[`medeadown`][medeadown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-3.0-red.svg) | [![dependencies](https://img.shields.io/david/kesla/medeadown.svg?label=%E2%99%A5)](https://david-dm.org/kesla/medeadown) | [medea](https://github.com/argo/medea)
 **[`jsondown`][jsondown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.7-red.svg) | [![dependencies](https://img.shields.io/david/toolness/jsondown.svg?label=%E2%99%A5)](https://david-dm.org/toolness/jsondown) | JSON on disk
@@ -121,11 +121,12 @@ Modules related to splitting a database into sections a.k.a. sublevels.
 
 Name | Dependencies | Description
 :--- | :----------- | :----------
-**[`subleveldown`][subleveldown]** | [![dependencies](https://img.shields.io/david/mafintosh/subleveldown.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/subleveldown) | Split a [`levelup`][levelup] database into sublevels with their own keyspace, encoding and events.
+**[`subleveldown`][subleveldown]** | [![dependencies](https://img.shields.io/david/Level/subleveldown.svg?label=%E2%99%A5)](https://david-dm.org/Level/subleveldown) | Split a [`levelup`][levelup] database into sublevels with their own keyspace, encoding and events.
 **[`level-temp`][level-temp]** | [![dependencies](https://img.shields.io/david/mafintosh/level-temp.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/level-temp) | Create a temporary [`subleveldown`][subleveldown] sublevel that is guaranteed to be empty.
 **[`level-mount`][level-mount]** | [![dependencies](https://img.shields.io/david/u8sand/level-mount.svg?label=%E2%99%A5)](https://david-dm.org/u8sand/level-mount) | Mount multiple [`abstract-leveldown`][abstract-leveldown] stores by key prefix onto a single store. Can be used with [`subleveldown`][subleveldown].
 **[`bytespace`][bytespace]** | [![dependencies](https://img.shields.io/david/deanlandolt/bytespace.svg?label=%E2%99%A5)](https://david-dm.org/deanlandolt/bytespace) | Keypath subspaces prefixed with [`bytewise`][bytewise] tuples. Similar to [`level-sublevel`][level-sublevel].<br><br>NB. [`bytewise`][bytewise] - and thus [`bytespace`][bytespace] - can be slow. Consider using [`subleveldown`][subleveldown] paired with the [`charwise`][charwise] encoding instead.
 **[`level-sublevel`][level-sublevel]** | [![dependencies](https://img.shields.io/david/dominictarr/level-sublevel.svg?label=%E2%99%A5)](https://david-dm.org/dominictarr/level-sublevel) | Adds the ability to create subsections with the same API as [`levelup`][levelup], but only write/read to a prefixed section, or bucket, of the key-space. Each section also has [`level-hooks`][level-hooks] installed.<br><br>NB. No longer maintained. We recommend [`subleveldown`][subleveldown] instead.
+**[`sublevel-prefixer`][sublevel-prefixer]** | [![dependencies](https://img.shields.io/david/mafintosh/sublevel-prefixer.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/sublevel-prefixer) | Utility to prefix a key with a sublevel prefix.
 **[`level-sublevel-stream`][level-sublevel-stream]** | [![dependencies](https://img.shields.io/david/juliangruber/level-sublevel-stream.svg?label=%E2%99%A5)](https://david-dm.org/juliangruber/level-sublevel-stream) | Find [`level-sublevel`][level-sublevel] sublevels, not requiring them to be in memory already.
 **[`level-subtree`][level-subtree]** | [![dependencies](https://img.shields.io/david/hij1nx/level-subtree.svg?label=%E2%99%A5)](https://david-dm.org/hij1nx/level-subtree) | Generate a tree from [`level-sublevel`][level-sublevel] sublevels, useful when there is no manifest.
 **[`level-superlevel`][level-superlevel]** | [![dependencies](https://img.shields.io/david/randymized/level-superlevel.svg?label=%E2%99%A5)](https://david-dm.org/randymized/level-superlevel) | Superlevel adds a "super" level that allows accessing the entire database, discovering [`level-sublevel`][level-sublevel] sublevels and browsing the database without knowledge of the sublevel structure.
@@ -1170,7 +1171,9 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 [subindex]: https://github.com/eugeneware/subindex
 
-[subleveldown]: https://github.com/mafintosh/subleveldown
+[sublevel-prefixer]: https://github.com/mafintosh/sublevel-prefixer
+
+[subleveldown]: https://github.com/Level/subleveldown
 
 [suckit]: https://github.com/deoxxa/suckit
 
