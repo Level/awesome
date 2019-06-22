@@ -29,10 +29,10 @@
     "sentence-case": "^2.1.1",
     "standard": "^12.0.1",
     "thunky-with-args": "^1.0.0",
-    "to-vfile": "^5.0.2",
+    "to-vfile": "^6.0.0",
     "unist-builder": "^1.0.2",
     "unist-util-visit": "^1.4.0",
-    "vfile-reporter": "^5.1.1"
+    "vfile-reporter": "^6.0.0"
   },
   "hallmark": {
     "community": "level-community"
