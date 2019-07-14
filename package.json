@@ -13,7 +13,7 @@
   "devDependencies": {
     "dependency-check": "^3.3.0",
     "glob": "^7.1.2",
-    "hallmark": "~0.1.0",
+    "hallmark": "^1.0.0",
     "intersperse": "^1.0.0",
     "level-community": "^3.0.0",
     "map-limit": "0.0.1",
