@@ -20,7 +20,7 @@ module.exports = function (service, path, opts) {
   const type = opts.type || 'svg'
   const query = opts.query || {}
 
-  for (let k of SHORTCUTS) {
+  for (const k of SHORTCUTS) {
     if (opts[k]) query[k] = opts[k]
   }
 

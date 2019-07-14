@@ -55,7 +55,7 @@ module.exports = function (opts) {
     })
 
     // Sort for deterministic result (and less diff noise)
-    for (let identifier of Array.from(refs).sort()) {
+    for (const identifier of Array.from(refs).sort()) {
       const url = bookmarks[identifier]
       tree.children.push(b('definition', { url, identifier }, identifier))
     }

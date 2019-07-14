@@ -9,12 +9,12 @@ module.exports = function (options) {
   const modules = options.modules || {}
 
   // Normalize and validate sections
-  for (let section of sections) {
+  for (const section of sections) {
     if (typeof section.title !== 'string' || section.title === '') {
       throw new TypeError('title must be a non-empty string')
     }
 
-    for (let [id, module] of Object.entries(section.modules)) {
+    for (const [id, module] of Object.entries(section.modules)) {
       if (modules[id]) {
         throw new Error('duplicate module: ' + id)
       }
