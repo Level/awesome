@@ -537,7 +537,7 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 
 ### Sponsors
 
-[![Open Collective sponsors](https://opencollective.com/level/sponsors.svg?width=890)](https://opencollective.com/level)
+[![Open Collective sponsors](https://opencollective.com/level/sponsors.svg?width=890)](https://opencollective.com/level) [![Greenkeeper badge](https://badges.greenkeeper.io/Level/awesome.svg)](https://greenkeeper.io/)
 
 ## License
 
