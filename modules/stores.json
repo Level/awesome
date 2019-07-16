@@ -115,7 +115,7 @@
       "type": "[AWS S3](https://aws.amazon.com/s3/)"
     }, 
      "gaiadown-ts": {
-      "github": "acidleroy/gaidown-ts",
+      "github": "acidleroy/gaiadown-ts",
       "type": "[Gaia](https://github.com/blockstack/gaia)"
     }
   }
