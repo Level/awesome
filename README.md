@@ -91,6 +91,7 @@ Name | Compatibility | Dependencies | Type
 **[`localdown`][localdown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-4.0-orange.svg) | [![dependencies](https://img.shields.io/david/bhoriuchi/localdown.svg?label=%E2%99%A5)](https://david-dm.org/bhoriuchi/localdown) | localStorage in Node.js
 **[`aerospike-leveldown`][aerospike-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.7-red.svg) | [![dependencies](https://img.shields.io/david/ProjectThor/aerospikedown.svg?label=%E2%99%A5)](https://david-dm.org/ProjectThor/aerospikedown) | Aerospike
 **[`s3leveldown`][s3leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-brightgreen.svg) | [![dependencies](https://img.shields.io/david/loune/s3leveldown.svg?label=%E2%99%A5)](https://david-dm.org/loune/s3leveldown) | [AWS S3](https://aws.amazon.com/s3/)
+**[`gaiadown-ts`][gaiadown-ts]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-brightgreen.svg) | [![dependencies](https://david-dm.org/acidleroy/gaiadown-ts.svg?label=%E2%99%A5)](https://david-dm.org/acidleroy/gaiadown-ts) | [GAIA/Blockstack.js](https://github.com/blockstack/gaia)
 
 ## Layers
 
@@ -634,6 +635,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [flash-store]: https://github.com/zixia/flash-store
 
 [fruitdown]: https://github.com/nolanlawson/fruitdown
+
+[gaiadown-ts]: https://github.com/acidleroy/gaiadown-ts
 
 [groove basin]: https://github.com/andrewrk/groovebasin
 
