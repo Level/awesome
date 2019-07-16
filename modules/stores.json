@@ -113,6 +113,10 @@
     "s3leveldown": {
       "github": "loune/s3leveldown",
       "type": "[AWS S3](https://aws.amazon.com/s3/)"
+    }, 
+     "gaiadown-ts": {
+      "github": "acidleroy/gaidown-ts",
+      "type": "[Gaia](https://github.com/blockstack/gaia)"
     }
   }
 }
