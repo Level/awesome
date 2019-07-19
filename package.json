@@ -22,7 +22,7 @@
     "packument-package": "^1.0.0",
     "remark": "^10.0.1",
     "remark-collapse": "~0.1.2",
-    "remark-github": "^7.0.3",
+    "remark-github": "^8.0.0",
     "remark-stringify": "^6.0.4",
     "remark-toc": "^5.1.1",
     "semver": "^6.1.1",
