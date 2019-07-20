@@ -20,7 +20,7 @@
     "mdast-util-heading-range": "^2.1.0",
     "packument": "^1.0.0",
     "packument-package": "^1.0.0",
-    "remark": "^10.0.1",
+    "remark": "^11.0.0",
     "remark-collapse": "~0.1.2",
     "remark-github": "^7.0.3",
     "remark-stringify": "^6.0.4",
