@@ -31,7 +31,7 @@
     "thunky-with-args": "^1.0.0",
     "to-vfile": "^6.0.0",
     "unist-builder": "^1.0.2",
-    "unist-util-visit": "^1.4.0",
+    "unist-util-visit": "^2.0.0",
     "vfile-reporter": "^6.0.0"
   },
   "hallmark": {
