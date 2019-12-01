@@ -26,7 +26,7 @@
     "remark-stringify": "^7.0.1",
     "remark-toc": "^6.0.0",
     "semver": "^6.1.1",
-    "sentence-case": "^2.1.1",
+    "sentence-case": "^3.0.0",
     "standard": "^14.0.0",
     "thunky-with-args": "^1.0.0",
     "to-vfile": "^6.0.0",
