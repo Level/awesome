@@ -70,7 +70,7 @@
       "description": "Get the first record in a range, using an iterator or stream. NB. Not compatible with latest [levelup]."
     },
     "autolevel": {
-      "github": "https://gitlab.com/finwo/autolevel",
+      "github": "finwo/autolevel",
       "description": "Automatically combine [levelup] with the right [abstract-leveldown] store for your configuration."
     },
     "level-lazy-open": {
