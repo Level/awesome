@@ -41,10 +41,12 @@
     "jsondown": {
       "github": "toolness/jsondown",
       "type": "JSON on disk",
-      "compatibility": [{
-        "package": "abstract-leveldown",
-        "via": "memdown"
-      }]
+      "compatibility": [
+        {
+          "package": "abstract-leveldown",
+          "via": "memdown"
+        }
+      ]
     },
     "asyncstorage-down": {
       "github": "tradle/asyncstorage-down",
@@ -113,10 +115,16 @@
     "s3leveldown": {
       "github": "loune/s3leveldown",
       "type": "[AWS S3](https://aws.amazon.com/s3/)"
-    }, 
-     "gaiadown-ts": {
+    },
+    "gaiadown-ts": {
       "github": "acidleroy/gaiadown-ts",
       "type": "[Gaia](https://github.com/blockstack/gaia)"
+    },
+    "dynamodb-leveldown": {
+      "github": "GioCirque/DynamoDb-LevelDown",
+      "type": "[AWS DynamoDB](http://aws.amazon.com/dynamodb/)",
+      "copyrightYear": 2019,
+      "author": "Gio Palacino"
     }
   }
 }

@@ -92,6 +92,7 @@ Name | Compatibility | Dependencies | Type
 **[`aerospike-leveldown`][aerospike-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.7-red.svg) | [![dependencies](https://img.shields.io/david/ProjectThor/aerospikedown.svg?label=%E2%99%A5)](https://david-dm.org/ProjectThor/aerospikedown) | Aerospike
 **[`s3leveldown`][s3leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-yellow.svg) | [![dependencies](https://img.shields.io/david/loune/s3leveldown.svg?label=%E2%99%A5)](https://david-dm.org/loune/s3leveldown) | [AWS S3](https://aws.amazon.com/s3/)
 **[`gaiadown-ts`][gaiadown-ts]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-yellow.svg) | [![dependencies](https://img.shields.io/david/acidleroy/gaiadown-ts.svg?label=%E2%99%A5)](https://david-dm.org/acidleroy/gaiadown-ts) | [Gaia](https://github.com/blockstack/gaia)
+**[`dynamodb-leveldown`][dynamodb-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.2-brightgreen.svg) | [![dependencies](https://img.shields.io/david/GioCirque/DynamoDb-LevelDown.svg?label=%E2%99%A5)](https://david-dm.org/GioCirque/DynamoDb-LevelDown) | [AWS DynamoDB](http://aws.amazon.com/dynamodb/)
 
 ## Layers
 
@@ -623,6 +624,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [dulcimer]: https://github.com/fritzy/dulcimer
 
 [dynamo-down]: https://github.com/jed/dynamo-down
+
+[dynamodb-leveldown]: https://github.com/GioCirque/DynamoDb-LevelDown
 
 [electron-crash-report-service]: https://github.com/yoshuawuyts/electron-crash-report-service
 
