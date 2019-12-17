@@ -13,3 +13,4 @@
 | **Matthew Wright**     | [**@farskipper**](https://github.com/farskipper)       |                                                            |
 | **Maxime Lathuilière** |                                                        |                                                            |
 | **radzom**             | [**@radzom**](https://github.com/radzom)               |                                                            |
+| **Robin Bron**         |                                                        |                                                            |
