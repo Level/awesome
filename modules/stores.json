@@ -125,6 +125,10 @@
       "type": "[AWS DynamoDB](http://aws.amazon.com/dynamodb/)",
       "copyrightYear": 2019,
       "author": "Gio Palacino"
+    },
+    "localforagedown": {
+      "github": "KsRyY/localforagedown",
+      "type": "[localForage](https://github.com/localForage/localForage/)"
     }
   }
 }
