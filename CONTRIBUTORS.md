@@ -8,6 +8,7 @@
 | **Chiguireitor**       | [**@chiguireitor**](https://github.com/chiguireitor)   |                                                            |
 | **Cody Eilar**         |                                                        |                                                            |
 | **Evan Schwartz**      | [**@emschwartz**](https://github.com/emschwartz)       |                                                            |
+| **Gio Palacino**       | [**@GioCirque**](https://github.com/GioCirque)         |                                                            |
 | **Huan LI**            | [**@zixia**](https://github.com/zixia)                 | [**@zixia@twitter**](https://twitter.com/zixia)            |
 | **Loune Lam**          | [**@loune**](https://github.com/loune)                 |                                                            |
 | **Matthew Wright**     | [**@farskipper**](https://github.com/farskipper)       |                                                            |

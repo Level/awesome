@@ -93,6 +93,7 @@ Name | Compatibility | Dependencies | Type
 **[`s3leveldown`][s3leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-yellow.svg) | [![dependencies](https://img.shields.io/david/loune/s3leveldown.svg?label=%E2%99%A5)](https://david-dm.org/loune/s3leveldown) | [AWS S3](https://aws.amazon.com/s3/)
 **[`gaiadown-ts`][gaiadown-ts]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-yellow.svg) | [![dependencies](https://img.shields.io/david/acidleroy/gaiadown-ts.svg?label=%E2%99%A5)](https://david-dm.org/acidleroy/gaiadown-ts) | [Gaia](https://github.com/blockstack/gaia)
 **[`dynamodb-leveldown`][dynamodb-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.2-brightgreen.svg) | [![dependencies](https://img.shields.io/david/GioCirque/DynamoDb-LevelDown.svg?label=%E2%99%A5)](https://david-dm.org/GioCirque/DynamoDb-LevelDown) | [AWS DynamoDB](http://aws.amazon.com/dynamodb/)
+**[`localforagedown`][localforagedown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.2-brightgreen.svg) | [![dependencies](https://img.shields.io/david/KsRyY/localforagedown.svg?label=%E2%99%A5)](https://david-dm.org/KsRyY/localforagedown) | [localForage](https://github.com/localForage/localForage/)
 
 ## Layers
 
@@ -1092,6 +1093,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [lmdb-leveldown]: https://github.com/chrbala/lmdb-leveldown
 
 [localdown]: https://github.com/bhoriuchi/localdown
+
+[localforagedown]: https://github.com/KsRyY/localforagedown
 
 [localstorage-down]: https://github.com/No9/localstorage-down
 
