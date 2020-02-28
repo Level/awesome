@@ -24,7 +24,7 @@
     "remark-collapse": "~0.1.2",
     "remark-github": "^8.0.0",
     "remark-stringify": "^7.0.1",
-    "remark-toc": "^6.0.0",
+    "remark-toc": "^7.0.0",
     "semver": "^6.1.1",
     "sentence-case": "^2.1.1",
     "standard": "^14.0.0",
