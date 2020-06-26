@@ -129,6 +129,10 @@
     "localforagedown": {
       "github": "KsRyY/localforagedown",
       "type": "[localForage](https://github.com/localForage/localForage/)"
+    },
+    "react-native-leveldown": {
+      "github": "andymatuschak/react-native-leveldown",
+      "type": "[LevelDB](https://github.com/google/leveldb) (React Native)"
     }
   }
 }
