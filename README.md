@@ -172,6 +172,7 @@ Name | Dependencies | Description
 **[`level-tree-index`][level-tree-index]** | [![dependencies](https://img.shields.io/david/biobricks/level-tree-index.svg?label=%E2%99%A5)](https://david-dm.org/biobricks/level-tree-index) | Tree indexer for [`levelup`][levelup].
 **[`changes-index`][changes-index]** | [![dependencies](https://img.shields.io/david/substack/changes-index.svg?label=%E2%99%A5)](https://david-dm.org/substack/changes-index) | Create indexes from a [changes-feed](https://github.com/mafintosh/changes-feed). Provides a way to create a materialized view on top of an append-only log.
 **[`changesdown`][changesdown]** | [![dependencies](https://img.shields.io/david/mafintosh/changesdown.svg?label=%E2%99%A5)](https://david-dm.org/mafintosh/changesdown) | [`levelup`][levelup] interface that uses an [`abstract-leveldown`][abstract-leveldown] store that writes to a [changes-feed](https://github.com/mafintosh/changes-feed) to store its state.
+**[`level-ordered`][level-ordered]** | [![dependencies](https://img.shields.io/david/eranbnn/level-ordered.svg?label=%E2%99%A5)](https://david-dm.org/eranbnn/level-ordered) | A wrapper for [`level`][level] that keeps inserted items ordered.
 
 ## Databases
 
@@ -880,6 +881,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [level-object]: https://github.com/juliangruber/level-object
 
 [level-option-wrap]: https://github.com/substack/level-option-wrap
+
+[level-ordered]: https://github.com/eranbnn/level-ordered
 
 [level-org]: https://github.com/level
 

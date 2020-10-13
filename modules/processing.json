@@ -117,6 +117,10 @@
     "changesdown": {
       "github": "mafintosh/changesdown",
       "description": "[levelup] interface that uses an [abstract-leveldown] store that writes to a [changes-feed](https://github.com/mafintosh/changes-feed) to store its state."
+    },
+    "level-ordered": {
+      "github": "eranbnn/level-ordered",
+      "description": "A wrapper for [level] that keeps inserted items ordered."
     }
   }
 }
