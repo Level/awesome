@@ -90,11 +90,12 @@ Name | Compatibility | Dependencies | Type
 **[`lmdb-leveldown`][lmdb-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-4.0-orange.svg) | [![dependencies](https://img.shields.io/david/chrbala/lmdb-leveldown.svg?label=%E2%99%A5)](https://david-dm.org/chrbala/lmdb-leveldown) | LMDB
 **[`localdown`][localdown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-4.0-orange.svg) | [![dependencies](https://img.shields.io/david/bhoriuchi/localdown.svg?label=%E2%99%A5)](https://david-dm.org/bhoriuchi/localdown) | localStorage in Node.js
 **[`aerospike-leveldown`][aerospike-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.7-red.svg) | [![dependencies](https://img.shields.io/david/ProjectThor/aerospikedown.svg?label=%E2%99%A5)](https://david-dm.org/ProjectThor/aerospikedown) | Aerospike
-**[`s3leveldown`][s3leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-yellow.svg) | [![dependencies](https://img.shields.io/david/loune/s3leveldown.svg?label=%E2%99%A5)](https://david-dm.org/loune/s3leveldown) | [AWS S3](https://aws.amazon.com/s3/)
+**[`s3leveldown`][s3leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.3-brightgreen.svg) | [![dependencies](https://img.shields.io/david/loune/s3leveldown.svg?label=%E2%99%A5)](https://david-dm.org/loune/s3leveldown) | [AWS S3](https://aws.amazon.com/s3/)
 **[`gaiadown-ts`][gaiadown-ts]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.0-yellow.svg) | [![dependencies](https://img.shields.io/david/acidleroy/gaiadown-ts.svg?label=%E2%99%A5)](https://david-dm.org/acidleroy/gaiadown-ts) | [Gaia](https://github.com/blockstack/gaia)
-**[`dynamodb-leveldown`][dynamodb-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.2-yellow.svg) | [![dependencies](https://img.shields.io/david/GioCirque/DynamoDb-LevelDown.svg?label=%E2%99%A5)](https://david-dm.org/GioCirque/DynamoDb-LevelDown) | [AWS DynamoDB](http://aws.amazon.com/dynamodb/)
+**[`dynamodb-leveldown`][dynamodb-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.3-brightgreen.svg) | [![dependencies](https://img.shields.io/david/GioCirque/DynamoDb-LevelDown.svg?label=%E2%99%A5)](https://david-dm.org/GioCirque/DynamoDb-LevelDown) | [AWS DynamoDB](http://aws.amazon.com/dynamodb/)
 **[`localforagedown`][localforagedown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.2-yellow.svg) | [![dependencies](https://img.shields.io/david/KsRyY/localforagedown.svg?label=%E2%99%A5)](https://david-dm.org/KsRyY/localforagedown) | [localForage](https://github.com/localForage/localForage/)
 **[`react-native-leveldown`][react-native-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.3-brightgreen.svg) | [![dependencies](https://img.shields.io/david/andymatuschak/react-native-leveldown.svg?label=%E2%99%A5)](https://david-dm.org/andymatuschak/react-native-leveldown) | [LevelDB](https://github.com/google/leveldb) (React Native)
+**[`networked-hyperbeedown`][networked-hyperbeedown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-missing-lightgrey.svg) | [![dependencies](https://img.shields.io/david/RangerMauve/networked-hyperbeedown.svg?label=%E2%99%A5)](https://david-dm.org/RangerMauve/networked-hyperbeedown) | [Hyperbee](https://github.com/hypercore-protocol/hyperbee/)
 
 ## Layers
 
@@ -103,7 +104,7 @@ Modules that implement [`abstract-leveldown`][abstract-leveldown] to wrap anothe
 Name | Compatibility | Dependencies | Description
 :--- | :------------ | :----------- | :----------
 **[`encoding-down`][encoding-down]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.2-yellow.svg) | [![dependencies](https://img.shields.io/david/Level/encoding-down.svg?label=%E2%99%A5)](https://david-dm.org/Level/encoding-down) | Provides key/value encoding.
-**[`@adorsys/encrypt-down`][@adorsys/encrypt-down]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.2-yellow.svg) | [![dependencies](https://img.shields.io/david/adorsys/encrypt-down.svg?label=%E2%99%A5)](https://david-dm.org/adorsys/encrypt-down) | Provides encryption for values.
+**[`@adorsys/encrypt-down`][@adorsys/encrypt-down]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.3-brightgreen.svg) | [![dependencies](https://img.shields.io/david/adorsys/encrypt-down.svg?label=%E2%99%A5)](https://david-dm.org/adorsys/encrypt-down) | Provides encryption for values.
 **[`deferred-leveldown`][deferred-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.2-yellow.svg) | [![dependencies](https://img.shields.io/david/Level/deferred-leveldown.svg?label=%E2%99%A5)](https://david-dm.org/Level/deferred-leveldown) | Handles delayed-open. Built into [`levelup`][levelup].
 **[`level-cowdown`][level-cowdown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.4-red.svg) | [![dependencies](https://img.shields.io/david/substack/level-cowdown.svg?label=%E2%99%A5)](https://david-dm.org/substack/level-cowdown) | Copy-on-write [`abstract-leveldown`][abstract-leveldown] layer.
 **[`abstract-stream-leveldown`][abstract-stream-leveldown]** | ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-2.1-red.svg) | [![dependencies](https://img.shields.io/david/jed/abstract-stream-leveldown.svg?label=%E2%99%A5)](https://david-dm.org/jed/abstract-stream-leveldown) | A stream-based abstract prototype.
@@ -1135,6 +1136,8 @@ To sustain [`Level`](https://github.com/Level) and its activities, become a back
 [multileveldown]: https://github.com/mafintosh/multileveldown
 
 [mysqldown]: https://github.com/kesla/mysqldown
+
+[networked-hyperbeedown]: https://github.com/RangerMauve/networked-hyperbeedown
 
 [npm-search]: https://github.com/dominictarr/npm-search
 
