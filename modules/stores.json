@@ -133,6 +133,10 @@
     "react-native-leveldown": {
       "github": "andymatuschak/react-native-leveldown",
       "type": "[LevelDB](https://github.com/google/leveldb) (React Native)"
+    },
+    "networked-hyperbeedown": {
+      "github": "RangerMauve/networked-hyperbeedown",
+      "type": "[Hyperbee](https://github.com/hypercore-protocol/hyperbee/)"
     }
   }
 }
