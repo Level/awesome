@@ -1,6 +1,6 @@
 'use strict'
 
-const sentence = require('sentence-case')
+const sentence = require('sentence-case').sentenceCase
 const mapLimit = require('map-limit')
 const intersperse = require('intersperse')
 const compat = require('./shield-compat').badge
