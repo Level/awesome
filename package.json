@@ -27,7 +27,7 @@
     "remark-toc": "^7.0.0",
     "semver": "^6.1.1",
     "sentence-case": "^2.1.1",
-    "standard": "^14.0.0",
+    "standard": "^16.0.3",
     "thunky-with-args": "^1.0.0",
     "to-vfile": "^6.0.0",
     "unist-builder": "^2.0.0",
@@ -47,6 +47,6 @@
     "level"
   ],
   "engines": {
-    "node": ">=8"
+    "node": ">=12"
   }
 }

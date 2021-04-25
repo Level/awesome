@@ -106,8 +106,10 @@ exports.data = function (module, target, opts, callback) {
       const major = semver.major(latest)
       const minor = semver.minor(latest)
 
+      let compat
+
       try {
-        var compat = compatibility(versions, range)
+        compat = compatibility(versions, range)
       } catch (err) {
         return finish(err, 'invalid')
       }
