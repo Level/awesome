@@ -2,45 +2,44 @@
   "title": "Stores",
   "description": "Modules that implement [abstract-leveldown] as storage for [levelup].",
   "compatibility": ["abstract-leveldown"],
-  "descriptor": "type",
   "modules": {
     "leveldown": {
       "github": "Level/leveldown",
-      "type": "[LevelDB](https://github.com/google/leveldb)",
+      "description": "Backed by [LevelDB](https://github.com/google/leveldb).",
       "copyrightYear": 2012,
       "author": "Rod Vagg"
     },
     "memdown": {
       "github": "Level/memdown",
-      "type": "[In-memory RBTree](https://www.npmjs.com/package/functional-red-black-tree)",
+      "description": "Backed by [in-memory RBTree](https://www.npmjs.com/package/functional-red-black-tree).",
       "copyrightYear": 2013,
       "author": "Rod Vagg"
     },
     "level-js": {
       "github": "Level/level.js",
-      "type": "[IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB)",
+      "description": "Backed by [IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB).",
       "copyrightYear": 2012,
       "author": "[Max Ogden](https://github.com/maxogden)"
     },
     "rocksdb": {
       "github": "Level/rocksdb",
-      "type": "[RocksDB](https://github.com/facebook/rocksdb/)",
+      "description": "Backed by [RocksDB](https://github.com/facebook/rocksdb/).",
       "copyrightYear": 2012,
       "author": "Rod Vagg"
     },
     "leveldown-hyper": {
       "github": "Level/leveldown-hyper",
-      "type": "[HyperLevelDB](https://github.com/rescrv/HyperLevelDB)",
+      "description": "Backed by [HyperLevelDB](https://github.com/rescrv/HyperLevelDB).",
       "copyrightYear": 2012,
       "author": null
     },
     "medeadown": {
       "github": "kesla/medeadown",
-      "type": "[medea](https://github.com/argo/medea)"
+      "description": "Backed by [medea](https://github.com/argo/medea)."
     },
     "jsondown": {
       "github": "toolness/jsondown",
-      "type": "JSON on disk",
+      "description": "Backed by JSON on disk",
       "compatibility": [
         {
           "package": "abstract-leveldown",
@@ -50,93 +49,93 @@
     },
     "asyncstorage-down": {
       "github": "tradle/asyncstorage-down",
-      "type": "[AsyncStorage](https://facebook.github.io/react-native/docs/asyncstorage.html) (React Native)"
+      "description": "Backed by [AsyncStorage](https://facebook.github.io/react-native/docs/asyncstorage.html) (React Native)."
     },
     "mongodown": {
       "github": "watson/mongodown",
-      "type": "[MongoDB](https://www.mongodb.com/)"
+      "description": "Backed by [MongoDB](https://www.mongodb.com/)."
     },
     "sqldown": {
       "github": "calvinmetcalf/sqldown",
-      "type": "[`sqlite3`](https://www.npmjs.com/package/sqlite3), [`pg`](https://www.npmjs.com/package/pg), [`mysql`](https://www.npmjs.com/package/mysql), WebSQL"
+      "description": "Backed by [`sqlite3`](https://www.npmjs.com/package/sqlite3), [`pg`](https://www.npmjs.com/package/pg), [`mysql`](https://www.npmjs.com/package/mysql) or WebSQL."
     },
     "dynamo-down": {
       "github": "jed/dynamo-down",
-      "type": "[AWS DynamoDB](http://aws.amazon.com/dynamodb)"
+      "description": "Backed by [AWS DynamoDB](http://aws.amazon.com/dynamodb)."
     },
     "azureleveldown": {
       "github": "richorama/azureleveldown",
-      "type": "Windows Azure Table Storage"
+      "description": "Backed by Windows Azure Table Storage."
     },
     "fruitdown": {
       "github": "nolanlawson/fruitdown",
-      "type": "IndexedDB (Apple)"
+      "description": "Backed by IndexedDB (Apple)."
     },
     "localstorage-down": {
       "github": "No9/localstorage-down",
-      "type": "[localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)"
+      "description": "Backed by [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage)."
     },
     "riakdown": {
       "github": "nlf/riakdown",
-      "type": "[riakpbc](https://github.com/nlf/riakpbc)"
+      "description": "Backed by [riakpbc](https://github.com/nlf/riakpbc)."
     },
     "mysqldown": {
       "github": "kesla/mysqldown",
-      "type": "[MySQL](https://www.mysql.com/)"
+      "description": "Backed by [MySQL](https://www.mysql.com/)."
     },
     "redisdown": {
       "github": "hmalphettes/redisdown",
-      "type": "[Redis](https://redis.io/)"
+      "description": "Backed by [Redis](https://redis.io/)."
     },
     "leveldown-basho": {
       "url": "https://www.npmjs.com/package/leveldown-basho",
-      "type": "[Basho's LevelDB fork](https://github.com/basho/leveldb)"
+      "description": "Backed by [Basho's LevelDB fork](https://github.com/basho/leveldb)."
     },
     "sheet-down": {
       "github": "jed/sheet-down",
-      "type": "[Google Sheets](https://docs.google.com/spreadsheets)"
+      "description": "Backed by [Google Sheets](https://docs.google.com/spreadsheets)."
     },
     "indexeddown": {
       "github": "kapetan/indexeddown",
-      "type": "IndexedDB"
+      "description": "Backed by IndexedDB."
     },
     "lmdb-leveldown": {
       "github": "chrbala/lmdb-leveldown",
-      "type": "LMDB"
+      "description": "Backed by LMDB."
     },
     "localdown": {
       "github": "bhoriuchi/localdown",
-      "type": "localStorage in Node.js"
+      "description": "Backed by localStorage in Node.js."
     },
     "aerospike-leveldown": {
       "github": "ProjectThor/aerospikedown",
-      "type": "Aerospike"
+      "description": "Backed by Aerospike."
     },
     "s3leveldown": {
       "github": "loune/s3leveldown",
-      "type": "[AWS S3](https://aws.amazon.com/s3/)"
+      "description": "Backed by [AWS S3](https://aws.amazon.com/s3/)."
     },
     "gaiadown-ts": {
       "github": "acidleroy/gaiadown-ts",
-      "type": "[Gaia](https://github.com/blockstack/gaia)"
+      "description": "Backed by [Gaia](https://github.com/blockstack/gaia)."
     },
     "dynamodb-leveldown": {
       "github": "GioCirque/DynamoDb-LevelDown",
-      "type": "[AWS DynamoDB](http://aws.amazon.com/dynamodb/)",
+      "description": "Backed by [AWS DynamoDB](http://aws.amazon.com/dynamodb/).",
       "copyrightYear": 2019,
       "author": "Gio Palacino"
     },
     "localforagedown": {
       "github": "KsRyY/localforagedown",
-      "type": "[localForage](https://github.com/localForage/localForage/)"
+      "description": "Backed by [localForage](https://github.com/localForage/localForage/)."
     },
     "react-native-leveldown": {
       "github": "andymatuschak/react-native-leveldown",
-      "type": "[LevelDB](https://github.com/google/leveldb) (React Native)"
+      "description": "Backed by [LevelDB](https://github.com/google/leveldb) (React Native)."
     },
     "networked-hyperbeedown": {
       "github": "RangerMauve/networked-hyperbeedown",
-      "type": "[Hyperbee](https://github.com/hypercore-protocol/hyperbee/)"
+      "description": "Backed by [Hyperbee](https://github.com/hypercore-protocol/hyperbee/)."
     }
   }
 }

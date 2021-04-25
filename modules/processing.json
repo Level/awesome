@@ -75,7 +75,7 @@
       "description": "Range indexes for [levelup]."
     },
     "level-path-index": {
-      "github": "level-path-index",
+      "github": "binocarlos/level-path-index",
       "description": "Index properties of items that live in a tree of materialized paths."
     },
     "level-sql": {

@@ -1,6 +1,5 @@
 'use strict'
 
-const sentence = require('sentence-case').sentenceCase
 const mapLimit = require('map-limit')
 const intersperse = require('intersperse')
 const compat = require('./shield-compat').badge
@@ -10,86 +9,100 @@ const b = require('unist-builder')
 const processor = require('remark')()
 
 module.exports = function (section, done) {
-  const nodes = []
-  const descriptor = section.descriptor || 'description'
-
-  if (section.description) {
-    nodes.push(b('paragraph', parse(join(section.description, ' '))))
-  }
-
-  const columns = [{ name: 'Name', fn: generateName }]
-
-  if (section.compatibility) {
-    columns.push({ name: 'Compatibility', fn: generateCompatibilityBadge })
-  }
-
-  if (section.dependencies !== false) {
-    columns.push({ name: 'Dependencies', fn: generateDependenciesBadge })
-  }
-
-  columns.push({ name: sentence(descriptor), fn: generateDescription })
-
-  mapLimit(Object.entries(section.modules), 4, generateRow, (err, rows) => {
+  mapLimit(Object.entries(section.modules), 4, generateModuleSection, (err, res) => {
     if (err) return done(err)
 
-    nodes.push(b('table', { align: new Array(columns.length).fill('left') }, [
-      buildRow(columns.map(column => b('text', column.name))),
-      ...rows.map(buildRow)
-    ]))
+    const nodes = res.flat()
+
+    if (section.description) {
+      const children = parse(join(section.description, ' '))
+      nodes.unshift(b('paragraph', b('strong', children)))
+    }
 
     done(null, nodes)
   })
 
-  function generateRow ([id, module], done) {
-    mapLimit(columns, Infinity, ({ fn }, next) => fn(id, module, next), done)
+  function generateModuleSection ([id, module], done) {
+    generateBadges(id, module, (err, badges) => {
+      if (err) return done(err)
+
+      const nodes = [generateName(id)]
+      const description = parse(join(module.description, ' '))
+
+      if (badges.length) {
+        nodes.push(b('paragraph', intersperse(badges, { type: 'text', value: ' ' })))
+      }
+
+      done(null, nodes.concat(description))
+    })
   }
 
-  function generateName (id, module, done) {
+  function generateName (id) {
     const identifier = id.toLowerCase()
-    const name = b('strong', [
+
+    return b('heading', { depth: 3 }, [
       b('linkReference', { identifier, referenceType: 'shortcut' }, [
         b('inlineCode', identifier)
       ])
     ])
-
-    done(null, name)
   }
 
-  function generateCompatibilityBadge (id, module, done) {
-    const targets = module.compatibility || section.compatibility
+  function generateBadges (id, module, done) {
+    const fns = []
 
-    mapLimit(targets, 4, compat.bind(null, id), (err, badges) => {
+    if (section.compatibility) {
+      for (const target of (module.compatibility || section.compatibility)) {
+        fns.push((id, module, next) => {
+          compat(id, target, (err, badge) => {
+            if (err) return next(err)
+            next(null, img(badge.image, badge.alt, badge.link))
+          })
+        })
+      }
+    }
+
+    if (section.dependencies !== false) {
+      fns.push(generateDependenciesBadge)
+      fns.push(generateLastCommitBadge)
+      fns.push(generateContributorsBadge)
+    }
+
+    mapLimit(fns, 4, (fn, next) => fn(id, module, next), (err, badges) => {
       if (err) return done(err)
-
-      const nodes = badges.map(({ image, alt, link }) => img(image, alt, link))
-      const badge = intersperse(nodes, { type: 'html', value: '<br>' })
-
-      done(null, badge)
+      done(null, badges.filter(Boolean))
     })
   }
 
   function generateDependenciesBadge (id, module, done) {
-    const dm = david(module.github, { label: '♥' })
+    const dm = david(module.github)
     const badge = img(dm.image, dm.alt, dm.link)
 
-    done(null, badge)
+    process.nextTick(done, null, badge)
   }
 
-  function generateDescription (id, module, done) {
-    done(null, parse(join(module[descriptor], '<br>')))
+  function generateLastCommitBadge (id, module, done) {
+    if (!module.github) return process.nextTick(done)
+
+    const image = `https://img.shields.io/github/last-commit/${module.github}`
+    const alt = 'Last commit'
+    const link = `https://github.com/${module.github}`
+
+    process.nextTick(done, null, img(image, alt, link))
+  }
+
+  function generateContributorsBadge (id, module, done) {
+    if (!module.github) return process.nextTick(done)
+
+    const image = `https://img.shields.io/github/contributors/${module.github}?color=brightgreen`
+    const alt = 'Contributors'
+    const link = `https://github.com/${module.github}/graphs/contributors`
+
+    process.nextTick(done, null, img(image, alt, link))
   }
 }
 
 function join (parts, glue) {
   return [].concat(parts).join(glue)
-}
-
-function buildRow (columns) {
-  return b('tableRow', columns.map(buildCell))
-}
-
-function buildCell (children) {
-  return b('tableCell', [].concat(children))
 }
 
 function parse (md) {
