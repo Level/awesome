@@ -3,8 +3,8 @@
 > An open list of awesome **[Level][level-org]** modules and resources. [Add yours!](#contributing)
 
 [![level badge][level-badge]](https://github.com/level/awesome)
-[![Backers on Open Collective](https://opencollective.com/level/backers/badge.svg?color=orange)](#backers)
-[![Sponsors on Open Collective](https://opencollective.com/level/sponsors/badge.svg?color=orange)](#sponsors)
+[![Test](https://github.com/Level/awesome/actions/workflows/test.yml/badge.svg)](https://github.com/Level/awesome/actions/workflows/test.yml)
+[![Funding](https://opencollective.com/level/tiers/badge.svg?color=orange)](#donate)
 
 ## Table of Contents
 
@@ -535,19 +535,19 @@ See the [Contribution Guide](https://github.com/Level/community/blob/master/CONT
 
 ## Donate
 
-To sustain [`Level`](https://github.com/Level) and its activities, become a backer or sponsor on [Open Collective](https://opencollective.com/level). Your logo or avatar will be displayed on our 28+ [GitHub repositories](https://github.com/Level) and [npm](https://www.npmjs.com/) packages. 💖
+Support us with a monthly donation on [Open Collective](https://opencollective.com/level) and help us continue our work. Your logo or avatar will be displayed on our 28+ [GitHub repositories](https://github.com/Level) and [npm](https://www.npmjs.com/) packages. 💖
 
-### Backers
+**Active financial contributors**
 
-[![Open Collective backers](https://opencollective.com/level/backers.svg?width=890)](https://opencollective.com/level)
+[![Open Collective backers](https://opencollective.com/level/tiers/backer.svg?button=false)](https://opencollective.com/level) [![Open Collective sponsors](https://opencollective.com/level/tiers/sponsor.svg?button=false)](https://opencollective.com/level)
 
-### Sponsors
+**Past financial contributors**
 
-[![Open Collective sponsors](https://opencollective.com/level/sponsors.svg?width=890)](https://opencollective.com/level)
+[![Open Collective sponsors](https://opencollective.com/level/sponsors.svg?button=false&avatarHeight=36)](https://opencollective.com/level) [![Open Collective backers](https://opencollective.com/level/backers.svg?button=false&avatarHeight=36)](https://opencollective.com/level)
 
 ## License
 
-[MIT](LICENSE.md) © 2017-present [Contributors](CONTRIBUTORS.md).
+[MIT](LICENSE)
 
 [@adorsys/encrypt-down]: https://github.com/adorsys/encrypt-down
 

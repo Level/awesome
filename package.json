@@ -6,16 +6,14 @@
   "license": "MIT",
   "scripts": {
     "test": "standard && npm run dependency-check",
-    "awesome": "node src README.md modules/* && hallmark fix CONTRIBUTORS.md LICENSE.md",
-    "dependency-check": "dependency-check . src/*.js -i hallmark -i dependency-check -i level-community -i standard"
+    "awesome": "node src README.md modules/*",
+    "dependency-check": "dependency-check . src/*.js -i dependency-check -i standard"
   },
   "dependencies": {},
   "devDependencies": {
     "dependency-check": "^4.1.0",
     "glob": "^7.1.2",
-    "hallmark": "^3.1.0",
     "intersperse": "^1.0.0",
-    "level-community": "^3.0.0",
     "map-limit": "0.0.1",
     "mdast-util-heading-range": "^2.1.0",
     "packument": "^1.0.0",
@@ -33,9 +31,6 @@
     "unist-builder": "^2.0.0",
     "unist-util-visit": "^2.0.0",
     "vfile-reporter": "^6.0.0"
-  },
-  "hallmark": {
-    "community": "level-community"
   },
   "repository": {
     "type": "git",
