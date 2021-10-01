@@ -20,10 +20,6 @@
       "github": "Raynos/level-write-stream",
       "description": "Streams1 writable stream for [levelup] or [abstract-leveldown]."
     },
-    "level-delete-stream": {
-      "github": "juliangruber/level-delete-stream",
-      "description": "A streams1 deleteStream for [levelup]."
-    },
     "pull-level": {
       "github": "dominictarr/pull-level",
       "description": "[`pull-stream`](https://github.com/pull-stream/pull-stream) interface to [levelup] with read streams, write streams and realtime (tail/live) reads."

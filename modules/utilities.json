@@ -83,10 +83,6 @@
       "github": "eugeneware/changeset",
       "description": "Generate diff changesets for javascript objects, decomposing diffs into a series of puts and delete operations. The format is compatible with [levelup] batch operations. Useful to synchronize objects."
     },
-    "level-delete-range": {
-      "github": "Raynos/level-delete-range",
-      "description": "Delete a range of keys from [levelup]."
-    },
     "levelup-defaults": {
       "github": "mafintosh/levelup-defaults",
       "description": "Change the defaults settings on a [levelup] instance by returning a new [levelup] instance that uses the same [abstract-leveldown] but different options."

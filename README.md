@@ -869,12 +869,6 @@ Streams2 writable stream for [`levelup`][levelup].
 
 Streams1 writable stream for [`levelup`][levelup] or [`abstract-leveldown`][abstract-leveldown].
 
-### [`level-delete-stream`][level-delete-stream]
-
-[![dependencies](https://img.shields.io/david/juliangruber/level-delete-stream.svg)](https://david-dm.org/juliangruber/level-delete-stream) [![Last commit](https://img.shields.io/github/last-commit/juliangruber/level-delete-stream)](https://github.com/juliangruber/level-delete-stream) [![Contributors](https://img.shields.io/github/contributors/juliangruber/level-delete-stream?color=brightgreen)](https://github.com/juliangruber/level-delete-stream/graphs/contributors)
-
-A streams1 deleteStream for [`levelup`][levelup].
-
 ### [`pull-level`][pull-level]
 
 [![dependencies](https://img.shields.io/david/dominictarr/pull-level.svg)](https://david-dm.org/dominictarr/pull-level) [![Last commit](https://img.shields.io/github/last-commit/dominictarr/pull-level)](https://github.com/dominictarr/pull-level) [![Contributors](https://img.shields.io/github/contributors/dominictarr/pull-level?color=brightgreen)](https://github.com/dominictarr/pull-level/graphs/contributors)
@@ -1501,12 +1495,6 @@ Lazily open a leveldown compatible backend.
 
 Generate diff changesets for javascript objects, decomposing diffs into a series of puts and delete operations. The format is compatible with [`levelup`][levelup] batch operations. Useful to synchronize objects.
 
-### [`level-delete-range`][level-delete-range]
-
-[![dependencies](https://img.shields.io/david/Raynos/level-delete-range.svg)](https://david-dm.org/Raynos/level-delete-range) [![Last commit](https://img.shields.io/github/last-commit/Raynos/level-delete-range)](https://github.com/Raynos/level-delete-range) [![Contributors](https://img.shields.io/github/contributors/Raynos/level-delete-range?color=brightgreen)](https://github.com/Raynos/level-delete-range/graphs/contributors)
-
-Delete a range of keys from [`levelup`][levelup].
-
 ### [`levelup-defaults`][levelup-defaults]
 
 [![dependencies](https://img.shields.io/david/mafintosh/levelup-defaults.svg)](https://david-dm.org/mafintosh/levelup-defaults) [![Last commit](https://img.shields.io/github/last-commit/mafintosh/levelup-defaults)](https://github.com/mafintosh/levelup-defaults) [![Contributors](https://img.shields.io/github/contributors/mafintosh/levelup-defaults?color=brightgreen)](https://github.com/mafintosh/levelup-defaults/graphs/contributors)
@@ -1806,6 +1794,14 @@ Browserify CDN. Caches browserify bundles in LevelDB.
 ## Legacy
 
 **Modules that are deprecated, archived or superseded. Listed here for the historical record.**
+
+### [`level-delete-stream`][level-delete-stream]
+
+A streams1 deleteStream for [`levelup`][levelup]. Superseded by `db.clear()`.
+
+### [`level-delete-range`][level-delete-range]
+
+Delete a range of keys from [`levelup`][levelup]. Superseded by `db.clear()`.
 
 ### [`level-browserify`][level-browserify]
 

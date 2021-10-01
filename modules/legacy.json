@@ -3,6 +3,14 @@
   "description": "Modules that are deprecated, archived or superseded. Listed here for the historical record.",
   "dependencies": false,
   "modules": {
+    "level-delete-stream": {
+      "github": "juliangruber/level-delete-stream",
+      "description": "A streams1 deleteStream for [levelup]. Superseded by `db.clear()`."
+    },
+    "level-delete-range": {
+      "github": "Raynos/level-delete-range",
+      "description": "Delete a range of keys from [levelup]. Superseded by `db.clear()`."
+    },
     "level-browserify": {
       "github": "Level/level-browserify",
       "description": "Bundle for [level-js] and [leveldown]. No longer maintained: superseded by [level] v5.0.0.",
