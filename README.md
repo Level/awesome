@@ -47,19 +47,19 @@
 
 ### [`level`][level]
 
-![levelup](https://img.shields.io/badge/levelup-5.0-brightgreen.svg) [![dependencies](https://img.shields.io/david/Level/level.svg)](https://david-dm.org/Level/level) [![Last commit](https://img.shields.io/github/last-commit/Level/level)](https://github.com/Level/level) [![Contributors](https://img.shields.io/github/contributors/Level/level?color=brightgreen)](https://github.com/Level/level/graphs/contributors)
+![levelup](https://img.shields.io/badge/levelup-5.0-yellow.svg) [![dependencies](https://img.shields.io/david/Level/level.svg)](https://david-dm.org/Level/level) [![Last commit](https://img.shields.io/github/last-commit/Level/level)](https://github.com/Level/level) [![Contributors](https://img.shields.io/github/contributors/Level/level?color=brightgreen)](https://github.com/Level/level/graphs/contributors)
 
 Bundle for [`leveldown`][leveldown] and [`level-js`][level-js]. Main entry point for beginners.
 
 ### [`level-mem`][level-mem]
 
-![levelup](https://img.shields.io/badge/levelup-4.3-orange.svg) [![dependencies](https://img.shields.io/david/Level/level-mem.svg)](https://david-dm.org/Level/level-mem) [![Last commit](https://img.shields.io/github/last-commit/Level/level-mem)](https://github.com/Level/level-mem) [![Contributors](https://img.shields.io/github/contributors/Level/level-mem?color=brightgreen)](https://github.com/Level/level-mem/graphs/contributors)
+![levelup](https://img.shields.io/badge/levelup-5.0-yellow.svg) [![dependencies](https://img.shields.io/david/Level/level-mem.svg)](https://david-dm.org/Level/level-mem) [![Last commit](https://img.shields.io/github/last-commit/Level/level-mem)](https://github.com/Level/level-mem) [![Contributors](https://img.shields.io/github/contributors/Level/level-mem?color=brightgreen)](https://github.com/Level/level-mem/graphs/contributors)
 
 Bundle for [`memdown`][memdown].
 
 ### [`level-rocksdb`][level-rocksdb]
 
-![levelup](https://img.shields.io/badge/levelup-4.3-orange.svg) [![dependencies](https://img.shields.io/david/Level/level-rocksdb.svg)](https://david-dm.org/Level/level-rocksdb) [![Last commit](https://img.shields.io/github/last-commit/Level/level-rocksdb)](https://github.com/Level/level-rocksdb) [![Contributors](https://img.shields.io/github/contributors/Level/level-rocksdb?color=brightgreen)](https://github.com/Level/level-rocksdb/graphs/contributors)
+![levelup](https://img.shields.io/badge/levelup-5.0-yellow.svg) [![dependencies](https://img.shields.io/david/Level/level-rocksdb.svg)](https://david-dm.org/Level/level-rocksdb) [![Last commit](https://img.shields.io/github/last-commit/Level/level-rocksdb)](https://github.com/Level/level-rocksdb) [![Contributors](https://img.shields.io/github/contributors/Level/level-rocksdb?color=brightgreen)](https://github.com/Level/level-rocksdb/graphs/contributors)
 
 Bundle for [`rocksdb`][rocksdb].
 
@@ -101,25 +101,25 @@ Package helper to export [a bundle](#bundles). Use this to create a new `level-*
 
 ### [`leveldown`][leveldown]
 
-![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-7.0-brightgreen.svg) [![dependencies](https://img.shields.io/david/Level/leveldown.svg)](https://david-dm.org/Level/leveldown) [![Last commit](https://img.shields.io/github/last-commit/Level/leveldown)](https://github.com/Level/leveldown) [![Contributors](https://img.shields.io/github/contributors/Level/leveldown?color=brightgreen)](https://github.com/Level/leveldown/graphs/contributors)
+![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-7.2-brightgreen.svg) [![dependencies](https://img.shields.io/david/Level/leveldown.svg)](https://david-dm.org/Level/leveldown) [![Last commit](https://img.shields.io/github/last-commit/Level/leveldown)](https://github.com/Level/leveldown) [![Contributors](https://img.shields.io/github/contributors/Level/leveldown?color=brightgreen)](https://github.com/Level/leveldown/graphs/contributors)
 
 Backed by [LevelDB](https://github.com/google/leveldb).
 
 ### [`memdown`][memdown]
 
-![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-7.0-brightgreen.svg) [![dependencies](https://img.shields.io/david/Level/memdown.svg)](https://david-dm.org/Level/memdown) [![Last commit](https://img.shields.io/github/last-commit/Level/memdown)](https://github.com/Level/memdown) [![Contributors](https://img.shields.io/github/contributors/Level/memdown?color=brightgreen)](https://github.com/Level/memdown/graphs/contributors)
+![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-7.2-brightgreen.svg) [![dependencies](https://img.shields.io/david/Level/memdown.svg)](https://david-dm.org/Level/memdown) [![Last commit](https://img.shields.io/github/last-commit/Level/memdown)](https://github.com/Level/memdown) [![Contributors](https://img.shields.io/github/contributors/Level/memdown?color=brightgreen)](https://github.com/Level/memdown/graphs/contributors)
 
 Backed by [in-memory RBTree](https://www.npmjs.com/package/functional-red-black-tree).
 
 ### [`level-js`][level-js]
 
-![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-7.0-brightgreen.svg) [![dependencies](https://img.shields.io/david/Level/level.js.svg)](https://david-dm.org/Level/level.js) [![Last commit](https://img.shields.io/github/last-commit/Level/level.js)](https://github.com/Level/level.js) [![Contributors](https://img.shields.io/github/contributors/Level/level.js?color=brightgreen)](https://github.com/Level/level.js/graphs/contributors)
+![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-7.2-brightgreen.svg) [![dependencies](https://img.shields.io/david/Level/level.js.svg)](https://david-dm.org/Level/level.js) [![Last commit](https://img.shields.io/github/last-commit/Level/level.js)](https://github.com/Level/level.js) [![Contributors](https://img.shields.io/github/contributors/Level/level.js?color=brightgreen)](https://github.com/Level/level.js/graphs/contributors)
 
 Backed by [IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB).
 
 ### [`rocksdb`][rocksdb]
 
-![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-7.0-brightgreen.svg) [![dependencies](https://img.shields.io/david/Level/rocksdb.svg)](https://david-dm.org/Level/rocksdb) [![Last commit](https://img.shields.io/github/last-commit/Level/rocksdb)](https://github.com/Level/rocksdb) [![Contributors](https://img.shields.io/github/contributors/Level/rocksdb?color=brightgreen)](https://github.com/Level/rocksdb/graphs/contributors)
+![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-7.0-yellow.svg) [![dependencies](https://img.shields.io/david/Level/rocksdb.svg)](https://david-dm.org/Level/rocksdb) [![Last commit](https://img.shields.io/github/last-commit/Level/rocksdb)](https://github.com/Level/rocksdb) [![Contributors](https://img.shields.io/github/contributors/Level/rocksdb?color=brightgreen)](https://github.com/Level/rocksdb/graphs/contributors)
 
 Backed by [RocksDB](https://github.com/facebook/rocksdb/).
 
@@ -279,7 +279,7 @@ Backed by [Hyperbee](https://github.com/hypercore-protocol/hyperbee/).
 
 ### [`encoding-down`][encoding-down]
 
-![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-7.0-brightgreen.svg) [![dependencies](https://img.shields.io/david/Level/encoding-down.svg)](https://david-dm.org/Level/encoding-down) [![Last commit](https://img.shields.io/github/last-commit/Level/encoding-down)](https://github.com/Level/encoding-down) [![Contributors](https://img.shields.io/github/contributors/Level/encoding-down?color=brightgreen)](https://github.com/Level/encoding-down/graphs/contributors)
+![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-7.2-brightgreen.svg) [![dependencies](https://img.shields.io/david/Level/encoding-down.svg)](https://david-dm.org/Level/encoding-down) [![Last commit](https://img.shields.io/github/last-commit/Level/encoding-down)](https://github.com/Level/encoding-down) [![Contributors](https://img.shields.io/github/contributors/Level/encoding-down?color=brightgreen)](https://github.com/Level/encoding-down/graphs/contributors)
 
 Provides key/value encoding.
 
@@ -291,7 +291,7 @@ Provides encryption for values.
 
 ### [`deferred-leveldown`][deferred-leveldown]
 
-![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-7.0-brightgreen.svg) [![dependencies](https://img.shields.io/david/Level/deferred-leveldown.svg)](https://david-dm.org/Level/deferred-leveldown) [![Last commit](https://img.shields.io/github/last-commit/Level/deferred-leveldown)](https://github.com/Level/deferred-leveldown) [![Contributors](https://img.shields.io/github/contributors/Level/deferred-leveldown?color=brightgreen)](https://github.com/Level/deferred-leveldown/graphs/contributors)
+![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-7.2-brightgreen.svg) [![dependencies](https://img.shields.io/david/Level/deferred-leveldown.svg)](https://david-dm.org/Level/deferred-leveldown) [![Last commit](https://img.shields.io/github/last-commit/Level/deferred-leveldown)](https://github.com/Level/deferred-leveldown) [![Contributors](https://img.shields.io/github/contributors/Level/deferred-leveldown?color=brightgreen)](https://github.com/Level/deferred-leveldown/graphs/contributors)
 
 Handles delayed-open. Built into [`levelup`][levelup].
 
