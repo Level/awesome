@@ -3,7 +3,6 @@
 const mapLimit = require('map-limit')
 const intersperse = require('intersperse')
 const compat = require('./shield-compat').badge
-const david = require('./shield-david')
 const img = require('./mdast-image')
 const b = require('unist-builder')
 const processor = require('remark')()
@@ -62,7 +61,6 @@ module.exports = function (section, done) {
     }
 
     if (section.dependencies !== false) {
-      fns.push(generateDependenciesBadge)
       fns.push(generateLastCommitBadge)
       fns.push(generateContributorsBadge)
     }
@@ -71,13 +69,6 @@ module.exports = function (section, done) {
       if (err) return done(err)
       done(null, badges.filter(Boolean))
     })
-  }
-
-  function generateDependenciesBadge (id, module, done) {
-    const dm = david(module.github)
-    const badge = img(dm.image, dm.alt, dm.link)
-
-    process.nextTick(done, null, badge)
   }
 
   function generateLastCommitBadge (id, module, done) {
