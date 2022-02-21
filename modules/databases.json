@@ -12,30 +12,6 @@
       "url": "http://pouchdb.com/",
       "description": "PouchDB allows you to store and query data offline and then sync with CouchDB when online. For Node, browser and mobile."
     },
-    "couchup": {
-      "github": "mikeal/couchup",
-      "description": [
-        "A CouchDB implementation on top of [levelup]."
-      ]
-    },
-    "firedup": {
-      "github": "eugeneware/firedup",
-      "description": [
-        "A node.js implementation of firebase based on [levelup]."
-      ]
-    },
-    "len": {
-      "github": "binocarlos/len",
-      "description": [
-        "Len is a resource booking database using LevelDB for storage. Useful for calendar and gantt chart apps and for questions like 'can a customer book this resource starting X and ending Y'."
-      ]
-    },
-    "lem": {
-      "github": "binocarlos/lem",
-      "description": [
-        "Lem is a telemetry storage database using LevelDB. Keys are indexed by timestamp and you can read values in-between 2 points in time."
-      ]
-    },
     "levelgraph": {
       "github": "mcollina/node-levelgraph",
       "description": [
@@ -54,87 +30,10 @@
         "Event-driven database based on [pouchdb]. Optimized for reactive programming with observables. Events and state is automatically shared between multiple browser tabs. Queries are defined by the mongoDB mango-standard."
       ]
     },
-    "pushdb": {
-      "github": "mikeal/pushdb",
-      "description": [
-        "A programmable database with document storage and unique indexing capabilities."
-      ]
-    },
     "search-index": {
       "github": "fergiemcdowall/search-index",
       "description": [
         "A persistent full text search engine for browser and Node.js."
-      ]
-    },
-    "tacodb": {
-      "github": "dominictarr/tacodb",
-      "description": [
-        "A responsive, Node.js-style database ideal for realtime data. Highly modular and adaptable, allowing extension with the [Level][level-org] ecosystem."
-      ]
-    },
-    "timestreamdb": {
-      "github": "brycebaril/timestreamdb",
-      "description": [
-        "A full-featured timeseries database on top of LevelDB. Includes a library for streaming statistical operations on timeseries data including joins, aggregates, filters, and map-like operations."
-      ]
-    },
-    "@nano-sql/core": {
-      "github": "ClickSimply/Nano-SQL",
-      "description": [
-        "A small (10Kb) RDBMS abstraction on top of [levelup] that also runs in the browser with undo/redo support, immutable objects and IndexedDB persistence."
-      ]
-    },
-    "vertical": {
-      "github": "zy445566/vertical",
-      "description": [
-        "LevelDB distributed, Server and Client!"
-      ]
-    },
-    "flash-store": {
-      "github": "zixia/flash-store",
-      "description": [
-        "FlashStore is a Key-Value persistent storage with easy to use ES6 Map-like API(both Async and Sync support), powered by LevelDB and TypeScript."
-      ]
-    },
-    "level-fact-base": {
-      "github": "smallhelm/level-fact-base",
-      "description": [
-        "Store immutable facts and query them with datalog."
-      ]
-    },
-    "dulcimer": {
-      "github": "fritzy/dulcimer",
-      "description": "Define JSON models and manage indexes, children, foreign keys and much more."
-    },
-    "levi": {
-      "github": "cshum/levi",
-      "description": "Stream based full-text search for Node.js and browser using [levelup]."
-    },
-    "level-mongo": {
-      "github": "simon-p-r/level-mongo",
-      "description": "MongoDB-like database backed by LevelDB."
-    },
-    "level-orm": {
-      "github": "eugeneware/level-orm",
-      "description": "Simple ORM built on [levelup]."
-    },
-    "level-lively": {
-      "github": "eugeneware/level-lively",
-      "description": "[levelup] implementation of [LivelyDb](https://github.com/eugeneware/livelydb) for doing real-time data binding of a database with local javascript objects."
-    },
-    "kwdb": {
-      "github": "KsRyY/kwdb",
-      "description": "REST wrapper for [levelup]."
-    },
-    "level-restful": {
-      "github": "karissa/level-restful",
-      "description": "REST wrapper for [levelup], as an extension to [level-orm]."
-    },
-    "level-rest": {
-      "github": "shama/level-rest",
-      "description": [
-        "REST wrapper for [levelup].",
-        "NB. Not compatible with latest [levelup]."
       ]
     }
   }

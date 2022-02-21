@@ -1,6 +1,6 @@
 {
   "title": "Processing",
-  "description": "Modules for indexing, alternative forms of querying data, MapReduce models and other forms of data processing.",
+  "description": "Modules for indexing, alternative forms of querying data, MapReduce models and other forms of data processing. This section has not been updated for [abstract-level] yet.",
   "modules": {
     "level-auto-index": {
       "github": "hypermodules/level-auto-index",

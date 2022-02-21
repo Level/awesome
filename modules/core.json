@@ -1,32 +1,10 @@
 {
   "title": "Core",
   "modules": {
-    "levelup": {
-      "github": "Level/levelup",
-      "description": [
-        "The glue that holds everything together.",
-        "Use this when you need a [custom or swappable store](#stores)."
-      ],
-      "copyrightYear": 2012,
-      "author": null
-    },
-    "abstract-leveldown": {
-      "github": "Level/abstract-leveldown",
-      "description": [
-        "An abstract prototype matching the [leveldown] API.",
-        "Use this to implement your own store."
-      ],
-      "copyrightYear": 2013,
-      "author": "Rod Vagg"
-    },
-    "level-packager": {
-      "github": "Level/packager",
-      "description": [
-        "Package helper to export [a bundle](#bundles).",
-        "Use this to create a new `level-*` bundle."
-      ],
-      "copyrightYear": 2013,
-      "author": null
+    "abstract-level": {
+      "github": "Level/abstract-level",
+      "description": "Abstract class for a lexicographically sorted key-value database.",
+      "timeless": true
     }
   }
 }

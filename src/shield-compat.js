@@ -93,9 +93,6 @@ exports.data = function (module, target, opts, callback) {
       }
 
       return finish(null, 'missing')
-    } else if (range === '*') {
-      // Discourage use of this specifier.
-      return finish(null, range, 'red')
     }
 
     getPackument(target.package, (err, packument) => {
@@ -114,7 +111,9 @@ exports.data = function (module, target, opts, callback) {
         return finish(err, 'invalid')
       }
 
-      if (compat.major < major - 2) {
+      if (target.package === 'levelup' || target.package === 'abstract-leveldown') {
+        finish(null, compat.short, 'inactive')
+      } else if (compat.major < major - 2) {
         finish(null, compat.short, 'red')
       } else if (compat.major < major) {
         finish(null, compat.short, 'orange')
