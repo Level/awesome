@@ -46,7 +46,7 @@
 
 ### [`level`][level]
 
-![levelup](https://img.shields.io/badge/levelup-5.1-brightgreen.svg) [![Last commit](https://img.shields.io/github/last-commit/Level/level)](https://github.com/Level/level) [![Contributors](https://img.shields.io/github/contributors/Level/level?color=brightgreen)](https://github.com/Level/level/graphs/contributors)
+![levelup](https://img.shields.io/badge/levelup-missing-lightgrey.svg) [![Last commit](https://img.shields.io/github/last-commit/Level/level)](https://github.com/Level/level) [![Contributors](https://img.shields.io/github/contributors/Level/level?color=brightgreen)](https://github.com/Level/level/graphs/contributors)
 
 Bundle for [`leveldown`][leveldown] and [`level-js`][level-js]. Main entry point for beginners.
 
@@ -200,6 +200,12 @@ Backed by [MySQL](https://www.mysql.com/).
 
 Backed by [Redis](https://redis.io/).
 
+### [`upstash-redis-level`][upstash-redis-level]
+
+![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-missing-lightgrey.svg) [![Last commit](https://img.shields.io/github/last-commit/tinacms/upstash-redis-level)](https://github.com/tinacms/upstash-redis-level) [![Contributors](https://img.shields.io/github/contributors/tinacms/upstash-redis-level?color=brightgreen)](https://github.com/tinacms/upstash-redis-level/graphs/contributors)
+
+Backed by [@upstash/redis](https://www.npmjs.com/package/@upstash/redis). [abstract-level](https://github.com/Level/abstract-level) compatible.
+
 ### [`leveldown-basho`][leveldown-basho]
 
 ![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-missing-lightgrey.svg)
@@ -238,7 +244,7 @@ Backed by Aerospike.
 
 ### [`s3leveldown`][s3leveldown]
 
-![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-6.3-orange.svg) [![Last commit](https://img.shields.io/github/last-commit/loune/s3leveldown)](https://github.com/loune/s3leveldown) [![Contributors](https://img.shields.io/github/contributors/loune/s3leveldown?color=brightgreen)](https://github.com/loune/s3leveldown/graphs/contributors)
+![abstract-leveldown](https://img.shields.io/badge/abstract--leveldown-7.2-brightgreen.svg) [![Last commit](https://img.shields.io/github/last-commit/loune/s3leveldown)](https://github.com/loune/s3leveldown) [![Contributors](https://img.shields.io/github/contributors/loune/s3leveldown?color=brightgreen)](https://github.com/loune/s3leveldown/graphs/contributors)
 
 Backed by [AWS S3](https://aws.amazon.com/s3/).
 
@@ -2615,6 +2621,8 @@ See the [Contribution Guide](https://github.com/Level/community/blob/master/CONT
 [tiny-level-ttl]: https://github.com/ArtskydJ/tiny-level-ttl
 
 [tsd]: https://github.com/hij1nx/tsd
+
+[upstash-redis-level]: https://github.com/tinacms/upstash-redis-level
 
 [vertical]: https://github.com/zy445566/vertical
 
