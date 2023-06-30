@@ -87,6 +87,10 @@
       "github": "hmalphettes/redisdown",
       "description": "Backed by [Redis](https://redis.io/)."
     },
+    "upstash-redis-level": {
+        "github": "tinacms/upstash-redis-level",
+        "description": "Backed by [@upstash/redis](https://www.npmjs.com/package/@upstash/redis). [abstract-level](https://github.com/Level/abstract-level) compatible."
+    },
     "leveldown-basho": {
       "url": "https://www.npmjs.com/package/leveldown-basho",
       "description": "Backed by [Basho's LevelDB fork](https://github.com/basho/leveldb)."
