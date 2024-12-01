@@ -1,56 +1,25 @@
 {
   "title": "Streams",
-  "description": "[Node.js stream](https://nodejs.org/api/stream.html) or [`pull-stream`](https://github.com/pull-stream/pull-stream) implementations for reading and writing data from/to [levelup].",
+  "description": "[Node.js stream](https://nodejs.org/api/stream.html), [Web Streams](https://developer.mozilla.org/en-US/docs/Web/API/Streams_API) or [`pull-stream`](https://github.com/pull-stream/pull-stream) implementations for reading and writing data from/to databases.",
   "modules": {
-    "level-ws": {
-      "github": "Level/level-ws",
-      "description": "General-case, streams3 writable stream for [levelup].",
-      "copyrightYear": 2012,
-      "author": null
-    },
-    "level-batch-stream": {
-      "github": "jcrugzz/level-batch-stream",
-      "description": "Streams2 writable stream for [levelup]."
-    },
-    "level-writestream": {
-      "github": "pgte/level-writestream",
-      "description": "Streams2 writable stream for [levelup]."
-    },
-    "level-write-stream": {
-      "github": "Raynos/level-write-stream",
-      "description": "Streams1 writable stream for [levelup] or [abstract-leveldown]."
-    },
-    "pull-level": {
-      "github": "dominictarr/pull-level",
-      "description": "[`pull-stream`](https://github.com/pull-stream/pull-stream) interface to [levelup] with read streams, write streams and realtime (tail/live) reads."
-    },
-    "level-live-stream": {
-      "github": "dominictarr/level-live-stream",
-      "description": "Like `db.createReadStream()` except it's live / tailable. i.e. instead of ending, it will stay open and stream changes to the database as they are inserted."
-    },
-    "level-live": {
-      "github": "voltraco/level-live",
+    "level-read-stream": {
+      "github": "Level/read-stream",
       "description": [
-        "Simple, light and correct live read stream implementation.",
-        "",
-        "NB. Uses an undefined streams version."
+        "Read from an [abstract-level] database using Node.js streams."
+      ],
+      "timeless": true
+    },
+    "level-web-stream": {
+      "github": "Level/web-stream",
+      "description": [
+        "Read from an [abstract-level] database using Web Streams."
       ]
     },
-    "level-livefeed": {
-      "github": "Raynos/level-livefeed",
-      "description": "A live query of a range in [levelup]. Similar to [level-live-stream] but with a streams2 interface."
-    },
-    "level-range": {
-      "github": "juliangruber/level-range",
-      "description": "Find all K/V-pairs prefixed by a certain key. Streams1."
-    },
-    "level-cursor": {
-      "github": "kordon/cursor",
-      "description": "A stream \"cursor\" to iterate through a ReadStream / KeyStream / ValueStream."
-    },
-    "level-glob": {
-      "github": "vweevers/level-glob",
-      "description": "A streams2 read stream filtered and ordered by glob patterns. Keys in the database should be unix-like paths."
+    "level-ws": {
+      "github": "Level/level-ws",
+      "description": "A basic writable stream for [abstract-level] databases, using Node.js core streams. Has not been updated for `abstract-level` 2 yet (to use the promise API).",
+      "copyrightYear": 2012,
+      "author": null
     }
   }
 }

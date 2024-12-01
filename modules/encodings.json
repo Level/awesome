@@ -1,10 +1,16 @@
 {
   "title": "Encodings",
-  "description": "Custom [level-codec] compatible encodings for use with [encoding-down].",
+  "example": "encodings.js",
   "modules": {
+    "protocol-buffers": {
+      "github": "mafintosh/protocol-buffers",
+      "description": "[Protocol Buffers](https://developers.google.com/protocol-buffers/) for Node.js. Compiled messages are valid as encodings.",
+      "timeless": true
+    },
     "charwise": {
       "github": "dominictarr/charwise",
-      "description": "Encode/decode with same encoded sort order as [bytewise]."
+      "description": "Encode / decode with same encoded sort order as [bytewise].",
+      "timeless": true
     },
     "bytewise": {
       "github": "deanlandolt/bytewise",
@@ -14,13 +20,10 @@
         "NB. Use [charwise] if possible. Gives you almost everything `bytewise` does but much faster."
       ]
     },
-    "protocol-buffers": {
-      "github": "mafintosh/protocol-buffers",
-      "description": "[Protocol Buffers](https://developers.google.com/protocol-buffers/) for Node.js. Compiled messages are [level-codec] compatible encodings."
-    },
     "lexicographic-integer-encoding": {
       "github": "vweevers/lexicographic-integer-encoding",
-      "description": "Wraps [`lexicographic-integer`](https://github.com/substack/lexicographic-integer)."
+      "description": "Wraps [`lexicographic-integer`](https://github.com/substack/lexicographic-integer).",
+      "timeless": true
     }
   }
 }

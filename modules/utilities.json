@@ -1,27 +1,19 @@
 {
   "title": "Utilities",
   "modules": {
-    "level-codec": {
-      "github": "Level/codec",
-      "description": "Encode keys, values and ltgte options. Used in [encoding-down].",
-      "copyrightYear": 2012,
-      "author": null
-    },
-    "level-errors": {
-      "github": "Level/errors",
-      "description": "Error types for [levelup].",
-      "copyrightYear": 2012,
-      "author": null
+    "level-transcoder": {
+      "github": "Level/transcoder",
+      "description": "Encode data with built-in or custom encodings. Used in [abstract-level]."
     },
     "level-test": {
       "github": "Level/level-test",
-      "description": "Easily run your `level-*` tests against [all stores](#stores).",
+      "description": "Inject temporary and isolated [abstract-leveldown] stores ([leveldown], [level-js], [memdown] or custom) into your tests.",
       "copyrightYear": 2013,
       "author": "Dominic Tarr"
     },
     "level-compose": {
       "github": "Level/compose",
-      "description": "Compose a database factory from [abstract-leveldown] and [levelup] layers.",
+      "description": "Compose a database factory from [abstract-leveldown] and [levelup] layers. TBD if still relevant after [abstract-level].",
       "copyrightYear": 2019,
       "author": null
     },

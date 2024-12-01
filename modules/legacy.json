@@ -1,8 +1,603 @@
 {
   "title": "Legacy",
   "description": "Modules that are deprecated, archived or superseded. Listed here for the historical record.",
-  "dependencies": false,
   "modules": {
+    "levelup": {
+      "github": "Level/levelup",
+      "description": "Wrapper for [abstract-leveldown] stores. Superseded by [abstract-level].",
+      "oldCategory": "core",
+      "copyrightYear": 2012,
+      "author": null
+    },
+    "abstract-leveldown": {
+      "github": "Level/abstract-leveldown",
+      "description": "An abstract prototype matching the [leveldown] API. Superseded by [abstract-level].",
+      "oldCategory": "core",
+      "copyrightYear": 2013,
+      "author": "Rod Vagg"
+    },
+    "level-mem": {
+      "github": "Level/level-mem",
+      "description": "Bundles [memdown] with [levelup] and [encoding-down]. Superseded by [memory-level].",
+      "oldCategory": "bundles",
+      "copyrightYear": 2012,
+      "author": null,
+      "compatibility": [{
+        "package": "levelup",
+        "via": "level-packager"
+      }]
+    },
+    "level-rocksdb": {
+      "github": "Level/level-rocksdb",
+      "description": "Bundles [rocksdb] with [levelup] and [encoding-down].",
+      "oldCategory": "bundles",
+      "copyrightYear": 2013,
+      "author": null,
+      "compatibility": [{
+        "package": "levelup",
+        "via": "level-packager"
+      }]
+    },
+    "level-hyper": {
+      "github": "Level/level-hyper",
+      "description": "Bundles [leveldown-hyper] with [levelup] and [encoding-down].",
+      "oldCategory": "bundles",
+      "copyrightYear": 2012,
+      "author": null,
+      "compatibility": [{
+        "package": "levelup",
+        "via": "level-packager"
+      }]
+    },
+    "level-indexed": {
+      "github": "kapetan/level-indexed",
+      "description": "Bundles [indexeddown] with [levelup] and [encoding-down].",
+      "oldCategory": "bundles",
+      "compatibility": [{
+        "package": "levelup",
+        "via": "level-packager"
+      }]
+    },
+    "leveldown": {
+      "github": "Level/leveldown",
+      "description": "An [abstract-leveldown] implementation backed by [LevelDB](https://github.com/google/leveldb). Superseded by [classic-level].",
+      "compatibility": ["abstract-leveldown"],
+      "copyrightYear": 2012,
+      "author": "Rod Vagg"
+    },
+    "memdown": {
+      "github": "Level/memdown",
+      "description": "An [abstract-leveldown] implementation backed by [in-memory RBTree](https://www.npmjs.com/package/functional-red-black-tree). Superseded by [memory-level].",
+      "compatibility": ["abstract-leveldown"],
+      "copyrightYear": 2013,
+      "author": "Rod Vagg"
+    },
+    "level-js": {
+      "github": "Level/level.js",
+      "description": "An [abstract-leveldown] implementation backed by [IndexedDB](https://developer.mozilla.org/en-US/docs/IndexedDB). Superseded by [browser-level].",
+      "compatibility": ["abstract-leveldown"],
+      "copyrightYear": 2012,
+      "author": "[Max Ogden](https://github.com/maxogden)"
+    },
+    "rocksdb": {
+      "github": "Level/rocksdb",
+      "description": "An [abstract-leveldown] implementation backed by [RocksDB](https://github.com/facebook/rocksdb/).",
+      "compatibility": ["abstract-leveldown"],
+      "copyrightYear": 2012,
+      "author": "Rod Vagg"
+    },
+    "leveldown-hyper": {
+      "github": "Level/leveldown-hyper",
+      "description": "An [abstract-leveldown] implementation backed by [HyperLevelDB](https://github.com/rescrv/HyperLevelDB).",
+      "compatibility": ["abstract-leveldown"],
+      "copyrightYear": 2012,
+      "author": null
+    },
+    "medeadown": {
+      "github": "kesla/medeadown",
+      "description": "An [abstract-leveldown] implementation backed by [medea](https://github.com/argo/medea).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "jsondown": {
+      "github": "toolness/jsondown",
+      "description": "An [abstract-leveldown] implementation backed by JSON on disk.",
+      "compatibility": [
+        {
+          "package": "abstract-leveldown",
+          "via": "memdown"
+        }
+      ]
+    },
+    "asyncstorage-down": {
+      "github": "tradle/asyncstorage-down",
+      "description": "An [abstract-leveldown] implementation backed by [AsyncStorage](https://facebook.github.io/react-native/docs/asyncstorage.html) (React Native).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "mongodown": {
+      "github": "watson/mongodown",
+      "description": "An [abstract-leveldown] implementation backed by [MongoDB](https://www.mongodb.com/).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "sqldown": {
+      "github": "calvinmetcalf/sqldown",
+      "description": "An [abstract-leveldown] implementation backed by [`sqlite3`](https://www.npmjs.com/package/sqlite3), [`pg`](https://www.npmjs.com/package/pg), [`mysql`](https://www.npmjs.com/package/mysql) or WebSQL.",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "dynamo-down": {
+      "github": "jed/dynamo-down",
+      "description": "An [abstract-leveldown] implementation backed by [AWS DynamoDB](http://aws.amazon.com/dynamodb).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "azureleveldown": {
+      "github": "richorama/azureleveldown",
+      "description": "An [abstract-leveldown] implementation backed by Windows Azure Table Storage.",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "fruitdown": {
+      "github": "nolanlawson/fruitdown",
+      "description": "An [abstract-leveldown] implementation backed by IndexedDB (Apple).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "localstorage-down": {
+      "github": "No9/localstorage-down",
+      "description": "An [abstract-leveldown] implementation backed by [localStorage](https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "riakdown": {
+      "github": "nlf/riakdown",
+      "description": "An [abstract-leveldown] implementation backed by [riakpbc](https://github.com/nlf/riakpbc).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "mysqldown": {
+      "github": "kesla/mysqldown",
+      "description": "An [abstract-leveldown] implementation backed by [MySQL](https://www.mysql.com/).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "redisdown": {
+      "github": "hmalphettes/redisdown",
+      "description": "An [abstract-leveldown] implementation backed by [Redis](https://redis.io/).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "leveldown-basho": {
+      "url": "https://www.npmjs.com/package/leveldown-basho",
+      "description": "An [abstract-leveldown] implementation backed by [Basho's LevelDB fork](https://github.com/basho/leveldb).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "sheet-down": {
+      "github": "jed/sheet-down",
+      "description": "An [abstract-leveldown] implementation backed by [Google Sheets](https://docs.google.com/spreadsheets).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "indexeddown": {
+      "github": "kapetan/indexeddown",
+      "description": "An [abstract-leveldown] implementation backed by IndexedDB.",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "lmdb-leveldown": {
+      "github": "chrbala/lmdb-leveldown",
+      "description": "An [abstract-leveldown] implementation backed by LMDB.",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "localdown": {
+      "github": "bhoriuchi/localdown",
+      "description": "An [abstract-leveldown] implementation backed by localStorage in Node.js.",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "aerospike-leveldown": {
+      "github": "ProjectThor/aerospikedown",
+      "description": "An [abstract-leveldown] implementation backed by Aerospike.",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "s3leveldown": {
+      "github": "loune/s3leveldown",
+      "description": "An [abstract-leveldown] implementation backed by [AWS S3](https://aws.amazon.com/s3/).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "gaiadown-ts": {
+      "github": "acidleroy/gaiadown-ts",
+      "description": "An [abstract-leveldown] implementation backed by [Gaia](https://github.com/blockstack/gaia).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "dynamodb-leveldown": {
+      "github": "GioCirque/DynamoDb-LevelDown",
+      "description": "An [abstract-leveldown] implementation backed by [AWS DynamoDB](http://aws.amazon.com/dynamodb/).",
+      "compatibility": ["abstract-leveldown"],
+      "copyrightYear": 2019,
+      "author": "Gio Palacino"
+    },
+    "localforagedown": {
+      "github": "KsRyY/localforagedown",
+      "description": "An [abstract-leveldown] implementation backed by [localForage](https://github.com/localForage/localForage/).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "react-native-leveldown": {
+      "github": "andymatuschak/react-native-leveldown",
+      "description": "An [abstract-leveldown] implementation backed by [LevelDB](https://github.com/google/leveldb) (React Native).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "networked-hyperbeedown": {
+      "github": "RangerMauve/networked-hyperbeedown",
+      "description": "An [abstract-leveldown] implementation backed by [Hyperbee](https://github.com/hypercore-protocol/hyperbee/).",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "encoding-down": {
+      "github": "Level/encoding-down",
+      "description": "An [abstract-leveldown] layer that provides key/value encoding. Superseded by [abstract-level].",
+      "compatibility": ["abstract-leveldown"],
+      "copyrightYear": 2012,
+      "author": null
+    },
+    "@adorsys/encrypt-down": {
+      "github": "adorsys/encrypt-down",
+      "description": "An [abstract-leveldown] layer that provides encryption for values.",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "deferred-leveldown": {
+      "github": "Level/deferred-leveldown",
+      "description": "An [abstract-leveldown] layer that handles delayed-open. Built into [levelup]. Both are superseded by [abstract-level].",
+      "compatibility": ["abstract-leveldown"],
+      "copyrightYear": 2013,
+      "author": "Rod Vagg"
+    },
+    "level-cowdown": {
+      "github": "substack/level-cowdown",
+      "description": "Copy-on-write [abstract-leveldown] layer.",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "abstract-stream-leveldown": {
+      "github": "jed/abstract-stream-leveldown",
+      "description": "A stream-based [abstract-leveldown] prototype.",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "level-iterator-stream": {
+      "github": "Level/iterator-stream",
+      "description": [
+        "Turn an [abstract-leveldown] iterator into a readable stream. Included in [levelup]. For [abstract-level] databases, this is superseded by [level-read-stream]."
+      ],
+      "copyrightYear": 2012,
+      "author": null
+    },
+    "level-batch-stream": {
+      "github": "jcrugzz/level-batch-stream",
+      "description": "Streams2 writable stream for [levelup]."
+    },
+    "level-writestream": {
+      "github": "pgte/level-writestream",
+      "description": "Streams2 writable stream for [levelup]."
+    },
+    "level-write-stream": {
+      "github": "Raynos/level-write-stream",
+      "description": "Streams1 writable stream for [levelup] or [abstract-leveldown]."
+    },
+    "level-livefeed": {
+      "github": "Raynos/level-livefeed",
+      "description": "A live query of a range in [levelup]. Similar to [level-live-stream] but with a streams2 interface."
+    },
+    "level-range": {
+      "github": "juliangruber/level-range",
+      "description": "Find all K/V-pairs prefixed by a certain key. Streams1."
+    },
+    "level-cursor": {
+      "github": "kordon/cursor",
+      "description": "A stream \"cursor\" to iterate through a ReadStream / KeyStream / ValueStream."
+    },
+    "level-live": {
+      "github": "voltraco/level-live",
+      "description": [
+        "Simple, light and correct live read stream implementation.",
+        "",
+        "NB. Uses an undefined streams version, as well as [ltgt] which is not compatible with [abstract-level]."
+      ]
+    },
+    "level-glob": {
+      "github": "vweevers/level-glob",
+      "description": "A streams2 read stream filtered and ordered by glob patterns. Keys in the database should be unix-like paths."
+    },
+    "pull-level": {
+      "github": "dominictarr/pull-level",
+      "description": "[`pull-stream`](https://github.com/pull-stream/pull-stream) interface to [levelup] with read streams, write streams and realtime (tail/live) reads. Not compatible with [abstract-level]."
+    },
+    "level-live-stream": {
+      "github": "dominictarr/level-live-stream",
+      "description": "Like `db.createReadStream()` except it's live / tailable. i.e. instead of ending, it will stay open and stream changes to the database as they are inserted. Not compatible with [abstract-level]."
+    },
+    "level-concat-iterator": {
+      "github": "Level/concat-iterator",
+      "description": "Concatenate items from an [abstract-leveldown] iterator into an array. On [abstract-level] databases, this is superseded by `iterator.all()`.",
+      "copyrightYear": 2018,
+      "author": null
+    },
+    "subleveldown": {
+      "github": "Level/subleveldown",
+      "compatibility": ["abstract-leveldown", "levelup"],
+      "description": "Split a [levelup] database into sublevels with their own keyspace, encoding and events. Superseded by [abstract-level].",
+      "copyrightYear": 2014,
+      "author": "[Mathias Buus](https://github.com/mafintosh)"
+    },
+    "level-temp": {
+      "github": "mafintosh/level-temp",
+      "description": "Create a temporary [subleveldown] sublevel that is guaranteed to be empty."
+    },
+    "level-mount": {
+      "github": "u8sand/level-mount",
+      "description": "Mount multiple [abstract-leveldown] stores by key prefix onto a single store. Can be used with [subleveldown].",
+      "compatibility": ["abstract-leveldown"]
+    },
+    "bytespace": {
+      "github": "deanlandolt/bytespace",
+      "description": [
+        "Keypath subspaces prefixed with [bytewise] tuples. Similar to [level-sublevel].",
+        "",
+        "NB. [bytewise] - and thus [bytespace] - can be slow. Consider using the [charwise] encoding instead."
+      ]
+    },
+    "level-sublevel": {
+      "github": "dominictarr/level-sublevel",
+      "compatibility": ["levelup"],
+      "description": [
+        "Adds the ability to create subsections with the same API as [levelup], but only write/read to a prefixed section, or bucket, of the key-space. Each section also has [level-hooks] installed.",
+        "",
+        "NB. No longer maintained. Instead use [subleveldown] for [levelup], or the built-in sublevels of [abstract-level]."
+      ]
+    },
+    "sublevel-prefixer": {
+      "github": "mafintosh/sublevel-prefixer",
+      "description": "Utility to prefix a key with a sublevel prefix."
+    },
+    "level-sublevel-stream": {
+      "github": "juliangruber/level-sublevel-stream",
+      "description": [
+        "Find [level-sublevel] sublevels, not requiring them to be in memory already."
+      ]
+    },
+    "level-subtree": {
+      "github": "hij1nx/level-subtree",
+      "description": [
+        "Generate a tree from [level-sublevel] sublevels, useful when there is no manifest."
+      ]
+    },
+    "level-superlevel": {
+      "github": "randymized/level-superlevel",
+      "description": [
+        "Superlevel adds a \"super\" level that allows accessing the entire database, discovering [level-sublevel] sublevels and browsing the database without knowledge of the sublevel structure."
+      ]
+    },
+    "level-subkey": {
+      "github": "snowyu/level-subkey",
+      "description": [
+        "Use path-like keys to separate sections of [levelup], with hooks. Adapted from [level-sublevel]."
+      ]
+    },
+    "level-mirror": {
+      "github": "juliangruber/level-mirror",
+      "description": "Mirror and optionally transform data from one [level-sublevel] sublevel into another."
+    },
+    "couchup": {
+      "github": "mikeal/couchup",
+      "description": [
+        "A CouchDB implementation on top of [levelup]."
+      ]
+    },
+    "firedup": {
+      "github": "eugeneware/firedup",
+      "description": [
+        "A node.js implementation of firebase based on [levelup]."
+      ]
+    },
+    "len": {
+      "github": "binocarlos/len",
+      "description": [
+        "Len is a resource booking database using LevelDB for storage. Useful for calendar and gantt chart apps and for questions like 'can a customer book this resource starting X and ending Y'."
+      ]
+    },
+    "lem": {
+      "github": "binocarlos/lem",
+      "description": [
+        "Lem is a telemetry storage database using LevelDB. Keys are indexed by timestamp and you can read values in-between 2 points in time."
+      ]
+    },
+    "pushdb": {
+      "github": "mikeal/pushdb",
+      "description": [
+        "A programmable database with document storage and unique indexing capabilities."
+      ]
+    },
+    "tacodb": {
+      "github": "dominictarr/tacodb",
+      "description": [
+        "A responsive, Node.js-style database ideal for realtime data. Highly modular and adaptable, allowing extension with the [Level][level-org] ecosystem."
+      ]
+    },
+    "timestreamdb": {
+      "github": "brycebaril/timestreamdb",
+      "description": [
+        "A full-featured timeseries database on top of LevelDB. Includes a library for streaming statistical operations on timeseries data including joins, aggregates, filters, and map-like operations."
+      ]
+    },
+    "level-orm": {
+      "github": "eugeneware/level-orm",
+      "description": "Simple ORM built on [levelup]."
+    },
+    "level-restful": {
+      "github": "karissa/level-restful",
+      "description": "REST wrapper for [levelup], as an extension to [level-orm]."
+    },
+    "level-rest": {
+      "github": "shama/level-rest",
+      "description": "REST wrapper for [levelup]. Not compatible with latest [levelup]."
+    },
+    "level-lively": {
+      "github": "eugeneware/level-lively",
+      "description": "[levelup] implementation of [LivelyDb](https://github.com/eugeneware/livelydb) for doing real-time data binding of a database with local javascript objects."
+    },
+    "level-mongo": {
+      "github": "simon-p-r/level-mongo",
+      "description": "MongoDB-like database backed by LevelDB.",
+      "compatibility": [{
+        "package": "leveldown",
+        "via": "level"
+      }]
+    },
+    "levi": {
+      "github": "cshum/levi",
+      "description": "Stream based full-text search for Node.js and browser using [levelup]."
+    },
+    "dulcimer": {
+      "github": "fritzy/dulcimer",
+      "description": "Define JSON models and manage indexes, children, foreign keys and much more."
+    },
+    "level-fact-base": {
+      "github": "smallhelm/level-fact-base",
+      "description": [
+        "Store immutable facts and query them with datalog."
+      ]
+    },
+    "ltgt": {
+      "github": "dominictarr/ltgt",
+      "description": "Tool belt to find lower or upper bounds, compare and filter keys and more. Incompatible with [abstract-level], because in [abstract-level] `gte` and `lte` range options take precedence over `gt` and `lt` respectively."
+    },
+    "level-option-wrap": {
+      "github": "substack/level-option-wrap",
+      "description": "Wrap `ltgt` options with functions. Expose range options without leaking information about your internal key representations."
+    },
+    "interval-to-ltgt": {
+      "github": "nowsecure/interval-to-ltgt",
+      "description": "Convert an interval string to an `ltgt` object. This is the counterpart to [ltgt-to-interval]."
+    },
+    "ltgt-to-interval": {
+      "github": "juliangruber/ltgt-to-interval",
+      "description": "Convert an `ltgt` object to an interval string. This is the counterpart to [interval-to-ltgt]."
+    },
+    "range-emitter": {
+      "github": "jameskyburz/range-emitter",
+      "description": "Range emitter. Publish keys and subscribe to ranges."
+    },
+    "level-codec": {
+      "github": "Level/codec",
+      "description": "Encode keys, values and ltgte options. Used in [encoding-down]. Superseded by [level-transcoder].",
+      "copyrightYear": 2012,
+      "author": null
+    },
+    "level-errors": {
+      "github": "Level/errors",
+      "description": "Error types for [levelup]. Superseded by [abstract-level].",
+      "copyrightYear": 2012,
+      "author": null
+    },
+    "level-packager": {
+      "github": "Level/packager",
+      "description": "Legacy package helper to bundle an [abstract-leveldown] store with [levelup] and [encoding-down].",
+      "oldCategory": "core",
+      "copyrightYear": 2013,
+      "author": null
+    },
+    "multileveldown": {
+      "github": "mafintosh/multileveldown",
+      "description": "Share a [levelup] instance across multiple processes or over the network. An alternative to [multilevel], implemented as [abstract-leveldown] stores with seamless retry support. Superseded by [many-level].",
+      "oldCategory": "shared-access"
+    },
+    "level-party": {
+      "github": "substack/level-party",
+      "description": "Open a LevelDB ([leveldown]) handle multiple times, transparently upgrading to [multileveldown] when more than 1 process try to use the same LevelDB data directory at once and re-electing a new master when the primary unix socket (or named pipe) goes down. Superseded by [rave-level].",
+      "oldCategory": "shared-access"
+    },
+    "multilevel": {
+      "github": "juliangruber/multilevel",
+      "description": "Share a [levelup] instance over the network.",
+      "oldCategory": "shared-access"
+    },
+    "multilevel-http": {
+      "github": "juliangruber/multilevel-http",
+      "description": "Expose a [levelup] instance via HTTP.",
+      "oldCategory": "shared-access"
+    },
+    "level-manifest": {
+      "github": "dominictarr/level-manifest",
+      "description": "Describe the functions that [multilevel] should provide access to on the client.",
+      "oldCategory": "shared-access"
+    },
+    "level-sandbox": {
+      "github": "juliangruber/level-sandbox",
+      "description": "A sandbox for hosting [multilevel] enabled databases.",
+      "oldCategory": "shared-access"
+    },
+    "level-range-emitter": {
+      "github": "jameskyburz/level-range-emitter",
+      "description": "Client and server using [multileveldown], [range-emitter] and [ltgt].",
+      "oldCategory": "shared-access"
+    },
+    "leveldb-mount": {
+      "github": "jameskyburz/leveldb-mount",
+      "description": "LevelDB server and client with optional client-side REPL. Built with [subleveldown] and [multileveldown]."
+    },
+    "level2riak": {
+      "github": "fritzy/level2git",
+      "description": "A network service that allows you to connect to a Riak database over HTTP."
+    },
+    "level-cluster-get": {
+      "github": "kesla/level-cluster-get",
+      "description": "Given a key, get all values from a cluster of [multilevel] servers."
+    },
+    "level-connect": {
+      "github": "mattstyles/level-connect",
+      "description": "Connect to a [level-party] and [level-sublevel] enabled LevelDB over HTTP."
+    },
+    "level-pubsub": {
+      "github": "hij1nx/level-pubsub",
+      "description": "PubSub with server and client on top of [levelup]."
+    },
+    "level-query": {
+      "github": "substack/level-query",
+      "description": "Expose a [level-sublevel] database over HTTP, searchable with query strings."
+    },
+    "level-over-http": {
+      "github": "lakowske/level-over-http",
+      "description": "Another solution to expose [levelup] over HTTP."
+    },
+    "level-rpc": {
+      "github": "juliangruber/level-rpc",
+      "description": "Fast RPC mechanism for [levelup]. Intended as binary-compatible alternative to [multilevel]."
+    },
+    "level-events": {
+      "github": "mafintosh/level-events",
+      "description": "Get an event everytime something is written / read / deleted using [levelup].",
+      "oldCategory": "hooks"
+    },
+    "level-hookdown": {
+      "github": "hypermodules/level-hookdown",
+      "description": "Simple [levelup] hooks.",
+      "oldCategory": "hooks"
+    },
+    "level-post": {
+      "github": "dominictarr/level-post",
+      "description": "Consistent post hooks for [levelup].",
+      "oldCategory": "hooks"
+    },
+    "level-condition": {
+      "github": "juliangruber/level-condition",
+      "description": "Get notified when a condition is triggered inside a [levelup] instance.",
+      "oldCategory": "hooks"
+    },
+    "level-hooks": {
+      "github": "dominictarr/level-hooks",
+      "description": "Implements a hook mechanism that allows you to intercept `put`, `delete` and `batch` operations. You can then turn those operations into batches. Useful if you want to turn a `put` into an atomic batch for say an automatic map operation.<br><br>NB. Author recommends using [level-sublevel] instead of `level-hooks` directly. Note that [level-sublevel] is not maintained.<br><br>Both are now (anno 2024) superseded by [abstract-level] which has builtin sublevels and hooks.",
+      "oldCategory": "hooks"
+    },
+    "levelup-async-iterator": {
+      "github": "MeirionHughes/levelup-async-iterator",
+      "description": [
+        "Add an `iterator()` method to [levelup] with [`Symbol.asyncIterator`](https://github.com/tc39/proposal-async-iteration).",
+        "Superseded by builtin `Symbol.asyncIterator` support on [abstract-leveldown] iterators."
+      ]
+    },
+    "level-iterator": {
+      "github": "vweevers/level-iterator",
+      "description": [
+        "Decoding iterator for [levelup] instances. Wraps iterators like [level-iterator-stream] does.",
+        "",
+        "Superseded by [encoding-down] and later [abstract-level]."
+      ]
+    },
     "level-delete-stream": {
       "github": "juliangruber/level-delete-stream",
       "description": "A streams1 deleteStream for [levelup]. Superseded by `db.clear()`."

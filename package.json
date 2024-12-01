@@ -6,7 +6,7 @@
   "license": "MIT",
   "scripts": {
     "test": "standard && npm run dependency-check",
-    "awesome": "node src README.md modules/*",
+    "awesome": "node src README.md modules/*.json",
     "dependency-check": "dependency-check . src/*.js -i dependency-check -i standard"
   },
   "devDependencies": {
@@ -29,6 +29,9 @@
     "unist-builder": "^2.0.0",
     "unist-util-visit": "^2.0.0",
     "vfile-reporter": "^6.0.0"
+  },
+  "standard": {
+    "ignore": ["modules/*.js"]
   },
   "repository": {
     "type": "git",

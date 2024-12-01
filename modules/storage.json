@@ -1,0 +1,38 @@
+{
+  "title": "Storage",
+  "description": "Modules that implement [abstract-level].",
+  "modules": {
+    "level": {
+      "github": "Level/level",
+      "compatibility": [{
+        "package": "abstract-level",
+        "via": "classic-level"
+      }],
+      "description": [
+        "Universal [abstract-level] database for Node.js and browsers.",
+        "Main entry point for beginners."
+      ],
+      "timeless": true,
+      "copyrightYear": 2013,
+      "author": "Rod Vagg"
+    },
+    "classic-level": {
+      "github": "Level/classic-level",
+      "description": "An [abstract-level] database backed by LevelDB.",
+      "compatibility": ["abstract-level"],
+      "timeless": true
+    },
+    "browser-level": {
+      "github": "Level/browser-level",
+      "description": "An [abstract-level] database for browsers, backed by IndexedDB.",
+      "compatibility": ["abstract-level"],
+      "timeless": true
+    },
+    "memory-level": {
+      "github": "Level/memory-level",
+      "description": "In-memory [abstract-level] database for Node.js and browsers.",
+      "compatibility": ["abstract-level"],
+      "timeless": true
+    }
+  }
+}

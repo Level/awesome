@@ -1,69 +1,18 @@
 {
   "title": "Shared Access",
   "modules": {
-    "multileveldown": {
-      "github": "mafintosh/multileveldown",
-      "description": "Share a [levelup] instance across multiple processes or over the network. An alternative to [multilevel], implemented as [abstract-leveldown] stores with seamless retry support."
+    "many-level": {
+      "github": "Level/many-level",
+      "description": "Share an [abstract-level] database over the network or other kind of stream. Supersedes [multileveldown] and [multilevel].",
+      "compatibility": ["abstract-level"]
     },
-    "level-party": {
-      "github": "substack/level-party",
-      "description": "Open a LevelDB ([leveldown]) handle multiple times, transparently upgrading to [multileveldown] when more than 1 process try to use the same LevelDB data directory at once and re-electing a new master when the primary unix socket (or named pipe) goes down."
-    },
-    "cluster-levelup": {
-      "github": "chiguireitor/cluster-levelup",
-      "description": "Wrap a [levelup] instance for [`cluster`](https://nodejs.org/api/cluster.html) usage among multiple processes."
-    },
-    "multilevel": {
-      "github": "juliangruber/multilevel",
-      "description": "Share a [levelup] instance over the network."
-    },
-    "multilevel-http": {
-      "github": "juliangruber/multilevel-http",
-      "description": "Expose a [levelup] instance via HTTP."
-    },
-    "level-range-emitter": {
-      "github": "jameskyburz/level-range-emitter",
-      "description": "Client and server using [multileveldown], [range-emitter] and [ltgt]."
-    },
-    "level-manifest": {
-      "github": "dominictarr/level-manifest",
-      "description": "Describe the functions that [multilevel] should provide access to on the client."
-    },
-    "level-cluster-get": {
-      "github": "kesla/level-cluster-get",
-      "description": "Given a key, get all values from a cluster of [multilevel] servers."
-    },
-    "level-connect": {
-      "github": "mattstyles/level-connect",
-      "description": "Connect to a [level-party] and [level-sublevel] enabled LevelDB over HTTP."
-    },
-    "level-sandbox": {
-      "github": "juliangruber/level-sandbox",
-      "description": "A sandbox for hosting [multilevel] enabled databases."
-    },
-    "level2riak": {
-      "github": "fritzy/level2git",
-      "description": "A network service that allows you to connect to a Riak database over HTTP."
-    },
-    "leveldb-mount": {
-      "github": "jameskyburz/leveldb-mount",
-      "description": "LevelDB server and client with optional client-side REPL. Built with [subleveldown] and [multileveldown]."
-    },
-    "level-pubsub": {
-      "github": "hij1nx/level-pubsub",
-      "description": "PubSub with server and client on top of [levelup]."
-    },
-    "level-query": {
-      "github": "substack/level-query",
-      "description": "Expose a [level-sublevel] database over HTTP, searchable with query strings."
-    },
-    "level-over-http": {
-      "github": "lakowske/level-over-http",
-      "description": "Another solution to expose [levelup] over HTTP."
-    },
-    "level-rpc": {
-      "github": "juliangruber/level-rpc",
-      "description": "Fast RPC mechanism for [levelup]. Intended as binary-compatible alternative to [multilevel]."
+    "rave-level": {
+      "github": "Level/rave-level",
+      "description": "Use a LevelDB database from multiple processes with seamless failover. Supersedes [level-party].",
+      "compatibility": [{
+        "package": "abstract-level",
+        "via": "many-level"
+      }]
     }
   }
 }
