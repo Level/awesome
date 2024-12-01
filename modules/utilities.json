@@ -3,7 +3,8 @@
   "modules": {
     "level-transcoder": {
       "github": "Level/transcoder",
-      "description": "Encode data with built-in or custom encodings. Used in [abstract-level]."
+      "description": "Encode data with built-in or custom encodings. Used in [abstract-level].",
+      "timeless": true
     },
     "level-test": {
       "github": "Level/level-test",

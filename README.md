@@ -750,7 +750,7 @@ Standalone LevelDB file server based on [`level-serve`][level-serve], [`multilev
 
 ### [`level-transcoder`][level-transcoder]
 
-[![npm package version](https://img.shields.io/npm/v/level-transcoder)](https://www.npmjs.com/package/level-transcoder) [![npm downloads](https://img.shields.io/npm/dw/level-transcoder)](https://www.npmjs.com/package/level-transcoder) [![License](https://img.shields.io/npm/l/level-transcoder?color=blue)](https://www.npmjs.com/package/level-transcoder) [![Last commit](https://img.shields.io/github/last-commit/Level/transcoder)](https://github.com/Level/transcoder) [![Contributors](https://img.shields.io/github/contributors/Level/transcoder?color=blue)](https://github.com/Level/transcoder/graphs/contributors)
+[![npm package version](https://img.shields.io/npm/v/level-transcoder)](https://www.npmjs.com/package/level-transcoder) [![npm downloads](https://img.shields.io/npm/dw/level-transcoder)](https://www.npmjs.com/package/level-transcoder) [![License](https://img.shields.io/npm/l/level-transcoder?color=blue)](https://www.npmjs.com/package/level-transcoder) [![Last commit](https://img.shields.io/github/last-commit/Level/transcoder?color=brightgreen)](https://github.com/Level/transcoder) [![Contributors](https://img.shields.io/github/contributors/Level/transcoder?color=blue)](https://github.com/Level/transcoder/graphs/contributors)
 
 Encode data with built-in or custom encodings. Used in [`abstract-level`][abstract-level].
 
